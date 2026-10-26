@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{desc}}">
+<link rel="canonical" href="{{canonical}}">
+<link rel="alternate" hreflang="tr" href="https://tasami.com.tr/">
+<link rel="alternate" hreflang="en" href="https://tasami.com.tr/en/">
+<link rel="alternate" hreflang="x-default" href="https://tasami.com.tr/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{desc}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="https://tasami.com.tr/assets/img/ciftlik-genel.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#123d27">
+<link rel="icon" type="image/png" href="{{b}}favicon.png">
+<link rel="apple-touch-icon" href="{{b}}apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{b}}assets/site.css">
+<script type="application/ld+json">{{ld}}</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#top" aria-label="Tasami"><img src="{{b}}assets/img/tasami-amblem.png" alt="" width="40" height="40"><span>TASA<b>Mİ</b></span></a>
+    <nav class="nav">{{nav}}</nav>
+    <a class="lang" href="{{other_href}}" hreflang="{{other_lang}}">{{other_lang}}</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" id="oyun">
+    <div class="hero-bg" style="background-image:url('{{b}}assets/img/ciftlik-genel.webp')"></div>
+    <div class="wrap hero-in">
+      <p class="kicker">{{kicker}}</p>
+      <h1>{{game}}</h1>
+      <p class="lead">{{tagline}}</p>
+      <div class="cta">
+        <a class="btn primary" href="{{play_url}}" target="_blank" rel="noopener">▶ {{play}}</a>
+        <span class="btn ghost" aria-disabled="true">{{android}}</span>
+      </div>
+      <div class="facts">{{facts}}</div>
+    </div>
+  </section>
+
+  <section class="trailer wrap" aria-label="{{watch}}">
+    <div class="video">
+      <video controls playsinline preload="metadata" poster="{{b}}assets/img/koy-meydani.webp">
+        <source src="{{b}}assets/video/toprak-mirasi-fragman.mp4" type="video/mp4">
+      </video>
+    </div>
+    <p class="note">{{video_note}}</p>
+  </section>
+
+  <section class="story wrap">
+    <div class="story-text">
+      <h2>{{story_h}}</h2>
+      {{story}}
+    </div>
+    <ol class="acts">{{acts}}</ol>
+  </section>
+
+  <section class="feats" id="ozellikler">
+    <div class="wrap">
+      <h2>{{feat_h}}</h2>
+      <ul class="feat-grid">{{feats}}</ul>
+    </div>
+  </section>
+
+  <section class="gallery wrap" id="gorseller">
+    <h2>{{gallery_h}}</h2>
+    <p class="sub">{{gallery_sub}}</p>
+    <div class="grid">{{gallery}}</div>
+  </section>
+
+  <section class="about" id="hakkimizda">
+    <div class="wrap about-in">
+      <img class="about-logo" src="{{b}}assets/img/tasami-logo.png" alt="Tasami logosu" width="260" height="260" loading="lazy">
+      <div>
+        <p class="kicker">{{about_kicker}}</p>
+        <h2>{{about_h}}</h2>
+        {{about}}
+        <ul class="services">{{services}}</ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact wrap" id="iletisim">
+    <h2>{{contact_h}}</h2>
+    <p>{{contact}}</p>
+    <a class="btn primary" href="mailto:{{mail_to}}">✉ {{mail}}</a>
+    <p class="mail">{{mail_to}}</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>© 2026 Tasami. {{rights}}</span>
+    <span><a href="{{privacy_url}}">{{privacy}}</a> · <a href="{{delete_url}}">{{delete}}</a></span>
+  </div>
+</footer>
+
+<dialog class="lb" id="lb"><img alt=""><p></p><button type="button" aria-label="Kapat">✕</button></dialog>
+<script>
+(function(){var d=document.getElementById('lb');if(!d||!d.showModal)return;var im=d.querySelector('img'),cp=d.querySelector('p');
+document.querySelectorAll('.grid a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();im.src=a.href;im.alt=cp.textContent=a.dataset.cap;d.showModal()})});
+d.addEventListener('click',function(){d.close()});})();
+</script>
+</body>
+</html>
