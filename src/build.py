@@ -22,7 +22,6 @@ T = {
         "kicker": "Tasami'nin ilk oyunu",
         "game": "Toprağın Mirası",
         "tagline": "Dedenden kalan toprağa boş elle gel. Çiftliğini kur, köyünü büyüt, Hazar Gölü kıyısında kendi hikâyeni yaz.",
-        "play": "Tarayıcıda oyna",
         "android": "Google Play testine katıl",
         "t_h": "Erken erişim",
         "t_sub": "Toprağın Mirası yakında mağazalarda. İlk oynayanlardan olmak ister misin?",
@@ -40,7 +39,7 @@ T = {
         "t_ios_p": "iPhone ve iPad sürümü üzerinde çalışıyoruz.",
         "t_soon": "Yakında",
         "watch": "Fragmanı izle",
-        "facts": [("52", "hikâye görevi"), ("4", "perde"), ("7", "dil"), ("Ücretsiz", "tarayıcı ve Android")],
+        "facts": [("52", "hikâye görevi"), ("4", "perde"), ("7", "dil"), ("Ücretsiz", "Android · iOS yakında")],
         "story_h": "Bir köyün yeniden doğuşu",
         "story": [
             "Rahmetli Hasan Dede'nin torunusun. Elinde bir çanta, cebinde birkaç altınla Sivrice'ye, dedenin yıllardır bekleyen çiftliğine geliyorsun.",
@@ -88,7 +87,6 @@ T = {
         "kicker": "Tasami's first game",
         "game": "Legacy of the Land",
         "tagline": "Arrive empty-handed on the land your grandfather left you. Build your farm, grow your village and write your own story on the shores of Lake Hazar.",
-        "play": "Play in browser",
         "android": "Join the Google Play test",
         "t_h": "Early access",
         "t_sub": "Legacy of the Land is coming to the stores soon. Want to be among the first to play?",
@@ -106,7 +104,7 @@ T = {
         "t_ios_p": "We're working on the iPhone and iPad version.",
         "t_soon": "Coming soon",
         "watch": "Watch the trailer",
-        "facts": [("52", "story quests"), ("4", "acts"), ("7", "languages"), ("Free", "browser & Android")],
+        "facts": [("52", "story quests"), ("4", "acts"), ("7", "languages"), ("Free", "Android · iOS soon")],
         "story_h": "A village reborn",
         "story": [
             "You are the grandchild of the late Grandpa Hasan. With a bag and a few coins, you arrive in Sivrice, at the farm that has been waiting for years.",
@@ -170,7 +168,7 @@ def render(t):
         "email": CONTACT,
     }, ensure_ascii=False)
     vals = dict(t, b=b, facts=facts, story=story, acts=acts, feats=feats, gallery=gallery, about=about,
-                services=services, nav=nav, ld=ld, play_url=PLAY_URL,
+                services=services, nav=nav, ld=ld,
                 contact=t["contact"], mail_to=CONTACT,
                 privacy_url=PLAY_URL + "gizlilik.html", delete_url=PLAY_URL + "hesap-sil.html",
                 canonical="https://tasami.com.tr/" + t["path"])
