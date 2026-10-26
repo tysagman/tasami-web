@@ -42,7 +42,7 @@
       <p class="lead">{{tagline}}</p>
       <div class="cta">
         <a class="btn primary" href="{{play_url}}" target="_blank" rel="noopener">▶ {{play}}</a>
-        <span class="btn ghost" aria-disabled="true">{{android}}</span>
+        <a class="btn ghost" href="#test">{{android}}</a>
       </div>
       <div class="facts">{{facts}}</div>
     </div>
@@ -55,6 +55,29 @@
       </video>
     </div>
     <p class="note">{{video_note}}</p>
+  </section>
+
+  <section class="test wrap" id="test">
+    <h2>{{t_h}}</h2>
+    <p class="sub">{{t_sub}}</p>
+    <div class="test-grid">
+      <div class="card play">
+        <h3><span aria-hidden="true">▶</span> {{t_and_h}}</h3>
+        <p>{{t_and_p}}</p>
+        <form id="tform" novalidate data-ok="{{t_ok}}" data-dup="{{t_dup}}" data-err="{{t_err}}" data-bad="{{t_bad}}" data-lang="{{lang}}">
+          <label>{{t_email}}<input type="email" name="email" required maxlength="100" autocomplete="email" placeholder="ornek@gmail.com"></label>
+          <label>{{t_name}}<input type="text" name="name" maxlength="60" autocomplete="name"></label>
+          <label class="chk"><input type="checkbox" name="ok" required> <span>{{t_consent}} <a href="{{privacy_url}}" target="_blank" rel="noopener">{{privacy}}</a></span></label>
+          <button class="btn primary" type="submit">{{t_send}}</button>
+          <p class="msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="card ios">
+        <h3><span aria-hidden="true">📱</span> {{t_ios_h}}</h3>
+        <p>{{t_ios_p}}</p>
+        <span class="soon">{{t_soon}}</span>
+      </div>
+    </div>
   </section>
 
   <section class="story wrap">
@@ -105,6 +128,7 @@
   </div>
 </footer>
 
+<script type="module" src="{{b}}assets/test-form.js"></script>
 <dialog class="lb" id="lb"><img alt=""><p></p><button type="button" aria-label="Kapat">✕</button></dialog>
 <script>
 (function(){var d=document.getElementById('lb');if(!d||!d.showModal)return;var im=d.querySelector('img'),cp=d.querySelector('p');

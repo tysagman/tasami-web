@@ -42,7 +42,7 @@
       <p class="lead">Dedenden kalan toprağa boş elle gel. Çiftliğini kur, köyünü büyüt, Hazar Gölü kıyısında kendi hikâyeni yaz.</p>
       <div class="cta">
         <a class="btn primary" href="https://tysagman.github.io/toprak-oyun/oyun/" target="_blank" rel="noopener">▶ Tarayıcıda oyna</a>
-        <span class="btn ghost" aria-disabled="true">Google Play · Yakında</span>
+        <a class="btn ghost" href="#test">Google Play testine katıl</a>
       </div>
       <div class="facts"><div class="fact"><strong>52</strong><span>hikâye görevi</span></div><div class="fact"><strong>4</strong><span>perde</span></div><div class="fact"><strong>7</strong><span>dil</span></div><div class="fact"><strong>Ücretsiz</strong><span>tarayıcı ve Android</span></div></div>
     </div>
@@ -55,6 +55,29 @@
       </video>
     </div>
     <p class="note">Oyun içinden çekilmiştir.</p>
+  </section>
+
+  <section class="test wrap" id="test">
+    <h2>Erken erişim</h2>
+    <p class="sub">Toprağın Mirası yakında mağazalarda. İlk oynayanlardan olmak ister misin?</p>
+    <div class="test-grid">
+      <div class="card play">
+        <h3><span aria-hidden="true">▶</span> Google Play · Kapalı test</h3>
+        <p>Android test sürümüne katılmak için Google Play'de kullandığın Gmail adresini bırak. Seni test listesine ekleyip davet bağlantısını e-postayla göndereceğiz.</p>
+        <form id="tform" novalidate data-ok="Teşekkürler! Kaydın alındı. Davet e-postası geldiğinde Google Play'den testi indirebilirsin." data-dup="Bu tarayıcıdan zaten kayıt oldun. Teşekkürler!" data-err="Kayıt gönderilemedi. Lütfen biraz sonra tekrar dene ya da bize e-posta gönder." data-bad="Lütfen geçerli bir e-posta adresi yaz." data-lang="tr">
+          <label>Gmail adresin<input type="email" name="email" required maxlength="100" autocomplete="email" placeholder="ornek@gmail.com"></label>
+          <label>Adın (isteğe bağlı)<input type="text" name="name" maxlength="60" autocomplete="name"></label>
+          <label class="chk"><input type="checkbox" name="ok" required> <span>E-posta adresimin yalnızca test daveti için kullanılmasını kabul ediyorum. <a href="https://tysagman.github.io/toprak-oyun/oyun/gizlilik.html" target="_blank" rel="noopener">Gizlilik politikası</a></span></label>
+          <button class="btn primary" type="submit">Teste katıl</button>
+          <p class="msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="card ios">
+        <h3><span aria-hidden="true">📱</span> App Store · iOS</h3>
+        <p>iPhone ve iPad sürümü üzerinde çalışıyoruz.</p>
+        <span class="soon">Yakında</span>
+      </div>
+    </div>
   </section>
 
   <section class="story wrap">
@@ -105,6 +128,7 @@
   </div>
 </footer>
 
+<script type="module" src="assets/test-form.js"></script>
 <dialog class="lb" id="lb"><img alt=""><p></p><button type="button" aria-label="Kapat">✕</button></dialog>
 <script>
 (function(){var d=document.getElementById('lb');if(!d||!d.showModal)return;var im=d.querySelector('img'),cp=d.querySelector('p');

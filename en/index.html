@@ -42,7 +42,7 @@
       <p class="lead">Arrive empty-handed on the land your grandfather left you. Build your farm, grow your village and write your own story on the shores of Lake Hazar.</p>
       <div class="cta">
         <a class="btn primary" href="https://tysagman.github.io/toprak-oyun/oyun/" target="_blank" rel="noopener">▶ Play in browser</a>
-        <span class="btn ghost" aria-disabled="true">Google Play · Coming soon</span>
+        <a class="btn ghost" href="#test">Join the Google Play test</a>
       </div>
       <div class="facts"><div class="fact"><strong>52</strong><span>story quests</span></div><div class="fact"><strong>4</strong><span>acts</span></div><div class="fact"><strong>7</strong><span>languages</span></div><div class="fact"><strong>Free</strong><span>browser & Android</span></div></div>
     </div>
@@ -55,6 +55,29 @@
       </video>
     </div>
     <p class="note">Captured in-game.</p>
+  </section>
+
+  <section class="test wrap" id="test">
+    <h2>Early access</h2>
+    <p class="sub">Legacy of the Land is coming to the stores soon. Want to be among the first to play?</p>
+    <div class="test-grid">
+      <div class="card play">
+        <h3><span aria-hidden="true">▶</span> Google Play · Closed test</h3>
+        <p>To join the Android test, leave the Gmail address you use on Google Play. We'll add you to the tester list and email you the invite link.</p>
+        <form id="tform" novalidate data-ok="Thanks! You're signed up. When the invite arrives, you can install the test from Google Play." data-dup="You've already signed up from this browser. Thanks!" data-err="Couldn't send your sign-up. Please try again later or email us." data-bad="Please enter a valid email address." data-lang="en">
+          <label>Your Gmail address<input type="email" name="email" required maxlength="100" autocomplete="email" placeholder="ornek@gmail.com"></label>
+          <label>Your name (optional)<input type="text" name="name" maxlength="60" autocomplete="name"></label>
+          <label class="chk"><input type="checkbox" name="ok" required> <span>I agree that my email address is used only for the test invitation. <a href="https://tysagman.github.io/toprak-oyun/oyun/gizlilik.html" target="_blank" rel="noopener">Privacy policy</a></span></label>
+          <button class="btn primary" type="submit">Join the test</button>
+          <p class="msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="card ios">
+        <h3><span aria-hidden="true">📱</span> App Store · iOS</h3>
+        <p>We're working on the iPhone and iPad version.</p>
+        <span class="soon">Coming soon</span>
+      </div>
+    </div>
   </section>
 
   <section class="story wrap">
@@ -105,6 +128,7 @@
   </div>
 </footer>
 
+<script type="module" src="../assets/test-form.js"></script>
 <dialog class="lb" id="lb"><img alt=""><p></p><button type="button" aria-label="Kapat">✕</button></dialog>
 <script>
 (function(){var d=document.getElementById('lb');if(!d||!d.showModal)return;var im=d.querySelector('img'),cp=d.querySelector('p');
