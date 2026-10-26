@@ -8,7 +8,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 TEMPLATE = (ROOT / "src" / "template.html").read_text(encoding="utf-8")
 
 PLAY_URL = "https://tysagman.github.io/toprak-oyun/oyun/"
-CONTACT = "tysagman@gmail.com"
+CONTACT = "info@tasami.com.tr"
 
 SHOTS = ["ciftlik-genel", "koy-meydani", "gol-kiyisi", "ciftlik", "iskele", "sehir"]
 
