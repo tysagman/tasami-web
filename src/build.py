@@ -10,6 +10,8 @@ TEMPLATE = (ROOT / "src" / "template.html").read_text(encoding="utf-8")
 
 PLAY_URL = "https://tysagman.github.io/toprak-oyun/oyun/"
 CONTACT = "info@tasami.com.tr"
+YOUTUBE_ID = "VAp9sWofOYo"  # resmî fragman
+YOUTUBE = "https://www.youtube.com/watch?v=" + YOUTUBE_ID
 # Oyundan otomatik gelir (tools/oyun-senkron.js, .github/workflows/oyun-senkron.yml)
 GAME = json.loads((ROOT / "src" / "game.json").read_text(encoding="utf-8"))
 VERSION = GAME["version"]
@@ -49,7 +51,7 @@ T = {
         "cta_watch": "Fragmanı izle",
         "badge": f"Sürüm {VERSION} · Android kapalı test",
         "scroll": "Keşfet",
-        "presents": "sunar", "upd_k": "Oyunla eş zamanlı", "upd_h": "Son güncellemeler", "upd_v": "Sürüm", "slogan": "Topraktan Sanayiye",
+        "presents": "sunar", "yt_btn": "YouTube'da izle", "upd_k": "Oyunla eş zamanlı", "upd_h": "Son güncellemeler", "upd_v": "Sürüm", "slogan": "Topraktan Sanayiye",
         "trailer": "toprak-mirasi-fragman.mp4",
         "marquee": ["Tarla", "Ahır", "Mandıra", "Koyun &amp; keçi", "Fabrika", "Liman", "Holding", "Balıkçılık", "Kooperatif", "Güneş paneli"],
         "play_tr": "Fragmanı oynat",
@@ -73,11 +75,11 @@ T = {
         ],
         "feat_k": "Özellikler", "feat_h": "Yaşayan bir dünya",
         "feats": [
-            ("Sıfırdan bir çiftlik", "Ekip biç, sula, hasat et. Ahır, kümes, sera, sulama kanalı ve güneş panelleriyle çiftliğini adım adım büyüt.", ["Tarla ve sera", "Sulama", "Güneş paneli"]),
+            ("Sıfırdan bir çiftlik", "Ekip biç, sula, hasat et. Ahır, kümes, sera, sulama kanalı ve güneş panelleriyle çiftliğini adım adım büyüt; evini, tarlanı, ahırını istediğin yere yerleştir.", ["Tarla ve sera", "Serbest yerleşim", "Güneş paneli"]),
             ("Hayvancılık", "İnek, koyun ve keçi meraları; kuzular, oğlaklar, Veteriner Elif. Mandırada yoğurt, ayran, peynir, kaşar ve tereyağı üret.", ["İnek · koyun · keçi", "Mandıra", "Veteriner"]),
             ("Yaşayan bir köy", "Yüzlerce köylü kendi işinde: kahvehane, cami, pansiyon, turistler. Gece dışarıdakilere neden orada olduklarını sor.", ["400+ köylü", "Turistler", "Köy projeleri"]),
             ("Fabrikadan limana", "Un, yem ve şeker fabrikaları kur, toptancıyla sözleşme yap, kamyonlarla taşı, Mersin limanından ihracat yap.", ["Fabrikalar", "Lojistik", "İhracat"]),
-            ("Göl ve doğa", "Hazar Gölü'nde balık tut: iri balık zor çekilir ama pahalı satılır. Dal, mantar topla, mevsimlere ve kurtlara hazırlıklı ol.", ["Balıkçılık", "Dalış", "Mevsimler"]),
+            ("Göl ve doğa", "Hazar Gölü'nde balık tut: iri balık zor çekilir ama pahalı satılır. Kuzey yamacındaki şelaleyi keşfet, dal, mantar topla, mevsimlere ve kurtlara hazırlıklı ol.", ["Balıkçılık", "Şelale", "Mevsimler"]),
             ("Birlikte oyna", "Arkadaşının köyünü ziyaret et, kooperatif kur, pazarda ticaret yap, bölge telsiziyle ve sesli aramayla konuş.", ["Kooperatif", "Pazar", "Telsiz"]),
         ],
         "gal_k": "Görüntüler", "gal_h": "Oyundan kareler", "gal_sub": "Tümü oyunun içinden, gerçek görüntülerdir.",
@@ -121,7 +123,7 @@ T = {
         "cta_watch": "Watch the trailer",
         "badge": f"Version {VERSION} · Android closed test",
         "scroll": "Explore",
-        "presents": "presents", "upd_k": "Live from the game", "upd_h": "Latest updates", "upd_v": "Version", "slogan": "From Soil to Industry",
+        "presents": "presents", "yt_btn": "Watch on YouTube", "upd_k": "Live from the game", "upd_h": "Latest updates", "upd_v": "Version", "slogan": "From Soil to Industry",
         "trailer": "legacy-of-the-land-trailer.mp4",
         "marquee": ["Fields", "Barns", "Dairy", "Sheep &amp; goats", "Factories", "Harbour", "Holding", "Fishing", "Co-op", "Solar power"],
         "play_tr": "Play trailer",
@@ -145,11 +147,11 @@ T = {
         ],
         "feat_k": "Features", "feat_h": "A living world",
         "feats": [
-            ("A farm from scratch", "Sow, water and harvest. Grow your farm step by step with barns, a coop, a greenhouse, irrigation and solar panels.", ["Fields & greenhouse", "Irrigation", "Solar"]),
+            ("A farm from scratch", "Sow, water and harvest. Grow your farm step by step with barns, a coop, a greenhouse, irrigation and solar panels, and place your house, fields and barns wherever you like.", ["Fields & greenhouse", "Free placement", "Solar"]),
             ("Livestock", "Cow, sheep and goat pastures; lambs, kids and Elif the vet. Make yoghurt, ayran, cheese, kashar and butter at your dairy.", ["Cows · sheep · goats", "Dairy", "Vet"]),
             ("A living village", "Hundreds of villagers going about their day: tea house, mosque, guesthouse, tourists. Ask the night owls why they're still out.", ["400+ villagers", "Tourists", "Village projects"]),
             ("From factory to harbour", "Build flour, feed and sugar factories, sign wholesale contracts, haul goods by truck and export from the port of Mersin.", ["Factories", "Logistics", "Exports"]),
-            ("Lake and nature", "Fish Lake Hazar: big fish fight harder but sell for more. Dive, forage mushrooms and be ready for the seasons and the wolves.", ["Fishing", "Diving", "Seasons"]),
+            ("Lake and nature", "Fish Lake Hazar: big fish fight harder but sell for more. Find the waterfall on the northern slope, dive, forage mushrooms and be ready for the seasons and the wolves.", ["Fishing", "Waterfall", "Seasons"]),
             ("Play together", "Visit friends' villages, form a co-op, trade at the market, talk on the regional radio or by voice call.", ["Co-op", "Market", "Radio"]),
         ],
         "gal_k": "Screenshots", "gal_h": "Scenes from the game", "gal_sub": "All captured in-game.",
@@ -231,9 +233,12 @@ def render(t):
          "description": t["desc"], "genre": ["Simulation", "Farming"], "gamePlatform": ["Android"],
          "playMode": ["SinglePlayer", "MultiPlayer"], "author": {"@type": "Organization", "name": "Tasami"},
          "inLanguage": ["tr", "en", "de", "fr", "es", "ru", "ku"],
-         "image": "https://tasami.com.tr/assets/img/oyun/genel-og.jpg"},
+         "image": "https://tasami.com.tr/assets/img/oyun/baslik-og.jpg",
+         "trailer": {"@type": "VideoObject", "name": t["game"] + " | " + t["tr_k"], "description": t["tagline"],
+                     "embedUrl": "https://www.youtube.com/embed/" + YOUTUBE_ID, "url": YOUTUBE,
+                     "thumbnailUrl": f"https://i.ytimg.com/vi/{YOUTUBE_ID}/hqdefault.jpg", "uploadDate": "2026-10-27"}},
     ], ensure_ascii=False)
-    vals = dict(t, b=b, stats=stats, updates=updates, story=story, chapters=chapters, feats=feats, gallery=gallery, about=about,
+    vals = dict(t, b=b, yt=YOUTUBE, stats=stats, updates=updates, story=story, chapters=chapters, feats=feats, gallery=gallery, about=about,
                 services=services, nav=nav, marquee=marquee, ld=ld, mail_to=CONTACT,
                 privacy_url=PLAY_URL + "gizlilik.html", delete_url=PLAY_URL + "hesap-sil.html",
                 canonical="https://tasami.com.tr/" + t["path"],

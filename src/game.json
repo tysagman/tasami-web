@@ -1,27 +1,27 @@
 {
- "v": 370,
- "version": "3.70",
+ "v": 376,
+ "version": "3.76",
  "quests": 201,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 370,
+   "v": 376,
    "d": "2026-10-27",
-   "tr": "Geri bildirimlerin hepsi artık kaydediliyor. Araç yolsuz yerden geçince arkasında toprak yol izi kalır. Mera çitlerinin tahtaları artık havada kalmıyor.",
-   "en": "All feedback is now saved. Vehicles leave a dirt track when driving off-road. Pasture fence rails now follow the ground."
+   "tr": "Yapılarını istediğin yere kur: Çiftliği geliştir → 📍 Yapıların yerini değiştir. Ev, tarla, kümes, ahır, meralar, bahçe, kulübe, tulumba, kovan, silo, depo, ambar, güneş paneli, mandıra, fabrikalar ve kamyonlar parmakla sürüklenip taşınır. Yeşil yer uygun, kırmızı yer uygun değil (başka yapı, yol, göl, köy meydanı, ağaç, taş, dik yamaç). Yeni yapı alınca yerini sen seçersin. Taşımayanların çiftliği olduğu gibi kalır.",
+   "en": "Build wherever you like: Upgrade farm → 📍 Change building locations. House, field, coop, stable, pastures, gardens, kennel, pump, hives, silo, tank, barn, solar panels, dairy, factories and trucks can be dragged to a new spot. Green means fine, red means not (another building, road, lake, village square, tree, rock, steep slope). When you buy a new building you choose where it goes. Farms you don't move stay exactly as they are."
   },
   {
-   "v": 369,
+   "v": 375,
    "d": "2026-10-27",
-   "tr": "Sağlık artık kendiliğinden yavaşça doluyor: tokken (açlık %50'nin altında), hasta değilken ve üşümüyorken sağlık yavaş yavaş artar, durup beklerken 3 kat hızlı. Sargı bezi, kekik, evde dinlenme ve muayene hâlâ hemen iyileştirir. Durum ekranında sağlığın nasıl dolduğu yazıyor.",
-   "en": "Health now refills slowly on its own: while you're fed (hunger below 50%), not sick and not cold, health rises little by little, 3 times faster while standing still. Bandages, thyme, resting at home and check-ups still heal right away. The status screen explains how health refills."
+   "tr": "Köyden uzaklaşınca yollar artık kaybolmuyor; otobüs ve araç yolculuğunda toprak yol görünüyor.",
+   "en": "Roads no longer disappear when you are far from the village; the dirt road is visible during bus and car trips."
   },
   {
-   "v": 368,
+   "v": 374,
    "d": "2026-10-27",
-   "tr": "Köyün inek ahırı artık bir köy evinin içine girmiyor. Göl kenarındaki müze, köy evleriyle aynı taş duvarlı, kiremit çatılı ve ahşap sundurmalı bir binaya dönüştü.",
-   "en": "The village cow barn no longer overlaps a house. The lakeside museum now matches the village style with stone walls, a tiled roof and a wooden porch."
+   "tr": "Hazar Gölü kuzeye doğru genişledi (köy tarafındaki kıyı ve iskele aynı yerde). Gölün kuzey yamacından kayaların arasından dökülen bir şelale ve göle akan bir dere eklendi. Yüzme yenilendi: ilerlerken serbest stil kulaç atılıyor, nefes için baş yana dönüyor; dururken suda dik durulup kollar ve bacaklarla su tutuluyor.",
+   "en": "Lake Hazar is now wider to the north (the village shore and pier stay where they were). A waterfall now pours down the northern slope between the rocks, with a stream flowing into the lake. Swimming is new: front crawl strokes with side breathing while moving, treading water when standing still."
   }
  ]
 }

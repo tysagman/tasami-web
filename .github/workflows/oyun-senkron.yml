@@ -2,7 +2,7 @@ name: Oyunla senkron
 # Oyun (toprak-oyun) güncellenince sürüm, sayılar ve son yenilikler siteye işlenir.
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '7,37 * * * *'
   workflow_dispatch:
     inputs:
       force: { description: 'Sürüm aynı olsa da çalıştır', type: boolean, default: false }
