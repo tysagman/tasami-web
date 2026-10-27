@@ -31,7 +31,7 @@
 </head>
 <body>
 <div class="intro" aria-hidden="true">
-  <div class="intro-in"><span class="emb"><img src="{{b}}assets/img/tasami-amblem.png" alt="" width="96" height="96"></span><span class="emb-soil"><i class="s"></i><i class="g"></i></span><span class="intro-word">TASA<b>Mİ</b></span><small>{{presents}}</small></div>
+  <div class="intro-in"><canvas class="burst" width="640" height="420" data-img="{{b}}assets/img/tasami-amblem.png"></canvas><span class="intro-word">TASA<b>Mİ</b></span><small>{{presents}}</small></div>
 </div>
 <div class="cursor" aria-hidden="true"></div>
 <a class="skip" href="#oyun">{{game}}</a>
@@ -188,6 +188,7 @@
 
 <button class="music" type="button" aria-pressed="false" data-src="{{b}}assets/audio/muzik.mp3" data-on="{{music_on}}" data-off="{{music_off}}" aria-label="{{music_on}}"><span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><b>{{music}}</b></button>
 
+<script src="{{b}}assets/burst.js" defer></script>
 <script src="{{b}}assets/site.js" defer></script>
 <script type="module" src="{{b}}assets/test-form.js"></script>
 </body>

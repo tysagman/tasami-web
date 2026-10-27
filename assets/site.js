@@ -55,6 +55,14 @@
   if (root.classList.contains('intro-on')) {
     try { sessionStorage.setItem('tsm-intro', '1'); } catch (e) {}
     const intro = $('.intro');
+    const bc = $('.burst', intro);
+    if (bc && window.tasamiBurst) {
+      const dpr = Math.min(devicePixelRatio || 1, 2);
+      bc.width = 640 * dpr; bc.height = 420 * dpr;
+      const im = new Image();
+      im.onload = () => tasamiBurst(bc, im, { seed: 11 }).play();
+      im.src = bc.dataset.img;
+    }
     const go = () => {
       intro.classList.add('out');
       setTimeout(ready, 350);
@@ -63,7 +71,7 @@
     let loaded = document.readyState === 'complete';
     addEventListener('load', () => { loaded = true; });
     const t0 = performance.now();
-    const wait = () => (loaded && performance.now() - t0 > 2700) || performance.now() - t0 > 4000 ? go() : setTimeout(wait, 100);
+    const wait = () => (loaded && performance.now() - t0 > 4300) || performance.now() - t0 > 6000 ? go() : setTimeout(wait, 100);
     wait();
   } else ready();
 
