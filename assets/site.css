@@ -519,3 +519,14 @@ h1,h2,h3{color:#f6f6f6}
 .brand img{border-radius:0;object-fit:contain}
 .foot .slogan{display:block;font-style:normal;font-weight:600;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:#C9A97A;margin-top:4px}
 .about-logo img{border-radius:28px}
+
+/* title artwork banner */
+.title-art{padding:40px 0 10px;overflow:hidden}
+.ta{position:relative;max-width:1600px;margin:0 auto;-webkit-mask-image:linear-gradient(transparent,#000 14%,#000 82%,transparent),linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(transparent,#000 14%,#000 82%,transparent),linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-composite:intersect}
+.ta img{display:block;width:100%;height:auto;transform:scale(1.14);filter:saturate(.2) brightness(.55);transition:transform 3.2s cubic-bezier(.16,1,.3,1),filter 2.6s ease .3s}
+.js .ta.reveal{opacity:1;transform:none}
+.ta.in img{transform:scale(1);filter:none}
+.ta-beam{position:absolute;left:58%;top:-10%;width:22%;height:80%;background:radial-gradient(ellipse at 50% 0,rgba(255,236,170,.45),rgba(255,236,170,0) 70%);mix-blend-mode:screen;opacity:0;pointer-events:none}
+.ta.in .ta-beam{animation:beam 6s ease-in-out 2.4s infinite}
+@keyframes beam{0%,100%{opacity:0}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.ta img{transform:none;filter:none;transition:none}.ta.in .ta-beam{animation:none}}
