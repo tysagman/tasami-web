@@ -188,7 +188,7 @@
         r: leaf ? 4 + Math.random() * 4 : .8 + Math.random() * 2.4,
         vx: (Math.random() - .5) * .3, vy: leaf ? .35 + Math.random() * .5 : -(.15 + Math.random() * .45),
         a: Math.random() * 6.28, s: .01 + Math.random() * .02, leaf,
-        c: leaf ? (Math.random() < .5 ? '140,198,63' : '242,185,48') : (Math.random() < .7 ? '255,214,102' : '255,255,255')
+        c: leaf ? (Math.random() < .5 ? '200,200,200' : '255,255,255') : (Math.random() < .7 ? '255,255,255' : '180,180,180')
       };
     };
     size();
@@ -213,7 +213,7 @@
           cx.beginPath(); cx.ellipse(0, 0, p.r, p.r * .45, 0, 0, 6.28); cx.fill();
           cx.restore();
         } else {
-          const tw = .45 + Math.sin(p.a * 3) * .35;
+          const tw = .28 + Math.sin(p.a * 3) * .22;
           const g = cx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r * 4);
           g.addColorStop(0, `rgba(${p.c},${tw})`); g.addColorStop(1, `rgba(${p.c},0)`);
           cx.fillStyle = g; cx.beginPath(); cx.arc(p.x, p.y, p.r * 4, 0, 6.28); cx.fill();
@@ -291,6 +291,52 @@
     }
     requestAnimationFrame(loop);
   })();
+
+  // Background music (Web Audio for a gapless loop; starts only on user request)
+  const mb = $('.music');
+  const music = (() => {
+    let ctx, gain, buf, src, on = false, loading = null;
+    const load = () => loading || (loading = (async () => {
+      ctx = new (window.AudioContext || window.webkitAudioContext)();
+      gain = ctx.createGain(); gain.gain.value = 0; gain.connect(ctx.destination);
+      const data = await (await fetch(mb.dataset.src)).arrayBuffer();
+      buf = await new Promise((ok, no) => ctx.decodeAudioData(data, ok, no));
+    })());
+    const set = v => {
+      on = v; mb.classList.toggle('on', v); mb.setAttribute('aria-pressed', v);
+      mb.setAttribute('aria-label', v ? mb.dataset.off : mb.dataset.on);
+      try { localStorage.setItem('tsm-music', v ? '1' : '0'); } catch (e) {}
+    };
+    const play = async () => {
+      set(true); await load(); if (!on) return;
+      await ctx.resume();
+      if (!src) {
+        src = ctx.createBufferSource(); src.buffer = buf; src.loop = true;
+        src.loopEnd = Math.min(buf.duration, 96); src.connect(gain); src.start();
+      }
+      gain.gain.cancelScheduledValues(ctx.currentTime);
+      gain.gain.setTargetAtTime(.55, ctx.currentTime, .8);
+    };
+    const pause = (remember = true) => {
+      if (remember) set(false); else mb.classList.remove('on');
+      if (ctx) gain.gain.setTargetAtTime(0, ctx.currentTime, .25);
+    };
+    return { play, pause, get on() { return on; } };
+  })();
+  if (mb) {
+    mb.addEventListener('click', () => music.on ? music.pause() : music.play());
+    let pref = null; try { pref = localStorage.getItem('tsm-music'); } catch (e) {}
+    if (pref === '1') {
+      // browsers need a gesture before sound: resume on the first one
+      const go = e => { if (!e.target.closest('.music')) music.play(); ['pointerdown', 'keydown'].forEach(t => removeEventListener(t, go, true)); };
+      ['pointerdown', 'keydown'].forEach(t => addEventListener(t, go, true));
+    } else if (pref === null) setTimeout(() => mb.classList.add('hint'), 4000);
+  }
+  let musicWas = false;
+  $$('video[controls], #vm video, .video-frame video').forEach(v => {
+    v.addEventListener('play', () => { musicWas = music.on; if (musicWas) music.pause(false); });
+    v.addEventListener('pause', () => { if (musicWas) music.play(); musicWas = false; });
+  });
 
   // Inline trailer: custom play button
   if (vf) {

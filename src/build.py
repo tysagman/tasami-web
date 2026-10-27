@@ -101,7 +101,7 @@ T = {
         "contact_h": "Bize ulaşın",
         "contact": "Oyun hakkında görüşünüz, iş birliği teklifiniz ya da bir uygulama fikriniz mi var? Yazın, dönüş yapalım.",
         "mail": "E-posta gönder",
-        "privacy": "Gizlilik politikası", "delete": "Hesap silme", "rights": "Tüm hakları saklıdır.",
+        "privacy": "Gizlilik politikası", "delete": "Hesap silme", "rights": "Tüm hakları saklıdır.", "music": "Müzik", "music_on": "Müziği aç", "music_off": "Müziği kapat", "credit": "Müzikteki enstrüman sesleri: FluidR3 GM (Frank Wen, CC BY 3.0)",
         "close": "Kapat", "prev": "Önceki", "next": "Sonraki",
     },
     "en": {
@@ -173,7 +173,7 @@ T = {
         "contact_h": "Get in touch",
         "contact": "Feedback on the game, a partnership offer or an app idea? Write to us and we'll get back to you.",
         "mail": "Send an email",
-        "privacy": "Privacy policy", "delete": "Account deletion", "rights": "All rights reserved.",
+        "privacy": "Privacy policy", "delete": "Account deletion", "rights": "All rights reserved.", "music": "Music", "music_on": "Play music", "music_off": "Mute music", "credit": "Instrument samples in the music: FluidR3 GM (Frank Wen, CC BY 3.0)",
         "close": "Close", "prev": "Previous", "next": "Next",
     },
 }
