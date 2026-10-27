@@ -2,7 +2,7 @@
 <html lang="{{lang}}">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>{{title}}</title>
 <meta name="description" content="{{desc}}">
 <link rel="canonical" href="{{canonical}}">
@@ -10,129 +10,174 @@
 <link rel="alternate" hreflang="en" href="https://tasami.com.tr/en/">
 <link rel="alternate" hreflang="x-default" href="https://tasami.com.tr/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Tasami">
 <meta property="og:title" content="{{title}}">
 <meta property="og:description" content="{{desc}}">
 <meta property="og:url" content="{{canonical}}">
-<meta property="og:image" content="https://tasami.com.tr/assets/img/ciftlik-genel.webp">
+<meta property="og:image" content="https://tasami.com.tr/assets/img/oyun/genel-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#123d27">
+<meta name="theme-color" content="#0d2c1c">
 <link rel="icon" type="image/png" href="{{b}}favicon.png">
 <link rel="apple-touch-icon" href="{{b}}apple-touch-icon.png">
+<link rel="preload" as="image" href="{{b}}assets/img/oyun/genel.webp" imagesrcset="{{b}}assets/img/oyun/genel-k.webp 960w, {{b}}assets/img/oyun/genel.webp 1920w" imagesizes="100vw">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{b}}assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">{{ld}}</script>
 </head>
 <body>
-<header class="top">
+<a class="skip" href="#oyun">{{game}}</a>
+
+<header class="top" id="top">
   <div class="wrap top-in">
-    <a class="brand" href="#top" aria-label="Tasami"><img src="{{b}}assets/img/tasami-amblem.png" alt="" width="40" height="40"><span>TASA<b>Mİ</b></span></a>
-    <nav class="nav">{{nav}}</nav>
-    <a class="lang" href="{{other_href}}" hreflang="{{other_lang}}">{{other_lang}}</a>
+    <a class="brand" href="#oyun" aria-label="Tasami"><img src="{{b}}assets/img/tasami-amblem.png" alt="" width="40" height="40"><span>TASA<b>Mİ</b></span></a>
+    <nav class="nav" id="nav" aria-label="{{menu}}">{{nav}}<a class="lang" href="{{other_href}}" hreflang="{{other_lang}}" title="{{other_name}}">{{other_lang}}</a></nav>
+    <button class="burger" type="button" aria-label="{{menu}}" aria-controls="nav" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
+  <div class="progress" aria-hidden="true"></div>
 </header>
 
-<main id="top">
+<main>
   <section class="hero" id="oyun">
-    <div class="hero-bg" style="background-image:url('{{b}}assets/img/ciftlik-genel.webp')"></div>
+    <div class="hero-media" aria-hidden="true">
+      {{hero_img}}
+      <video class="hero-video" muted loop playsinline preload="none" data-src="{{b}}assets/video/hero.mp4"></video>
+    </div>
+    <div class="hero-shade" aria-hidden="true"></div>
     <div class="wrap hero-in">
+      <span class="badge"><i></i>{{badge}}</span>
       <p class="kicker">{{kicker}}</p>
-      <h1>{{game}}</h1>
+      <h1 class="hero-title" data-split>{{game}}</h1>
       <p class="lead">{{tagline}}</p>
       <div class="cta">
-        <a class="btn primary" href="#test">▶ {{android}}</a>
-      </div>
-      <div class="facts">{{facts}}</div>
-    </div>
-  </section>
-
-  <section class="trailer wrap" aria-label="{{watch}}">
-    <div class="video">
-      <video controls playsinline preload="metadata" poster="{{b}}assets/img/koy-meydani.webp">
-        <source src="{{b}}assets/video/toprak-mirasi-fragman.mp4" type="video/mp4">
-      </video>
-    </div>
-    <p class="note">{{video_note}}</p>
-  </section>
-
-  <section class="test wrap" id="test">
-    <h2>{{t_h}}</h2>
-    <p class="sub">{{t_sub}}</p>
-    <div class="test-grid">
-      <div class="card play">
-        <h3><span aria-hidden="true">▶</span> {{t_and_h}}</h3>
-        <p>{{t_and_p}}</p>
-        <form id="tform" novalidate data-ok="{{t_ok}}" data-dup="{{t_dup}}" data-err="{{t_err}}" data-bad="{{t_bad}}" data-lang="{{lang}}">
-          <label>{{t_email}}<input type="email" name="email" required maxlength="100" autocomplete="email" placeholder="ornek@gmail.com"></label>
-          <label>{{t_name}}<input type="text" name="name" maxlength="60" autocomplete="name"></label>
-          <label class="chk"><input type="checkbox" name="ok" required> <span>{{t_consent}} <a href="{{privacy_url}}" target="_blank" rel="noopener">{{privacy}}</a></span></label>
-          <button class="btn primary" type="submit">{{t_send}}</button>
-          <p class="msg" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-      <div class="card ios">
-        <h3><span aria-hidden="true">📱</span> {{t_ios_h}}</h3>
-        <p>{{t_ios_p}}</p>
-        <span class="soon">{{t_soon}}</span>
+        <a class="btn primary" href="#test"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5v17l15-8.5z"/></svg>{{cta_test}}</a>
+        <button class="btn glass" type="button" data-trailer><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z"/></svg>{{cta_watch}}</button>
       </div>
     </div>
+    <a class="scroll-cue" href="#hikaye"><span>{{scroll}}</span><i></i></a>
   </section>
 
-  <section class="story wrap">
-    <div class="story-text">
-      <h2>{{story_h}}</h2>
-      {{story}}
+  <section class="stats" aria-label="{{game}}">
+    <div class="wrap stats-in">{{stats}}</div>
+  </section>
+
+  <section class="story" id="hikaye">
+    <div class="wrap story-in">
+      <div class="story-txt reveal">
+        <p class="kicker">{{story_k}}</p>
+        <h2>{{story_h}}</h2>
+        {{story}}
+      </div>
+      <figure class="story-img reveal parallax">{{story_img}}</figure>
     </div>
-    <ol class="acts">{{acts}}</ol>
   </section>
 
-  <section class="feats" id="ozellikler">
+  <section class="chapters">
     <div class="wrap">
-      <h2>{{feat_h}}</h2>
-      <ul class="feat-grid">{{feats}}</ul>
+      <div class="sec-head reveal"><p class="kicker">{{ch_k}}</p><h2>{{ch_h}}</h2></div>
+    </div>
+    <div class="ch-track-wrap">
+      <ol class="ch-track">{{chapters}}</ol>
     </div>
   </section>
 
-  <section class="gallery wrap" id="gorseller">
-    <h2>{{gallery_h}}</h2>
-    <p class="sub">{{gallery_sub}}</p>
-    <div class="grid">{{gallery}}</div>
+  <section class="features" id="ozellikler">
+    <div class="wrap">
+      <div class="sec-head reveal"><p class="kicker">{{feat_k}}</p><h2>{{feat_h}}</h2></div>
+      {{feats}}
+    </div>
   </section>
 
-  <section class="about" id="hakkimizda">
+  <section class="trailer" id="fragman">
+    <div class="wrap">
+      <div class="sec-head center reveal"><p class="kicker">{{tr_k}}</p><h2>{{tr_h}}</h2></div>
+      <div class="video-frame reveal">
+        <video controls playsinline preload="none" poster="{{b}}assets/img/oyun/koy-meydani.webp">
+          <source src="{{b}}assets/video/toprak-mirasi-fragman.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="note">{{tr_note}}</p>
+    </div>
+  </section>
+
+  <section class="gallery" id="goruntuler">
+    <div class="wrap">
+      <div class="sec-head reveal"><p class="kicker">{{gal_k}}</p><h2>{{gal_h}}</h2><p class="sub">{{gal_sub}}</p></div>
+      <div class="g-grid">{{gallery}}</div>
+    </div>
+  </section>
+
+  <section class="test" id="test">
+    <div class="test-bg" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="sec-head center reveal"><p class="kicker">{{t_k}}</p><h2>{{t_h}}</h2><p class="sub">{{t_sub}}</p></div>
+      <div class="test-grid">
+        <div class="card play reveal">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5v17l15-8.5z"/></svg>{{t_and_h}}</h3>
+          <p>{{t_and_p}}</p>
+          <form id="tform" novalidate data-ok="{{t_ok}}" data-dup="{{t_dup}}" data-err="{{t_err}}" data-bad="{{t_bad}}" data-lang="{{lang}}">
+            <label>{{t_email}}<input type="email" name="email" required maxlength="100" autocomplete="email" placeholder="ornek@gmail.com"></label>
+            <label>{{t_name}}<input type="text" name="name" maxlength="60" autocomplete="name"></label>
+            <label class="chk"><input type="checkbox" name="ok" required> <span>{{t_consent}} <a href="{{privacy_url}}" target="_blank" rel="noopener">{{privacy}}</a></span></label>
+            <button class="btn primary" type="submit">{{t_send}}</button>
+            <p class="msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="card ios reveal">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="18" r="1.2"/></svg>{{t_ios_h}}</h3>
+          <p>{{t_ios_p}}</p>
+          <span class="soon">{{t_soon}}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="studyo">
     <div class="wrap about-in">
-      <img class="about-logo" src="{{b}}assets/img/tasami-logo.png" alt="Tasami logosu" width="260" height="260" loading="lazy">
-      <div>
-        <p class="kicker">{{about_kicker}}</p>
+      <div class="about-logo reveal"><img src="{{b}}assets/img/tasami-logo.png" alt="Tasami" width="320" height="320" loading="lazy"></div>
+      <div class="reveal">
+        <p class="kicker">{{about_k}}</p>
         <h2>{{about_h}}</h2>
         {{about}}
-        <ul class="services">{{services}}</ul>
+        <ul class="tags">{{services}}</ul>
       </div>
     </div>
   </section>
 
-  <section class="contact wrap" id="iletisim">
-    <h2>{{contact_h}}</h2>
-    <p>{{contact}}</p>
-    <a class="btn primary" href="mailto:{{mail_to}}">✉ {{mail}}</a>
-    <p class="mail">{{mail_to}}</p>
+  <section class="contact" id="iletisim">
+    <div class="wrap reveal">
+      <h2>{{contact_h}}</h2>
+      <p>{{contact}}</p>
+      <a class="btn primary" href="mailto:{{mail_to}}">✉ {{mail}}</a>
+      <p class="mail"><a href="mailto:{{mail_to}}">{{mail_to}}</a></p>
+    </div>
   </section>
 </main>
 
 <footer class="foot">
   <div class="wrap foot-in">
+    <a class="brand" href="#oyun"><img src="{{b}}assets/img/tasami-amblem.png" alt="" width="32" height="32"><span>TASA<b>Mİ</b></span></a>
     <span>© 2026 Tasami. {{rights}}</span>
-    <span><a href="{{privacy_url}}">{{privacy}}</a> · <a href="{{delete_url}}">{{delete}}</a></span>
+    <span><a href="{{privacy_url}}">{{privacy}}</a> · <a href="{{delete_url}}">{{delete}}</a> · <a href="{{other_href}}">{{other_name}}</a></span>
   </div>
 </footer>
 
+<div class="lb" id="lb" role="dialog" aria-modal="true" hidden>
+  <button class="lb-x" type="button" aria-label="{{close}}">✕</button>
+  <button class="lb-nav prev" type="button" aria-label="{{prev}}">‹</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb-nav next" type="button" aria-label="{{next}}">›</button>
+</div>
+<div class="vm" id="vm" role="dialog" aria-modal="true" hidden>
+  <button class="lb-x" type="button" aria-label="{{close}}">✕</button>
+  <div class="vm-in"><video controls playsinline preload="none"><source src="{{b}}assets/video/toprak-mirasi-fragman.mp4" type="video/mp4"></video></div>
+</div>
+
+<script src="{{b}}assets/site.js" defer></script>
 <script type="module" src="{{b}}assets/test-form.js"></script>
-<dialog class="lb" id="lb"><img alt=""><p></p><button type="button" aria-label="Kapat">✕</button></dialog>
-<script>
-(function(){var d=document.getElementById('lb');if(!d||!d.showModal)return;var im=d.querySelector('img'),cp=d.querySelector('p');
-document.querySelectorAll('.grid a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();im.src=a.href;im.alt=cp.textContent=a.dataset.cap;d.showModal()})});
-d.addEventListener('click',function(){d.close()});})();
-</script>
 </body>
 </html>

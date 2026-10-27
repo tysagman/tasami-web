@@ -2,137 +2,182 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tasami · Oyun ve uygulama stüdyosu · Toprağın Mirası</title>
-<meta name="description" content="Tasami, oyun ve mobil uygulama geliştiren bağımsız bir stüdyo. İlk oyunumuz Toprağın Mirası: Hazar Gölü kıyısında sıfırdan çiftlik ve köy kurduğun 3D çok oyunculu bir yaşam oyunu.">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Toprağın Mirası · Tasami oyun ve uygulama stüdyosu</title>
+<meta name="description" content="Toprağın Mirası: Hazar Gölü kıyısında dedenden kalan topraklarda çiftlik, köy, fabrika ve holding kurduğun 3D çok oyunculu yaşam oyunu. Tasami, oyun ve mobil uygulama geliştiren bağımsız bir stüdyo.">
 <link rel="canonical" href="https://tasami.com.tr/">
 <link rel="alternate" hreflang="tr" href="https://tasami.com.tr/">
 <link rel="alternate" hreflang="en" href="https://tasami.com.tr/en/">
 <link rel="alternate" hreflang="x-default" href="https://tasami.com.tr/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Tasami · Oyun ve uygulama stüdyosu · Toprağın Mirası">
-<meta property="og:description" content="Tasami, oyun ve mobil uygulama geliştiren bağımsız bir stüdyo. İlk oyunumuz Toprağın Mirası: Hazar Gölü kıyısında sıfırdan çiftlik ve köy kurduğun 3D çok oyunculu bir yaşam oyunu.">
+<meta property="og:site_name" content="Tasami">
+<meta property="og:title" content="Toprağın Mirası · Tasami oyun ve uygulama stüdyosu">
+<meta property="og:description" content="Toprağın Mirası: Hazar Gölü kıyısında dedenden kalan topraklarda çiftlik, köy, fabrika ve holding kurduğun 3D çok oyunculu yaşam oyunu. Tasami, oyun ve mobil uygulama geliştiren bağımsız bir stüdyo.">
 <meta property="og:url" content="https://tasami.com.tr/">
-<meta property="og:image" content="https://tasami.com.tr/assets/img/ciftlik-genel.webp">
+<meta property="og:image" content="https://tasami.com.tr/assets/img/oyun/genel-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#123d27">
+<meta name="theme-color" content="#0d2c1c">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" as="image" href="assets/img/oyun/genel.webp" imagesrcset="assets/img/oyun/genel-k.webp 960w, assets/img/oyun/genel.webp 1920w" imagesizes="100vw">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Tasami", "url": "https://tasami.com.tr/", "logo": "https://tasami.com.tr/assets/img/tasami-logo.png", "email": "info@tasami.com.tr"}</script>
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Tasami", "url": "https://tasami.com.tr/", "logo": "https://tasami.com.tr/assets/img/tasami-logo.png", "email": "info@tasami.com.tr"}, {"@context": "https://schema.org", "@type": "VideoGame", "name": "Toprağın Mirası", "alternateName": "Toprağın Mirası", "description": "Toprağın Mirası: Hazar Gölü kıyısında dedenden kalan topraklarda çiftlik, köy, fabrika ve holding kurduğun 3D çok oyunculu yaşam oyunu. Tasami, oyun ve mobil uygulama geliştiren bağımsız bir stüdyo.", "genre": ["Simulation", "Farming"], "gamePlatform": ["Android"], "playMode": ["SinglePlayer", "MultiPlayer"], "author": {"@type": "Organization", "name": "Tasami"}, "inLanguage": ["tr", "en", "de", "fr", "es", "ru", "ku"], "image": "https://tasami.com.tr/assets/img/oyun/genel-og.jpg"}]</script>
 </head>
 <body>
-<header class="top">
+<a class="skip" href="#oyun">Toprağın Mirası</a>
+
+<header class="top" id="top">
   <div class="wrap top-in">
-    <a class="brand" href="#top" aria-label="Tasami"><img src="assets/img/tasami-amblem.png" alt="" width="40" height="40"><span>TASA<b>Mİ</b></span></a>
-    <nav class="nav"><a href="#oyun">Oyun</a><a href="#ozellikler">Özellikler</a><a href="#gorseller">Görseller</a><a href="#hakkimizda">Hakkımızda</a><a href="#iletisim">İletişim</a></nav>
-    <a class="lang" href="en/" hreflang="EN">EN</a>
+    <a class="brand" href="#oyun" aria-label="Tasami"><img src="assets/img/tasami-amblem.png" alt="" width="40" height="40"><span>TASA<b>Mİ</b></span></a>
+    <nav class="nav" id="nav" aria-label="Menü"><a href="#oyun">Oyun</a><a href="#hikaye">Hikâye</a><a href="#ozellikler">Özellikler</a><a href="#goruntuler">Görüntüler</a><a href="#test">Erken erişim</a><a href="#studyo">Stüdyo</a><a class="lang" href="en/" hreflang="EN" title="English">EN</a></nav>
+    <button class="burger" type="button" aria-label="Menü" aria-controls="nav" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
+  <div class="progress" aria-hidden="true"></div>
 </header>
 
-<main id="top">
+<main>
   <section class="hero" id="oyun">
-    <div class="hero-bg" style="background-image:url('assets/img/ciftlik-genel.webp')"></div>
+    <div class="hero-media" aria-hidden="true">
+      <img src="assets/img/oyun/genel.webp" srcset="assets/img/oyun/genel-k.webp 960w, assets/img/oyun/genel.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="" width="1920" height="1080">
+      <video class="hero-video" muted loop playsinline preload="none" data-src="assets/video/hero.mp4"></video>
+    </div>
+    <div class="hero-shade" aria-hidden="true"></div>
     <div class="wrap hero-in">
+      <span class="badge"><i></i>Sürüm 3.65 · Android kapalı test</span>
       <p class="kicker">Tasami'nin ilk oyunu</p>
-      <h1>Toprağın Mirası</h1>
-      <p class="lead">Dedenden kalan toprağa boş elle gel. Çiftliğini kur, köyünü büyüt, Hazar Gölü kıyısında kendi hikâyeni yaz.</p>
+      <h1 class="hero-title" data-split>Toprağın Mirası</h1>
+      <p class="lead">Dedenden kalan toprağa boş elle gel. Çiftliğini kur, köyünü büyüt, fabrikalarını işlet ve Hazar Gölü kıyısında kendi mirasını bırak.</p>
       <div class="cta">
-        <a class="btn primary" href="#test">▶ Google Play testine katıl</a>
-      </div>
-      <div class="facts"><div class="fact"><strong>192</strong><span>hikâye görevi</span></div><div class="fact"><strong>6</strong><span>bölüm</span></div><div class="fact"><strong>7</strong><span>dil</span></div><div class="fact"><strong>Ücretsiz</strong><span>Android · iOS yakında</span></div></div>
-    </div>
-  </section>
-
-  <section class="trailer wrap" aria-label="Fragmanı izle">
-    <div class="video">
-      <video controls playsinline preload="metadata" poster="assets/img/koy-meydani.webp">
-        <source src="assets/video/toprak-mirasi-fragman.mp4" type="video/mp4">
-      </video>
-    </div>
-    <p class="note">Oyun içinden çekilmiştir.</p>
-  </section>
-
-  <section class="test wrap" id="test">
-    <h2>Erken erişim</h2>
-    <p class="sub">Toprağın Mirası yakında mağazalarda. İlk oynayanlardan olmak ister misin?</p>
-    <div class="test-grid">
-      <div class="card play">
-        <h3><span aria-hidden="true">▶</span> Google Play · Kapalı test</h3>
-        <p>Android test sürümüne katılmak için Google Play'de kullandığın Gmail adresini bırak. Seni test listesine ekleyip davet bağlantısını e-postayla göndereceğiz.</p>
-        <form id="tform" novalidate data-ok="Teşekkürler! Kaydın alındı. Davet e-postası geldiğinde Google Play'den testi indirebilirsin." data-dup="Bu tarayıcıdan zaten kayıt oldun. Teşekkürler!" data-err="Kayıt gönderilemedi. Lütfen biraz sonra tekrar dene ya da bize e-posta gönder." data-bad="Lütfen geçerli bir e-posta adresi yaz." data-lang="tr">
-          <label>Gmail adresin<input type="email" name="email" required maxlength="100" autocomplete="email" placeholder="ornek@gmail.com"></label>
-          <label>Adın (isteğe bağlı)<input type="text" name="name" maxlength="60" autocomplete="name"></label>
-          <label class="chk"><input type="checkbox" name="ok" required> <span>E-posta adresimin yalnızca test daveti için kullanılmasını kabul ediyorum. <a href="https://tysagman.github.io/toprak-oyun/oyun/gizlilik.html" target="_blank" rel="noopener">Gizlilik politikası</a></span></label>
-          <button class="btn primary" type="submit">Teste katıl</button>
-          <p class="msg" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-      <div class="card ios">
-        <h3><span aria-hidden="true">📱</span> App Store · iOS</h3>
-        <p>iPhone ve iPad sürümü üzerinde çalışıyoruz.</p>
-        <span class="soon">Yakında</span>
+        <a class="btn primary" href="#test"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5v17l15-8.5z"/></svg>Kapalı teste katıl</a>
+        <button class="btn glass" type="button" data-trailer><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z"/></svg>Fragmanı izle</button>
       </div>
     </div>
+    <a class="scroll-cue" href="#hikaye"><span>Keşfet</span><i></i></a>
   </section>
 
-  <section class="story wrap">
-    <div class="story-text">
-      <h2>Bir köyün yeniden doğuşu</h2>
-      <p>Rahmetli Hasan Dede'nin torunusun. Elinde bir çanta, cebinde birkaç altınla Sivrice'ye, dedenin yıllardır bekleyen çiftliğine geliyorsun.</p><p>Önce odun toplayıp ip örüyorsun, ilk tavuklarını alıyorsun. Sonra tarlalar, ahırlar, köy çeşmesi, kahvehane ve pansiyon geliyor. Köy büyüdükçe mandıra ve kooperatif kuruluyor, ardından fabrikalar, kamyonlar ve ihracat gemileri. Sonunda kendi holdingini kurup Hasan Dede'nin mirasını bir vakıfla köye devrediyorsun.</p>
+  <section class="stats" aria-label="Toprağın Mirası">
+    <div class="wrap stats-in"><div class="stat reveal"><strong data-count="201">201</strong><span>hikâye görevi</span></div><div class="stat reveal"><strong data-count="6">6</strong><span>bölüm</span></div><div class="stat reveal"><strong data-count="7">7</strong><span>dil</span></div><div class="stat reveal"><strong data-count="400+">400+</strong><span>yaşayan köylü</span></div></div>
+  </section>
+
+  <section class="story" id="hikaye">
+    <div class="wrap story-in">
+      <div class="story-txt reveal">
+        <p class="kicker">Hikâye</p>
+        <h2>Bir köyün yeniden doğuşu</h2>
+        <p>Rahmetli Hasan Dede'nin torunusun. Elinde bir çanta, cebinde birkaç altınla Sivrice'ye, yıllardır seni bekleyen çiftliğe geliyorsun.</p><p>Önce odun toplayıp ip örüyor, ilk tavuklarını alıyorsun. Sonra tarlalar, ahırlar, meralar ve köy çeşmesi geliyor. Köy büyüdükçe mandıra ve kooperatif kuruluyor, ardından fabrikalar, kamyonlar ve ihracat gemileri.</p><p>Sonunda kendi holdingini kurup Hasan Dede'nin mirasını bir vakıfla köye devrediyorsun.</p>
+      </div>
+      <figure class="story-img reveal parallax"><img src="assets/img/oyun/koy-meydani-k.webp" srcset="assets/img/oyun/koy-meydani-k.webp 960w, assets/img/oyun/koy-meydani.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Toprağın Mirası" width="1920" height="1080" loading="lazy" decoding="async"></figure>
     </div>
-    <ol class="acts"><li><span class="act-n">Bölüm 1</span><h3>Boş Eller</h3><p>Odun, ip, sepet ve ilk tavuklar. Hayatta kalmayı öğren.</p></li><li><span class="act-n">Bölüm 2</span><h3>Toprağa Kök</h3><p>Ahır, tarlalar, çalışanlar, turistler ve dalış merkezi.</p></li><li><span class="act-n">Bölüm 3</span><h3>Köyün Umudu</h3><p>Kuzey Diyarı, süt ve mandıra, kooperatif, banka ve Demirkol'la fiyat savaşı.</p></li><li><span class="act-n">Bölüm 4</span><h3>Fabrika Dumanı</h3><p>Un, yem, şeker fabrikaları ve tekstil atölyesi. Toptancıyla sözleşmeler.</p></li><li><span class="act-n">Bölüm 5</span><h3>Yollar ve Limanlar</h3><p>Meslek okulu, bursiyerler, kamyonlar, soğuk hava deposu ve ilk ihracat gemisi.</p></li><li><span class="act-n">Bölüm 6</span><h3>Miras</h3><p>Holding ve şirketler, hastane, kütüphane ve Hasan Dede Vakfı.</p></li></ol>
   </section>
 
-  <section class="feats" id="ozellikler">
+  <section class="chapters">
     <div class="wrap">
-      <h2>Neler yapabilirsin?</h2>
-      <ul class="feat-grid"><li><span class="fi" aria-hidden="true">🌾</span><h3>Tarım ve hayvancılık</h3><p>Ek, sula, biç. Tavuk, inek, at ve eşek besle; ahırını ve kümesini büyüt.</p></li><li><span class="fi" aria-hidden="true">🏘️</span><h3>Köyünü kur</h3><p>Çeşme, kahvehane, pansiyon, müze. Muhtarın isteklerini karşıla, köyü turistlerle doldur.</p></li><li><span class="fi" aria-hidden="true">🎣</span><h3>Göl ve doğa</h3><p>Hazar Gölü'nde balık tut, dal, ormanda mantar ve meyve topla. Mevsimler ve hava değişir.</p></li><li><span class="fi" aria-hidden="true">👥</span><h3>Çok oyunculu</h3><p>Arkadaşının köyünü ziyaret et, kooperatif kur, pazarda ticaret yap, bölge telsiziyle konuş.</p></li><li><span class="fi" aria-hidden="true">🧑‍🌾</span><h3>Çalışanlar</h3><p>Murat hayvanlara, Ayşe tarlaya bakar. Sen oyunda değilken bile çalışmaya devam ederler.</p></li><li><span class="fi" aria-hidden="true">🚌</span><h3>Koca bir dünya</h3><p>Otobüsle şehre in, taksiyle Kuzey Diyarı'na çık. Köyler, kasabalar ve yüzlerce insan.</p></li></ul>
+      <div class="sec-head reveal"><p class="kicker">6 bölüm</p><h2>Boş ellerden holdinge</h2></div>
+    </div>
+    <div class="ch-track-wrap">
+      <ol class="ch-track"><li class="ch reveal" style="--i:0"><figure><img src="assets/img/oyun/ciftlik-evi-k.webp" srcset="assets/img/oyun/ciftlik-evi-k.webp 960w, assets/img/oyun/ciftlik-evi.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Boş Eller" width="1920" height="1080" loading="lazy" decoding="async"></figure><div class="ch-body"><span class="ch-n">Bölüm 1</span><h3>Boş Eller</h3><p>Odun, ip, sepet ve ilk tavuklar. Dedenin evini onar, hayatta kalmayı öğren.</p></div></li><li class="ch reveal" style="--i:1"><figure><img src="assets/img/oyun/inek-merasi-k.webp" srcset="assets/img/oyun/inek-merasi-k.webp 960w, assets/img/oyun/inek-merasi.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Toprağa Kök" width="1920" height="1080" loading="lazy" decoding="async"></figure><div class="ch-body"><span class="ch-n">Bölüm 2</span><h3>Toprağa Kök</h3><p>Ahır, tarlalar, ilk çalışanların, turistler ve göldeki dalış merkezi.</p></div></li><li class="ch reveal" style="--i:2"><figure><img src="assets/img/oyun/kuzey-diyari-k.webp" srcset="assets/img/oyun/kuzey-diyari-k.webp 960w, assets/img/oyun/kuzey-diyari.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Köyün Umudu" width="1920" height="1080" loading="lazy" decoding="async"></figure><div class="ch-body"><span class="ch-n">Bölüm 3</span><h3>Köyün Umudu</h3><p>Kuzey Diyarı açılıyor: süt ve mandıra, kooperatif, banka ve Demirkol'la fiyat savaşı.</p></div></li><li class="ch reveal" style="--i:3"><figure><img src="assets/img/oyun/fabrikalar-k.webp" srcset="assets/img/oyun/fabrikalar-k.webp 960w, assets/img/oyun/fabrikalar.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Fabrika Dumanı" width="1920" height="1080" loading="lazy" decoding="async"></figure><div class="ch-body"><span class="ch-n">Bölüm 4</span><h3>Fabrika Dumanı</h3><p>Un, yem ve şeker fabrikaları, tekstil atölyesi, toptancıyla sözleşmeler.</p></div></li><li class="ch reveal" style="--i:4"><figure><img src="assets/img/oyun/sehir-k.webp" srcset="assets/img/oyun/sehir-k.webp 960w, assets/img/oyun/sehir.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Yollar ve Limanlar" width="1920" height="1080" loading="lazy" decoding="async"></figure><div class="ch-body"><span class="ch-n">Bölüm 5</span><h3>Yollar ve Limanlar</h3><p>Meslek okulu, bursiyerler, kamyon filosu, soğuk hava deposu ve ilk ihracat gemisi.</p></div></li><li class="ch reveal" style="--i:5"><figure><img src="assets/img/oyun/genel-k.webp" srcset="assets/img/oyun/genel-k.webp 960w, assets/img/oyun/genel.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Miras" width="1920" height="1080" loading="lazy" decoding="async"></figure><div class="ch-body"><span class="ch-n">Bölüm 6</span><h3>Miras</h3><p>Holding ve şirketlerin, köye hastane ve kütüphane, Hasan Dede Vakfı.</p></div></li></ol>
     </div>
   </section>
 
-  <section class="gallery wrap" id="gorseller">
-    <h2>Oyundan görüntüler</h2>
-    <p class="sub">Tümü oyunun içinden, gerçek görüntülerdir.</p>
-    <div class="grid"><figure><a href="assets/img/ciftlik-genel.webp" data-cap="Dedenin çiftliği"><img src="assets/img/ciftlik-genel-k.webp" alt="Toprağın Mirası: Dedenin çiftliği" loading="lazy" width="800" height="450"></a><figcaption>Dedenin çiftliği</figcaption></figure><figure><a href="assets/img/koy-meydani.webp" data-cap="Köy meydanı"><img src="assets/img/koy-meydani-k.webp" alt="Toprağın Mirası: Köy meydanı" loading="lazy" width="800" height="450"></a><figcaption>Köy meydanı</figcaption></figure><figure><a href="assets/img/gol-kiyisi.webp" data-cap="Göl kıyısı"><img src="assets/img/gol-kiyisi-k.webp" alt="Toprağın Mirası: Göl kıyısı" loading="lazy" width="800" height="450"></a><figcaption>Göl kıyısı</figcaption></figure><figure><a href="assets/img/ciftlik.webp" data-cap="İlk günler"><img src="assets/img/ciftlik-k.webp" alt="Toprağın Mirası: İlk günler" loading="lazy" width="800" height="450"></a><figcaption>İlk günler</figcaption></figure><figure><a href="assets/img/iskele.webp" data-cap="İskele"><img src="assets/img/iskele-k.webp" alt="Toprağın Mirası: İskele" loading="lazy" width="800" height="450"></a><figcaption>İskele</figcaption></figure><figure><a href="assets/img/sehir.webp" data-cap="Şehir"><img src="assets/img/sehir-k.webp" alt="Toprağın Mirası: Şehir" loading="lazy" width="800" height="450"></a><figcaption>Şehir</figcaption></figure></div>
+  <section class="features" id="ozellikler">
+    <div class="wrap">
+      <div class="sec-head reveal"><p class="kicker">Özellikler</p><h2>Yaşayan bir dünya</h2></div>
+      <article class="feat"><figure class="feat-img reveal"><img src="assets/img/oyun/ciftlik-evi-k.webp" srcset="assets/img/oyun/ciftlik-evi-k.webp 960w, assets/img/oyun/ciftlik-evi.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Sıfırdan bir çiftlik" width="1920" height="1080" loading="lazy" decoding="async"></figure><div class="feat-txt reveal"><span class="feat-n">01</span><h3>Sıfırdan bir çiftlik</h3><p>Ekip biç, sula, hasat et. Ahır, kümes, sera, sulama kanalı ve güneş panelleriyle çiftliğini adım adım büyüt.</p><ul class="tags"><li>Tarla ve sera</li><li>Sulama</li><li>Güneş paneli</li></ul></div></article><article class="feat flip"><figure class="feat-img reveal"><img src="assets/img/oyun/meralar-k.webp" srcset="assets/img/oyun/meralar-k.webp 960w, assets/img/oyun/meralar.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Hayvancılık" width="1920" height="1080" loading="lazy" decoding="async"></figure><div class="feat-txt reveal"><span class="feat-n">02</span><h3>Hayvancılık</h3><p>İnek, koyun ve keçi meraları; kuzular, oğlaklar, Veteriner Elif. Mandırada yoğurt, ayran, peynir, kaşar ve tereyağı üret.</p><ul class="tags"><li>İnek · koyun · keçi</li><li>Mandıra</li><li>Veteriner</li></ul></div></article><article class="feat"><figure class="feat-img reveal"><img src="assets/img/oyun/koy-meydani-k.webp" srcset="assets/img/oyun/koy-meydani-k.webp 960w, assets/img/oyun/koy-meydani.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Yaşayan bir köy" width="1920" height="1080" loading="lazy" decoding="async"></figure><div class="feat-txt reveal"><span class="feat-n">03</span><h3>Yaşayan bir köy</h3><p>Yüzlerce köylü kendi işinde: kahvehane, cami, pansiyon, turistler. Gece dışarıdakilere neden orada olduklarını sor.</p><ul class="tags"><li>400+ köylü</li><li>Turistler</li><li>Köy projeleri</li></ul></div></article><article class="feat flip"><figure class="feat-img reveal"><img src="assets/img/oyun/fabrikalar-k.webp" srcset="assets/img/oyun/fabrikalar-k.webp 960w, assets/img/oyun/fabrikalar.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Fabrikadan limana" width="1920" height="1080" loading="lazy" decoding="async"></figure><div class="feat-txt reveal"><span class="feat-n">04</span><h3>Fabrikadan limana</h3><p>Un, yem ve şeker fabrikaları kur, toptancıyla sözleşme yap, kamyonlarla taşı, Mersin limanından ihracat yap.</p><ul class="tags"><li>Fabrikalar</li><li>Lojistik</li><li>İhracat</li></ul></div></article><article class="feat"><figure class="feat-img reveal"><img src="assets/img/oyun/iskele-k.webp" srcset="assets/img/oyun/iskele-k.webp 960w, assets/img/oyun/iskele.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Göl ve doğa" width="1920" height="1080" loading="lazy" decoding="async"></figure><div class="feat-txt reveal"><span class="feat-n">05</span><h3>Göl ve doğa</h3><p>Hazar Gölü'nde balık tut: iri balık zor çekilir ama pahalı satılır. Dal, mantar topla, mevsimlere ve kurtlara hazırlıklı ol.</p><ul class="tags"><li>Balıkçılık</li><li>Dalış</li><li>Mevsimler</li></ul></div></article><article class="feat flip"><figure class="feat-img reveal"><img src="assets/img/oyun/gece-k.webp" srcset="assets/img/oyun/gece-k.webp 960w, assets/img/oyun/gece.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Birlikte oyna" width="1920" height="1080" loading="lazy" decoding="async"></figure><div class="feat-txt reveal"><span class="feat-n">06</span><h3>Birlikte oyna</h3><p>Arkadaşının köyünü ziyaret et, kooperatif kur, pazarda ticaret yap, bölge telsiziyle ve sesli aramayla konuş.</p><ul class="tags"><li>Kooperatif</li><li>Pazar</li><li>Telsiz</li></ul></div></article>
+    </div>
   </section>
 
-  <section class="about" id="hakkimizda">
+  <section class="trailer" id="fragman">
+    <div class="wrap">
+      <div class="sec-head center reveal"><p class="kicker">Fragman</p><h2>Toprağın Mirası'nı izle</h2></div>
+      <div class="video-frame reveal">
+        <video controls playsinline preload="none" poster="assets/img/oyun/koy-meydani.webp">
+          <source src="assets/video/toprak-mirasi-fragman.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="note">Oyun içinden çekilmiştir · Sürüm 3.65</p>
+    </div>
+  </section>
+
+  <section class="gallery" id="goruntuler">
+    <div class="wrap">
+      <div class="sec-head reveal"><p class="kicker">Görüntüler</p><h2>Oyundan kareler</h2><p class="sub">Tümü oyunun içinden, gerçek görüntülerdir.</p></div>
+      <div class="g-grid"><figure class="g-item reveal wide" style="--i:0"><a href="assets/img/oyun/genel.webp" data-cap="Hazar Gölü kıyısında köy ve çiftlik"><img src="assets/img/oyun/genel-k.webp" srcset="assets/img/oyun/genel-k.webp 960w, assets/img/oyun/genel.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Toprağın Mirası: Hazar Gölü kıyısında köy ve çiftlik" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Hazar Gölü kıyısında köy ve çiftlik</figcaption></figure><figure class="g-item reveal" style="--i:1"><a href="assets/img/oyun/koy-meydani.webp" data-cap="Köy meydanı"><img src="assets/img/oyun/koy-meydani-k.webp" srcset="assets/img/oyun/koy-meydani-k.webp 960w, assets/img/oyun/koy-meydani.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Toprağın Mirası: Köy meydanı" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Köy meydanı</figcaption></figure><figure class="g-item reveal" style="--i:2"><a href="assets/img/oyun/meralar.webp" data-cap="İnek, koyun ve keçi meraları"><img src="assets/img/oyun/meralar-k.webp" srcset="assets/img/oyun/meralar-k.webp 960w, assets/img/oyun/meralar.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Toprağın Mirası: İnek, koyun ve keçi meraları" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>İnek, koyun ve keçi meraları</figcaption></figure><figure class="g-item reveal" style="--i:3"><a href="assets/img/oyun/fabrikalar.webp" data-cap="Fabrikalar ve cami"><img src="assets/img/oyun/fabrikalar-k.webp" srcset="assets/img/oyun/fabrikalar-k.webp 960w, assets/img/oyun/fabrikalar.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Toprağın Mirası: Fabrikalar ve cami" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Fabrikalar ve cami</figcaption></figure><figure class="g-item reveal wide" style="--i:0"><a href="assets/img/oyun/gece.webp" data-cap="Gece meydan"><img src="assets/img/oyun/gece-k.webp" srcset="assets/img/oyun/gece-k.webp 960w, assets/img/oyun/gece.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Toprağın Mirası: Gece meydan" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Gece meydan</figcaption></figure><figure class="g-item reveal" style="--i:1"><a href="assets/img/oyun/iskele.webp" data-cap="İskele"><img src="assets/img/oyun/iskele-k.webp" srcset="assets/img/oyun/iskele-k.webp 960w, assets/img/oyun/iskele.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Toprağın Mirası: İskele" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>İskele</figcaption></figure><figure class="g-item reveal" style="--i:2"><a href="assets/img/oyun/inek-merasi.webp" data-cap="İnek merası"><img src="assets/img/oyun/inek-merasi-k.webp" srcset="assets/img/oyun/inek-merasi-k.webp 960w, assets/img/oyun/inek-merasi.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Toprağın Mirası: İnek merası" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>İnek merası</figcaption></figure><figure class="g-item reveal" style="--i:3"><a href="assets/img/oyun/kuzey-diyari.webp" data-cap="Kuzey Diyarı · Çamlıbel"><img src="assets/img/oyun/kuzey-diyari-k.webp" srcset="assets/img/oyun/kuzey-diyari-k.webp 960w, assets/img/oyun/kuzey-diyari.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Toprağın Mirası: Kuzey Diyarı · Çamlıbel" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Kuzey Diyarı · Çamlıbel</figcaption></figure><figure class="g-item reveal" style="--i:0"><a href="assets/img/oyun/sehir.webp" data-cap="Şehir"><img src="assets/img/oyun/sehir-k.webp" srcset="assets/img/oyun/sehir-k.webp 960w, assets/img/oyun/sehir.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Toprağın Mirası: Şehir" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Şehir</figcaption></figure><figure class="g-item reveal" style="--i:1"><a href="assets/img/oyun/ciftlik-evi.webp" data-cap="Dedenin çiftliği"><img src="assets/img/oyun/ciftlik-evi-k.webp" srcset="assets/img/oyun/ciftlik-evi-k.webp 960w, assets/img/oyun/ciftlik-evi.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Toprağın Mirası: Dedenin çiftliği" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Dedenin çiftliği</figcaption></figure><figure class="g-item reveal" style="--i:2"><a href="assets/img/oyun/koy-ve-sanayi.webp" data-cap="Köy ve sanayi"><img src="assets/img/oyun/koy-ve-sanayi-k.webp" srcset="assets/img/oyun/koy-ve-sanayi-k.webp 960w, assets/img/oyun/koy-ve-sanayi.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Toprağın Mirası: Köy ve sanayi" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Köy ve sanayi</figcaption></figure><figure class="g-item reveal" style="--i:3"><a href="assets/img/oyun/gol-kiyisi.webp" data-cap="Göl kıyısı"><img src="assets/img/oyun/gol-kiyisi-k.webp" srcset="assets/img/oyun/gol-kiyisi-k.webp 960w, assets/img/oyun/gol-kiyisi.webp 1920w" sizes="(max-width: 900px) 100vw, 60vw" alt="Toprağın Mirası: Göl kıyısı" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Göl kıyısı</figcaption></figure></div>
+    </div>
+  </section>
+
+  <section class="test" id="test">
+    <div class="test-bg" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="sec-head center reveal"><p class="kicker">Erken erişim</p><h2>İlk oynayanlardan ol</h2><p class="sub">Toprağın Mirası yakında mağazalarda. Android kapalı testine şimdi katılabilirsin.</p></div>
+      <div class="test-grid">
+        <div class="card play reveal">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5v17l15-8.5z"/></svg>Google Play · Kapalı test</h3>
+          <p>Google Play'de kullandığın Gmail adresini bırak. Seni test listesine ekleyip davet bağlantısını e-postayla göndereceğiz.</p>
+          <form id="tform" novalidate data-ok="Teşekkürler! Kaydın alındı. Davet e-postası geldiğinde Google Play'den testi indirebilirsin." data-dup="Bu tarayıcıdan zaten kayıt oldun. Teşekkürler!" data-err="Kayıt gönderilemedi. Lütfen biraz sonra tekrar dene ya da bize e-posta gönder." data-bad="Lütfen geçerli bir e-posta adresi yaz." data-lang="tr">
+            <label>Gmail adresin<input type="email" name="email" required maxlength="100" autocomplete="email" placeholder="ornek@gmail.com"></label>
+            <label>Adın (isteğe bağlı)<input type="text" name="name" maxlength="60" autocomplete="name"></label>
+            <label class="chk"><input type="checkbox" name="ok" required> <span>E-posta adresimin yalnızca test daveti için kullanılmasını kabul ediyorum. <a href="https://tysagman.github.io/toprak-oyun/oyun/gizlilik.html" target="_blank" rel="noopener">Gizlilik politikası</a></span></label>
+            <button class="btn primary" type="submit">Teste katıl</button>
+            <p class="msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="card ios reveal">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="18" r="1.2"/></svg>App Store · iOS</h3>
+          <p>iPhone ve iPad sürümü üzerinde çalışıyoruz.</p>
+          <span class="soon">Yakında</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="studyo">
     <div class="wrap about-in">
-      <img class="about-logo" src="assets/img/tasami-logo.png" alt="Tasami logosu" width="260" height="260" loading="lazy">
-      <div>
+      <div class="about-logo reveal"><img src="assets/img/tasami-logo.png" alt="Tasami" width="320" height="320" loading="lazy"></div>
+      <div class="reveal">
         <p class="kicker">Stüdyo</p>
         <h2>Tasami hakkında</h2>
-        <p>Tasami, oyun tasarlayan ve geliştiren, mobil ve web uygulamaları üreten bağımsız bir stüdyo. İki kimya mühendisi tarafından kuruldu.</p><p>Mühendislikten gelen alışkanlıkla çalışıyoruz: önce sistemi kuruyoruz, sonra ölçüyor, deniyor ve iyileştiriyoruz. Oyunlarımızda bu yüzden ekonomi, üretim zinciri ve dünya birbirine bağlı ve tutarlı.</p><p>Adımız kurucularımızın adlarından geliyor: Taha ve Sami.</p>
-        <ul class="services"><li>Oyun tasarımı ve geliştirme</li><li>Mobil uygulamalar (Android)</li><li>Web uygulamaları</li></ul>
+        <p>Tasami, oyun tasarlayan ve geliştiren, mobil ve web uygulamaları üreten bağımsız bir stüdyo. İki kimya mühendisi tarafından kuruldu.</p><p>Mühendislikten gelen alışkanlıkla çalışıyoruz: önce sistemi kuruyor, sonra ölçüyor, deniyor ve iyileştiriyoruz. Oyunlarımızda ekonomi, üretim zinciri ve dünya bu yüzden birbirine bağlı ve tutarlı.</p><p>Adımız kurucularımızın adlarından geliyor: Taha ve Sami.</p>
+        <ul class="tags"><li>Oyun tasarımı ve geliştirme</li><li>Mobil uygulamalar</li><li>Web uygulamaları</li></ul>
       </div>
     </div>
   </section>
 
-  <section class="contact wrap" id="iletisim">
-    <h2>Bize ulaşın</h2>
-    <p>Oyun hakkında görüşünüz, iş birliği teklifiniz ya da bir uygulama fikriniz mi var? Yazın, dönüş yapalım.</p>
-    <a class="btn primary" href="mailto:info@tasami.com.tr">✉ E-posta gönder</a>
-    <p class="mail">info@tasami.com.tr</p>
+  <section class="contact" id="iletisim">
+    <div class="wrap reveal">
+      <h2>Bize ulaşın</h2>
+      <p>Oyun hakkında görüşünüz, iş birliği teklifiniz ya da bir uygulama fikriniz mi var? Yazın, dönüş yapalım.</p>
+      <a class="btn primary" href="mailto:info@tasami.com.tr">✉ E-posta gönder</a>
+      <p class="mail"><a href="mailto:info@tasami.com.tr">info@tasami.com.tr</a></p>
+    </div>
   </section>
 </main>
 
 <footer class="foot">
   <div class="wrap foot-in">
+    <a class="brand" href="#oyun"><img src="assets/img/tasami-amblem.png" alt="" width="32" height="32"><span>TASA<b>Mİ</b></span></a>
     <span>© 2026 Tasami. Tüm hakları saklıdır.</span>
-    <span><a href="https://tysagman.github.io/toprak-oyun/oyun/gizlilik.html">Gizlilik politikası</a> · <a href="https://tysagman.github.io/toprak-oyun/oyun/hesap-sil.html">Hesap silme</a></span>
+    <span><a href="https://tysagman.github.io/toprak-oyun/oyun/gizlilik.html">Gizlilik politikası</a> · <a href="https://tysagman.github.io/toprak-oyun/oyun/hesap-sil.html">Hesap silme</a> · <a href="en/">English</a></span>
   </div>
 </footer>
 
+<div class="lb" id="lb" role="dialog" aria-modal="true" hidden>
+  <button class="lb-x" type="button" aria-label="Kapat">✕</button>
+  <button class="lb-nav prev" type="button" aria-label="Önceki">‹</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb-nav next" type="button" aria-label="Sonraki">›</button>
+</div>
+<div class="vm" id="vm" role="dialog" aria-modal="true" hidden>
+  <button class="lb-x" type="button" aria-label="Kapat">✕</button>
+  <div class="vm-in"><video controls playsinline preload="none"><source src="assets/video/toprak-mirasi-fragman.mp4" type="video/mp4"></video></div>
+</div>
+
+<script src="assets/site.js" defer></script>
 <script type="module" src="assets/test-form.js"></script>
-<dialog class="lb" id="lb"><img alt=""><p></p><button type="button" aria-label="Kapat">✕</button></dialog>
-<script>
-(function(){var d=document.getElementById('lb');if(!d||!d.showModal)return;var im=d.querySelector('img'),cp=d.querySelector('p');
-document.querySelectorAll('.grid a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();im.src=a.href;im.alt=cp.textContent=a.dataset.cap;d.showModal()})});
-d.addEventListener('click',function(){d.close()});})();
-</script>
 </body>
 </html>
