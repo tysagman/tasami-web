@@ -46,6 +46,9 @@ T = {
         "cta_watch": "Fragmanı izle",
         "badge": f"Sürüm {VERSION} · Android kapalı test",
         "scroll": "Keşfet",
+        "presents": "sunar",
+        "marquee": ["Tarla", "Ahır", "Mandıra", "Koyun &amp; keçi", "Fabrika", "Liman", "Holding", "Balıkçılık", "Kooperatif", "Güneş paneli"],
+        "play_tr": "Fragmanı oynat",
         "stats": [("201", "hikâye görevi"), ("6", "bölüm"), ("7", "dil"), ("400+", "yaşayan köylü")],
         "story_k": "Hikâye",
         "story_h": "Bir köyün yeniden doğuşu",
@@ -114,6 +117,9 @@ T = {
         "cta_watch": "Watch the trailer",
         "badge": f"Version {VERSION} · Android closed test",
         "scroll": "Explore",
+        "presents": "presents",
+        "marquee": ["Fields", "Barns", "Dairy", "Sheep &amp; goats", "Factories", "Harbour", "Holding", "Fishing", "Co-op", "Solar power"],
+        "play_tr": "Play trailer",
         "stats": [("201", "story quests"), ("6", "chapters"), ("7", "languages"), ("400+", "living villagers")],
         "story_k": "Story",
         "story_h": "A village reborn",
@@ -202,6 +208,8 @@ def render(t):
         for i, (n, ct, ce) in enumerate(GALLERY))
     about = "".join(f"<p>{p}</p>" for p in t["about"])
     services = "".join(f"<li>{s}</li>" for s in t["services"])
+    mq = "".join(f"<span>{w}</span><i>✦</i>" for w in t["marquee"])
+    marquee = f'<div class="mq-row"><div class="mq-in">{mq}{mq}</div></div><div class="mq-row rev"><div class="mq-in">{mq}{mq}</div></div>'
     nav = "".join(f'<a href="#{i}">{n}</a>' for i, n in zip(NAV_IDS, t["nav"]))
     ld = json.dumps([
         {"@context": "https://schema.org", "@type": "Organization", "name": "Tasami",
@@ -213,7 +221,7 @@ def render(t):
          "image": "https://tasami.com.tr/assets/img/oyun/genel-og.jpg"},
     ], ensure_ascii=False)
     vals = dict(t, b=b, stats=stats, story=story, chapters=chapters, feats=feats, gallery=gallery, about=about,
-                services=services, nav=nav, ld=ld, mail_to=CONTACT,
+                services=services, nav=nav, marquee=marquee, ld=ld, mail_to=CONTACT,
                 privacy_url=PLAY_URL + "gizlilik.html", delete_url=PLAY_URL + "hesap-sil.html",
                 canonical="https://tasami.com.tr/" + t["path"],
                 hero_img=img(b, "genel", "", eager=True, big=True),
