@@ -2,7 +2,7 @@
 // Layers come from the artwork itself: a plate with the wall removed, the wall (with plants) as a cut-out.
 // rise(canvas, plate, wall) returns { draw(t), play(), T } with t in seconds; drawn in 1584x672 image space.
 (function () {
-  const W = 1584, H = 672, WX = 147, WY = 135, BY = 521, X0 = 150, X1 = 1452, T = 5;
+  const W = 1584, H = 672, T = 5;
   const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
   const ease = x => 1 - Math.pow(1 - clamp(x), 3);
   const mix = (a, b, k) => a + (b - a) * k;
@@ -11,6 +11,9 @@
   window.tasamiRise = function (canvas, plate, wall, opt = {}) {
     const ctx = canvas.getContext('2d');
     const r = rnd(opt.seed || 7);
+    // where the rising layer sits in artwork space; defaults fit the stone title
+    const WX = opt.wx ?? 147, WY = opt.wy ?? 135, BY = opt.by ?? 521, X0 = opt.x0 ?? 150, X1 = opt.x1 ?? 1452;
+    const V = opt.view || [0, 0, W, H], dens = Math.max(.4, (X1 - X0) / 1302);
     const off = document.createElement('canvas'); off.width = wall.width; off.height = wall.height;
     const ox = off.getContext('2d');
 
@@ -26,7 +29,7 @@
     const pat = ctx.createPattern(soil, 'repeat');
     // radial cracks running out over the ground (in perspective: flatter vertically)
     const cracks = [];
-    for (let i = 0; i < 26; i++) {
+    for (let i = 0; i < 26 * dens; i++) {
       const sx = mix(X0, X1, r()), side = r() < .5 ? -1 : 1, front = r() < .7;
       let x = sx, y = BY + 2, a = front ? Math.PI / 2 + (r() - .5) * 2.2 : -Math.PI / 2 + (r() - .5) * 2.4;
       const pts = [[x, y]], n = 5 + (r() * 7 | 0);
@@ -41,7 +44,7 @@
 
     // soil clods thrown out of the fissure, cut from the real ground texture
     const clods = [];
-    for (let i = 0; i < 230; i++) {
+    for (let i = 0; i < 230 * dens; i++) {
       const x = mix(X0 - 10, X1 + 10, r()), big = r() < .3;
       const s = big ? 10 + r() * 16 : 3 + r() * 6;
       const vy = -(140 + r() * 420), vx = (r() - .5) * 220, back = r() < .35;
@@ -52,7 +55,7 @@
     }
     // dust puffs
     const dust = [];
-    for (let i = 0; i < 220; i++) dust.push({ x: mix(X0 - 40, X1 + 40, r()), t0: .45 + Math.pow(r(), 1.4) * 2.3, vx: (r() - .5) * 70, vy: -(10 + r() * 40),
+    for (let i = 0; i < 220 * dens; i++) dust.push({ x: mix(X0 - 40, X1 + 40, r()), t0: .45 + Math.pow(r(), 1.4) * 2.3, vx: (r() - .5) * 70, vy: -(10 + r() * 40),
       s: 30 + r() * 80, life: 1.4 + r() * 1.4, c: r() < .5 ? [150, 118, 84] : [118, 94, 70] });
 
     function shake(t) {
@@ -73,10 +76,10 @@
     }
 
     function draw(t) {
-      const cw = canvas.width, ch = canvas.height, sc = cw / W;
+      const cw = canvas.width, ch = canvas.height, sc = cw / V[2];
       ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, cw, ch);
       const [sx, sy] = shake(t);
-      const Z = 1.012; ctx.setTransform(sc * Z, 0, 0, sc * Z, (sx - W * (Z - 1) / 2) * sc, (sy - H * (Z - 1) / 2) * sc);
+      const Z = 1.012; ctx.setTransform(sc * Z, 0, 0, sc * Z, (sx - V[0] * Z - V[2] * (Z - 1) / 2) * sc, (sy - V[1] * Z - V[3] * (Z - 1) / 2) * sc);
       ctx.drawImage(plate, 0, 0, W, H);
 
       // fissure opening
