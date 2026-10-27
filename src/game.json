@@ -1,10 +1,16 @@
 {
- "v": 369,
- "version": "3.69",
+ "v": 370,
+ "version": "3.70",
  "quests": 201,
  "chapters": 6,
  "languages": 7,
  "changes": [
+  {
+   "v": 370,
+   "d": "2026-10-27",
+   "tr": "Geri bildirimlerin hepsi artık kaydediliyor. Araç yolsuz yerden geçince arkasında toprak yol izi kalır. Mera çitlerinin tahtaları artık havada kalmıyor.",
+   "en": "All feedback is now saved. Vehicles leave a dirt track when driving off-road. Pasture fence rails now follow the ground."
+  },
   {
    "v": 369,
    "d": "2026-10-27",
@@ -16,12 +22,6 @@
    "d": "2026-10-27",
    "tr": "Köyün inek ahırı artık bir köy evinin içine girmiyor. Göl kenarındaki müze, köy evleriyle aynı taş duvarlı, kiremit çatılı ve ahşap sundurmalı bir binaya dönüştü.",
    "en": "The village cow barn no longer overlaps a house. The lakeside museum now matches the village style with stone walls, a tiled roof and a wooden porch."
-  },
-  {
-   "v": 367,
-   "d": "2026-10-27",
-   "tr": "Gebe hayvanlarda doğuma kalan süre artık görünüyor: inek, koyun, keçi, at ve eşek listelerinde 'doğuma 3 oyun günü (oyun açıkken ≈2 saat 50 dakika)' yazar. Doğum o gece yarısı olacaksa 'bu gece' yazar. Hayvan adları artık 'Pamuk 51' gibi saçmalamıyor: ad listeleri büyütüldü, gerekirse 'Bulut 2' gibi kısa ek alır, eski garip adlar kendiliğinden düzelir.",
-   "en": "Pregnant animals now show the time left until birth: cow, sheep, goat, horse and donkey lists say 'birth in 3 game days (while playing ≈2 hours 50 min)', or 'tonight' if the birth is due at midnight. Animal names no longer turn into things like 'Pamuk 51': bigger name lists, short suffixes like 'Bulut 2' when needed, and old odd names are fixed automatically."
   }
  ]
 }
