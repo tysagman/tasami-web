@@ -1,27 +1,27 @@
 {
- "v": 376,
- "version": "3.76",
+ "v": 379,
+ "version": "3.79",
  "quests": 201,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 376,
+   "v": 379,
    "d": "2026-10-27",
-   "tr": "Yapılarını istediğin yere kur: Çiftliği geliştir → 📍 Yapıların yerini değiştir. Ev, tarla, kümes, ahır, meralar, bahçe, kulübe, tulumba, kovan, silo, depo, ambar, güneş paneli, mandıra, fabrikalar ve kamyonlar parmakla sürüklenip taşınır. Yeşil yer uygun, kırmızı yer uygun değil (başka yapı, yol, göl, köy meydanı, ağaç, taş, dik yamaç). Yeni yapı alınca yerini sen seçersin. Taşımayanların çiftliği olduğu gibi kalır.",
-   "en": "Build wherever you like: Upgrade farm → 📍 Change building locations. House, field, coop, stable, pastures, gardens, kennel, pump, hives, silo, tank, barn, solar panels, dairy, factories and trucks can be dragged to a new spot. Green means fine, red means not (another building, road, lake, village square, tree, rock, steep slope). When you buy a new building you choose where it goes. Farms you don't move stay exactly as they are."
+   "tr": "Ot ve çalıların üstüne yapı kurabilirsin; yapı kurulunca altındaki bitkiler kalkar (ağaç ve taş yine engel). Yapı taşırken eski yerindeki bütün parçaları (yemlik, direk, suluk, işaret) gizlenir, böylece yeşil alanda engel varmış gibi görünmez. Ahır penceresindeki çift \"Ahırı geliştir\" düğmesi teke indi.",
+   "en": "You can now build over grass and bushes; the plants under a new building are cleared (trees and rocks still block). While moving a building, all of its parts at the old spot (troughs, posts, water trough, sign) are hidden so the green area no longer looks blocked. The stable window no longer shows \"Upgrade stable\" twice."
   },
   {
-   "v": 375,
+   "v": 378,
    "d": "2026-10-27",
-   "tr": "Köyden uzaklaşınca yollar artık kaybolmuyor; otobüs ve araç yolculuğunda toprak yol görünüyor.",
-   "en": "Roads no longer disappear when you are far from the village; the dirt road is visible during bus and car trips."
+   "tr": "Yapı yeri seçerken çakışma kontrolü düzeldi: artık başka bir evin, köylü evinin, avlu duvarının, çitin, çatının ya da ağacın üstü kırmızı görünür ve oraya yapı kurulmaz. Taşıdığın yapının eski hâli yer seçerken gizlenir, böylece yeşil alanın altında başka bir yapı varmış gibi görünmez; vazgeçince geri gelir.",
+   "en": "Building placement now checks overlaps properly: another house, a villager's house, yard walls, fences, roofs and trees show red and you can't build there. While you choose a spot, the building you're moving is hidden at its old place so the green area no longer looks like it sits on another building; it comes back if you cancel."
   },
   {
-   "v": 374,
+   "v": 377,
    "d": "2026-10-27",
-   "tr": "Hazar Gölü kuzeye doğru genişledi (köy tarafındaki kıyı ve iskele aynı yerde). Gölün kuzey yamacından kayaların arasından dökülen bir şelale ve göle akan bir dere eklendi. Yüzme yenilendi: ilerlerken serbest stil kulaç atılıyor, nefes için baş yana dönüyor; dururken suda dik durulup kollar ve bacaklarla su tutuluyor.",
-   "en": "Lake Hazar is now wider to the north (the village shore and pier stay where they were). A waterfall now pours down the northern slope between the rocks, with a stream flowing into the lake. Swimming is new: front crawl strokes with side breathing while moving, treading water when standing still."
+   "tr": "Şehirde yerin alçaldığı kenarlarda binaların altı artık havada görünmüyor.",
+   "en": "City buildings no longer appear to float where the ground dips at the city edge."
   }
  ]
 }
