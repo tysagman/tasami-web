@@ -73,7 +73,7 @@
   <div class="marquee" aria-hidden="true">{{marquee}}</div>
 
   <section class="title-art" aria-label="{{game}}">
-    <div class="ta reveal"><img src="{{b}}assets/img/oyun/baslik.webp" srcset="{{b}}assets/img/oyun/baslik-k.webp 960w, {{b}}assets/img/oyun/baslik.webp 1600w" sizes="100vw" alt="{{game}}" width="1600" height="679" loading="lazy"><i class="ta-beam"></i></div>
+    <div class="ta reveal"><img src="{{b}}assets/img/oyun/baslik.webp" srcset="{{b}}assets/img/oyun/baslik-k.webp 960w, {{b}}assets/img/oyun/baslik.webp 1600w" sizes="100vw" alt="{{game}}" width="1600" height="679" loading="lazy"><canvas class="ta-rise" width="1584" height="672" aria-hidden="true" data-zemin="{{b}}assets/img/oyun/baslik-zemin.webp" data-tas="{{b}}assets/img/oyun/baslik-tas.webp"></canvas><i class="ta-beam"></i></div>
   </section>
 
   <section class="story" id="hikaye">
@@ -200,6 +200,7 @@
 <button class="music" type="button" aria-pressed="false" data-src="{{b}}assets/audio/muzik.mp3" data-on="{{music_on}}" data-off="{{music_off}}" aria-label="{{music_on}}"><span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><b>{{music}}</b></button>
 
 <script src="{{b}}assets/burst.js" defer></script>
+<script src="{{b}}assets/rise.js" defer></script>
 <script src="{{b}}assets/site.js" defer></script>
 <script type="module" src="{{b}}assets/test-form.js"></script>
 </body>

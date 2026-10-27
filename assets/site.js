@@ -396,4 +396,21 @@
     tw.addEventListener('click', e => { if (moved) { e.preventDefault(); e.stopPropagation(); } }, true);
     tw.style.cursor = 'grab';
   }
+
+  // Title artwork: the stone name rises out of the artwork's own cracked ground
+  {
+  const ta = $('.ta'), cv = ta && $('.ta-rise', ta);
+  if (cv && window.tasamiRise && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    ta.classList.add('rise');
+    const load = src => new Promise((ok, no) => { const i = new Image(); i.onload = () => ok(i); i.onerror = no; i.src = src; });
+    const full = $('img', ta);
+    const parts = Promise.all([load(cv.dataset.zemin), load(cv.dataset.tas), full.decode ? full.decode().then(() => full) : load(full.currentSrc || full.src)]);
+    let fx = null;
+    parts.then(([p, w, f]) => { fx = tasamiRise(cv, p, w, { full: f }); fx.draw(0); ta.classList.add('ready'); }).catch(() => ta.classList.remove('rise'));
+    new IntersectionObserver(([e], o) => {
+      if (!e.isIntersecting) return; o.disconnect();
+      parts.then(() => fx && fx.play(() => ta.classList.add('done')));
+    }, { threshold: .45 }).observe(ta);
+  }
+  }
 })();
