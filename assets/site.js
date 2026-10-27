@@ -11,14 +11,47 @@
       .map((w, i) => `<span class="w"><span style="--d:${i}">${w}</span></span>`).join(' ');
   });
 
+  // Game name: letters rise like stone out of dry soil, turn green, grass spreads, a sprout opens.
+  const growIt = el => {
+    const text = el.textContent.trim();
+    let n = 0;
+    el.classList.add('grow');
+    el.setAttribute('aria-label', text);
+    el.innerHTML = '<span class="gr-words" aria-hidden="true">' + text.split(/\s+/).map(w =>
+      `<span class="gw">${[...w].map(c => `<span class="gl" style="--d:${n++}">${c}</span>`).join('')}</span>`).join(' ') +
+      '</span><span class="soil" aria-hidden="true"></span><span class="grass" aria-hidden="true"></span>' +
+      '<svg class="sprout" viewBox="0 0 40 60" aria-hidden="true"><path class="stem" d="M20 60 C20 46 18 38 21 26"/>' +
+      '<path class="lf l" d="M21 30 C12 30 5 24 3 15 C12 15 19 20 21 30Z"/><path class="lf r" d="M21 27 C27 20 34 18 39 19 C36 27 29 30 21 27Z"/></svg>';
+    el.style.setProperty('--gd', (0.5 + n * 0.07 + 1.2).toFixed(2) + 's');
+    // dirt bursting where each letter breaks through
+    requestAnimationFrame(() => {
+      const box = el.getBoundingClientRect();
+      const cols = ['#b08a5a', '#8b6a43', '#c9a774', '#6d5232'];
+      $$('.gl', el).forEach((g, i) => {
+        const r = g.getBoundingClientRect(), cx = r.left + r.width / 2 - box.left;
+        for (let k = 0; k < 3; k++) {
+          const d = document.createElement('i'); d.className = 'dirt';
+          const s = 3 + Math.random() * 5;
+          d.style.cssText = `left:${cx + (Math.random() - .5) * r.width}px;--s:${s}px;--x:${(Math.random() - .5) * 90}px;--y:${-(25 + Math.random() * 70)}px;--t:${.8 + Math.random() * .6}s;--dl:${(0.5 + i * 0.07 + .1 + Math.random() * .15).toFixed(2)}s;--c:${cols[k % 4]}`;
+          el.appendChild(d);
+        }
+      });
+    });
+  };
+  $$('[data-grow]').forEach(growIt);
+  const growIO = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('go'); growIO.unobserve(e.target); }
+  }), { threshold: .5 });
+  const startGrow = () => $$('[data-grow]').forEach(el => el.closest('.hero') ? el.classList.add('go') : growIO.observe(el));
+
   // Section headings: same word split, revealed with their parent.
-  $$('.sec-head h2, .story-txt h2, .about h2, .contact h2').forEach(h => {
+  $$('.sec-head h2:not([data-grow]), .story-txt h2, .about h2, .contact h2').forEach(h => {
     h.innerHTML = h.textContent.trim().split(/\s+/)
       .map((w, i) => `<span class="w"><span style="--d:${i}">${w}</span></span>`).join(' ');
   });
 
   // Intro curtain (once per session)
-  const ready = () => root.classList.add('ready');
+  const ready = () => { root.classList.add('ready'); startGrow(); };
   if (root.classList.contains('intro-on')) {
     try { sessionStorage.setItem('tsm-intro', '1'); } catch (e) {}
     const intro = $('.intro');
@@ -30,7 +63,7 @@
     let loaded = document.readyState === 'complete';
     addEventListener('load', () => { loaded = true; });
     const t0 = performance.now();
-    const wait = () => (loaded && performance.now() - t0 > 1500) || performance.now() - t0 > 3200 ? go() : setTimeout(wait, 100);
+    const wait = () => (loaded && performance.now() - t0 > 2700) || performance.now() - t0 > 4000 ? go() : setTimeout(wait, 100);
     wait();
   } else ready();
 
