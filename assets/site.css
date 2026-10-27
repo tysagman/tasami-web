@@ -530,3 +530,12 @@ h1,h2,h3{color:#f6f6f6}
 .ta.in .ta-beam{animation:beam 6s ease-in-out 2.4s infinite}
 @keyframes beam{0%,100%{opacity:0}50%{opacity:1}}
 @media (prefers-reduced-motion:reduce){.ta img{transform:none;filter:none;transition:none}.ta.in .ta-beam{animation:none}}
+
+/* latest updates (synced from the game) */
+.updates{padding:90px 0 40px}
+.upd-list{list-style:none;margin:34px 0 0;padding:0;display:grid;gap:14px;max-width:900px}
+.upd{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:22px 26px;border:1px solid rgba(255,255,255,.1);border-radius:16px;background:rgba(255,255,255,.03)}
+.upd-m b{display:block;color:#fff;font-size:1rem}
+.upd-m time{font-size:.8rem;color:rgba(255,255,255,.5)}
+.upd p{margin:0;color:rgba(255,255,255,.78);line-height:1.6}
+@media (max-width:640px){.upd{grid-template-columns:1fr;gap:8px}}

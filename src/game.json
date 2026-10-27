@@ -1,0 +1,27 @@
+{
+ "v": 369,
+ "version": "3.69",
+ "quests": 201,
+ "chapters": 6,
+ "languages": 7,
+ "changes": [
+  {
+   "v": 369,
+   "d": "2026-10-27",
+   "tr": "Sağlık artık kendiliğinden yavaşça doluyor: tokken (açlık %50'nin altında), hasta değilken ve üşümüyorken sağlık yavaş yavaş artar, durup beklerken 3 kat hızlı. Sargı bezi, kekik, evde dinlenme ve muayene hâlâ hemen iyileştirir. Durum ekranında sağlığın nasıl dolduğu yazıyor.",
+   "en": "Health now refills slowly on its own: while you're fed (hunger below 50%), not sick and not cold, health rises little by little, 3 times faster while standing still. Bandages, thyme, resting at home and check-ups still heal right away. The status screen explains how health refills."
+  },
+  {
+   "v": 368,
+   "d": "2026-10-27",
+   "tr": "Köyün inek ahırı artık bir köy evinin içine girmiyor. Göl kenarındaki müze, köy evleriyle aynı taş duvarlı, kiremit çatılı ve ahşap sundurmalı bir binaya dönüştü.",
+   "en": "The village cow barn no longer overlaps a house. The lakeside museum now matches the village style with stone walls, a tiled roof and a wooden porch."
+  },
+  {
+   "v": 367,
+   "d": "2026-10-27",
+   "tr": "Gebe hayvanlarda doğuma kalan süre artık görünüyor: inek, koyun, keçi, at ve eşek listelerinde 'doğuma 3 oyun günü (oyun açıkken ≈2 saat 50 dakika)' yazar. Doğum o gece yarısı olacaksa 'bu gece' yazar. Hayvan adları artık 'Pamuk 51' gibi saçmalamıyor: ad listeleri büyütüldü, gerekirse 'Bulut 2' gibi kısa ek alır, eski garip adlar kendiliğinden düzelir.",
+   "en": "Pregnant animals now show the time left until birth: cow, sheep, goat, horse and donkey lists say 'birth in 3 game days (while playing ≈2 hours 50 min)', or 'tonight' if the birth is due at midnight. Animal names no longer turn into things like 'Pamuk 51': bigger name lists, short suffixes like 'Bulut 2' when needed, and old odd names are fixed automatically."
+  }
+ ]
+}

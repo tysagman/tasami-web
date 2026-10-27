@@ -1,0 +1,44 @@
+name: Oyunla senkron
+# Oyun (toprak-oyun) güncellenince sürüm, sayılar ve son yenilikler siteye işlenir.
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency: oyun-senkron
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Oyun sürümünü kontrol et
+        id: check
+        run: |
+          live=$(curl -fsSL https://raw.githubusercontent.com/tysagman/toprak-oyun/main/oyun/version.json | jq .v)
+          have=$(jq .v src/game.json)
+          echo "live=$live have=$have"
+          if [ "$live" != "$have" ]; then echo "changed=1" >> "$GITHUB_OUTPUT"; fi
+      - if: steps.check.outputs.changed
+        run: git clone --depth 1 https://github.com/tysagman/toprak-oyun ../toprak-oyun
+      - if: steps.check.outputs.changed
+        uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - if: steps.check.outputs.changed
+        run: |
+          npm i --no-save playwright@1.47.2
+          npx playwright install --with-deps chromium
+          node tools/oyun-senkron.js ../toprak-oyun
+          python3 src/build.py
+      - if: steps.check.outputs.changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "tasami-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/game.json index.html en/index.html
+          git diff --cached --quiet && exit 0
+          git commit -m "Oyunla senkron: sürüm $(jq -r .version src/game.json)"
+          git push
+          gh api -X POST repos/${{ github.repository }}/pages/builds || true

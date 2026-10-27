@@ -3,14 +3,17 @@
 Metinleri değiştirmek için aşağıdaki T sözlüğünü düzenleyin, sonra:  python3 src/build.py
 Görseller assets/img/oyun/<ad>.webp (1920x1080) ve <ad>-k.webp (960x540); hepsi oyunun içinden çekildi.
 """
-import json, pathlib
+import html, json, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 TEMPLATE = (ROOT / "src" / "template.html").read_text(encoding="utf-8")
 
 PLAY_URL = "https://tysagman.github.io/toprak-oyun/oyun/"
 CONTACT = "info@tasami.com.tr"
-VERSION = "3.65"
+# Oyundan otomatik gelir (tools/oyun-senkron.js, .github/workflows/oyun-senkron.yml)
+GAME = json.loads((ROOT / "src" / "game.json").read_text(encoding="utf-8"))
+VERSION = GAME["version"]
+TRAILER_VERSION = "3.65"  # fragmanın çekildiği sürüm
 
 # (görsel, TR başlık, EN başlık) — galeri sırası
 GALLERY = [
@@ -46,11 +49,11 @@ T = {
         "cta_watch": "Fragmanı izle",
         "badge": f"Sürüm {VERSION} · Android kapalı test",
         "scroll": "Keşfet",
-        "presents": "sunar", "slogan": "Topraktan Sanayiye",
+        "presents": "sunar", "upd_k": "Oyunla eş zamanlı", "upd_h": "Son güncellemeler", "upd_v": "Sürüm", "slogan": "Topraktan Sanayiye",
         "trailer": "toprak-mirasi-fragman.mp4",
         "marquee": ["Tarla", "Ahır", "Mandıra", "Koyun &amp; keçi", "Fabrika", "Liman", "Holding", "Balıkçılık", "Kooperatif", "Güneş paneli"],
         "play_tr": "Fragmanı oynat",
-        "stats": [("201", "hikâye görevi"), ("6", "bölüm"), ("7", "dil"), ("400+", "yaşayan köylü")],
+        "stats": [(str(GAME["quests"]), "hikâye görevi"), (str(GAME["chapters"]), "bölüm"), (str(GAME["languages"]), "dil"), ("400+", "yaşayan köylü")],
         "story_k": "Hikâye",
         "story_h": "Bir köyün yeniden doğuşu",
         "story": [
@@ -78,7 +81,7 @@ T = {
             ("Birlikte oyna", "Arkadaşının köyünü ziyaret et, kooperatif kur, pazarda ticaret yap, bölge telsiziyle ve sesli aramayla konuş.", ["Kooperatif", "Pazar", "Telsiz"]),
         ],
         "gal_k": "Görüntüler", "gal_h": "Oyundan kareler", "gal_sub": "Tümü oyunun içinden, gerçek görüntülerdir.",
-        "tr_k": "Resmî fragman", "tr_h": "Toprağın Mirası'nı izle", "tr_note": f"Oyun içinden çekilmiştir · Sürüm {VERSION}",
+        "tr_k": "Resmî fragman", "tr_h": "Toprağın Mirası'nı izle", "tr_note": f"Oyun içinden çekilmiştir · Sürüm {TRAILER_VERSION}",
         "t_k": "Erken erişim", "t_h": "İlk oynayanlardan ol",
         "t_sub": "Toprağın Mirası yakında mağazalarda. Android kapalı testine şimdi katılabilirsin.",
         "t_and_h": "Google Play · Kapalı test",
@@ -118,11 +121,11 @@ T = {
         "cta_watch": "Watch the trailer",
         "badge": f"Version {VERSION} · Android closed test",
         "scroll": "Explore",
-        "presents": "presents", "slogan": "From Soil to Industry",
+        "presents": "presents", "upd_k": "Live from the game", "upd_h": "Latest updates", "upd_v": "Version", "slogan": "From Soil to Industry",
         "trailer": "legacy-of-the-land-trailer.mp4",
         "marquee": ["Fields", "Barns", "Dairy", "Sheep &amp; goats", "Factories", "Harbour", "Holding", "Fishing", "Co-op", "Solar power"],
         "play_tr": "Play trailer",
-        "stats": [("201", "story quests"), ("6", "chapters"), ("7", "languages"), ("400+", "living villagers")],
+        "stats": [(str(GAME["quests"]), "story quests"), (str(GAME["chapters"]), "chapters"), (str(GAME["languages"]), "languages"), ("400+", "living villagers")],
         "story_k": "Story",
         "story_h": "A village reborn",
         "story": [
@@ -150,7 +153,7 @@ T = {
             ("Play together", "Visit friends' villages, form a co-op, trade at the market, talk on the regional radio or by voice call.", ["Co-op", "Market", "Radio"]),
         ],
         "gal_k": "Screenshots", "gal_h": "Scenes from the game", "gal_sub": "All captured in-game.",
-        "tr_k": "Official trailer", "tr_h": "Watch Legacy of the Land", "tr_note": f"Captured in-game · Version {VERSION}",
+        "tr_k": "Official trailer", "tr_h": "Watch Legacy of the Land", "tr_note": f"Captured in-game · Version {TRAILER_VERSION}",
         "t_k": "Early access", "t_h": "Be among the first to play",
         "t_sub": "Legacy of the Land is coming to the stores soon. You can join the Android closed test now.",
         "t_and_h": "Google Play · Closed test",
@@ -209,6 +212,14 @@ def render(t):
         f'{img(b, n, t["game"] + ": " + (ce if en else ct))}</a><figcaption>{ce if en else ct}</figcaption></figure>'
         for i, (n, ct, ce) in enumerate(GALLERY))
     about = "".join(f"<p>{p}</p>" for p in t["about"])
+    mon = (["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"] if not en else
+           ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"])
+    def day(d):
+        y, m, g = d.split("-"); return f"{int(g)} {mon[int(m) - 1]} {y}"
+    updates = "".join(
+        f'<li class="upd reveal" style="--i:{i}"><div class="upd-m"><b>{t["upd_v"]} {c["v"] // 100}.{c["v"] % 100:02d}</b>'
+        f'<time datetime="{c["d"]}">{day(c["d"])}</time></div><p>{html.escape(c["en"] if en else c["tr"])}</p></li>'
+        for i, c in enumerate(GAME["changes"]))
     services = "".join(f"<li>{s}</li>" for s in t["services"])
     mq = "".join(f"<span>{w}</span><i>✦</i>" for w in t["marquee"])
     marquee = f'<div class="mq-row"><div class="mq-in">{mq}{mq}</div></div><div class="mq-row rev"><div class="mq-in">{mq}{mq}</div></div>'
@@ -222,7 +233,7 @@ def render(t):
          "inLanguage": ["tr", "en", "de", "fr", "es", "ru", "ku"],
          "image": "https://tasami.com.tr/assets/img/oyun/genel-og.jpg"},
     ], ensure_ascii=False)
-    vals = dict(t, b=b, stats=stats, story=story, chapters=chapters, feats=feats, gallery=gallery, about=about,
+    vals = dict(t, b=b, stats=stats, updates=updates, story=story, chapters=chapters, feats=feats, gallery=gallery, about=about,
                 services=services, nav=nav, marquee=marquee, ld=ld, mail_to=CONTACT,
                 privacy_url=PLAY_URL + "gizlilik.html", delete_url=PLAY_URL + "hesap-sil.html",
                 canonical="https://tasami.com.tr/" + t["path"],
