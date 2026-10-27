@@ -513,7 +513,10 @@ h1,h2,h3{color:#f6f6f6}
 @media (prefers-reduced-motion:reduce){.grow .gl{transform:none;background-position:0 0,0 100%;animation:none!important}.grow .soil{transform:none;opacity:0}.grow .grass{opacity:1;clip-path:none}.grow .sprout path.stem{stroke-dashoffset:0}.grow .sprout .lf{transform:none}.grow .dirt{display:none}}
 
 /* intro emblem breaks up through the soil (assets/burst.js) */
-.intro .burst{display:block;width:min(820px,96vw);height:auto;aspect-ratio:640/420;margin-bottom:-70px}
+.intro .burst{display:block;width:100vw;height:auto;max-height:100vh;object-fit:contain}
+.intro-in{position:relative;width:100vw}
+.intro-in .intro-word,.intro-in small{position:absolute;left:0;right:0;text-align:center;text-shadow:0 2px 20px rgba(0,0,0,.85)}
+.intro-in .intro-word{bottom:9%}.intro-in small{bottom:3.5%}
 
 /* official logo (Oct 2026): non-circular mark */
 .brand img{border-radius:0;object-fit:contain}

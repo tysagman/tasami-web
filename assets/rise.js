@@ -177,7 +177,7 @@
       baseDraw(t); }
     function play(onDone) {
       let s = null;
-      const step = ts => { if (s === null) s = ts; const t = (ts - s) / 1000; drawT(Math.min(t, T)); if (t < T) requestAnimationFrame(step); else onDone && onDone(); };
+      const step = ts => { if (s === null) s = ts; const t = (ts - s) / 1000 * (opt.speed || 1); drawT(Math.min(t, T)); if (t < T) requestAnimationFrame(step); else onDone && onDone(); };
       requestAnimationFrame(step);
     }
     return { draw: drawT, play, T };

@@ -56,12 +56,19 @@
     try { sessionStorage.setItem('tsm-intro', '1'); } catch (e) {}
     const intro = $('.intro');
     const bc = $('.burst', intro);
-    if (bc && window.tasamiBurst) {
+    if (bc && window.tasamiRise) {
+      // logo rising out of the title artwork's real cracked ground; the view is cropped to the screen's shape
+      const a = Math.min(Math.max(innerWidth / innerHeight, .62), 1584 / 672);
+      const vh = Math.min(672, 1584 / a), vw = vh * a, view = [792 - vw / 2, Math.min(672 - vh, 90), vw, vh];
       const dpr = Math.min(devicePixelRatio || 1, 2);
-      bc.width = 640 * dpr; bc.height = 420 * dpr;
-      const im = new Image();
-      im.onload = () => tasamiBurst(bc, im, { seed: 11 }).play();
-      im.src = bc.dataset.img;
+      bc.width = Math.round(Math.min(innerWidth * dpr, 1800)); bc.height = Math.round(bc.width / a);
+      bc.style.aspectRatio = a;
+      const L = s => new Promise((ok, no) => { const i = new Image(); i.onload = () => ok(i); i.onerror = no; i.src = s; });
+      Promise.all([L(bc.dataset.zemin), L(bc.dataset.img)]).then(([pl, m]) => {
+        const h = 380, w = Math.round(m.width * h / m.height), cx = 792, by = 508;
+        const lc = document.createElement('canvas'); lc.width = w; lc.height = h; lc.getContext('2d').drawImage(m, 0, 0, w, h);
+        tasamiRise(bc, pl, lc, { wx: cx - w / 2, wy: by - h + 10, by, x0: cx - w / 2 + 20, x1: cx + w / 2 - 20, view, seed: 5, speed: 1.3 }).play();
+      }).catch(() => {});
     }
     const go = () => {
       intro.classList.add('out');
