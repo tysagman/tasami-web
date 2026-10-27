@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: '*/30 * * * *'
   workflow_dispatch:
+    inputs:
+      force: { description: 'Sürüm aynı olsa da çalıştır', type: boolean, default: false }
 permissions:
   contents: write
   pages: write
@@ -19,7 +21,7 @@ jobs:
           live=$(curl -fsSL https://raw.githubusercontent.com/tysagman/toprak-oyun/main/oyun/version.json | jq .v)
           have=$(jq .v src/game.json)
           echo "live=$live have=$have"
-          if [ "$live" != "$have" ]; then echo "changed=1" >> "$GITHUB_OUTPUT"; fi
+          if [ "$live" != "$have" ] || [ "${{ inputs.force }}" = "true" ]; then echo "changed=1" >> "$GITHUB_OUTPUT"; fi
       - if: steps.check.outputs.changed
         run: git clone --depth 1 https://github.com/tysagman/toprak-oyun ../toprak-oyun
       - if: steps.check.outputs.changed
