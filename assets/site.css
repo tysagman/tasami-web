@@ -514,3 +514,8 @@ h1,h2,h3{color:#f6f6f6}
 
 /* intro emblem breaks up through the soil (assets/burst.js) */
 .intro .burst{display:block;width:min(820px,96vw);height:auto;aspect-ratio:640/420;margin-bottom:-70px}
+
+/* official logo (Oct 2026): non-circular mark */
+.brand img{border-radius:0;object-fit:contain}
+.foot .slogan{display:block;font-style:normal;font-weight:600;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:#C9A97A;margin-top:4px}
+.about-logo img{border-radius:28px}

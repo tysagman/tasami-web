@@ -10,6 +10,7 @@
   const ease = x => 1 - Math.pow(1 - clamp(x), 3);
   const easeIO = x => { x = clamp(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
   const mix = (a, b, k) => a + (b - a) * k;
+  let lc;
   const mixc = (a, b, k) => `rgb(${a.map((v, i) => Math.round(mix(v, b[i], k))).join(',')})`;
 
   function burst(cv, img, opt = {}) {
@@ -173,18 +174,16 @@
         ctx.clip();
         const tilt = (1 - rise) * .12 * Math.sin(t * 7);
         ctx.translate(cx, ly + LOGO / 2); ctx.rotate(tilt);
+        // logo plus the soil still clinging to it (only on the logo's own pixels), falling away
+        if (!lc) { lc = document.createElement('canvas'); lc.width = lc.height = LOGO * 2; }
+        const lx = lc.getContext('2d');
+        lx.globalCompositeOperation = 'source-over'; lx.globalAlpha = 1;
+        lx.clearRect(0, 0, lc.width, lc.height); lx.drawImage(img, 0, 0, lc.width, lc.height);
+        if (life < 1) { lx.globalCompositeOperation = 'source-atop'; lx.globalAlpha = (1 - life) * .55; lx.drawImage(tex, 0, 0, lc.width, lc.height); }
         ctx.filter = `grayscale(${1 - life}) sepia(${(1 - life) * .3}) brightness(${mix(.72, 1, life)}) contrast(${mix(1.15, 1, life)})`;
         ctx.shadowColor = `rgba(255,255,255,${life * .15})`; ctx.shadowBlur = 40 * life;
-        ctx.save(); ctx.beginPath(); ctx.arc(0, 0, LOGO / 2 - 1, 0, Math.PI * 2); ctx.clip();
-        ctx.drawImage(img, -LOGO / 2, -LOGO / 2, LOGO, LOGO); ctx.restore();
+        ctx.drawImage(lc, -LOGO / 2, -LOGO / 2, LOGO, LOGO);
         ctx.filter = 'none';
-        // soil still clinging to the logo, falling away
-        if (life < 1) {
-          ctx.globalAlpha = (1 - life) * .55;
-          ctx.fillStyle = 'rgb(120,88,52)';
-          ctx.beginPath(); ctx.arc(0, 0, LOGO / 2, 0, Math.PI * 2); ctx.clip();
-          ctx.drawImage(tex, -LOGO / 2, -LOGO / 2, LOGO, LOGO);
-        }
         ctx.restore();
       }
 
