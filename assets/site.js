@@ -414,4 +414,75 @@
     }, { threshold: .45 }).observe(ta);
   }
   }
+
+  // Chapters journey map (inspired by motion-design map reveals): the board pops in, the route draws
+  // itself from stop to stop, each pin bounces in, colour blooms around it and its photo card flies out.
+  const jm = $('.jmap');
+  if (jm) {
+    const NS = 'http://www.w3.org/2000/svg';
+    const el = (n, a, p) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); p && p.appendChild(e); return e; };
+    const P = jm.dataset.pins.split(';').map(s => s.split(',').map(Number));
+    // Catmull-Rom through the stops -> cubic Béziers; remember the length up to each stop
+    const seg = i => { const p0 = P[Math.max(i - 1, 0)], p1 = P[i], p2 = P[i + 1], p3 = P[Math.min(i + 2, P.length - 1)];
+      return `C${p1[0] + (p2[0] - p0[0]) / 7},${p1[1] + (p2[1] - p0[1]) / 7} ${p2[0] - (p3[0] - p1[0]) / 7},${p2[1] - (p3[1] - p1[1]) / 7} ${p2[0]},${p2[1]}`; };
+    let d = `M${P[0][0]},${P[0][1]}`; const at = [0];
+    const route = $('.jm-route', jm), sh = $('.jm-route-sh', jm);
+    for (let i = 0; i < P.length - 1; i++) { d += seg(i); route.setAttribute('d', d); at.push(route.getTotalLength()); }
+    sh.setAttribute('d', d);
+    const L = at[at.length - 1];
+    const blooms = $('.jm-blooms', jm), rings = $('.jm-rings', jm), pinsG = $('.jm-pins', jm), links = $('.jm-links', jm);
+    const cards = $$('.jm-card', jm), chs = $$('.ch');
+    const bl = P.map(([x, y]) => el('circle', { cx: x, cy: y, r: 0, fill: 'url(#jm-g)' }, blooms));
+    const rg = P.map(([x, y]) => el('circle', { class: 'jm-ring', cx: x, cy: y, r: 0, opacity: 0 }, rings));
+    const pins = P.map(([x, y], i) => {
+      const g = el('g', { class: 'jm-pin', transform: `translate(${x},${y - 34})` }, pinsG);
+      const s = el('g', { style: 'transform:scale(0)' }, g);
+      el('path', { d: 'M0,34 L-14,10 A20,20 0 1 1 14,10 Z', fill: '#fff' }, s);
+      el('circle', { class: 'b', r: 24 }, s); el('circle', { class: 'h', r: 18 }, s);
+      el('text', {}, s).textContent = i + 1;
+      return s;
+    });
+    const ln = cards.map((c, i) => {
+      const cx = parseFloat(c.style.left) * 16, cy = parseFloat(c.style.top) * 9;
+      return el('line', { x1: P[i][0], y1: P[i][1] - 30, x2: P[i][0], y2: P[i][1] - 30, 'data-x': cx, 'data-y': cy }, links);
+    });
+    const hl = (i, on) => { cards[i] && cards[i].classList.toggle('hl', on); pins[i].parentNode.classList.toggle('hl', on); chs[i] && chs[i].classList.toggle('hl', on); };
+    const goCh = i => { const c = chs[i]; if (!c) return;
+      c.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'nearest', inline: 'start' }); hl(i, true); setTimeout(() => hl(i, false), 1600); };
+    pins.forEach((p, i) => { const g = p.parentNode; g.addEventListener('click', () => goCh(i)); g.addEventListener('mouseenter', () => hl(i, true)); g.addEventListener('mouseleave', () => hl(i, false)); });
+    cards.forEach((c, i) => { c.addEventListener('click', e => { e.preventDefault(); goCh(i); }); c.addEventListener('mouseenter', () => hl(i, true)); c.addEventListener('mouseleave', () => hl(i, false)); });
+    const ease = t => 1 - Math.pow(1 - t, 3), back = t => { const c = 1.9; return 1 + (c + 1) * Math.pow(t - 1, 3) + c * Math.pow(t - 1, 2); };
+    const cl = t => Math.min(Math.max(t, 0), 1);
+    const R = 260, T0 = 700, DRAW = 4600, tStop = at.map(a => T0 + DRAW * a / L), END = tStop[P.length - 1];
+    const popped = [];
+    const frame = t => {
+      // route: draw speed eases between stops so it "arrives" at each one
+      const k = cl((t - T0) / DRAW); route.style.strokeDashoffset = L * (1 - k); sh.style.strokeDashoffset = L * (1 - k);
+      P.forEach((_, i) => {
+        const u = t - tStop[i];
+        pins[i].style.transform = `scale(${u <= 0 ? 0 : back(cl(u / 520)) * (jm.clientWidth < 700 ? 1.9 : 1)})`;
+        bl[i].setAttribute('r', u <= 0 ? 0 : R * ease(cl(u / 1400)));
+        const q = cl(u / 900); rg[i].setAttribute('r', u <= 0 ? 0 : 30 + 150 * ease(q)); rg[i].setAttribute('opacity', u <= 0 ? 0 : 1 - q);
+        if (ln[i]) { const v = ease(cl((u - 150) / 380)), x2 = +ln[i].dataset.x, y2 = +ln[i].dataset.y;
+          ln[i].setAttribute('x2', P[i][0] + (x2 - P[i][0]) * v); ln[i].setAttribute('y2', P[i][1] - 30 + (y2 - P[i][1] + 30) * v); }
+        if (u > 400 && !popped[i] && cards[i]) {
+          popped[i] = 1; const c = cards[i], w = jm.clientWidth / 1600, dx = (P[i][0] - +ln[i].dataset.x) * w, dy = (P[i][1] - +ln[i].dataset.y) * w;
+          c.animate([{ transform: `translate(-50%,-50%) translate(${dx}px,${dy}px) scale(.15)`, opacity: 0 },
+                     { transform: 'translate(-50%,-50%) scale(1.08)', opacity: 1, offset: .7 }, { transform: 'translate(-50%,-50%) scale(1)', opacity: 1 }],
+                    { duration: calm ? 1 : 750, easing: 'cubic-bezier(.2,.8,.2,1)', fill: 'forwards' });
+          c.classList.add('flash');
+        }
+      });
+      if (t > END + 3000) pins.forEach(p => p.style.transform = `scale(${jm.clientWidth < 700 ? 1.9 : 1})`);
+      // finale (Miras): colour spreads over the whole land
+      const f = t - END - 900; if (f > 0) bl[P.length - 1].setAttribute('r', R + 1500 * ease(cl(f / 2200)));
+    };
+    route.style.strokeDasharray = L; sh.style.strokeDasharray = L; frame(0);
+    new IntersectionObserver((es, o) => {
+      if (!es[0].isIntersecting) return; o.disconnect(); jm.classList.add('on');
+      if (calm) return frame(1e6);
+      const s = performance.now(), tick = n => { const t = n - s; frame(t); if (t < END + 3200) requestAnimationFrame(tick); };
+      requestAnimationFrame(tick);
+    }, { threshold: .35 }).observe(jm);
+  }
 })();
