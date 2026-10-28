@@ -1,27 +1,27 @@
 {
- "v": 404,
- "version": "4.04",
+ "v": 410,
+ "version": "4.10",
  "quests": 201,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 404,
-   "d": "2026-10-28",
-   "tr": "Destek ekibi artık bir yere sıkışan oyuncuyu uzaktan en yakın boş alana taşıyabiliyor.",
-   "en": "The support team can now remotely move a stuck player to the nearest free spot."
+   "v": 410,
+   "d": "2026-10-29",
+   "tr": "Kuzu görevinde kart artık neden kuzu doğmadığını gösteriyor: sağlıklı koç ve koyun, gebe koyunun doğuma kalan günü, kışın yemlik. Hasta hayvan varsa karttan veteriner çağrılabiliyor.",
+   "en": "The lamb quest card now shows why no lamb is born yet: a healthy ram and ewe, days left for a pregnant ewe, and the winter feeder. If an animal is sick, you can call the vet from the card."
   },
   {
-   "v": 403,
+   "v": 409,
    "d": "2026-10-28",
-   "tr": "Otobüsle Elazığ'a inince karakterin Otogar binasının içine düşüp çıkamaması düzeltildi. Bir binanın içinde kalırsan artık yürümeye başlayınca ya da Ayarlar › «Takıldım, kurtar» ile hemen dışarı alınırsın.",
-   "en": "Fixed the character getting stuck inside the bus station after arriving in Elazığ. If you end up inside a building, you are now moved out as soon as you walk or press Settings › \"I'm stuck\"."
+   "tr": "Harita büyüdü: Mastar Dağı'nın batısında geniş Batı ormanları, dağdaki geçitten inen yeni yol ve güneyde Güney ovası açıldı. Yeni topraklarda ağaç, taş, mantar, meyve ağacı ve çalı var. Çiftlik yapılarını kurabileceğin alan genişledi (batıda sırt eteğine, doğuda Uluova'ya kadar). Keşif haritası büyüdü, eski keşiflerin korunur.",
+   "en": "The map grew: wide Western forests west of Mastar Mountain, a new road down through the mountain pass, and the Southern plain. The new lands have trees, stones, mushrooms, fruit trees and bushes. The area where you can place farm buildings is larger. The exploration map grew; your old discoveries are kept."
   },
   {
-   "v": 402,
+   "v": 408,
    "d": "2026-10-28",
-   "tr": "Yüksek yenileme hızlı ekranlarda (120 Hz) oyun çizimler arasında boşta bekliyor, saniyede 120 kez uyanmıyor: telefon daha az ısınır, görüntü aynı. Isınma şikayetlerinin teşhisi için geri bildirime cihaz bilgisi eklendi.",
-   "en": "On high refresh rate screens (120 Hz) the game now idles between frames instead of waking 120 times a second: phones heat less, visuals unchanged. Device details added to feedback to diagnose heating."
+   "tr": "Telefon daha az ısınır, oyun daha akıcı: her karede sahnedeki binlerce kıpırdamayan nesnenin konumu artık baştan hesaplanmıyor, uzaktaki görünmeyen nesneler atlanıyor. Görüntü aynı.",
+   "en": "Phones heat less and the game runs smoother: the positions of thousands of motionless objects are no longer recomputed every frame, and distant hidden objects are skipped. Visuals unchanged."
   }
  ]
 }
