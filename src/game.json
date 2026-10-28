@@ -1,27 +1,27 @@
 {
- "v": 392,
- "version": "3.92",
+ "v": 404,
+ "version": "4.04",
  "quests": 201,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 392,
+   "v": 404,
    "d": "2026-10-28",
-   "tr": "Geri bildirim gönderirken çıkan \"Gönderilemedi\" hatası düzeldi; eklenen görseller de artık bize ulaşıyor.",
-   "en": "Fixed the \"Could not send\" error when sending feedback; attached images now reach us too."
+   "tr": "Destek ekibi artık bir yere sıkışan oyuncuyu uzaktan en yakın boş alana taşıyabiliyor.",
+   "en": "The support team can now remotely move a stuck player to the nearest free spot."
   },
   {
-   "v": 391,
+   "v": 403,
    "d": "2026-10-28",
-   "tr": "Köy inekleri artık bahçeye, tarlaya ve kümese girmiyor; dağ yamacında karakterin yere gömülmesi düzeldi.",
-   "en": "Village cows no longer walk into gardens, fields or the coop; sinking into the mountain slope is fixed."
+   "tr": "Otobüsle Elazığ'a inince karakterin Otogar binasının içine düşüp çıkamaması düzeltildi. Bir binanın içinde kalırsan artık yürümeye başlayınca ya da Ayarlar › «Takıldım, kurtar» ile hemen dışarı alınırsın.",
+   "en": "Fixed the character getting stuck inside the bus station after arriving in Elazığ. If you end up inside a building, you are now moved out as soon as you walk or press Settings › \"I'm stuck\"."
   },
   {
-   "v": 390,
+   "v": 402,
    "d": "2026-10-28",
-   "tr": "Topluluk › 🏆 Sıralama: herkesin gördüğü İtibar, Altın (net varlık), Görev ve Oyun süresi sıralamaları. Saatte bir güncellenir; hileli görünen ve engellenen hesaplar yer almaz.",
-   "en": "Community › 🏆 Ranking: public Reputation, Gold (net worth), Quest and Play time rankings for everyone. Updated hourly; suspicious and banned accounts are not ranked."
+   "tr": "Yüksek yenileme hızlı ekranlarda (120 Hz) oyun çizimler arasında boşta bekliyor, saniyede 120 kez uyanmıyor: telefon daha az ısınır, görüntü aynı. Isınma şikayetlerinin teşhisi için geri bildirime cihaz bilgisi eklendi.",
+   "en": "On high refresh rate screens (120 Hz) the game now idles between frames instead of waking 120 times a second: phones heat less, visuals unchanged. Device details added to feedback to diagnose heating."
   }
  ]
 }
