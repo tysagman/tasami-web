@@ -1,27 +1,27 @@
 {
- "v": 380,
- "version": "3.80",
+ "v": 384,
+ "version": "3.84",
  "quests": 201,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 380,
+   "v": 384,
    "d": "2026-10-28",
-   "tr": "Yapı yeri seçerken boş arazi artık kabul ediliyor: yapılar şu anki boyutları kadar yer kaplar (eskiden en büyük seviyeye göre yer ayrılıyordu), köylülerin yürüdüğü noktalar yeri kapatmaz, köylüler yeni yapının etrafından dolaşır. Bir yapıyı geliştirince yeni boyutu sığmazsa kendiliğinden boş bir yere alınır ve yerini seçebilirsin.",
-   "en": "Empty land is now accepted when placing buildings: buildings take up only their current size (space used to be reserved for the largest level), villagers' walking spots no longer block a spot and villagers walk around the new building. If an upgraded building no longer fits, it is moved to a free spot and you can choose its place."
+   "tr": "Gece olunca dışarıdaki hayvanlar uyuyor: yabani tavuk ve horozlar ağaç ya da çalı dibinde birbirine sokulup tünüyor, tavşanlar yuvalarının dibinde, sürüler bir arada yatarak, atlar ayakta, sokak kedileri kıvrılarak uyuyor. Gece etrafta gezmiyorlar. Hayvanlar nerede? ekranındaki 📍 seni uyudukları yere götürüyor; yavaş yaklaşırsan yakalayabilirsin, koşarsan uyanıp kaçarlar, yem atarsan kalkıp gelirler.",
+   "en": "At night, animals outside now sleep: wild chickens and roosters huddle under a tree or bush, rabbits sleep by their burrow, herds lie down together, horses doze standing and stray cats curl up. They no longer wander at night. 📍 in Where are the animals? takes you to where they sleep; approach slowly to catch them, run and they wake and flee, drop feed and they come."
   },
   {
-   "v": 379,
-   "d": "2026-10-27",
-   "tr": "Ot ve çalıların üstüne yapı kurabilirsin; yapı kurulunca altındaki bitkiler kalkar (ağaç ve taş yine engel). Yapı taşırken eski yerindeki bütün parçaları (yemlik, direk, suluk, işaret) gizlenir, böylece yeşil alanda engel varmış gibi görünmez. Ahır penceresindeki çift \"Ahırı geliştir\" düğmesi teke indi.",
-   "en": "You can now build over grass and bushes; the plants under a new building are cleared (trees and rocks still block). While moving a building, all of its parts at the old spot (troughs, posts, water trough, sign) are hidden so the green area no longer looks blocked. The stable window no longer shows \"Upgrade stable\" twice."
+   "v": 383,
+   "d": "2026-10-28",
+   "tr": "Geliştirilen yapılar (ahır, meralar, sebze bahçesi, tarla, kümes) büyürken artık başka yapıya girmiyor. Yer yoksa büyüme boş yöne (ör. doğu yerine batıya, güney yerine kuzeye) çevriliyor; yapı yerinden kopmuyor.",
+   "en": "Upgraded buildings (barn, pastures, garden, field, coop) no longer grow into other buildings. If there is no room, they grow toward free space instead of jumping elsewhere."
   },
   {
-   "v": 378,
-   "d": "2026-10-27",
-   "tr": "Yapı yeri seçerken çakışma kontrolü düzeldi: artık başka bir evin, köylü evinin, avlu duvarının, çitin, çatının ya da ağacın üstü kırmızı görünür ve oraya yapı kurulmaz. Taşıdığın yapının eski hâli yer seçerken gizlenir, böylece yeşil alanın altında başka bir yapı varmış gibi görünmez; vazgeçince geri gelir.",
-   "en": "Building placement now checks overlaps properly: another house, a villager's house, yard walls, fences, roofs and trees show red and you can't build there. While you choose a spot, the building you're moving is hidden at its old place so the green area no longer looks like it sits on another building; it comes back if you cancel."
+   "v": 382,
+   "d": "2026-10-28",
+   "tr": "Kümes gelişince artık bahçeye taşmıyor; yalnızca boş yöne (kuzey/doğu) büyüyor. Tavşan tuzağa düşünce yön oku tuzağı gösteriyor.",
+   "en": "The coop now grows only toward free space and no longer overlaps the garden. A guide arrow points to a trap when a rabbit is caught."
   }
  ]
 }
