@@ -22,14 +22,17 @@ GALLERY = [
     ("genel", "Hazar Gölü kıyısında köy ve çiftlik", "Village and farm on the shores of Lake Hazar"),
     ("koy-meydani", "Köy meydanı", "The village square"),
     ("meralar", "İnek, koyun ve keçi meraları", "Cow, sheep and goat pastures"),
-    ("fabrikalar", "Fabrikalar ve cami", "Factories and the mosque"),
+    ("fabrikalar", "Fabrikalar", "Factories"),
+    ("koy-ve-sanayi", "Köy ve sanayi", "Village and industry"),
     ("gece", "Gece meydan", "The square at night"),
     ("iskele", "İskele", "The pier"),
-    ("inek-merasi", "İnek merası", "The cow pasture"),
     ("kuzey-diyari", "Kuzey Diyarı · Çamlıbel", "The Northlands · Çamlıbel"),
     ("sehir", "Şehir", "The city"),
     ("ciftlik-evi", "Dedenin çiftliği", "Grandpa's farm"),
-    ("koy-ve-sanayi", "Köy ve sanayi", "Village and industry"),
+    # köyün ibadethanesi oyuncunun bölgesine göre değişir (oyunda FAITHS)
+    ("cami", "Köyün ibadethanesi · cami", "The village place of worship · mosque"),
+    ("kilise", "Köyün ibadethanesi · kilise", "The village place of worship · church"),
+    ("sinagog", "Köyün ibadethanesi · sinagog", "The village place of worship · synagogue"),
     ("gol-kiyisi", "Göl kıyısı", "The lakeshore"),
 ]
 
@@ -228,7 +231,7 @@ def render(t):
         f'<ul class="tags">{"".join(f"<li>{x}</li>" for x in tags)}</ul></div></article>'
         for i, (h, d, tags) in enumerate(t["feats"]))
     gallery = "".join(
-        f'<figure class="g-item reveal{" wide" if i in (0, 4) else ""}" style="--i:{i % 4}"><a href="{b}assets/img/oyun/{n}.webp" data-cap="{(ce if en else ct)}">'
+        f'<figure class="g-item reveal{" wide" if i in (0, 5) else ""}" style="--i:{i % 4}"><a href="{b}assets/img/oyun/{n}.webp" data-cap="{(ce if en else ct)}">'
         f'{img(b, n, t["game"] + ": " + (ce if en else ct))}</a><figcaption>{ce if en else ct}</figcaption></figure>'
         for i, (n, ct, ce) in enumerate(GALLERY))
     about = "".join(f"<p>{p}</p>" for p in t["about"])
