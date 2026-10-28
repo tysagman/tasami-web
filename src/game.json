@@ -1,27 +1,27 @@
 {
- "v": 384,
- "version": "3.84",
+ "v": 392,
+ "version": "3.92",
  "quests": 201,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 384,
+   "v": 392,
    "d": "2026-10-28",
-   "tr": "Gece olunca dışarıdaki hayvanlar uyuyor: yabani tavuk ve horozlar ağaç ya da çalı dibinde birbirine sokulup tünüyor, tavşanlar yuvalarının dibinde, sürüler bir arada yatarak, atlar ayakta, sokak kedileri kıvrılarak uyuyor. Gece etrafta gezmiyorlar. Hayvanlar nerede? ekranındaki 📍 seni uyudukları yere götürüyor; yavaş yaklaşırsan yakalayabilirsin, koşarsan uyanıp kaçarlar, yem atarsan kalkıp gelirler.",
-   "en": "At night, animals outside now sleep: wild chickens and roosters huddle under a tree or bush, rabbits sleep by their burrow, herds lie down together, horses doze standing and stray cats curl up. They no longer wander at night. 📍 in Where are the animals? takes you to where they sleep; approach slowly to catch them, run and they wake and flee, drop feed and they come."
+   "tr": "Geri bildirim gönderirken çıkan \"Gönderilemedi\" hatası düzeldi; eklenen görseller de artık bize ulaşıyor.",
+   "en": "Fixed the \"Could not send\" error when sending feedback; attached images now reach us too."
   },
   {
-   "v": 383,
+   "v": 391,
    "d": "2026-10-28",
-   "tr": "Geliştirilen yapılar (ahır, meralar, sebze bahçesi, tarla, kümes) büyürken artık başka yapıya girmiyor. Yer yoksa büyüme boş yöne (ör. doğu yerine batıya, güney yerine kuzeye) çevriliyor; yapı yerinden kopmuyor.",
-   "en": "Upgraded buildings (barn, pastures, garden, field, coop) no longer grow into other buildings. If there is no room, they grow toward free space instead of jumping elsewhere."
+   "tr": "Köy inekleri artık bahçeye, tarlaya ve kümese girmiyor; dağ yamacında karakterin yere gömülmesi düzeldi.",
+   "en": "Village cows no longer walk into gardens, fields or the coop; sinking into the mountain slope is fixed."
   },
   {
-   "v": 382,
+   "v": 390,
    "d": "2026-10-28",
-   "tr": "Kümes gelişince artık bahçeye taşmıyor; yalnızca boş yöne (kuzey/doğu) büyüyor. Tavşan tuzağa düşünce yön oku tuzağı gösteriyor.",
-   "en": "The coop now grows only toward free space and no longer overlaps the garden. A guide arrow points to a trap when a rabbit is caught."
+   "tr": "Topluluk › 🏆 Sıralama: herkesin gördüğü İtibar, Altın (net varlık), Görev ve Oyun süresi sıralamaları. Saatte bir güncellenir; hileli görünen ve engellenen hesaplar yer almaz.",
+   "en": "Community › 🏆 Ranking: public Reputation, Gold (net worth), Quest and Play time rankings for everyone. Updated hourly; suspicious and banned accounts are not ranked."
   }
  ]
 }
