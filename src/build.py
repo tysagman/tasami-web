@@ -34,6 +34,10 @@ GALLERY = [
 ]
 
 CHAPTER_IMG = ["ciftlik-evi", "inek-merasi", "kuzey-diyari", "fabrikalar", "sehir", "genel"]
+# journey map over genel.webp (viewBox 1600x900): pin of each chapter and where its photo card floats (% of the map)
+JMAP_PINS = [(416, 477), (704, 572), (624, 342), (1290, 640), (1408, 351), (1158, 414)]
+JMAP_CARDS = [(11, 30), (40, 87), (29, 11), (84, 88), (89, 12), (61, 12)]
+JMAP_THUMB = ["ciftlik-evi", "inek-merasi", "kuzey-diyari", "fabrikalar", "iskele", "koy-ve-sanayi"]
 FEATURE_IMG = ["ciftlik-evi", "meralar", "koy-meydani", "fabrikalar", "iskele", "gece"]
 
 T = {
@@ -201,9 +205,23 @@ def render(t):
         f'<div class="stat reveal"><strong data-count="{n}">{n}</strong><span>{l}</span></div>' for n, l in t["stats"])
     story = "".join(f"<p>{p}</p>" for p in t["story"])
     chapters = "".join(
-        f'<li class="ch reveal" style="--i:{i}"><figure>{img(b, CHAPTER_IMG[i], h)}</figure>'
+        f'<li class="ch reveal" id="ch-{i+1}" style="--i:{i}"><figure>{img(b, CHAPTER_IMG[i], h)}</figure>'
         f'<div class="ch-body"><span class="ch-n">{t["chapter"]} {i+1}</span><h3>{h}</h3><p>{d}</p></div></li>'
         for i, (h, d) in enumerate(t["chapters"]))
+    jmap = (f'<div class="jmap reveal" data-pins="{";".join(f"{x},{y}" for x, y in JMAP_PINS)}">'
+            f'<div class="jm-board"><svg class="jm-svg" viewBox="0 0 1600 900" aria-hidden="true">'
+            f'<defs><radialGradient id="jm-g"><stop offset=".55" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>'
+            f'<radialGradient id="jm-v" r=".75"><stop offset=".55" stop-opacity="0"/><stop offset="1" stop-opacity=".6"/></radialGradient><filter id="jm-gray"><feColorMatrix type="saturate" values="0"/></filter><mask id="jm-m"><g class="jm-blooms"></g></mask></defs>'
+            f'<image href="{b}assets/img/oyun/genel.webp" width="1600" height="900" filter="url(#jm-gray)" opacity=".8"/>'
+            f'<image href="{b}assets/img/oyun/genel.webp" width="1600" height="900" mask="url(#jm-m)"/>'
+            f'<rect width="1600" height="900" fill="url(#jm-v)" class="jm-vig"/>'
+            f'<path class="jm-route-sh"/><path class="jm-route"/><g class="jm-rings"></g><g class="jm-pins"></g></svg></div>'
+            f'<svg class="jm-links" viewBox="0 0 1600 900" preserveAspectRatio="none" aria-hidden="true"></svg>'
+            + "".join(f'<a class="jm-card" href="#ch-{i+1}" style="left:{cx}%;top:{cy}%" data-i="{i}"><span class="jm-in">'
+                      f'<img src="{b}assets/img/oyun/{JMAP_THUMB[i]}-k.webp" alt="" loading="lazy" decoding="async" width="960" height="540">'
+                      f'<span class="jm-cap"><b>{i+1}</b>{h}</span></span></a>'
+                      for i, ((cx, cy), (h, _)) in enumerate(zip(JMAP_CARDS, t["chapters"])))
+            + '</div>')
     feats = "".join(
         f'<article class="feat{" flip" if i % 2 else ""}"><figure class="feat-img reveal">{img(b, FEATURE_IMG[i], h)}</figure>'
         f'<div class="feat-txt reveal"><span class="feat-n">0{i+1}</span><h3>{h}</h3><p>{d}</p>'
@@ -238,7 +256,7 @@ def render(t):
                      "embedUrl": "https://www.youtube.com/embed/" + YOUTUBE_ID, "url": YOUTUBE,
                      "thumbnailUrl": f"https://i.ytimg.com/vi/{YOUTUBE_ID}/hqdefault.jpg", "uploadDate": "2026-10-27"}},
     ], ensure_ascii=False)
-    vals = dict(t, b=b, yt=YOUTUBE, stats=stats, updates=updates, story=story, chapters=chapters, feats=feats, gallery=gallery, about=about,
+    vals = dict(t, b=b, yt=YOUTUBE, stats=stats, updates=updates, story=story, chapters=chapters, jmap=jmap, feats=feats, gallery=gallery, about=about,
                 services=services, nav=nav, marquee=marquee, ld=ld, mail_to=CONTACT,
                 privacy_url=PLAY_URL + "gizlilik.html", delete_url=PLAY_URL + "hesap-sil.html",
                 canonical="https://tasami.com.tr/" + t["path"],

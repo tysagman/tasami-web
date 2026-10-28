@@ -554,3 +554,35 @@ h1,h2,h3{color:#f6f6f6}
 @media (max-width:900px){.about-logo{display:flex;justify-content:center}.about-logo img{max-width:260px}}
 .yt-row{display:flex;justify-content:center;margin-top:18px}
 .yt-row svg{width:22px;height:22px;color:#ff3d3d}
+
+/* chapters journey map: route draws itself, pins pop, colour blooms around each stop, photo cards fly out */
+.jmap{position:relative;margin:10px auto 70px;max-width:1100px}
+.jm-board{border-radius:22px;overflow:hidden;box-shadow:0 0 0 1px rgba(255,255,255,.09),0 40px 90px -40px #000;transform:scale(.94) rotate(-1.2deg);opacity:0;transition:transform 1s cubic-bezier(.34,1.45,.64,1),opacity .6s}
+.jmap.on .jm-board{transform:none;opacity:1}
+.jm-svg{display:block;width:100%;height:auto}
+.jm-route,.jm-route-sh{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.jm-route{stroke:#fff;stroke-width:7;filter:drop-shadow(0 0 10px rgba(255,255,255,.7))}
+.jm-route-sh{stroke:rgba(0,0,0,.55);stroke-width:15}
+.jm-pin{cursor:pointer;transform-box:fill-box;transform-origin:50% 100%}
+.jm-pin circle.b{fill:#fff}.jm-pin circle.h{fill:#000}
+.jm-pin text{font:800 26px/1 var(--sans);fill:#fff;text-anchor:middle;dominant-baseline:central}
+.jm-pin:hover circle.b,.jm-pin.hl circle.b{fill:var(--gold)}
+.jm-ring{fill:none;stroke:#fff;stroke-width:4}
+.jm-links{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.jm-links line{stroke:rgba(255,255,255,.75);stroke-width:2;stroke-dasharray:6 6;vector-effect:non-scaling-stroke}
+.jm-card{position:absolute;width:15.5%;transform:translate(-50%,-50%) scale(.2);opacity:0;z-index:2;color:#fff;text-decoration:none}
+.jm-in{display:block;background:#fff;padding:5px 5px 0;border-radius:10px;box-shadow:0 18px 40px -14px rgba(0,0,0,.9);transition:transform .35s var(--ease-out)}
+.jm-card:nth-of-type(odd) .jm-in{transform:rotate(-3deg)}.jm-card:nth-of-type(even) .jm-in{transform:rotate(2.5deg)}
+.jm-card:hover .jm-in,.jm-card.hl .jm-in{transform:scale(1.18) rotate(0);z-index:3}
+.jm-card:hover,.jm-card.hl{z-index:4}
+.jm-in img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;border-radius:6px}
+.jm-cap{display:flex;align-items:center;gap:7px;padding:6px 3px 7px;font:800 .74rem/1.15 var(--sans);color:#111;letter-spacing:.01em}
+.jm-cap b{flex:none;display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#111;color:#fff;font-size:.7rem}
+.jm-card.flash .jm-in{animation:jmFlash 1s ease-out}
+@keyframes jmFlash{0%{box-shadow:0 0 0 0 rgba(255,255,255,.95),0 0 40px 10px rgba(255,255,255,.6)}100%{box-shadow:0 0 0 22px rgba(255,255,255,0),0 18px 40px -14px rgba(0,0,0,.9)}}
+.ch.hl{box-shadow:0 0 0 2px #fff,0 24px 50px -30px #000}
+@media (max-width:760px){
+  .jmap{margin:0 -8px 40px}.jm-board{border-radius:14px}
+  .jm-card,.jm-links{display:none}
+  .jm-pin text{font-size:34px}
+}
