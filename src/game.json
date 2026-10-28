@@ -1,10 +1,16 @@
 {
- "v": 379,
- "version": "3.79",
+ "v": 380,
+ "version": "3.80",
  "quests": 201,
  "chapters": 6,
  "languages": 7,
  "changes": [
+  {
+   "v": 380,
+   "d": "2026-10-28",
+   "tr": "Yapı yeri seçerken boş arazi artık kabul ediliyor: yapılar şu anki boyutları kadar yer kaplar (eskiden en büyük seviyeye göre yer ayrılıyordu), köylülerin yürüdüğü noktalar yeri kapatmaz, köylüler yeni yapının etrafından dolaşır. Bir yapıyı geliştirince yeni boyutu sığmazsa kendiliğinden boş bir yere alınır ve yerini seçebilirsin.",
+   "en": "Empty land is now accepted when placing buildings: buildings take up only their current size (space used to be reserved for the largest level), villagers' walking spots no longer block a spot and villagers walk around the new building. If an upgraded building no longer fits, it is moved to a free spot and you can choose its place."
+  },
   {
    "v": 379,
    "d": "2026-10-27",
@@ -16,12 +22,6 @@
    "d": "2026-10-27",
    "tr": "Yapı yeri seçerken çakışma kontrolü düzeldi: artık başka bir evin, köylü evinin, avlu duvarının, çitin, çatının ya da ağacın üstü kırmızı görünür ve oraya yapı kurulmaz. Taşıdığın yapının eski hâli yer seçerken gizlenir, böylece yeşil alanın altında başka bir yapı varmış gibi görünmez; vazgeçince geri gelir.",
    "en": "Building placement now checks overlaps properly: another house, a villager's house, yard walls, fences, roofs and trees show red and you can't build there. While you choose a spot, the building you're moving is hidden at its old place so the green area no longer looks like it sits on another building; it comes back if you cancel."
-  },
-  {
-   "v": 377,
-   "d": "2026-10-27",
-   "tr": "Şehirde yerin alçaldığı kenarlarda binaların altı artık havada görünmüyor.",
-   "en": "City buildings no longer appear to float where the ground dips at the city edge."
   }
  ]
 }
