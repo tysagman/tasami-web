@@ -81,7 +81,7 @@ T = {
         "feats": [
             ("Sıfırdan bir çiftlik", "Ekip biç, sula, hasat et. Ahır, kümes, sera, sulama kanalı ve güneş panelleriyle çiftliğini adım adım büyüt; evini, tarlanı, ahırını istediğin yere yerleştir.", ["Tarla ve sera", "Serbest yerleşim", "Güneş paneli"]),
             ("Hayvancılık", "İnek, koyun ve keçi meraları; kuzular, oğlaklar, Veteriner Elif. Mandırada yoğurt, ayran, peynir, kaşar ve tereyağı üret.", ["İnek · koyun · keçi", "Mandıra", "Veteriner"]),
-            ("Yaşayan bir köy", "Yüzlerce köylü kendi işinde: kahvehane, cami, pansiyon, turistler. Gece dışarıdakilere neden orada olduklarını sor.", ["400+ köylü", "Turistler", "Köy projeleri"]),
+            ("Yaşayan bir köy", "Yüzlerce köylü kendi işinde: kahvehane, ibadethane, pansiyon, turistler. Köyün ibadethanesi bölgene göre cami, kilise ya da sinagog olur. Gece dışarıdakilere neden orada olduklarını sor.", ["400+ köylü", "Cami · kilise · sinagog", "Köy projeleri"]),
             ("Fabrikadan limana", "Un, yem ve şeker fabrikaları kur, toptancıyla sözleşme yap, kamyonlarla taşı, Mersin limanından ihracat yap.", ["Fabrikalar", "Lojistik", "İhracat"]),
             ("Göl ve doğa", "Hazar Gölü'nde balık tut: iri balık zor çekilir ama pahalı satılır. Kuzey yamacındaki şelaleyi keşfet, dal, mantar topla, mevsimlere ve kurtlara hazırlıklı ol.", ["Balıkçılık", "Şelale", "Mevsimler"]),
             ("Birlikte oyna", "Arkadaşının köyünü ziyaret et, kooperatif kur, pazarda ticaret yap, bölge telsiziyle ve sesli aramayla konuş.", ["Kooperatif", "Pazar", "Telsiz"]),
@@ -153,7 +153,7 @@ T = {
         "feats": [
             ("A farm from scratch", "Sow, water and harvest. Grow your farm step by step with barns, a coop, a greenhouse, irrigation and solar panels, and place your house, fields and barns wherever you like.", ["Fields & greenhouse", "Free placement", "Solar"]),
             ("Livestock", "Cow, sheep and goat pastures; lambs, kids and Elif the vet. Make yoghurt, ayran, cheese, kashar and butter at your dairy.", ["Cows · sheep · goats", "Dairy", "Vet"]),
-            ("A living village", "Hundreds of villagers going about their day: tea house, mosque, guesthouse, tourists. Ask the night owls why they're still out.", ["400+ villagers", "Tourists", "Village projects"]),
+            ("A living village", "Hundreds of villagers going about their day: tea house, place of worship, guesthouse, tourists. Depending on your region, the village has a mosque, a church or a synagogue. Ask the night owls why they're still out.", ["400+ villagers", "Mosque · church · synagogue", "Village projects"]),
             ("From factory to harbour", "Build flour, feed and sugar factories, sign wholesale contracts, haul goods by truck and export from the port of Mersin.", ["Factories", "Logistics", "Exports"]),
             ("Lake and nature", "Fish Lake Hazar: big fish fight harder but sell for more. Find the waterfall on the northern slope, dive, forage mushrooms and be ready for the seasons and the wolves.", ["Fishing", "Waterfall", "Seasons"]),
             ("Play together", "Visit friends' villages, form a co-op, trade at the market, talk on the regional radio or by voice call.", ["Co-op", "Market", "Radio"]),
