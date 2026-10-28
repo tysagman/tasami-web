@@ -1,10 +1,16 @@
 {
- "v": 410,
- "version": "4.10",
+ "v": 411,
+ "version": "4.11",
  "quests": 201,
  "chapters": 6,
  "languages": 7,
  "changes": [
+  {
+   "v": 411,
+   "d": "2026-10-28",
+   "tr": "Köy meydanı: pazar günü kurulan tezgâhların içinden artık köylü geçmiyor, demirci ve tezgâhçının içine başka köylü girmiyor. Köy çeşmesi yenilendi: kesme taş gövde, kurşun kaplı çatı, gerçek kemerli niş; köylüler artık çeşmenin ve yalağın içine girmiyor. Cami, kilise ve bankadaki kemerli kapı/pencereler duvardan yana taşmıyor. Köy projesi inşaatında beyaz kutu yerine taş temel, kereste ve 🏗️ tabelası; inşaat alanına girilmiyor. Köylü konuşma balonları sağdaki yakınlaştır/döndür düğmelerinin ve haritanın üstüne binmiyor.",
+   "en": "Village square: villagers no longer walk through the Sunday market stalls or into the blacksmith and stall keepers. Village fountain rebuilt: cut-stone body, lead roof and a proper arched niche; villagers no longer stand inside the fountain or its trough. Arched doors and windows on the mosque, church and bank no longer stick out of the walls. Village construction sites show a stone foundation, timber and a 🏗️ sign instead of a white box, and can no longer be walked into. Villager speech bubbles no longer cover the zoom/rotate buttons or the map."
+  },
   {
    "v": 410,
    "d": "2026-10-29",
@@ -16,12 +22,6 @@
    "d": "2026-10-28",
    "tr": "Harita büyüdü: Mastar Dağı'nın batısında geniş Batı ormanları, dağdaki geçitten inen yeni yol ve güneyde Güney ovası açıldı. Yeni topraklarda ağaç, taş, mantar, meyve ağacı ve çalı var. Çiftlik yapılarını kurabileceğin alan genişledi (batıda sırt eteğine, doğuda Uluova'ya kadar). Keşif haritası büyüdü, eski keşiflerin korunur.",
    "en": "The map grew: wide Western forests west of Mastar Mountain, a new road down through the mountain pass, and the Southern plain. The new lands have trees, stones, mushrooms, fruit trees and bushes. The area where you can place farm buildings is larger. The exploration map grew; your old discoveries are kept."
-  },
-  {
-   "v": 408,
-   "d": "2026-10-28",
-   "tr": "Telefon daha az ısınır, oyun daha akıcı: her karede sahnedeki binlerce kıpırdamayan nesnenin konumu artık baştan hesaplanmıyor, uzaktaki görünmeyen nesneler atlanıyor. Görüntü aynı.",
-   "en": "Phones heat less and the game runs smoother: the positions of thousands of motionless objects are no longer recomputed every frame, and distant hidden objects are skipped. Visuals unchanged."
   }
  ]
 }
