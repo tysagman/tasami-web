@@ -55,31 +55,25 @@
   if (root.classList.contains('intro-on')) {
     try { sessionStorage.setItem('tsm-intro', '1'); } catch (e) {}
     const intro = $('.intro');
-    const bc = $('.burst', intro);
-    if (bc && window.tasamiRise) {
-      // logo rising out of the title artwork's real cracked ground; the view is cropped to the screen's shape
-      const a = Math.min(Math.max(innerWidth / innerHeight, .62), 1584 / 672);
-      const vh = Math.min(672, 1584 / a), vw = vh * a, view = [792 - vw / 2, Math.min(672 - vh, 90), vw, vh];
-      const dpr = Math.min(devicePixelRatio || 1, 2);
-      bc.width = Math.round(Math.min(innerWidth * dpr, 1800)); bc.height = Math.round(bc.width / a);
-      bc.style.aspectRatio = a;
-      const L = s => new Promise((ok, no) => { const i = new Image(); i.onload = () => ok(i); i.onerror = no; i.src = s; });
-      Promise.all([L(bc.dataset.zemin), L(bc.dataset.img)]).then(([pl, m]) => {
-        const h = 380, w = Math.round(m.width * h / m.height), cx = 792, by = 508;
-        const lc = document.createElement('canvas'); lc.width = w; lc.height = h; lc.getContext('2d').drawImage(m, 0, 0, w, h);
-        tasamiRise(bc, pl, lc, { wx: cx - w / 2, wy: by - h + 10, by, x0: cx - w / 2 + 20, x1: cx + w / 2 - 20, view, seed: 5, speed: 1.3 }).play();
-      }).catch(() => {});
-    }
     const go = () => {
       intro.classList.add('out');
       setTimeout(ready, 350);
       setTimeout(() => intro.remove(), 1200);
     };
-    let loaded = document.readyState === 'complete';
-    addEventListener('load', () => { loaded = true; });
-    const t0 = performance.now();
-    const wait = () => (loaded && performance.now() - t0 > 4300) || performance.now() - t0 > 6000 ? go() : setTimeout(wait, 100);
-    wait();
+    let done = false;
+    const end = () => { if (!done) { done = true; go(); } };
+    const v = $('.intro-vid', intro);
+    // play the logo animation once; close the curtain when it ends (or on tap / key / if it can't play)
+    if (v) {
+      v.addEventListener('playing', () => v.classList.add('on'), { once: true });
+      v.addEventListener('ended', end);
+      v.addEventListener('error', end);
+      const p = v.play(); if (p && p.catch) p.catch(end);
+      setTimeout(() => { if (v.paused || v.readyState < 3) end(); }, 3500);
+    }
+    intro.addEventListener('click', end);
+    addEventListener('keydown', end, { once: true });
+    setTimeout(end, v ? 12500 : 2500);
   } else ready();
 
   // Counters
