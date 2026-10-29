@@ -15,7 +15,6 @@ YOUTUBE = "https://www.youtube.com/watch?v=" + YOUTUBE_ID
 # Oyundan otomatik gelir (tools/oyun-senkron.js, .github/workflows/oyun-senkron.yml)
 GAME = json.loads((ROOT / "src" / "game.json").read_text(encoding="utf-8"))
 VERSION = GAME["version"]
-TRAILER_VERSION = "3.65"  # fragmanın çekildiği sürüm
 
 # (görsel, TR başlık, EN başlık) — galeri sırası
 GALLERY = [
@@ -86,11 +85,11 @@ T = {
             ("Hayvancılık", "İnek, koyun ve keçi meraları; kuzular, oğlaklar, Veteriner Elif. Mandırada yoğurt, ayran, peynir, kaşar ve tereyağı üret.", ["İnek · koyun · keçi", "Mandıra", "Veteriner"]),
             ("Yaşayan bir köy", "Yüzlerce köylü kendi işinde: kahvehane, ibadethane, pansiyon, turistler. Köyün ibadethanesi bölgene göre cami, kilise ya da sinagog olur. Gece dışarıdakilere neden orada olduklarını sor.", ["400+ köylü", "Cami · kilise · sinagog", "Köy projeleri"]),
             ("Fabrikadan limana", "Un, yem ve şeker fabrikaları kur, toptancıyla sözleşme yap, kamyonlarla taşı, Mersin limanından ihracat yap.", ["Fabrikalar", "Lojistik", "İhracat"]),
-            ("Göl ve doğa", "Hazar Gölü'nde balık tut: iri balık zor çekilir ama pahalı satılır. Kuzey yamacındaki şelaleyi, Mastar Dağı'nın batısındaki ormanları ve Güney ovasını keşfet; atını ıslıkla çağır, dal, mantar topla, mevsimlere ve kurtlara hazırlıklı ol.", ["Balıkçılık", "Şelale", "Mevsimler"]),
+            ("Göl ve doğa", "Hazar Gölü'nde balık tut: iri balık zor çekilir ama pahalı satılır. Kuzey yamacındaki şelaleyi, Mastar Dağı'nın batısındaki ormanları ve Güney ovasını keşfet; atını ıslıkla çağır, gölün dibindeki Batık Şehir'e dal, mantar topla, mevsimlere ve kurtlara hazırlıklı ol.", ["Balıkçılık", "Şelale", "Mevsimler"]),
             ("Birlikte oyna", "Arkadaşının köyünü ziyaret et, kooperatif kur, pazarda ticaret yap, bölge telsiziyle ve sesli aramayla konuş; İtibar, Altın, Görev ve Oyun süresi sıralamalarında yerini gör.", ["Kooperatif", "Pazar", "Telsiz"]),
         ],
         "gal_k": "Görüntüler", "gal_h": "Oyundan kareler", "gal_sub": "Tümü oyunun içinden, gerçek görüntülerdir.",
-        "tr_k": "Resmî fragman", "tr_h": "Toprağın Mirası'nı izle", "tr_note": f"Oyun içinden çekilmiştir · Sürüm {TRAILER_VERSION}",
+        "tr_k": "Resmî fragman", "tr_h": "Toprağın Mirası'nı izle", "tr_note": "Oyun içinden çekilmiştir",
         "t_k": "Erken erişim", "t_h": "İlk oynayanlardan ol",
         "t_sub": "Toprağın Mirası yakında mağazalarda. Android kapalı testine şimdi katılabilirsin.",
         "t_and_h": "Google Play · Kapalı test",
@@ -158,11 +157,11 @@ T = {
             ("Livestock", "Cow, sheep and goat pastures; lambs, kids and Elif the vet. Make yoghurt, ayran, cheese, kashar and butter at your dairy.", ["Cows · sheep · goats", "Dairy", "Vet"]),
             ("A living village", "Hundreds of villagers going about their day: tea house, place of worship, guesthouse, tourists. Depending on your region, the village has a mosque, a church or a synagogue. Ask the night owls why they're still out.", ["400+ villagers", "Mosque · church · synagogue", "Village projects"]),
             ("From factory to harbour", "Build flour, feed and sugar factories, sign wholesale contracts, haul goods by truck and export from the port of Mersin.", ["Factories", "Logistics", "Exports"]),
-            ("Lake and nature", "Fish Lake Hazar: big fish fight harder but sell for more. Explore the waterfall on the northern slope, the western forests beyond Mastar Mountain and the southern plain; whistle for your horse, dive, forage mushrooms and be ready for the seasons and the wolves.", ["Fishing", "Waterfall", "Seasons"]),
+            ("Lake and nature", "Fish Lake Hazar: big fish fight harder but sell for more. Explore the waterfall on the northern slope, the western forests beyond Mastar Mountain and the southern plain; whistle for your horse, dive to the sunken city on the lake bed, forage mushrooms and be ready for the seasons and the wolves.", ["Fishing", "Waterfall", "Seasons"]),
             ("Play together", "Visit friends' villages, form a co-op, trade at the market, talk on the regional radio or by voice call, and see where you stand in the Reputation, Gold, Quest and Play time rankings.", ["Co-op", "Market", "Radio"]),
         ],
         "gal_k": "Screenshots", "gal_h": "Scenes from the game", "gal_sub": "All captured in-game.",
-        "tr_k": "Official trailer", "tr_h": "Watch Legacy of the Land", "tr_note": f"Captured in-game · Version {TRAILER_VERSION}",
+        "tr_k": "Official trailer", "tr_h": "Watch Legacy of the Land", "tr_note": "Captured in-game",
         "t_k": "Early access", "t_h": "Be among the first to play",
         "t_sub": "Legacy of the Land is coming to the stores soon. You can join the Android closed test now.",
         "t_and_h": "Google Play · Closed test",
@@ -239,8 +238,11 @@ def render(t):
            ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"])
     def day(d):
         y, m, g = d.split("-"); return f"{int(g)} {mon[int(m) - 1]} {y}"
+    # oyundaki gibi: sürümü (pv) olan büyük güncellemeler sürümle, küçük düzeltmeler yalnız tarihle
+    def ver(c):
+        return f'<b>{t["upd_v"]} {c["pv"]}</b>' if "pv" in c else ""
     updates = "".join(
-        f'<li class="upd reveal" style="--i:{i}"><div class="upd-m"><b>{t["upd_v"]} {c["v"] // 100}.{c["v"] % 100:02d}</b>'
+        f'<li class="upd reveal" style="--i:{i}"><div class="upd-m">{ver(c)}'
         f'<time datetime="{c["d"]}">{day(c["d"])}</time></div><p>{html.escape(c["en"] if en else c["tr"])}</p></li>'
         for i, c in enumerate(GAME["changes"]))
     services = "".join(f"<li>{s}</li>" for s in t["services"])

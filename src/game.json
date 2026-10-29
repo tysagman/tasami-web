@@ -1,27 +1,28 @@
 {
- "v": 445,
- "version": "4.45",
+ "v": 451,
+ "version": "1.00",
  "quests": 201,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 445,
-   "d": "2026-10-29",
-   "tr": "Çiftliğin doğusundaki kalabalık dağıtıldı: yaban tavukları, taşlar, otlar, meyve ağaçları ve köyün inek ve atları artık tek yere yığılmıyor, geniş ovaya seyrek dağılıyor. Sayıları aynı, o bölgede oyun daha akıcı. Bahçe bankı artık evin üstüne taşınamıyor.",
-   "en": "The crowd east of the farm is spread out: wild chickens, stones, grass, fruit trees and the village cows and horses no longer pile up in one place but are scattered across the wide plain. Same numbers, smoother play there. The garden bench can no longer be moved onto the house."
+   "v": 451,
+   "pv": "1.00",
+   "d": "2026-10-30",
+   "tr": "Oyunun sürümü v1.00 olarak yeniden başladı. Küçük düzeltmeler artık sürüm numarasını değiştirmiyor; sürüm yalnız büyük güncellemelerde artacak.",
+   "en": "The game version restarted at v1.00. Small fixes no longer change the version number; it will only go up with major updates."
   },
   {
-   "v": 444,
-   "d": "2026-10-29",
-   "tr": "Çiftliğe araçla gelince artık ahırın içine inmiyorsun; araç seni yapıların ve çitlerin dışında, en yakın boş yere bırakıyor.",
-   "en": "When you arrive at your farm by car you no longer end up inside the stable; you are dropped at the nearest free spot outside buildings and fences."
+   "v": 450,
+   "d": "2026-10-30",
+   "tr": "Hazar Bank'taki hisse alım satımı kaldırıldı. Elinde hisse olanların o günkü değeri banka hesabına iade edildi.",
+   "en": "Share trading at the bank was removed. If you held shares, their value that day was refunded to your bank account."
   },
   {
-   "v": 443,
+   "v": 448,
    "d": "2026-10-29",
-   "tr": "Ortaklık teklifi ✓ ile onaylanmıyordu (iki taraf da teklif edince kalan teklif takılıyordu); düzeldi, eski teklif kendiliğinden silinir. Ortaklık ekranında artık ortakların neler yapabildiği yazıyor: ortak kasaya altın koyma/çekme ve sınırlar.",
-   "en": "Partnership offers could not be accepted with ✓ (when both players had sent an offer, the leftover one got stuck); fixed, the old offer is removed automatically. The partnership screen now explains what partners can do: putting gold into and taking it out of the shared vault, and the limits."
+   "tr": "Bankada yatırım fonu payı artık vadesiz hesapta para yoksa cebinden de alınabiliyor: önce hesaptan, yetmezse cepten ödenir. Para yetmezse en çok kaç pay alabileceğin yazıyor.",
+   "en": "Investment fund shares at the bank can now be bought even with an empty current account: payment comes from the account first, then from your pocket. If you don't have enough, it shows how many shares you can buy."
   }
  ]
 }
