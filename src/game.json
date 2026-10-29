@@ -1,27 +1,27 @@
 {
- "v": 434,
- "version": "4.34",
+ "v": 445,
+ "version": "4.45",
  "quests": 201,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 434,
+   "v": 445,
    "d": "2026-10-29",
-   "tr": "Gece köy meydanının ortasında \"Kapıyı çal\" düğmesi çıkıyordu. Köylüler artık gece gerçek bir evin kapısına gidiyor; kapıyı çalma yalnız o evin kapısının önündeyken çıkıyor.",
-   "en": "At night a \"Knock on the door\" button appeared in the middle of the village square. Villagers now go to the door of a real house at night, and knocking only appears when you stand at that door."
+   "tr": "Çiftliğin doğusundaki kalabalık dağıtıldı: yaban tavukları, taşlar, otlar, meyve ağaçları ve köyün inek ve atları artık tek yere yığılmıyor, geniş ovaya seyrek dağılıyor. Sayıları aynı, o bölgede oyun daha akıcı. Bahçe bankı artık evin üstüne taşınamıyor.",
+   "en": "The crowd east of the farm is spread out: wild chickens, stones, grass, fruit trees and the village cows and horses no longer pile up in one place but are scattered across the wide plain. Same numbers, smoother play there. The garden bench can no longer be moved onto the house."
   },
   {
-   "v": 433,
+   "v": 444,
    "d": "2026-10-29",
-   "tr": "Islıkla çağırdığın at ya da eşek artık ahırın duvarına takılmıyor; kapıdan çıkıp yanına geliyor.",
-   "en": "Your horse or donkey no longer gets stuck on the stable wall when you whistle; it comes out through the door."
+   "tr": "Çiftliğe araçla gelince artık ahırın içine inmiyorsun; araç seni yapıların ve çitlerin dışında, en yakın boş yere bırakıyor.",
+   "en": "When you arrive at your farm by car you no longer end up inside the stable; you are dropped at the nearest free spot outside buildings and fences."
   },
   {
-   "v": 432,
+   "v": 443,
    "d": "2026-10-29",
-   "tr": "Evin yanındaki kamp ateşine artık odun koyabilirsin: her odun ateşi 3 saat yakar (en çok 24 saat). Odun bitince ateş söner, yeniden yakmak için 1 odun gerekir.",
-   "en": "You can now add wood to the campfire by your house: each log burns for 3 hours (up to 24 hours). When the wood runs out the fire goes out; relighting it takes 1 wood."
+   "tr": "Ortaklık teklifi ✓ ile onaylanmıyordu (iki taraf da teklif edince kalan teklif takılıyordu); düzeldi, eski teklif kendiliğinden silinir. Ortaklık ekranında artık ortakların neler yapabildiği yazıyor: ortak kasaya altın koyma/çekme ve sınırlar.",
+   "en": "Partnership offers could not be accepted with ✓ (when both players had sent an offer, the leftover one got stuck); fixed, the old offer is removed automatically. The partnership screen now explains what partners can do: putting gold into and taking it out of the shared vault, and the limits."
   }
  ]
 }
