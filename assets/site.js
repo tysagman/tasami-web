@@ -338,17 +338,16 @@
   const mb = $('.music');
   const music = (() => {
     let ctx, gain, buf, src, on = false, loading = null;
-    const key = () => mb.dataset.key || 'tsm-music';
     const load = () => loading || (loading = (async () => {
-      ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
-      if (!gain) { gain = ctx.createGain(); gain.gain.value = 0; gain.connect(ctx.destination); }
+      ctx = new (window.AudioContext || window.webkitAudioContext)();
+      gain = ctx.createGain(); gain.gain.value = 0; gain.connect(ctx.destination);
       const data = await (await fetch(mb.dataset.src)).arrayBuffer();
       buf = await new Promise((ok, no) => ctx.decodeAudioData(data, ok, no));
     })());
     const set = v => {
       on = v; mb.classList.toggle('on', v); mb.setAttribute('aria-pressed', v);
       mb.setAttribute('aria-label', v ? mb.dataset.off : mb.dataset.on);
-      try { localStorage.setItem(key(), v ? '1' : '0'); } catch (e) {}
+      try { localStorage.setItem('tsm-music', v ? '1' : '0'); } catch (e) {}
     };
     const play = async () => {
       set(true); await load(); if (!on) return;
@@ -364,25 +363,14 @@
       if (remember) set(false); else mb.classList.remove('on');
       if (ctx) gain.gain.setTargetAtTime(0, ctx.currentTime, .25);
     };
-    // back to the regular track (used when a seasonal theme ends)
-    const reset = () => {
-      if (on) pause(false);
-      on = false; mb.setAttribute('aria-pressed', false); mb.setAttribute('aria-label', mb.dataset.on);
-      const old = src; src = null; buf = null; loading = null;
-      if (old) setTimeout(() => { try { old.stop(); } catch (e) {} }, 1500);
-      if (mb.dataset.orig) mb.dataset.src = mb.dataset.orig;
-      if (mb.dataset.label) $('b', mb).textContent = mb.dataset.label;
-      delete mb.dataset.key; delete mb.dataset.auto;
-    };
-    return { play, pause, reset, get on() { return on; } };
+    return { play, pause, get on() { return on; } };
   })();
   if (mb) {
-    window.tsmMusic = music;
     mb.addEventListener('click', () => music.on ? music.pause() : music.play());
-    let pref = null; try { pref = localStorage.getItem(mb.dataset.key || 'tsm-music'); } catch (e) {}
-    if (pref === '1' || (pref === null && mb.dataset.auto)) {
+    let pref = null; try { pref = localStorage.getItem('tsm-music'); } catch (e) {}
+    if (pref === '1') {
       // browsers need a gesture before sound: resume on the first one
-      const go = e => { if (!e.target.closest('.music, [data-nomusic]')) music.play(); ['pointerdown', 'keydown'].forEach(t => removeEventListener(t, go, true)); };
+      const go = e => { if (!e.target.closest('.music')) music.play(); ['pointerdown', 'keydown'].forEach(t => removeEventListener(t, go, true)); };
       ['pointerdown', 'keydown'].forEach(t => addEventListener(t, go, true));
     } else if (pref === null) setTimeout(() => mb.classList.add('hint'), 4000);
   }
