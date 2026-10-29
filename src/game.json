@@ -1,27 +1,27 @@
 {
- "v": 411,
- "version": "4.11",
+ "v": 417,
+ "version": "4.17",
  "quests": 201,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 411,
-   "d": "2026-10-28",
-   "tr": "Köy meydanı: pazar günü kurulan tezgâhların içinden artık köylü geçmiyor, demirci ve tezgâhçının içine başka köylü girmiyor. Köy çeşmesi yenilendi: kesme taş gövde, kurşun kaplı çatı, gerçek kemerli niş; köylüler artık çeşmenin ve yalağın içine girmiyor. Cami, kilise ve bankadaki kemerli kapı/pencereler duvardan yana taşmıyor. Köy projesi inşaatında beyaz kutu yerine taş temel, kereste ve 🏗️ tabelası; inşaat alanına girilmiyor. Köylü konuşma balonları sağdaki yakınlaştır/döndür düğmelerinin ve haritanın üstüne binmiyor.",
-   "en": "Village square: villagers no longer walk through the Sunday market stalls or into the blacksmith and stall keepers. Village fountain rebuilt: cut-stone body, lead roof and a proper arched niche; villagers no longer stand inside the fountain or its trough. Arched doors and windows on the mosque, church and bank no longer stick out of the walls. Village construction sites show a stone foundation, timber and a 🏗️ sign instead of a white box, and can no longer be walked into. Villager speech bubbles no longer cover the zoom/rotate buttons or the map."
-  },
-  {
-   "v": 410,
+   "v": 417,
    "d": "2026-10-29",
-   "tr": "Kuzu görevinde kart artık neden kuzu doğmadığını gösteriyor: sağlıklı koç ve koyun, gebe koyunun doğuma kalan günü, kışın yemlik. Hasta hayvan varsa karttan veteriner çağrılabiliyor.",
-   "en": "The lamb quest card now shows why no lamb is born yet: a healthy ram and ewe, days left for a pregnant ewe, and the winter feeder. If an animal is sick, you can call the vet from the card."
+   "tr": "Sıralama: Başkan gerçek puanıyla sıralamaya girdi ve adının yanında 🎖️ Onursal Üye yazıyor. Sıralamadan artık yalnız engellenen hesaplar çıkar.",
+   "en": "Rankings: Başkan is now ranked by his real score and shows 🎖️ Honorary Member next to his name. Only banned accounts are left out of the rankings now."
   },
   {
-   "v": 409,
-   "d": "2026-10-28",
-   "tr": "Harita büyüdü: Mastar Dağı'nın batısında geniş Batı ormanları, dağdaki geçitten inen yeni yol ve güneyde Güney ovası açıldı. Yeni topraklarda ağaç, taş, mantar, meyve ağacı ve çalı var. Çiftlik yapılarını kurabileceğin alan genişledi (batıda sırt eteğine, doğuda Uluova'ya kadar). Keşif haritası büyüdü, eski keşiflerin korunur.",
-   "en": "The map grew: wide Western forests west of Mastar Mountain, a new road down through the mountain pass, and the Southern plain. The new lands have trees, stones, mushrooms, fruit trees and bushes. The area where you can place farm buildings is larger. The exploration map grew; your old discoveries are kept."
+   "v": 416,
+   "d": "2026-10-29",
+   "tr": "Yatakta karakter artık yatağın içine gömülmüyor, yorganın ve yastığın üstünde yatıyor. Evde ya da otelde uyuyunca saat ileri gider: akşam ya da gece uyursan sabah 07:00'de, gündüz uyursan akşam 19:00'da uyanırsın. Uzun süre uyumazsan uyarı gelir; uyumamaya devam edersen sağlığın düşer, %20'nin altında son uyarıdan sonra olduğun yerde uyuyakalırsın.",
+   "en": "Your character no longer sinks into the bed and lies on top of the blanket and pillow. Sleeping at home or in a hotel moves the clock forward: sleep in the evening or at night and you wake at 07:00, sleep during the day and you wake at 19:00. If you stay awake too long you get a warning; keep going and your health drops, and below 20% you fall asleep where you are after a final warning."
+  },
+  {
+   "v": 415,
+   "d": "2026-10-29",
+   "tr": "Sağlık bakıcısı Derya taşınan veya büyüyen meranın içinde kalmıyor, meranın önünde duruyor.",
+   "en": "Caretaker Derya no longer gets stuck inside a moved or enlarged pasture."
   }
  ]
 }
