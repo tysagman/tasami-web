@@ -1,27 +1,27 @@
 {
- "v": 417,
- "version": "4.17",
+ "v": 434,
+ "version": "4.34",
  "quests": 201,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 417,
+   "v": 434,
    "d": "2026-10-29",
-   "tr": "Sıralama: Başkan gerçek puanıyla sıralamaya girdi ve adının yanında 🎖️ Onursal Üye yazıyor. Sıralamadan artık yalnız engellenen hesaplar çıkar.",
-   "en": "Rankings: Başkan is now ranked by his real score and shows 🎖️ Honorary Member next to his name. Only banned accounts are left out of the rankings now."
+   "tr": "Gece köy meydanının ortasında \"Kapıyı çal\" düğmesi çıkıyordu. Köylüler artık gece gerçek bir evin kapısına gidiyor; kapıyı çalma yalnız o evin kapısının önündeyken çıkıyor.",
+   "en": "At night a \"Knock on the door\" button appeared in the middle of the village square. Villagers now go to the door of a real house at night, and knocking only appears when you stand at that door."
   },
   {
-   "v": 416,
+   "v": 433,
    "d": "2026-10-29",
-   "tr": "Yatakta karakter artık yatağın içine gömülmüyor, yorganın ve yastığın üstünde yatıyor. Evde ya da otelde uyuyunca saat ileri gider: akşam ya da gece uyursan sabah 07:00'de, gündüz uyursan akşam 19:00'da uyanırsın. Uzun süre uyumazsan uyarı gelir; uyumamaya devam edersen sağlığın düşer, %20'nin altında son uyarıdan sonra olduğun yerde uyuyakalırsın.",
-   "en": "Your character no longer sinks into the bed and lies on top of the blanket and pillow. Sleeping at home or in a hotel moves the clock forward: sleep in the evening or at night and you wake at 07:00, sleep during the day and you wake at 19:00. If you stay awake too long you get a warning; keep going and your health drops, and below 20% you fall asleep where you are after a final warning."
+   "tr": "Islıkla çağırdığın at ya da eşek artık ahırın duvarına takılmıyor; kapıdan çıkıp yanına geliyor.",
+   "en": "Your horse or donkey no longer gets stuck on the stable wall when you whistle; it comes out through the door."
   },
   {
-   "v": 415,
+   "v": 432,
    "d": "2026-10-29",
-   "tr": "Sağlık bakıcısı Derya taşınan veya büyüyen meranın içinde kalmıyor, meranın önünde duruyor.",
-   "en": "Caretaker Derya no longer gets stuck inside a moved or enlarged pasture."
+   "tr": "Evin yanındaki kamp ateşine artık odun koyabilirsin: her odun ateşi 3 saat yakar (en çok 24 saat). Odun bitince ateş söner, yeniden yakmak için 1 odun gerekir.",
+   "en": "You can now add wood to the campfire by your house: each log burns for 3 hours (up to 24 hours). When the wood runs out the fire goes out; relighting it takes 1 wood."
   }
  ]
 }
