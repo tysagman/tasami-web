@@ -1,30 +1,30 @@
 {
- "v": 465,
- "version": "1.01",
+ "v": 483,
+ "version": "1.03",
  "quests": 215,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 465,
-   "pv": "1.01",
+   "v": 483,
+   "pv": "1.03",
    "d": "2026-10-30",
-   "tr": "Çalışanlar artık her gün prim istemiyor. Prim ayda bir: ay dönünce o ay en az 10 gün çalışan prim ister. Prim satışlara göre değişir: 1 günlük yevmiye, satışların geçen aydan fazlaysa ve çalışan kapasitesini çok doldurduysa en çok 3 günlük. Satışlar çok düştüyse prim istenmez. Prim 3 gün +%20 iş yaptırır. İkramiye de ayda bir verilir; bayramlarda ayrıca bir kez.",
-   "en": "Workers no longer ask for a bonus every day. Bonuses are monthly: when the month turns, workers who worked at least 10 days ask for one. The amount follows your sales: 1 day's wage, up to 3 if sales beat last month and the worker often filled their capacity. If sales dropped sharply, nobody asks. A bonus gives +20% work for 3 days. Gifts (ikramiye) can also be given once a month, plus once on each holiday."
+   "tr": "Arka plan iyileştirmesi: oyunun hangi bölümlerinin daha keyifli olduğunu anlamak için oynama süresi ölçümü geliştirildi. Oyunda görünen bir değişiklik yok.",
+   "en": "Background improvement: play-time measurement was improved so we can see which parts of the game are most fun. No visible changes in the game."
   },
   {
-   "v": 464,
-   "pv": "1.01",
+   "v": 482,
+   "pv": "1.03",
    "d": "2026-10-30",
-   "tr": "İtibar kazanmak biraz daha zorlaştı: her iş, sipariş ve iyilikten gelen itibar azaldı, seviyeler biraz daha fazla itibar istiyor ve bir oyun gününde 3 itibardan sonrası yarım geliyor. Kazandığın itibar ve seviyen düşmez.",
-   "en": "Earning reputation is a bit harder: jobs, orders and good deeds give less reputation, levels need a bit more, and after 3 reputation in a game day the rest comes at half rate. Reputation and levels you already have are not reduced."
+   "tr": "Yeni: Biyogaz tesisi ve Laboratuvar. Meralarda her gün gübre birikir; Gübre taşıyıcı Rıfat onu tesise taşır (ya da mera kapısından elle toplayıp tesise boşaltırsın). Gübre gaza, gaz jeneratörde elektriğe dönüşür ve elektrik her sabah satılır; posası gübre olarak sandığa gelir. Laborant Nazlı her partiyi analiz eder: verim %60'tan, hayvanların sağlığı ve beslenmesine göre %70–120'ye çıkar.",
+   "en": "New: Biogas plant and Laboratory. Manure piles up in the pastures every day; manure carrier Rıfat hauls it to the plant (or collect it by hand at the pasture gate and unload it there). Manure becomes gas, the generator turns it into electricity sold every morning, and the residue goes to your chest as fertilizer. Lab technician Nazlı analyses every batch: efficiency rises from 60% to 70–120% depending on your animals' health and feeding."
   },
   {
-   "v": 463,
-   "pv": "1.01",
+   "v": 481,
+   "pv": "1.03",
    "d": "2026-10-30",
-   "tr": "Motorlu testerenin simgesi artık el testeresi değil, gerçek motorlu testere. Testereyle keserken motor sesi duyuluyor: çalışınca devir yükseliyor, kesim bitince susuyor.",
-   "en": "The chainsaw icon is now a real chainsaw instead of a hand saw. You now hear the engine while cutting: it revs up and stops when the cut is done."
+   "tr": "Kümes ve meralar: kümeste, merada, ağılda ve ahırda kaç dişi (♀) ve kaç erkek (♂) hayvan olduğu görünüyor. Yumurta verimi tavukların sağlığına bağlı: tok, aşılı ve vitaminli kümes en çok yumurtayı verir (sağlık %95'te ×1,5), hasta ya da aç tavuk yarıya düşer. Veteriner Elif'te yeni Kümes vitamini (20 A, 7 gün). Yalnız dişi tavuklar yumurtlar.",
+   "en": "Coop and pastures: the coop, pasture, sheepfold and stable now show how many female (♀) and male (♂) animals you have. Egg yield depends on hen health: a fed, vaccinated coop with vitamins lays the most (×1.5 at 95% health), sick or hungry hens drop to half. New Coop vitamins at Vet Elif (20 G, 7 days). Only hens lay eggs."
   }
  ]
 }
