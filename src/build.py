@@ -82,7 +82,7 @@ T = {
         "feat_k": "Özellikler", "feat_h": "Yaşayan bir dünya",
         "feats": [
             ("Sıfırdan bir çiftlik", "Ekip biç, sula, hasat et. Ahır, kümes, sera, sulama kanalı ve güneş panelleriyle çiftliğini adım adım büyüt; evini, tarlanı, ahırını istediğin yere yerleştir.", ["Tarla ve sera", "Serbest yerleşim", "Güneş paneli"]),
-            ("Hayvancılık", "İnek, koyun ve keçi meraları; kuzular, oğlaklar, Veteriner Elif. Mandırada yoğurt, ayran, peynir, kaşar ve tereyağı üret.", ["İnek · koyun · keçi", "Mandıra", "Veteriner"]),
+            ("Hayvancılık", "İnek, koyun ve keçi meraları; kuzular, oğlaklar, Veteriner Elif. Mandırada yoğurt, ayran, peynir, kaşar ve tereyağı üret, arı kovanlarından kavanoz kavanoz bal topla.", ["İnek · koyun · keçi", "Mandıra", "Veteriner"]),
             ("Yaşayan bir köy", "Yüzlerce köylü kendi işinde: kahvehane, ibadethane, pansiyon, turistler. Köyün ibadethanesi bölgene göre cami, kilise ya da sinagog olur. Gece dışarıdakilere neden orada olduklarını sor.", ["400+ köylü", "Cami · kilise · sinagog", "Köy projeleri"]),
             ("Fabrikadan limana", "Un, yem ve şeker fabrikaları kur, toptancıyla sözleşme yap, kamyonlarla taşı, Mersin limanından ihracat yap.", ["Fabrikalar", "Lojistik", "İhracat"]),
             ("Göl ve doğa", "Hazar Gölü'nde balık tut: iri balık zor çekilir ama pahalı satılır. Kuzey yamacındaki şelaleyi, Mastar Dağı'nın batısındaki ormanları ve Güney ovasını keşfet; atını ıslıkla çağır, gölün dibindeki Batık Şehir'e dal, mantar topla, mevsimlere ve kurtlara hazırlıklı ol.", ["Balıkçılık", "Şelale", "Mevsimler"]),
@@ -154,7 +154,7 @@ T = {
         "feat_k": "Features", "feat_h": "A living world",
         "feats": [
             ("A farm from scratch", "Sow, water and harvest. Grow your farm step by step with barns, a coop, a greenhouse, irrigation and solar panels, and place your house, fields and barns wherever you like.", ["Fields & greenhouse", "Free placement", "Solar"]),
-            ("Livestock", "Cow, sheep and goat pastures; lambs, kids and Elif the vet. Make yoghurt, ayran, cheese, kashar and butter at your dairy.", ["Cows · sheep · goats", "Dairy", "Vet"]),
+            ("Livestock", "Cow, sheep and goat pastures; lambs, kids and Elif the vet. Make yoghurt, ayran, cheese, kashar and butter at your dairy, and collect jars of honey from your beehives.", ["Cows · sheep · goats", "Dairy", "Vet"]),
             ("A living village", "Hundreds of villagers going about their day: tea house, place of worship, guesthouse, tourists. Depending on your region, the village has a mosque, a church or a synagogue. Ask the night owls why they're still out.", ["400+ villagers", "Mosque · church · synagogue", "Village projects"]),
             ("From factory to harbour", "Build flour, feed and sugar factories, sign wholesale contracts, haul goods by truck and export from the port of Mersin.", ["Factories", "Logistics", "Exports"]),
             ("Lake and nature", "Fish Lake Hazar: big fish fight harder but sell for more. Explore the waterfall on the northern slope, the western forests beyond Mastar Mountain and the southern plain; whistle for your horse, dive to the sunken city on the lake bed, forage mushrooms and be ready for the seasons and the wolves.", ["Fishing", "Waterfall", "Seasons"]),

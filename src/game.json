@@ -1,28 +1,30 @@
 {
- "v": 451,
+ "v": 457,
  "version": "1.00",
  "quests": 201,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 451,
+   "v": 457,
    "pv": "1.00",
    "d": "2026-10-30",
-   "tr": "Oyunun sürümü v1.00 olarak yeniden başladı. Küçük düzeltmeler artık sürüm numarasını değiştirmiyor; sürüm yalnız büyük güncellemelerde artacak.",
-   "en": "The game version restarted at v1.00. Small fixes no longer change the version number; it will only go up with major updates."
+   "tr": "Hedefler ekranındaki \"Bölüm 2: büyükbabanın tarlasını geri al\" artık hep kilitli görünmüyor: Bölüm 2'de açılır, tarlayı Muhtar'dan geri alınca tamamlanır. Bu görev eklenmeden önce Bölüm 2'yi geçmiş oyuncularda tarla alınmış sayılır.",
+   "en": "The \"Chapter 2: reclaim grandpa's field\" goal on the Goals screen no longer always shows as locked: it unlocks in Chapter 2 and completes when you buy the field back from the Headman. Players who passed Chapter 2 before this quest existed now own the field."
   },
   {
-   "v": 450,
+   "v": 457,
+   "pv": "1.00",
    "d": "2026-10-30",
-   "tr": "Hazar Bank'taki hisse alım satımı kaldırıldı. Elinde hisse olanların o günkü değeri banka hesabına iade edildi.",
-   "en": "Share trading at the bank was removed. If you held shares, their value that day was refunded to your bank account."
+   "tr": "Çevrimiçi durumun artık yalnız arkadaşlarına görünüyor. Kabul ettiğin arkadaşlık istekleri tekrar karşına çıkmıyor.",
+   "en": "Your online status is now visible only to your friends. Friend requests you accepted no longer keep showing up."
   },
   {
-   "v": 448,
-   "d": "2026-10-29",
-   "tr": "Bankada yatırım fonu payı artık vadesiz hesapta para yoksa cebinden de alınabiliyor: önce hesaptan, yetmezse cepten ödenir. Para yetmezse en çok kaç pay alabileceğin yazıyor.",
-   "en": "Investment fund shares at the bank can now be bought even with an empty current account: payment comes from the account first, then from your pocket. If you don't have enough, it shows how many shares you can buy."
+   "v": 456,
+   "pv": "1.00",
+   "d": "2026-10-30",
+   "tr": "Koşarken ya da çite doğru zorlayınca çitlerin içinden geçme düzeltildi.",
+   "en": "Fixed walking through fences while running or pushing against them."
   }
  ]
 }
