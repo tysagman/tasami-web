@@ -1,30 +1,30 @@
 {
- "v": 494,
+ "v": 497,
  "version": "1.03",
  "quests": 215,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 494,
+   "v": 497,
    "pv": "1.03",
    "d": "2026-10-30",
-   "tr": "Düzeltme: «Batık şehre 7 kez dal» görevi günde tek dalış yüzünden 7 gün sürüyordu. Görev açıkken dalış merkezinde aynı gün 7 kez dalabilirsin, görev bir günde biter. Görev bitince yine günde bir dalış.",
-   "en": "Fix: The «Dive into the sunken city 7 times» quest took 7 days because of the one-dive-per-day limit. While the quest is active you can dive 7 times in the same day at the dive center, so it can be finished in one day. After the quest, it is back to one dive per day."
+   "tr": "Düzeltme: «Tavuklarını 19 kez yemle» görevinde «Tavukları yemle» düğmesi yemlik 16'nın altına inene kadar çıkmıyordu, her yemleme için 1-2 dakika beklemek gerekiyordu. Görev açıkken yemlik tamamen dolu değilse tavukları yeniden yemleyebilirsin. Görev yokken kural aynı.",
+   "en": "Fix: In the «Feed your chickens 19 times» quest, the «Feed the chickens» button did not appear until the feeder dropped below 16, so each feeding meant waiting 1-2 minutes. While the quest is active you can feed again whenever the feeder is not completely full. Without the quest the rule is unchanged."
   },
   {
-   "v": 493,
+   "v": 496,
    "pv": "1.03",
    "d": "2026-10-30",
-   "tr": "Arka plan iyileştirmesi: oyuncuların gönderdiği hata bildirimleri ve şikayetler ekibimize artık yaklaşık 1 dakika içinde ulaşıyor. Oyunda görünen bir değişiklik yok.",
-   "en": "Background improvement: bug reports and complaints sent by players now reach our team within about 1 minute. No visible change in the game."
+   "tr": "Düzeltme: «Nereye gidelim?» › İnsanlar listesinde henüz işe almadığın çalışanlar (ör. Laborant Nazlı, laboratuvar kurulmadan) çıkıyor, «Git» deyince seni kimsenin olmadığı yere götürüyordu. Artık listede yalnız köyde gerçekten bulunan kişiler var; Laborant Nazlı laboratuvarı kurup işe alınca listede görünür.",
+   "en": "Fix: The «Where to go?» › People list showed workers you had not hired yet (e.g. Lab technician Nazlı before building the laboratory), and «Go» led you to an empty spot. The list now shows only people who are actually around; Nazlı appears once you build the laboratory and hire her."
   },
   {
-   "v": 492,
+   "v": 495,
    "pv": "1.03",
    "d": "2026-10-30",
-   "tr": "Düzeltme: Biyogaz tesisi, laboratuvar gibi ek yapılar yer seçerken çiftlikten çok uzağa gidebiliyor ve görünmüyordu. Artık «📍 Yapıların yeri» ekranında uzaktaki yapılar işaretlenir; «🏠 Getir» ya da «Uzaktaki yapıları çiftliğe getir» ile tek dokunuşta çiftliğine gelir. Bir yapıyı çiftlikten çok uzağa kurmak istersen önce onay sorulur.",
-   "en": "Fix: Extra buildings such as the biogas plant and laboratory could end up far from the farm while placing them and seemed missing. Now «📍 Building locations» marks distant buildings; «🏠 Bring back» or «Bring distant buildings back to the farm» moves them to your farm in one tap. Placing a building very far from the farm now asks for confirmation."
+   "tr": "Düzeltme: Batık şehre dalarken dalgıç kalıntıların üstünde dik, havada asılı gibi duruyordu. Artık yüzeyden kalıntılara iner, yüz üstü yatay yüzer, ayak çırpar ve kulaç atar.",
+   "en": "Fix: While diving into the sunken city, the diver stood upright above the ruins as if hanging in the air. Now the diver descends from the surface to the ruins, swims face down, kicks and strokes."
   }
  ]
 }
