@@ -10,6 +10,7 @@ TEMPLATE = (ROOT / "src" / "template.html").read_text(encoding="utf-8")
 
 PLAY_URL = "https://tysagman.github.io/toprak-oyun/oyun/"
 CONTACT = "info@tasami.com.tr"
+SITE = "https://tasami.com.tr/"
 YOUTUBE_ID = "VAp9sWofOYo"  # resmî fragman
 YOUTUBE = "https://www.youtube.com/watch?v=" + YOUTUBE_ID
 # Oyundan otomatik gelir (tools/oyun-senkron.js, .github/workflows/oyun-senkron.yml)
@@ -49,8 +50,10 @@ T = {
     "tr": {
         "lang": "tr", "path": "", "base": "",
         "other_lang": "EN", "other_href": "en/", "other_name": "English",
-        "title": "Toprağın Mirası · Tasami oyun ve uygulama stüdyosu",
-        "desc": "Toprağın Mirası: Hazar Gölü kıyısında dedenden kalan topraklarda çiftlik, köy, fabrika ve holding kurduğun 3D çok oyunculu yaşam oyunu. Tasami, oyun ve mobil uygulama geliştiren bağımsız bir stüdyo.",
+        "title": "Toprağın Mirası: 3D çiftlik ve köy kurma oyunu | Tasami",
+        "desc": "Toprağın Mirası: Hazar Gölü kıyısında dedenden kalan toprakta çiftlik, köy ve fabrika kurduğun 3D çok oyunculu yaşam oyunu. Android kapalı teste katıl.",
+        "locale": "tr_TR", "other_locale": "en_US",
+        "og_alt": "Toprağın Mirası oyun logosu",
         "nav": ["Oyun", "Hikâye", "Özellikler", "Görüntüler", "Erken erişim", "Stüdyo"],
         "menu": "Menü",
         "kicker": "Tasami'nin ilk oyunu",
@@ -106,6 +109,7 @@ T = {
         "t_bad": "Lütfen geçerli bir e-posta adresi yaz.",
         "t_ios_h": "App Store · iOS", "t_ios_p": "iPhone ve iPad sürümü üzerinde çalışıyoruz.", "t_soon": "Yakında",
         "about_k": "Stüdyo", "about_h": "Tasami hakkında",
+        "about_org": "İki kimya mühendisinin kurduğu, oyun tasarımı, oyun geliştirme ve mobil uygulama stüdyosu.",
         "about": [
             "Tasami, oyun tasarlayan ve geliştiren, mobil ve web uygulamaları üreten bağımsız bir stüdyo. İki kimya mühendisi tarafından kuruldu.",
             "Mühendislikten gelen alışkanlıkla çalışıyoruz: önce sistemi kuruyor, sonra ölçüyor, deniyor ve iyileştiriyoruz. Oyunlarımızda ekonomi, üretim zinciri ve dünya bu yüzden birbirine bağlı ve tutarlı.",
@@ -121,8 +125,10 @@ T = {
     "en": {
         "lang": "en", "path": "en/", "base": "../",
         "other_lang": "TR", "other_href": "../", "other_name": "Türkçe",
-        "title": "Legacy of the Land · Tasami game and app studio",
-        "desc": "Legacy of the Land (Toprağın Mirası): a 3D multiplayer life sim where you build a farm, a village, factories and a holding company on the land your grandfather left you by Lake Hazar. Tasami is an independent game and app studio.",
+        "title": "Legacy of the Land: 3D farming and village-building game | Tasami",
+        "desc": "Legacy of the Land: build a farm, a village and factories on your grandfather's land by Lake Hazar in this 3D multiplayer life sim. Join the Android closed test.",
+        "locale": "en_US", "other_locale": "tr_TR",
+        "og_alt": "Legacy of the Land game logo",
         "nav": ["Game", "Story", "Features", "Screenshots", "Early access", "Studio"],
         "menu": "Menu",
         "kicker": "Tasami's first game",
@@ -178,6 +184,7 @@ T = {
         "t_bad": "Please enter a valid email address.",
         "t_ios_h": "App Store · iOS", "t_ios_p": "We're working on the iPhone and iPad version.", "t_soon": "Coming soon",
         "about_k": "Studio", "about_h": "About Tasami",
+        "about_org": "A game design, game development and mobile app studio founded by two chemical engineers.",
         "about": [
             "Tasami is an independent studio that designs and develops games and builds mobile and web apps. It was founded by two chemical engineers.",
             "We work the way engineers do: build the system first, then measure, test and improve. That is why the economy, production chains and world in our games fit together.",
@@ -252,14 +259,18 @@ def render(t):
     mq = "".join(f"<span>{w}</span><i>✦</i>" for w in t["marquee"])
     marquee = f'<div class="mq-row"><div class="mq-in">{mq}{mq}</div></div><div class="mq-row rev"><div class="mq-in">{mq}{mq}</div></div>'
     nav = "".join(f'<a href="#{i}">{n}</a>' for i, n in zip(NAV_IDS, t["nav"]))
+    org = {"@type": "Organization", "@id": SITE + "#tasami", "name": "Tasami"}
     ld = json.dumps([
-        {"@context": "https://schema.org", "@type": "Organization", "name": "Tasami",
-         "url": "https://tasami.com.tr/", "logo": "https://tasami.com.tr/assets/img/tasami-logo.png", "email": CONTACT},
-        {"@context": "https://schema.org", "@type": "VideoGame", "name": t["game"], "alternateName": "Toprağın Mirası",
+        {"@context": "https://schema.org", "@type": "WebSite", "name": "Tasami", "url": SITE + t["path"],
+         "inLanguage": t["lang"], "publisher": org},
+        {"@context": "https://schema.org", **org, "url": SITE, "logo": SITE + "assets/img/tasami-logo.png", "email": CONTACT,
+         "description": t["about_org"]},
+        {"@context": "https://schema.org", "@type": "VideoGame", "name": t["game"],
+         "alternateName": "Legacy of the Land" if t["lang"] == "tr" else "Toprağın Mirası", "url": SITE + t["path"],
          "description": t["desc"], "genre": ["Simulation", "Farming"], "gamePlatform": ["Android"],
-         "playMode": ["SinglePlayer", "MultiPlayer"], "author": {"@type": "Organization", "name": "Tasami"},
+         "playMode": ["SinglePlayer", "MultiPlayer"], "author": org, "publisher": org,
          "inLanguage": ["tr", "en", "de", "fr", "es", "ru", "ku"],
-         "image": "https://tasami.com.tr/assets/img/oyun/baslik-og.jpg",
+         "image": SITE + "assets/img/oyun/baslik-og.jpg",
          "trailer": {"@type": "VideoObject", "name": t["game"] + " | " + t["tr_k"], "description": t["tagline"],
                      "embedUrl": "https://www.youtube.com/embed/" + YOUTUBE_ID, "url": YOUTUBE,
                      "thumbnailUrl": f"https://i.ytimg.com/vi/{YOUTUBE_ID}/hqdefault.jpg", "uploadDate": "2026-10-27"}},
@@ -267,7 +278,7 @@ def render(t):
     vals = dict(t, b=b, yt=YOUTUBE, stats=stats, updates=updates, story=story, chapters=chapters, jmap=jmap, feats=feats, gallery=gallery, about=about,
                 services=services, nav=nav, marquee=marquee, ld=ld, mail_to=CONTACT,
                 privacy_url=PLAY_URL + "gizlilik.html", delete_url=PLAY_URL + "hesap-sil.html",
-                canonical="https://tasami.com.tr/" + t["path"],
+                canonical=SITE + t["path"],
                 hero_img=img(b, "genel", "", eager=True, big=True),
                 story_img=img(b, "koy-meydani", t["game"]))
     out = TEMPLATE
@@ -283,3 +294,14 @@ for t in T.values():
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(render(t), encoding="utf-8")
     print("yazıldı:", p.relative_to(ROOT))
+
+# arama motorları: robots.txt + iki dilli sitemap (lastmod = son oyun güncellemesi)
+alts = "".join(f'\n    <xhtml:link rel="alternate" hreflang="{h}" href="{SITE}{q}"/>'
+               for h, q in (("tr", ""), ("en", "en/"), ("x-default", "")))
+urls = "".join(f"\n  <url>\n    <loc>{SITE}{t['path']}</loc>\n    <lastmod>{GAME['changes'][0]['d']}</lastmod>{alts}\n  </url>"
+               for t in T.values())
+(ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n'
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'
+    + urls + "\n</urlset>\n", encoding="utf-8")
+(ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}sitemap.xml\n", encoding="utf-8")
+print("yazıldı: sitemap.xml, robots.txt")
