@@ -26,7 +26,10 @@ GALLERY = [
     ("gece", "Gece meydan", "The square at night"),
     ("iskele", "İskele", "The pier"),
     ("kuzey-diyari", "Kuzey Diyarı · Çamlıbel", "The Northlands · Çamlıbel"),
-    ("sehir", "Şehir", "The city"),
+    ("sehir", "Elazığ şehri", "The city of Elazığ"),
+    ("batik-sehir", "Hazar Gölü'nün dibindeki Batık Şehir", "The sunken city on the bed of Lake Hazar"),
+    ("kovan", "Arı kovanları ve bahçe", "Beehives and the garden"),
+    ("kamp-atesi", "Akşam kamp ateşi", "An evening campfire"),
     ("ciftlik-evi", "Dedenin çiftliği", "Grandpa's farm"),
     # köyün ibadethanesi oyuncunun bölgesine göre değişir (oyunda FAITHS)
     ("cami", "Köyün ibadethanesi · cami", "The village place of worship · mosque"),
@@ -40,7 +43,7 @@ CHAPTER_IMG = ["ciftlik-evi", "inek-merasi", "kuzey-diyari", "fabrikalar", "sehi
 JMAP_PINS = [(416, 477), (704, 572), (624, 342), (1290, 640), (1408, 351), (1158, 414)]
 JMAP_CARDS = [(11, 30), (40, 87), (29, 11), (84, 88), (89, 12), (61, 12)]
 JMAP_THUMB = ["ciftlik-evi", "inek-merasi", "kuzey-diyari", "fabrikalar", "iskele", "koy-ve-sanayi"]
-FEATURE_IMG = ["ciftlik-evi", "meralar", "koy-meydani", "fabrikalar", "iskele", "gece"]
+FEATURE_IMG = ["ciftlik-evi", "meralar", "koy-meydani", "fabrikalar", "batik-sehir", "gece"]
 
 T = {
     "tr": {
@@ -58,7 +61,7 @@ T = {
         "badge": f"Sürüm {VERSION} · Android kapalı test",
         "scroll": "Keşfet",
         "presents": "sunar", "skip": "Geç", "yt_btn": "YouTube'da izle", "upd_k": "Oyunla eş zamanlı", "upd_h": "Son güncellemeler", "upd_v": "Sürüm", "slogan": "Topraktan Sanayiye",
-        "trailer": "toprak-mirasi-fragman.mp4",
+        "trailer": "toprak-mirasi-fragman.mp4?v=1030",
         "marquee": ["Tarla", "Ahır", "Mandıra", "Koyun &amp; keçi", "Fabrika", "Liman", "Holding", "Balıkçılık", "Kooperatif", "Güneş paneli"],
         "play_tr": "Fragmanı oynat",
         "stats": [(str(GAME["quests"]), "hikâye görevi"), (str(GAME["chapters"]), "bölüm"), (str(GAME["languages"]), "dil"), ("400+", "yaşayan köylü")],
@@ -84,8 +87,8 @@ T = {
             ("Sıfırdan bir çiftlik", "Ekip biç, sula, hasat et. Ahır, kümes, sera, sulama kanalı ve güneş panelleriyle çiftliğini adım adım büyüt; evini, tarlanı, ahırını istediğin yere yerleştir.", ["Tarla ve sera", "Serbest yerleşim", "Güneş paneli"]),
             ("Hayvancılık", "İnek, koyun ve keçi meraları; kuzular, oğlaklar, Veteriner Elif. Mandırada yoğurt, ayran, peynir, kaşar ve tereyağı üret, arı kovanlarından kavanoz kavanoz bal topla.", ["İnek · koyun · keçi", "Mandıra", "Veteriner"]),
             ("Yaşayan bir köy", "Yüzlerce köylü kendi işinde: kahvehane, ibadethane, pansiyon, turistler. Köyün ibadethanesi bölgene göre cami, kilise ya da sinagog olur. Gece dışarıdakilere neden orada olduklarını sor.", ["400+ köylü", "Cami · kilise · sinagog", "Köy projeleri"]),
-            ("Fabrikadan limana", "Un, yem ve şeker fabrikaları kur, toptancıyla sözleşme yap, kamyonlarla taşı, Mersin limanından ihracat yap.", ["Fabrikalar", "Lojistik", "İhracat"]),
-            ("Göl ve doğa", "Hazar Gölü'nde balık tut: iri balık zor çekilir ama pahalı satılır. Kuzey yamacındaki şelaleyi, Mastar Dağı'nın batısındaki ormanları ve Güney ovasını keşfet; atını ıslıkla çağır, gölün dibindeki Batık Şehir'e dal, mantar topla, mevsimlere ve kurtlara hazırlıklı ol.", ["Balıkçılık", "Şelale", "Mevsimler"]),
+            ("Fabrikadan limana", "Un, yem ve şeker fabrikaları kur, toptancıyla sözleşme yap, kamyonlarla taşı, Mersin limanından ihracat yap. Otobüsle Elazığ'a in; bankada, belediyede ve kafede işlerini hallet.", ["Fabrikalar", "Lojistik", "İhracat"]),
+            ("Göl ve doğa", "Hazar Gölü'nde balık tut: iri balık zor çekilir ama pahalı satılır. Kuzey yamacındaki şelaleyi, Mastar Dağı'nın batısındaki ormanları ve Güney ovasını keşfet; atını ıslıkla çağır, gölün dibindeki Batık Şehir'e dal, istediğin yerde kamp ateşi yak, mantar topla, mevsimlere ve kurtlara hazırlıklı ol.", ["Balıkçılık", "Şelale", "Mevsimler"]),
             ("Birlikte oyna", "Arkadaşının köyünü ziyaret et, kooperatif kur, pazarda ticaret yap, bölge telsiziyle ve sesli aramayla konuş; İtibar, Altın, Görev ve Oyun süresi sıralamalarında yerini gör.", ["Kooperatif", "Pazar", "Telsiz"]),
         ],
         "gal_k": "Görüntüler", "gal_h": "Oyundan kareler", "gal_sub": "Tümü oyunun içinden, gerçek görüntülerdir.",
@@ -130,7 +133,7 @@ T = {
         "badge": f"Version {VERSION} · Android closed test",
         "scroll": "Explore",
         "presents": "presents", "skip": "Skip", "yt_btn": "Watch on YouTube", "upd_k": "Live from the game", "upd_h": "Latest updates", "upd_v": "Version", "slogan": "From Soil to Industry",
-        "trailer": "legacy-of-the-land-trailer.mp4",
+        "trailer": "legacy-of-the-land-trailer.mp4?v=1030",
         "marquee": ["Fields", "Barns", "Dairy", "Sheep &amp; goats", "Factories", "Harbour", "Holding", "Fishing", "Co-op", "Solar power"],
         "play_tr": "Play trailer",
         "stats": [(str(GAME["quests"]), "story quests"), (str(GAME["chapters"]), "chapters"), (str(GAME["languages"]), "languages"), ("400+", "living villagers")],
@@ -156,8 +159,8 @@ T = {
             ("A farm from scratch", "Sow, water and harvest. Grow your farm step by step with barns, a coop, a greenhouse, irrigation and solar panels, and place your house, fields and barns wherever you like.", ["Fields & greenhouse", "Free placement", "Solar"]),
             ("Livestock", "Cow, sheep and goat pastures; lambs, kids and Elif the vet. Make yoghurt, ayran, cheese, kashar and butter at your dairy, and collect jars of honey from your beehives.", ["Cows · sheep · goats", "Dairy", "Vet"]),
             ("A living village", "Hundreds of villagers going about their day: tea house, place of worship, guesthouse, tourists. Depending on your region, the village has a mosque, a church or a synagogue. Ask the night owls why they're still out.", ["400+ villagers", "Mosque · church · synagogue", "Village projects"]),
-            ("From factory to harbour", "Build flour, feed and sugar factories, sign wholesale contracts, haul goods by truck and export from the port of Mersin.", ["Factories", "Logistics", "Exports"]),
-            ("Lake and nature", "Fish Lake Hazar: big fish fight harder but sell for more. Explore the waterfall on the northern slope, the western forests beyond Mastar Mountain and the southern plain; whistle for your horse, dive to the sunken city on the lake bed, forage mushrooms and be ready for the seasons and the wolves.", ["Fishing", "Waterfall", "Seasons"]),
+            ("From factory to harbour", "Build flour, feed and sugar factories, sign wholesale contracts, haul goods by truck and export from the port of Mersin. Take the bus to Elazığ and run errands at the bank, the town hall and the café.", ["Factories", "Logistics", "Exports"]),
+            ("Lake and nature", "Fish Lake Hazar: big fish fight harder but sell for more. Explore the waterfall on the northern slope, the western forests beyond Mastar Mountain and the southern plain; whistle for your horse, dive to the sunken city on the lake bed, light a campfire anywhere, forage mushrooms and be ready for the seasons and the wolves.", ["Fishing", "Waterfall", "Seasons"]),
             ("Play together", "Visit friends' villages, form a co-op, trade at the market, talk on the regional radio or by voice call, and see where you stand in the Reputation, Gold, Quest and Play time rankings.", ["Co-op", "Market", "Radio"]),
         ],
         "gal_k": "Screenshots", "gal_h": "Scenes from the game", "gal_sub": "All captured in-game.",
