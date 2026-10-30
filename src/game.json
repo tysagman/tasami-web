@@ -1,30 +1,30 @@
 {
- "v": 463,
+ "v": 465,
  "version": "1.01",
  "quests": 215,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
+   "v": 465,
+   "pv": "1.01",
+   "d": "2026-10-30",
+   "tr": "Çalışanlar artık her gün prim istemiyor. Prim ayda bir: ay dönünce o ay en az 10 gün çalışan prim ister. Prim satışlara göre değişir: 1 günlük yevmiye, satışların geçen aydan fazlaysa ve çalışan kapasitesini çok doldurduysa en çok 3 günlük. Satışlar çok düştüyse prim istenmez. Prim 3 gün +%20 iş yaptırır. İkramiye de ayda bir verilir; bayramlarda ayrıca bir kez.",
+   "en": "Workers no longer ask for a bonus every day. Bonuses are monthly: when the month turns, workers who worked at least 10 days ask for one. The amount follows your sales: 1 day's wage, up to 3 if sales beat last month and the worker often filled their capacity. If sales dropped sharply, nobody asks. A bonus gives +20% work for 3 days. Gifts (ikramiye) can also be given once a month, plus once on each holiday."
+  },
+  {
+   "v": 464,
+   "pv": "1.01",
+   "d": "2026-10-30",
+   "tr": "İtibar kazanmak biraz daha zorlaştı: her iş, sipariş ve iyilikten gelen itibar azaldı, seviyeler biraz daha fazla itibar istiyor ve bir oyun gününde 3 itibardan sonrası yarım geliyor. Kazandığın itibar ve seviyen düşmez.",
+   "en": "Earning reputation is a bit harder: jobs, orders and good deeds give less reputation, levels need a bit more, and after 3 reputation in a game day the rest comes at half rate. Reputation and levels you already have are not reduced."
+  },
+  {
    "v": 463,
    "pv": "1.01",
    "d": "2026-10-30",
    "tr": "Motorlu testerenin simgesi artık el testeresi değil, gerçek motorlu testere. Testereyle keserken motor sesi duyuluyor: çalışınca devir yükseliyor, kesim bitince susuyor.",
    "en": "The chainsaw icon is now a real chainsaw instead of a hand saw. You now hear the engine while cutting: it revs up and stops when the cut is done."
-  },
-  {
-   "v": 462,
-   "pv": "1.01",
-   "d": "2026-10-30",
-   "tr": "Haritada ve Dünya haritasında sağda kaydırma çubuğu var: ▲ ▼ ya da tutamaçla alttaki bilgilere inebilirsin. Otobüs, tabelalar ve haritadaki yazılar artık senin yurdunun adlarını yazıyor. Yer adlarını Ayarlar › Yurdunu düzenle'den istediğin zaman değiştirebilirsin; kuzeydeki köy ve kasabanın adı da artık değişiyor.",
-   "en": "The map and the World map now have a scroll bar on the right: use ▲ ▼ or drag the handle to reach the info below. The bus, signs and map labels now show your homeland's names. You can rename places any time in Settings › Edit your homeland; the northern village and town can now be renamed too."
-  },
-  {
-   "v": 461,
-   "pv": "1.01",
-   "d": "2026-10-30",
-   "tr": "Çiftlik ferahladı: fabrikalar, holding ve kamyonlar artık köy meydanının dibine yığılmıyor; çiftliğin doğusundaki geniş düzlükte ayrı bir sanayi bölgesinde duruyor. Kendin yerini seçtiğin yapılar olduğu yerde kalır.",
-   "en": "More room on the farm: factories, the holding and trucks no longer pile up next to the village square; they now sit in their own industrial zone on the wide plain east of the farm. Buildings you placed yourself stay where they are."
   }
  ]
 }
