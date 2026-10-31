@@ -591,5 +591,5 @@ h1,h2,h3{color:#f6f6f6}
 /* oyunun taş başlık logosu (fragman kapanışıyla aynı) */
 .hero-title.hero-logo{margin:26px 0 18px;line-height:0;filter:drop-shadow(0 10px 34px rgba(0,0,0,.6))}
 .hero-logo img{display:block;width:min(760px,92vw);height:auto;margin-left:-1.5%;opacity:0;transform:translateY(28px) scale(.97);animation:logoRise 1.3s var(--ease-out) .2s forwards}
-@keyframes logoRise{to{opacity:.45;transform:none}}
-@media (prefers-reduced-motion:reduce){.hero-logo img{animation:none;opacity:.45;transform:none}}
+@keyframes logoRise{to{opacity:.35;transform:none}}
+@media (prefers-reduced-motion:reduce){.hero-logo img{animation:none;opacity:.35;transform:none}}
