@@ -1,30 +1,30 @@
 {
- "v": 500,
- "version": "1.04",
+ "v": 534,
+ "version": "1.16",
  "quests": 215,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 500,
-   "pv": "1.04",
+   "v": 534,
+   "pv": "1.16",
    "d": "2026-10-31",
-   "tr": "Düzeltme: çayıra kurulan yapıların (ör. laboratuvar) önünde «Yem bırak» uyarısı çıkıyordu. Artık laboratuvarın önünde kendi «Laboratuvar» düğmesi var; kurulu yapıların içinde ve yanında yem bırakma ve tuzak kurma çıkmıyor, yapının altında kalan yaban tavuğu yuvaları başka yere taşınıyor.",
-   "en": "Fix: a «Leave bait» prompt appeared in front of buildings placed on the meadow (e.g. the laboratory). The laboratory now has its own button; leaving bait and setting traps no longer appear inside or next to buildings, and wild chicken nests under a building are moved elsewhere."
+   "tr": "Traktör artık yalnız sen binip sürünce çalışıyor. Tarladaki \"Hepsini biç / Hepsine ek\" düğmesi işi elle yapar, traktör kendi kendine tarlaya gitmez. Traktörle çalışmak için traktöre bin, ekipmanı tak ve tarlanın üstünden geç.",
+   "en": "The tractor now only works when you get on and drive it. The field's \"Harvest all / Sow all\" button does the work by hand and the tractor no longer drives out on its own. To work with the tractor, get on, attach the equipment and drive over the field."
   },
   {
-   "v": 499,
-   "pv": "1.04",
+   "v": 533,
+   "pv": "1.16",
    "d": "2026-10-31",
-   "tr": "v1.04: yeni açılış (göl üstü karşılama uçuşu, görev kutlaması, hoş geldin hediyesi), «Bugün» günlük 3 iş, rozetler ve albüm, haftalık etkinlik zincirleri ve özel süsler, çatı rengi",
-   "en": "v1.04: new opening (welcome flight over the lake, quest celebrations, welcome gift), daily «Today» tasks, badges and album, weekly event chains with exclusive decorations, roof colours"
+   "tr": "Bölümlerde kendini tekrarlayan görevler değişti: aynı işin daha büyüğünü isteyen 40 görev (kredi notu, itibar, merada hayvan, toptancı sözleşmesi, kamyon seferi, ihracat sayısı gibi) artık köylülere farklı ürünler götürdüğün teslim görevleri. Ödüller ve görev sırası aynı, kayıtlar kaymaz.",
+   "en": "Repetitive chapter quests changed: 40 quests that only asked for a bigger number of the same task (credit score, reputation, pasture animals, wholesale contracts, truck trips, exports) are now delivery quests where you take different goods to villagers. Rewards and order are unchanged; saves are kept."
   },
   {
-   "v": 498,
-   "pv": "1.03",
+   "v": 532,
+   "pv": "1.16",
    "d": "2026-10-31",
-   "tr": "Telsiz ve sesli arama: telefonun mikrofon izni daha önce reddedildiyse artık kısa bir uyarı yerine iznin nasıl açılacağını adım adım gösteren bir pencere çıkıyor.",
-   "en": "Walkie-talkie and voice calls: if your phone's microphone permission was denied before, a window now shows step by step how to turn it back on instead of a short notice."
+   "tr": "Evinin yanındaki salıncakta artık sallanabilirsin: yanına gidip \"Salıncakta sallan\" düğmesine bas; salıncak gittikçe açılarak sallanır, karakterin ipleri tutup bacaklarıyla pompalar. Kalkmak için joystick'i oynat ya da \"Salıncaktan in\"e bas. Evdeki bayrak da büyüdü (7 metrelik direkte daha büyük bayrak) ve rüzgârda dalgalanıyor.",
+   "en": "You can now swing on the swing next to your house: walk up and tap \"Swing on the swing\"; it swings higher and higher while your character holds the ropes and pumps with their legs. Move the joystick or tap \"Get off the swing\" to stand up. The flag at your house is also bigger (a larger flag on a 7 m pole) and waves in the wind."
   }
  ]
 }
