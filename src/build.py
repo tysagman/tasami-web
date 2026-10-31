@@ -273,7 +273,7 @@ def render(t):
          "image": SITE + "assets/img/oyun/baslik-og.jpg",
          "trailer": {"@type": "VideoObject", "name": t["game"] + " | " + t["tr_k"], "description": t["tagline"],
                      "embedUrl": "https://www.youtube.com/embed/" + YOUTUBE_ID, "url": YOUTUBE,
-                     "thumbnailUrl": f"https://i.ytimg.com/vi/{YOUTUBE_ID}/hqdefault.jpg", "uploadDate": "2026-10-27"}},
+                     "thumbnailUrl": f"https://i.ytimg.com/vi/{YOUTUBE_ID}/hqdefault.jpg", "uploadDate": "2026-10-27T12:00:00+03:00"}},
     ], ensure_ascii=False)
     vals = dict(t, b=b, yt=YOUTUBE, stats=stats, updates=updates, story=story, chapters=chapters, jmap=jmap, feats=feats, gallery=gallery, about=about,
                 services=services, nav=nav, marquee=marquee, ld=ld, mail_to=CONTACT,
