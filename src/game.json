@@ -1,30 +1,30 @@
 {
- "v": 497,
- "version": "1.03",
+ "v": 500,
+ "version": "1.04",
  "quests": 215,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 497,
-   "pv": "1.03",
-   "d": "2026-10-30",
-   "tr": "Düzeltme: «Tavuklarını 19 kez yemle» görevinde «Tavukları yemle» düğmesi yemlik 16'nın altına inene kadar çıkmıyordu, her yemleme için 1-2 dakika beklemek gerekiyordu. Görev açıkken yemlik tamamen dolu değilse tavukları yeniden yemleyebilirsin. Görev yokken kural aynı.",
-   "en": "Fix: In the «Feed your chickens 19 times» quest, the «Feed the chickens» button did not appear until the feeder dropped below 16, so each feeding meant waiting 1-2 minutes. While the quest is active you can feed again whenever the feeder is not completely full. Without the quest the rule is unchanged."
+   "v": 500,
+   "pv": "1.04",
+   "d": "2026-10-31",
+   "tr": "Düzeltme: çayıra kurulan yapıların (ör. laboratuvar) önünde «Yem bırak» uyarısı çıkıyordu. Artık laboratuvarın önünde kendi «Laboratuvar» düğmesi var; kurulu yapıların içinde ve yanında yem bırakma ve tuzak kurma çıkmıyor, yapının altında kalan yaban tavuğu yuvaları başka yere taşınıyor.",
+   "en": "Fix: a «Leave bait» prompt appeared in front of buildings placed on the meadow (e.g. the laboratory). The laboratory now has its own button; leaving bait and setting traps no longer appear inside or next to buildings, and wild chicken nests under a building are moved elsewhere."
   },
   {
-   "v": 496,
-   "pv": "1.03",
-   "d": "2026-10-30",
-   "tr": "Düzeltme: «Nereye gidelim?» › İnsanlar listesinde henüz işe almadığın çalışanlar (ör. Laborant Nazlı, laboratuvar kurulmadan) çıkıyor, «Git» deyince seni kimsenin olmadığı yere götürüyordu. Artık listede yalnız köyde gerçekten bulunan kişiler var; Laborant Nazlı laboratuvarı kurup işe alınca listede görünür.",
-   "en": "Fix: The «Where to go?» › People list showed workers you had not hired yet (e.g. Lab technician Nazlı before building the laboratory), and «Go» led you to an empty spot. The list now shows only people who are actually around; Nazlı appears once you build the laboratory and hire her."
+   "v": 499,
+   "pv": "1.04",
+   "d": "2026-10-31",
+   "tr": "v1.04: yeni açılış (göl üstü karşılama uçuşu, görev kutlaması, hoş geldin hediyesi), «Bugün» günlük 3 iş, rozetler ve albüm, haftalık etkinlik zincirleri ve özel süsler, çatı rengi",
+   "en": "v1.04: new opening (welcome flight over the lake, quest celebrations, welcome gift), daily «Today» tasks, badges and album, weekly event chains with exclusive decorations, roof colours"
   },
   {
-   "v": 495,
+   "v": 498,
    "pv": "1.03",
-   "d": "2026-10-30",
-   "tr": "Düzeltme: Batık şehre dalarken dalgıç kalıntıların üstünde dik, havada asılı gibi duruyordu. Artık yüzeyden kalıntılara iner, yüz üstü yatay yüzer, ayak çırpar ve kulaç atar.",
-   "en": "Fix: While diving into the sunken city, the diver stood upright above the ruins as if hanging in the air. Now the diver descends from the surface to the ruins, swims face down, kicks and strokes."
+   "d": "2026-10-31",
+   "tr": "Telsiz ve sesli arama: telefonun mikrofon izni daha önce reddedildiyse artık kısa bir uyarı yerine iznin nasıl açılacağını adım adım gösteren bir pencere çıkıyor.",
+   "en": "Walkie-talkie and voice calls: if your phone's microphone permission was denied before, a window now shows step by step how to turn it back on instead of a short notice."
   }
  ]
 }
