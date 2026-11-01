@@ -1,30 +1,30 @@
 {
- "v": 557,
- "version": "1.26",
+ "v": 565,
+ "version": "1.30",
  "quests": 216,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 557,
-   "pv": "1.25",
+   "v": 565,
+   "pv": "1.30",
    "d": "2026-11-01",
-   "tr": "Oyunun simgesi ve açılış ekranı yenilendi: telefondaki uygulama simgesi ve oyun açılırken görünen logo artık Tasami logosu. Açılışta bir an görünen eski filiz logosu kaldırıldı. Simgenin telefonda değişmesi için Google Play'den gelen uygulama güncellemesi gerekir.",
-   "en": "New game icon and start screen: the app icon on your phone and the logo shown while the game opens are now the Tasami logo. The old sprout logo that flashed for a moment at start is gone. The icon on your phone changes with the next app update from Google Play."
+   "tr": "Köylüler artık cami yanında sıkışmıyor (Başkan'ın bildirimi): namaz vaktinde camiye giden Muhtar Rıza ve diğer köylüler caminin yanından ya da arkasından kapıya düz yürümeye çalışınca minare ile cami duvarı arasındaki köşede takılı kalıyordu. Artık caminin köşesinden dolaşıp kapıya gidiyorlar; bir yere takılan köylü sen yanındayken de birkaç saniye içinde kendiliğinden kurtuluyor.",
+   "en": "Villagers no longer get stuck next to the mosque: at prayer time Muhtar Rıza and other villagers walking to the mosque from its side or back tried to go straight to the door and got stuck in the corner between the minaret and the mosque wall. They now walk around the corner of the building to the door, and a villager who gets stuck somewhere frees itself within a few seconds even while you are nearby."
   },
   {
-   "v": 556,
-   "pv": "1.25",
+   "v": 564,
+   "pv": "1.30",
    "d": "2026-11-01",
-   "tr": "Başkan'ın bildirdiği üç hata düzeltildi. Köy meydanının çevresindeki süs bankı ahırın duvarının içine konuyordu; köy süsleri artık ahır, meralar, kümes avlusu ve evin olduğu yere konmuyor. Avluya çıkan tavuklar ve yabani tavuklar artık inek, koyun ve keçi meralarına girmiyor; gübre çukuru da inek merası çitinin dışına alındı. Arı kovanları tabelası kovanların arasından çıkarıldı, kovanların eve bakan kenarına dikildi.",
-   "en": "Fixed three issues reported by players. A decorative bench near the village square was placed inside the barn wall; village decorations no longer go where the barn, pastures, chicken yard or house are. Free-roaming hens and wild chickens no longer walk into the cow, sheep or goat pastures, and the manure pit was moved outside the cow pasture fence. The \"Beehives\" sign was moved out from among the hives to the side facing the house."
+   "tr": "At arabasının içine artık girilemiyor (Başkan'ın bildirimi): ahırın yanında park etmiş at ve eşek arabası katı bir engel, oyuncu içinden geçmiyor, etrafından dolaşıyor. Ata binme ve 'Araba takılsın' seçimi eskisi gibi çalışıyor.",
+   "en": "You can no longer walk into the horse cart: the horse and donkey carts parked next to the stable are now solid and you walk around them. Riding and the 'Hitch the cart' option work as before."
   },
   {
-   "v": 555,
-   "pv": "1.25",
+   "v": 563,
+   "pv": "1.30",
    "d": "2026-11-01",
-   "tr": "Ek meralar kaldırıldı, şimdilik her hayvan türünün (inek, koyun, keçi) tek merası var; ek kümes ve ek ahır duruyor. Ek merası olan oyuncuların hayvanlarının hepsi ana meraya geçti, hiçbiri kaybolmadı; ek meraların altını, odunu ve taşı geri verildi. Fazla hayvanlar için ana merada geçici yer tanındı: hayvan satıldıkça bu yer azalır, yeni hayvan ana meranın kendi yerine göre alınır. Mağaza görevleri buna göre değişti: Yeni barınak ek kümes ya da ek ahır ister, Üç barınak yerine İki barınak (ek kümes + ek ahır).",
-   "en": "Extra pastures have been removed: for now each animal type (cow, sheep, goat) has a single pasture; the extra coop and extra stable stay. Players who had extra pastures keep all their animals in the main pasture, none are lost, and the gold, wood and stone for the extra pastures were refunded. Extra animals get temporary room in the main pasture that shrinks as animals are sold; new animals fit the main pasture's own capacity. Shop tasks changed: New shelter asks for an extra coop or stable, and Three shelters became Two shelters (extra coop + extra stable)."
+   "tr": "Şehre giden yolun asfaltı artık şehrin girişine kadar uzanıyor (Başkan'ın bildirimi): yolun son parçası çizilmiyordu, asfalt şehre birkaç metre kala çimende bitiyordu. Asfaltlanmamış toprak yol da aynı şekilde şehre bağlanıyor.",
+   "en": "The asphalt road to the city now reaches all the way to the city entrance: the last piece of the road was missing, so the asphalt stopped a few metres short on the grass. The unpaved dirt road connects to the city the same way."
   }
  ]
 }
