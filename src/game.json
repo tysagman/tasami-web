@@ -1,30 +1,30 @@
 {
- "v": 565,
+ "v": 568,
  "version": "1.30",
  "quests": 216,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 565,
+   "v": 568,
    "pv": "1.30",
    "d": "2026-11-01",
-   "tr": "Köylüler artık cami yanında sıkışmıyor (Başkan'ın bildirimi): namaz vaktinde camiye giden Muhtar Rıza ve diğer köylüler caminin yanından ya da arkasından kapıya düz yürümeye çalışınca minare ile cami duvarı arasındaki köşede takılı kalıyordu. Artık caminin köşesinden dolaşıp kapıya gidiyorlar; bir yere takılan köylü sen yanındayken de birkaç saniye içinde kendiliğinden kurtuluyor.",
-   "en": "Villagers no longer get stuck next to the mosque: at prayer time Muhtar Rıza and other villagers walking to the mosque from its side or back tried to go straight to the door and got stuck in the corner between the minaret and the mosque wall. They now walk around the corner of the building to the door, and a villager who gets stuck somewhere frees itself within a few seconds even while you are nearby."
+   "tr": "Şehirde hastanenin arkasındaki apartmanın girişi iki binanın arasındaki dar boşluğa bakıyordu ve oraya girilemiyordu (Müjdat'ın bildirimi). Apartman artık çevre yoluna dönük, girişinin önü kaldırım. Şehirdeki bütün binaların girişleri caddeye ya da kaldırıma açılıyor.",
+   "en": "In the city, the entrance of the apartment block behind the hospital faced the narrow gap between two buildings and could not be reached. The block now faces the ring road with the sidewalk in front of its door. Every building in the city now opens onto a street or sidewalk."
   },
   {
-   "v": 564,
+   "v": 567,
    "pv": "1.30",
    "d": "2026-11-01",
-   "tr": "At arabasının içine artık girilemiyor (Başkan'ın bildirimi): ahırın yanında park etmiş at ve eşek arabası katı bir engel, oyuncu içinden geçmiyor, etrafından dolaşıyor. Ata binme ve 'Araba takılsın' seçimi eskisi gibi çalışıyor.",
-   "en": "You can no longer walk into the horse cart: the horse and donkey carts parked next to the stable are now solid and you walk around them. Riding and the 'Hitch the cart' option work as before."
+   "tr": "Camide cemaat safları düzeldi (Sami'nin bildirimi): imam en önde tek başına duruyor, 1. saf ondan bir seccade boyu geride. Herkes saf çizgisinde, kendi seccadesinde yan yana diziliyor; secdede eller başın iki yanında yere konuyor, kimse önündekine değmiyor. Sen de 1. saftaki boş seccadede kılıyorsun.",
+   "en": "Prayer rows in the mosque are fixed: the imam stands alone in front and the first row is one prayer rug behind him. Everyone lines up side by side on the row lines, each on their own rug; in prostration the hands rest beside the head and nobody touches the person in front. You pray on the free rug in the first row."
   },
   {
-   "v": 563,
+   "v": 566,
    "pv": "1.30",
    "d": "2026-11-01",
-   "tr": "Şehre giden yolun asfaltı artık şehrin girişine kadar uzanıyor (Başkan'ın bildirimi): yolun son parçası çizilmiyordu, asfalt şehre birkaç metre kala çimende bitiyordu. Asfaltlanmamış toprak yol da aynı şekilde şehre bağlanıyor.",
-   "en": "The asphalt road to the city now reaches all the way to the city entrance: the last piece of the road was missing, so the asphalt stopped a few metres short on the grass. The unpaved dirt road connects to the city the same way."
+   "tr": "Merada yatan ineklerin başı artık çitin dışına taşmıyor; yatma yerleri çitten bir boy içeride. Koyun ve keçilerin içinden artık geçilemiyor, ineklerde olduğu gibi yanlarından dolaşman gerekiyor.",
+   "en": "Cows sleeping in the pasture no longer poke their heads through the fence; their sleeping spots are a body length inside. You can no longer walk through sheep and goats; walk around them, just like cows."
   }
  ]
 }
