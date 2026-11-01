@@ -1,30 +1,30 @@
 {
- "v": 555,
+ "v": 557,
  "version": "1.26",
  "quests": 216,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
+   "v": 557,
+   "pv": "1.25",
+   "d": "2026-11-01",
+   "tr": "Oyunun simgesi ve açılış ekranı yenilendi: telefondaki uygulama simgesi ve oyun açılırken görünen logo artık Tasami logosu. Açılışta bir an görünen eski filiz logosu kaldırıldı. Simgenin telefonda değişmesi için Google Play'den gelen uygulama güncellemesi gerekir.",
+   "en": "New game icon and start screen: the app icon on your phone and the logo shown while the game opens are now the Tasami logo. The old sprout logo that flashed for a moment at start is gone. The icon on your phone changes with the next app update from Google Play."
+  },
+  {
+   "v": 556,
+   "pv": "1.25",
+   "d": "2026-11-01",
+   "tr": "Başkan'ın bildirdiği üç hata düzeltildi. Köy meydanının çevresindeki süs bankı ahırın duvarının içine konuyordu; köy süsleri artık ahır, meralar, kümes avlusu ve evin olduğu yere konmuyor. Avluya çıkan tavuklar ve yabani tavuklar artık inek, koyun ve keçi meralarına girmiyor; gübre çukuru da inek merası çitinin dışına alındı. Arı kovanları tabelası kovanların arasından çıkarıldı, kovanların eve bakan kenarına dikildi.",
+   "en": "Fixed three issues reported by players. A decorative bench near the village square was placed inside the barn wall; village decorations no longer go where the barn, pastures, chicken yard or house are. Free-roaming hens and wild chickens no longer walk into the cow, sheep or goat pastures, and the manure pit was moved outside the cow pasture fence. The \"Beehives\" sign was moved out from among the hives to the side facing the house."
+  },
+  {
    "v": 555,
    "pv": "1.25",
    "d": "2026-11-01",
    "tr": "Ek meralar kaldırıldı, şimdilik her hayvan türünün (inek, koyun, keçi) tek merası var; ek kümes ve ek ahır duruyor. Ek merası olan oyuncuların hayvanlarının hepsi ana meraya geçti, hiçbiri kaybolmadı; ek meraların altını, odunu ve taşı geri verildi. Fazla hayvanlar için ana merada geçici yer tanındı: hayvan satıldıkça bu yer azalır, yeni hayvan ana meranın kendi yerine göre alınır. Mağaza görevleri buna göre değişti: Yeni barınak ek kümes ya da ek ahır ister, Üç barınak yerine İki barınak (ek kümes + ek ahır).",
    "en": "Extra pastures have been removed: for now each animal type (cow, sheep, goat) has a single pasture; the extra coop and extra stable stay. Players who had extra pastures keep all their animals in the main pasture, none are lost, and the gold, wood and stone for the extra pastures were refunded. Extra animals get temporary room in the main pasture that shrinks as animals are sold; new animals fit the main pasture's own capacity. Shop tasks changed: New shelter asks for an extra coop or stable, and Three shelters became Two shelters (extra coop + extra stable)."
-  },
-  {
-   "v": 554,
-   "pv": "1.25",
-   "d": "2026-11-01",
-   "tr": "Değirmen deresi düzeltildi: dere artık değirmenci Yakup'un evinin altından geçmiyor, Yakup suda durmuyor; dere değirmenin ve evin güneyinden dolaşıyor ve değirmen yolunu küçük bir tahta köprünün altından geçiyor. Derenin başında taşlarla çevrili bir kaynak gölü, döküldüğü yerde sazlıklı bir gölet var; dere artık çimenin ortasında kesik bitmiyor. Derenin ve göletin içindeki ağaçlar ve otlar kaldırıldı.",
-   "en": "The mill stream is fixed: it no longer runs under miller Yakup's house and Yakup no longer stands in the water; the stream now curves south of the mill and the house and passes under a small wooden bridge on the mill road. It now starts from a stone-ringed spring pool and flows into a reedy pond, instead of stopping abruptly in the grass. Trees and grass inside the stream and pond have been removed."
-  },
-  {
-   "v": 553,
-   "pv": "1.25",
-   "d": "2026-10-31",
-   "tr": "Çiftliğe araçla gelişte araç yolu ahırın içinden geçiyor sayılıyordu: genişleyen yolun eğimdeki parçası yapı gibi algılanıyordu. Yol artık engel sayılmıyor, araç ahırın ve evin dışından geliyor.",
-   "en": "When arriving at the farm by vehicle, the route was counted as passing through the barn: a sloped piece of the widened road was treated as a building. Roads no longer count as obstacles, so vehicles come in outside the barn and the house."
   }
  ]
 }
