@@ -1,30 +1,30 @@
 {
- "v": 575,
+ "v": 580,
  "version": "1.31",
  "quests": 216,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 575,
+   "v": 580,
    "pv": "1.31",
    "d": "2026-11-01",
-   "tr": "Yapı taşınınca hayvanlar da taşınıyor (Müjdat'ın bildirimi): ek ahır başka yere kurulunca atlar ve eşekler artık eski yerde kalmıyor, yeni bölmelerine geçiyor. İnek ahırı, koyun ve keçi ağılı taşındıktan sonra hayvanlar gece de eski yerde değil, yeni ahırda/ağılda yatıyor. Kümes, köpek kulübesi ve ana ahır taşınınca da hayvanlar yeni yerde.",
-   "en": "Animals now move with their building: after relocating an extra stable, horses and donkeys go to their new stalls instead of staying behind. After moving the cow barn, sheepfold or goat pen, animals also sleep in the new place at night. Animals follow the coop, dog kennel and main stable too."
+   "tr": "Köylüler ve çalışanlar artık bir yere takılıp kalmıyor (Başkan'ın bildirimi): yürüyen biri birkaç saniye ilerleyemezse engellerin etrafından yeni yol bulur, yine olmazsa gideceği yerin yanına geçer. Ahırın su tankı, gübre çukuru ve inek ahırı çiti arasındaki küçük cep kapatıldı; çiftlikteki caminin köşesinde birbirini iten çalışanlar da artık yoluna devam ediyor.",
+   "en": "Villagers and workers no longer get stuck: if someone walking can't make progress for a few seconds, they find a new path around obstacles, and if that fails they move next to where they were going. The small gap between the barn's water tank, manure pit and the cow barn fence is closed, and workers no longer block each other at the corner of the mosque near the farm."
   },
   {
-   "v": 574,
+   "v": 579,
    "pv": "1.31",
    "d": "2026-11-01",
-   "tr": "Hasan Dede'nin konağında anı odası (Sami'nin isteği): konağın kapısından «İçeri gir» ile içeri girilir. İçeride dedenin 6 eşyası var: gençlik fotoğrafı, mektup sandığı, köstekli saat, bağlama, kehribar tespih ve tohum kesesi. Her gün birini yad edersin ve hikâyesi açılır. Altısını yad edince «Mirasın sahibi» rozeti ve Muhtar Selim'in mesajı gelir.",
-   "en": "Memory room in Grandpa Hasan's mansion: tap «Go inside» at the mansion door. Inside are 6 of Grandpa's keepsakes: a photo from his youth, a chest of letters, a pocket watch, a bağlama, amber prayer beads and a seed pouch. Remember one each day to unlock its story. Remember all six to earn the «Heir of the Legacy» badge and a message from Headman Selim."
+   "tr": "Hayvanların ayakları artık toprağa batmıyor (Başkan'ın bildirimi): inek, buzağı, koyun, keçi, at, eşek ve köydeki hayvanlar eğimli yerde gövdesini yamaca yatırıyor, dört ayağı da yerin üstünde duruyor. At ve eşeğin toynakları düz yerde de toprağın içinde kalmıyor.",
+   "en": "Animals' legs no longer sink into the ground: cows, calves, sheep, goats, horses, donkeys and village animals now tilt their body with the slope and keep all four hooves on the ground. Horse and donkey hooves no longer sink on flat ground either."
   },
   {
-   "v": 573,
-   "pv": "1.30",
+   "v": 578,
+   "pv": "1.31",
    "d": "2026-11-01",
-   "tr": "Şehirde ve köyde insanlar artık birbirinin içinden geçmiyor (Sami'nin bildirimi): kaldırımda herkes sağdan yürüyor, karşıdan gelen birini görünce yana çekiliyor, yan yana gelenler birbirine girmiyor. Köylüler ve turistler de duran kişilerin etrafından dolaşıyor.",
-   "en": "People in the city and the village no longer walk through each other: everyone keeps to the right on the pavement, steps aside when someone comes the other way, and walkers no longer overlap side by side. Villagers and tourists also walk around people standing still."
+   "tr": "Camide secdede eller, dizler ve alın artık halının içine girmiyor; avuçlar başın önünde halıya değiyor (Başkan'ın bildirimi). Oyuncu, imam ve cemaat için aynı; oturuşta da dizler halının üstünde.",
+   "en": "In the mosque, hands, knees and forehead no longer sink into the carpet during prostration; palms now rest on the carpet in front of the head. Same for the player, imam and congregation."
   }
  ]
 }

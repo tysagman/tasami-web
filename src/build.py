@@ -73,7 +73,7 @@ T = {
         "story": [
             "Rahmetli Hasan Dede'nin torunusun. Elinde bir çanta, cebinde birkaç altınla Sivrice'ye, yıllardır seni bekleyen çiftliğe geliyorsun.",
             "Önce odun toplayıp ip örüyor, ilk tavuklarını alıyorsun. Sonra tarlalar, ahırlar, meralar ve köy çeşmesi geliyor. Köy büyüdükçe mandıra ve kooperatif kuruluyor, ardından fabrikalar, kamyonlar ve ihracat gemileri.",
-            "Sonunda kendi holdingini kurup Hasan Dede'nin mirasını bir vakıfla köye devrediyorsun.",
+            "Yolda dedenin Çamlıbel'deki taş konağını satın alıp anı odasında onun eşyalarını, mektuplarını bulursun. Sonunda kendi holdingini kurup Hasan Dede'nin mirasını bir vakıfla köye devrediyorsun.",
         ],
         "ch_k": "6 bölüm", "ch_h": "Boş ellerden holdinge",
         "chapter": "Bölüm",
@@ -148,7 +148,7 @@ T = {
         "story": [
             "You are the grandchild of the late Grandpa Hasan. With a bag and a few coins, you arrive in Sivrice, at the farm that has been waiting for you for years.",
             "First you gather wood, braid rope and buy your first chickens. Then come fields, barns, pastures and a village fountain. As the village grows come a dairy and a co-op, then factories, trucks and export ships.",
-            "In the end you build your own holding company and pass Grandpa Hasan's legacy on to the village through a foundation.",
+            "Along the way you can buy back Grandpa's stone mansion in Çamlıbel and find his keepsakes and letters in its memory room. In the end you build your own holding company and pass Grandpa Hasan's legacy on to the village through a foundation.",
         ],
         "ch_k": "6 chapters", "ch_h": "From empty hands to a holding",
         "chapter": "Chapter",
