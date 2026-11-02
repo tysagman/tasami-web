@@ -1,30 +1,30 @@
 {
- "v": 585,
- "version": "1.32",
+ "v": 603,
+ "version": "1.40",
  "quests": 216,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 585,
-   "pv": "1.32",
+   "v": 603,
+   "pv": "1.40",
    "d": "2026-11-02",
-   "tr": "\"Bölüm tamamlandı\" penceresi artık açık bir konuşmanın ya da yapı yeri seçiminin üstüne binmiyor; pencere kapanınca geliyor. Böylece holding kurulduktan hemen sonra Semih Başkan'la konuşurken \"Dürüst rekabet anlaşmasını imzala\" düğmesi kaybolmuyor.",
-   "en": "The \"Chapter complete\" window no longer pops up over an open conversation or while placing a building; it appears once that window is closed. Talking to Semih Başkan right after founding the holding no longer loses the \"Sign the fair competition agreement\" button."
+   "tr": "Pazarlamacı Burak artık günde çok daha fazla satar: günlük satış sınırı maaşının 6 katından 20 katına çıktı. Fiyatlar ve %25 komisyon aynı.",
+   "en": "Marketer Burak now sells much more each day: his daily sales limit went from 6× to 20× his wage. Prices and the 25% commission are unchanged."
   },
   {
-   "v": 584,
-   "pv": "1.32",
+   "v": 602,
+   "pv": "1.40",
    "d": "2026-11-02",
-   "tr": "Hasan Dede'nin tarlası artık yalnız Demirkol'dan geri alındıktan sonra görünüyor. Oyunda yeni sürüm çıkınca \"Yeni sürüm\" çubuğu yeniden görünüyor.",
-   "en": "Grandpa Hasan's field now appears only after you buy it back from Demirkol. The \"New version\" bar shows up again when an update is out."
+   "tr": "Yeni: inek ahırı ve koyun/keçi ağıllarına açılır çatı (Sami'nin önerisi). Ahır ya da ağıl menüsünden altınla yaptırılır (inek ahırı 1500 A, koyun ağılı 900 A, keçi ağılı 800 A + odun). Yağmur ve karda çatı açıksa hayvanlar ıslanır: o gün süt azalır, sağlık düşer, hastalık riski artar. 'Çatıyı kapat' ile korunurlar; güneşli günlerde açık tut. Çoban tutulduysa çatıyı kendisi açıp kapatır.",
+   "en": "New: opening roofs for the cow barn and sheep/goat pens. Build one with gold from the barn or pen menu (cow barn 1500 G, sheepfold 900 G, goat pen 800 G + wood). If the roof is open in rain or snow the animals get wet: less milk that day, lower health and a higher risk of illness. 'Close the roof' keeps them dry; keep it open on sunny days. A hired shepherd opens and closes it himself."
   },
   {
-   "v": 583,
-   "pv": "1.32",
+   "v": 601,
+   "pv": "1.39",
    "d": "2026-11-02",
-   "tr": "Hasan Dede'nin tarlası artık dünyada: Bölüm 2'de Demirkol'dan geri aldığın tarla Meşe ormanının batısında, 50 parsellik buğday tarlası olarak duruyor (taş duvar, tabela, yaşlı ceviz ağacı). Hasan Dede'nin konağı da satın almadan önce Çamlıbel'de görünüyor. Haritada yeni \"Önemli yerler\" bölümü: Evin, dedenin tarlası ve konağı için tek dokunuşla yol göster.",
-   "en": "Grandpa Hasan's field is now in the world: the field you bought back from Demirkol in Chapter 2 stands west of the Oak forest as a 50-plot wheat field (stone wall, sign, old walnut tree). Grandpa Hasan's mansion is also visible in Çamlıbel before you buy it. New \"Important places\" section on the map: one tap shows the way to your home, grandpa's field and the mansion."
+   "tr": "Süt kooperatifi artık depondaki bütün sütü alıyor (Sami'nin bildirimi): günlük kota dolunca kalan süt, peynir ve koyun/keçi sütü yarı fiyatına alınır. Yeni 'Hepsini teslim et' düğmesiyle ürün bozulmadan tek seferde satılır; fazlası da kooperatif görevine sayılır.",
+   "en": "The milk cooperative now takes all the milk in your storage: once the daily quota is full, the rest of the milk, cheese and sheep/goat milk is bought at half price. The new 'Deliver all' button sells it in one go before it spoils, and the extra also counts toward the cooperative quest."
   }
  ]
 }
