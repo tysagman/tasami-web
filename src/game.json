@@ -1,30 +1,30 @@
 {
- "v": 603,
+ "v": 607,
  "version": "1.40",
  "quests": 216,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 603,
+   "v": 607,
    "pv": "1.40",
    "d": "2026-11-02",
-   "tr": "Pazarlamacı Burak artık günde çok daha fazla satar: günlük satış sınırı maaşının 6 katından 20 katına çıktı. Fiyatlar ve %25 komisyon aynı.",
-   "en": "Marketer Burak now sells much more each day: his daily sales limit went from 6× to 20× his wage. Prices and the 25% commission are unchanged."
+   "tr": "Düzeltme: bir önceki güncellemeden sonra evine dönen bazı köylülerin kapısının önünde bir süre takılı kalması giderildi.",
+   "en": "Fix: after the previous update, some villagers returning home could get stuck at their door for a while. This is fixed."
   },
   {
-   "v": 602,
+   "v": 606,
    "pv": "1.40",
    "d": "2026-11-02",
-   "tr": "Yeni: inek ahırı ve koyun/keçi ağıllarına açılır çatı (Sami'nin önerisi). Ahır ya da ağıl menüsünden altınla yaptırılır (inek ahırı 1500 A, koyun ağılı 900 A, keçi ağılı 800 A + odun). Yağmur ve karda çatı açıksa hayvanlar ıslanır: o gün süt azalır, sağlık düşer, hastalık riski artar. 'Çatıyı kapat' ile korunurlar; güneşli günlerde açık tut. Çoban tutulduysa çatıyı kendisi açıp kapatır.",
-   "en": "New: opening roofs for the cow barn and sheep/goat pens. Build one with gold from the barn or pen menu (cow barn 1500 G, sheepfold 900 G, goat pen 800 G + wood). If the roof is open in rain or snow the animals get wet: less milk that day, lower health and a higher risk of illness. 'Close the roof' keeps them dry; keep it open on sunny days. A hired shepherd opens and closes it himself."
+   "tr": "Oyun oynarken otomatik kayıt sırasında yaşanan takılma azaltıldı: kayıt artık tek seferde değil, oyunun boş anlarına bölünerek parça parça yazılıyor (oyundan çıkarken yine hemen ve tam kaydedilir).",
+   "en": "Reduced stutter during autosave while playing: the save is now written in small pieces during the game's idle moments instead of all at once (it still saves fully and immediately when you leave the game)."
   },
   {
-   "v": 601,
-   "pv": "1.39",
-   "d": "2026-11-02",
-   "tr": "Süt kooperatifi artık depondaki bütün sütü alıyor (Sami'nin bildirimi): günlük kota dolunca kalan süt, peynir ve koyun/keçi sütü yarı fiyatına alınır. Yeni 'Hepsini teslim et' düğmesiyle ürün bozulmadan tek seferde satılır; fazlası da kooperatif görevine sayılır.",
-   "en": "The milk cooperative now takes all the milk in your storage: once the daily quota is full, the rest of the milk, cheese and sheep/goat milk is bought at half price. The new 'Deliver all' button sells it in one go before it spoils, and the extra also counts toward the cooperative quest."
+   "v": 605,
+   "pv": "1.40",
+   "d": "2026-11-03",
+   "tr": "Oyun giriş seviyesi telefon ve tabletlerde daha akıcı: haritadaki süs ağaçları artık yalnız ekranda görünen bölgede çiziliyor (ekran kartına giden üçgen %30–45 az, görüntü aynı). Grafik Otomatik'teyken telefon en düşük ayarda bile zorlanırsa 3D görüntünün çözünürlüğü biraz düşer, oyun hızlanınca geri gelir; yazılar ve düğmeler etkilenmez.",
+   "en": "Smoother on entry-level phones and tablets: decorative trees on the map are now drawn only in the visible area (30–45% fewer triangles, same picture). With Auto graphics, if the device still struggles at the lowest setting, the 3D resolution drops slightly and comes back when the game speeds up; text and buttons are not affected."
   }
  ]
 }
