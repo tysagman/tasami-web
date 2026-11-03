@@ -1,30 +1,30 @@
 {
- "v": 620,
- "version": "1.45",
+ "v": 626,
+ "version": "1.47",
  "quests": 216,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 620,
-   "pv": "1.45",
+   "v": 626,
+   "pv": "1.47",
    "d": "2026-11-03",
-   "tr": "Kışın Hazar Gölü buz tutar: soğuk günlerde buz kıyıdan içeri doğru büyür, havalar ısınınca erir; herkes için aynıdır. Göl buz tutunca göle girilmez, iskeleden ve kıyıdan balık tutmak sürer. Karda ağaç kesince yerine fidan dikilmez; kar kalkınca fidan dikilir, o zamana kadar ağaç yeniden büyümez.",
-   "en": "In winter Lake Hazar freezes: on cold days the ice grows from the shore inward and melts when it warms up; it's the same for everyone. Once the lake is frozen you can't go in, but you can still fish from the pier and the shore. Cutting a tree in the snow no longer plants a sapling; one is planted when the snow is gone, and the tree doesn't regrow until then."
+   "tr": "Kar yağınca tarla parselleri karla örtülüyor: filizler ve otlar kar altında kalıyor, ekinler kar kalkana kadar büyümüyor (sera hariç). Yerdeki ot telleri de kara gömülüyor.",
+   "en": "When snow settles, field plots are now covered: sprouts and weeds stay under the snow and crops don't grow until it melts (greenhouse excepted). Grass blades sink into the snow too."
   },
   {
-   "v": 619,
-   "pv": "1.45",
+   "v": 625,
+   "pv": "1.47",
    "d": "2026-11-03",
-   "tr": "Bölüm 3'teki \"10 gün üst üste kooperatife teslim yap\" görevi artık adil (Sami'nin bildirimi): 1 oyun günü gerçekte 1 saat olduğu için oyunda olmadığın saatlerde seri sıfırlanıyordu. Artık oyunda olmadığın ya da kısa kaldığın günler seriyi bozmaz; oyundayken bir günün yarısı (30 dk) teslimsiz geçerse seri sıfırlanır. 15 dakika teslim yapmazsan oyun seni uyarır, kooperatif ekranı bugün teslim yapıp yapmadığını gösterir.",
-   "en": "The chapter 3 quest \"deliver to the cooperative 10 days in a row\" is now fair: since one game day is one real hour, the streak used to reset during hours you weren't playing. Now days you don't play, or play only briefly, don't break the streak; it resets only if half a day (30 min) passes in the game without a delivery. After 15 minutes without a delivery the game reminds you, and the cooperative screen shows whether you've delivered today."
+   "tr": "Çardağına artık kendi adını verebilirsin: kurunca adı sorulur, sonradan çardağın kartındaki «Çardağa ad ver» düğmesiyle değiştirilir. Tabelada çay simgesi yok, yalnız verdiğin ad yazar (ad vermezsen «Çardak»). Çardağın çatısı altına artık kar yağmıyor; semaverin dibindeyken bank yerine semaver düğmesi çıkıyor.",
+   "en": "You can now give your gazebo its own name: you are asked when you build it, and you can change it later with «Name the gazebo» on its card. The sign has no tea icon, only the name you choose (or «Gazebo»). Snow no longer settles under the gazebo roof, and next to the samovar you get the samovar button instead of the bench one."
   },
   {
-   "v": 618,
-   "pv": "1.45",
+   "v": 624,
+   "pv": "1.47",
    "d": "2026-11-03",
-   "tr": "Traktör artık elle tarımdan çok daha avantajlı (Taha'nın isteği): traktöre binip tarlanın yanına gelince \"Tarlayı otomatik sür\" düğmesi çıkıyor; traktör takılı ekipmanla bütün tarlayı kendisi sürüyor, sıradaki ekipmanı da kendiliğinden takıyor. Traktörle iş yorulmadan yapılır, biçer tablası buğdayı kayıpsız biçer (+%10), mibzer düzgün eker (+%10 verim). Elle tarım ise daha yorucu (enerji 1,5 kat), daha uzun sürer ve elle biçerken buğdayın %10'u dökülür. Traktörü olmayan oyuncular yine elle ekip biçebilir.",
-   "en": "The tractor is now much better than farming by hand: get on it and drive to your field to see a \"Work the field automatically\" button; the tractor works the whole field with the attached implement and switches to the next one by itself. Tractor work costs no energy, the header harvests without loss (+10%) and the seed drill sows evenly (+10% yield). Farming by hand is more tiring (1.5x energy), takes longer and spills 10% of the wheat. Players without a tractor can still farm by hand."
+   "tr": "Hastane artık gerçek bir tedavi süreci: içeri girince Hemşire Elif masasından kalkıp seni karşılar. Sağlığına göre tansiyon ve ateş ölçülür, gerekirse kan ve idrar tahlili yapılır, yaraların sarılır, serum takılır; sedyede yatarken adımları ve sağlığının dolduğunu görürsün, sonunda doktor tahlil sonuçlarını söyler. Ücret aynı (20 altın), sağlığın tamken kısa kontrol ücretsiz. Bayılınca artık 112 ambulansı sirenle gelip seni Devlet Hastanesi'ne götürür, orada tedavi edilirsin (ambulans + tedavi yine 40 altın).",
+   "en": "The hospital now has a real treatment process: when you walk in, Nurse Elif gets up from her desk to greet you. Depending on your health, your blood pressure and temperature are checked, blood and urine tests are done if needed, wounds are bandaged and an IV drip is put in; lying on the bed you see each step and your health filling up, and at the end the doctor tells you the test results. The price is the same (20 gold), and a quick check-up is free when you're healthy. If you faint, a 112 ambulance now arrives with its siren and takes you to the State Hospital for treatment (ambulance + treatment still 40 gold)."
   }
  ]
 }
