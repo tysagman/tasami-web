@@ -1,30 +1,30 @@
 {
- "v": 610,
- "version": "1.41",
+ "v": 620,
+ "version": "1.45",
  "quests": 216,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 610,
-   "pv": "1.41",
+   "v": 620,
+   "pv": "1.45",
    "d": "2026-11-03",
-   "tr": "Üzüm bağındaki asma sıralarının içinden artık geçilemiyor (Sami'nin bildirimi): yürürken de atla da asma tellerine ve aralarındaki boşluklara çarpıp durursun. Sıraların arasındaki yollar açık, üzüm toplamak için bağın içinde dolaşabilirsin.",
-   "en": "You can no longer walk through the vine rows in the vineyard: on foot or on horseback you now stop at the vine wires and the gaps between them. The paths between the rows stay open, so you can still walk around the vineyard to pick grapes."
+   "tr": "Kışın Hazar Gölü buz tutar: soğuk günlerde buz kıyıdan içeri doğru büyür, havalar ısınınca erir; herkes için aynıdır. Göl buz tutunca göle girilmez, iskeleden ve kıyıdan balık tutmak sürer. Karda ağaç kesince yerine fidan dikilmez; kar kalkınca fidan dikilir, o zamana kadar ağaç yeniden büyümez.",
+   "en": "In winter Lake Hazar freezes: on cold days the ice grows from the shore inward and melts when it warms up; it's the same for everyone. Once the lake is frozen you can't go in, but you can still fish from the pier and the shore. Cutting a tree in the snow no longer plants a sapling; one is planted when the snow is gone, and the tree doesn't regrow until then."
   },
   {
-   "v": 609,
-   "pv": "1.41",
+   "v": 619,
+   "pv": "1.45",
    "d": "2026-11-03",
-   "tr": "Hasan Dede'nin tarlası büyüdü ve artık ekilip biçiliyor: Meşe ormanının batısında taş duvarlı 450 parsellik (18 tarh) tarla. Tarlanın içinde dur; kazma, çapa ya da traktör pulluğuyla sür, tohumla ek, olunca biç. Ark suyu tarhları kendiliğinden sular, buğday ambara gider; traktör ekipmanın varsa iş çok daha az yorar. Hasan Dede'nin konağı Çamlıbel'den tarlanın başına taşındı. Köyün yaşlıları, dedenin zor yıllar için toprağa bir şey gömdüğünü söylüyor...",
-   "en": "Grandpa Hasan's field grew and can now be farmed: a 450-plot (18 beds) field behind stone walls west of the Oak forest. Stand inside it; plough with a pickaxe, hoe or tractor plough, sow with seeds and harvest when ripe. The irrigation ditch waters the beds, wheat goes to the barn, and tractor equipment makes the work much less tiring. Grandpa Hasan's mansion moved from Çamlıbel to the head of the field. The village elders say grandpa buried something in the soil for hard years..."
+   "tr": "Bölüm 3'teki \"10 gün üst üste kooperatife teslim yap\" görevi artık adil (Sami'nin bildirimi): 1 oyun günü gerçekte 1 saat olduğu için oyunda olmadığın saatlerde seri sıfırlanıyordu. Artık oyunda olmadığın ya da kısa kaldığın günler seriyi bozmaz; oyundayken bir günün yarısı (30 dk) teslimsiz geçerse seri sıfırlanır. 15 dakika teslim yapmazsan oyun seni uyarır, kooperatif ekranı bugün teslim yapıp yapmadığını gösterir.",
+   "en": "The chapter 3 quest \"deliver to the cooperative 10 days in a row\" is now fair: since one game day is one real hour, the streak used to reset during hours you weren't playing. Now days you don't play, or play only briefly, don't break the streak; it resets only if half a day (30 min) passes in the game without a delivery. After 15 minutes without a delivery the game reminds you, and the cooperative screen shows whether you've delivered today."
   },
   {
-   "v": 608,
-   "pv": "1.40",
+   "v": 618,
+   "pv": "1.45",
    "d": "2026-11-03",
-   "tr": "Dedenin tarlası ve konağı daha kolay bulunuyor (Sami'nin bildirimi): haritanın en üstünde 🌾 Dedenin tarlası ve 🏛️ Dedenin konağı düğmeleri yolu gösteriyor. Tarlayı daha önce geri almış oyunculara Muhtar Rıza bir kez nerede olduğunu yazıyor (Meşe ormanının batısı; konak Çamlıbel köyünde).",
-   "en": "Grandpa's field and mansion are easier to find: the 🌾 Grandpa's field and 🏛️ Grandpa's mansion buttons at the top of the map show the way. Players who already bought the field back get a one-time message from Headman Rıza telling them where it is (west of the Oak forest; the mansion is in Çamlıbel)."
+   "tr": "Traktör artık elle tarımdan çok daha avantajlı (Taha'nın isteği): traktöre binip tarlanın yanına gelince \"Tarlayı otomatik sür\" düğmesi çıkıyor; traktör takılı ekipmanla bütün tarlayı kendisi sürüyor, sıradaki ekipmanı da kendiliğinden takıyor. Traktörle iş yorulmadan yapılır, biçer tablası buğdayı kayıpsız biçer (+%10), mibzer düzgün eker (+%10 verim). Elle tarım ise daha yorucu (enerji 1,5 kat), daha uzun sürer ve elle biçerken buğdayın %10'u dökülür. Traktörü olmayan oyuncular yine elle ekip biçebilir.",
+   "en": "The tractor is now much better than farming by hand: get on it and drive to your field to see a \"Work the field automatically\" button; the tractor works the whole field with the attached implement and switches to the next one by itself. Tractor work costs no energy, the header harvests without loss (+10%) and the seed drill sows evenly (+10% yield). Farming by hand is more tiring (1.5x energy), takes longer and spills 10% of the wheat. Players without a tractor can still farm by hand."
   }
  ]
 }
