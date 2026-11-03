@@ -1,30 +1,30 @@
 {
- "v": 607,
- "version": "1.40",
+ "v": 610,
+ "version": "1.41",
  "quests": 216,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 607,
-   "pv": "1.40",
-   "d": "2026-11-02",
-   "tr": "Düzeltme: bir önceki güncellemeden sonra evine dönen bazı köylülerin kapısının önünde bir süre takılı kalması giderildi.",
-   "en": "Fix: after the previous update, some villagers returning home could get stuck at their door for a while. This is fixed."
+   "v": 610,
+   "pv": "1.41",
+   "d": "2026-11-03",
+   "tr": "Üzüm bağındaki asma sıralarının içinden artık geçilemiyor (Sami'nin bildirimi): yürürken de atla da asma tellerine ve aralarındaki boşluklara çarpıp durursun. Sıraların arasındaki yollar açık, üzüm toplamak için bağın içinde dolaşabilirsin.",
+   "en": "You can no longer walk through the vine rows in the vineyard: on foot or on horseback you now stop at the vine wires and the gaps between them. The paths between the rows stay open, so you can still walk around the vineyard to pick grapes."
   },
   {
-   "v": 606,
-   "pv": "1.40",
-   "d": "2026-11-02",
-   "tr": "Oyun oynarken otomatik kayıt sırasında yaşanan takılma azaltıldı: kayıt artık tek seferde değil, oyunun boş anlarına bölünerek parça parça yazılıyor (oyundan çıkarken yine hemen ve tam kaydedilir).",
-   "en": "Reduced stutter during autosave while playing: the save is now written in small pieces during the game's idle moments instead of all at once (it still saves fully and immediately when you leave the game)."
+   "v": 609,
+   "pv": "1.41",
+   "d": "2026-11-03",
+   "tr": "Hasan Dede'nin tarlası büyüdü ve artık ekilip biçiliyor: Meşe ormanının batısında taş duvarlı 450 parsellik (18 tarh) tarla. Tarlanın içinde dur; kazma, çapa ya da traktör pulluğuyla sür, tohumla ek, olunca biç. Ark suyu tarhları kendiliğinden sular, buğday ambara gider; traktör ekipmanın varsa iş çok daha az yorar. Hasan Dede'nin konağı Çamlıbel'den tarlanın başına taşındı. Köyün yaşlıları, dedenin zor yıllar için toprağa bir şey gömdüğünü söylüyor...",
+   "en": "Grandpa Hasan's field grew and can now be farmed: a 450-plot (18 beds) field behind stone walls west of the Oak forest. Stand inside it; plough with a pickaxe, hoe or tractor plough, sow with seeds and harvest when ripe. The irrigation ditch waters the beds, wheat goes to the barn, and tractor equipment makes the work much less tiring. Grandpa Hasan's mansion moved from Çamlıbel to the head of the field. The village elders say grandpa buried something in the soil for hard years..."
   },
   {
-   "v": 605,
+   "v": 608,
    "pv": "1.40",
    "d": "2026-11-03",
-   "tr": "Oyun giriş seviyesi telefon ve tabletlerde daha akıcı: haritadaki süs ağaçları artık yalnız ekranda görünen bölgede çiziliyor (ekran kartına giden üçgen %30–45 az, görüntü aynı). Grafik Otomatik'teyken telefon en düşük ayarda bile zorlanırsa 3D görüntünün çözünürlüğü biraz düşer, oyun hızlanınca geri gelir; yazılar ve düğmeler etkilenmez.",
-   "en": "Smoother on entry-level phones and tablets: decorative trees on the map are now drawn only in the visible area (30–45% fewer triangles, same picture). With Auto graphics, if the device still struggles at the lowest setting, the 3D resolution drops slightly and comes back when the game speeds up; text and buttons are not affected."
+   "tr": "Dedenin tarlası ve konağı daha kolay bulunuyor (Sami'nin bildirimi): haritanın en üstünde 🌾 Dedenin tarlası ve 🏛️ Dedenin konağı düğmeleri yolu gösteriyor. Tarlayı daha önce geri almış oyunculara Muhtar Rıza bir kez nerede olduğunu yazıyor (Meşe ormanının batısı; konak Çamlıbel köyünde).",
+   "en": "Grandpa's field and mansion are easier to find: the 🌾 Grandpa's field and 🏛️ Grandpa's mansion buttons at the top of the map show the way. Players who already bought the field back get a one-time message from Headman Rıza telling them where it is (west of the Oak forest; the mansion is in Çamlıbel)."
   }
  ]
 }
