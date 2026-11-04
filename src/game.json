@@ -1,30 +1,30 @@
 {
- "v": 633,
+ "v": 637,
  "version": "1.49",
  "quests": 216,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 633,
+   "v": 637,
    "pv": "1.49",
-   "d": "2026-11-04",
-   "tr": "Karda ahır ve ağılların çatısını ve yan perdelerini çoban, hayvan bakıcısı Murat ya da sağlık bakıcısı Derya kapatıyor; yerde kar varken kapalı kalıyor. Kapalı ön perde artık kapı girişini kapatmıyor.",
-   "en": "In snow the shepherd, animal keeper Murat or animal health carer Derya now close the barn and pen roofs and side curtains, keeping them shut while snow lies on the ground. The closed front curtain no longer blocks the gate."
+   "d": "2026-11-05",
+   "tr": "Kendi karakterin artık 30'dan fazla parça yerine tek parça çiziliyor (her karede ~34 çizim yerine ~5, gölgesi de öyle); görünüşü, aletleri ve hareketleri aynı. Kıyafet ya da görünüm değişince karakter birkaç saniye içinde yeniden hazırlanır. Bütün telefonlarda, en çok da giriş seviyesi cihazlarda işe yarar.",
+   "en": "Your own character is now drawn as a single piece instead of 30+ parts (about 5 draws per frame instead of 34, shadow too); looks, tools and movement are unchanged. When clothes or appearance change, the character is prepared again within a few seconds. Helps on all phones, most of all entry-level devices."
   },
   {
-   "v": 632,
+   "v": 636,
    "pv": "1.49",
    "d": "2026-11-04",
-   "tr": "Fabrikalar canlandı: sanayi bölgesindeki bütün yapılara artık kapısından girilir. Un, yem, şeker fabrikası ve tekstil atölyesinin içinde hammadde yığını, besleme hunisi, makinenin içinden geçen bant ve ürün paletleri var; hammadde makineye girer, ürün olarak çıkar. Elektrik kesikse ya da hammadde yoksa bant durur ve ışık kırmızı yanar, operatör Erkan yoksa bant yarım hızda döner. Erkan, Selin ve mühendisin mesai saatinde içeride çalışır. Kontrol panelinde tarif, günlük kapasite ve bu sabahki üretim görünür; günde bir kez elle vardiya çalıştırıp (20 enerji) günlük kapasitenin dörtte biri kadar ek ürün yapabilirsin. Sanayi izni arsası artık Sanayi ofisi: duvardaki izin belgesi neleri açtığını tek tek yazar, toptancı masası, fabrikaların durum panosu ve çalışan panosu da burada. Jeneratör dairesine, soğuk hava deposuna, liman acentesine ve holding merkezine de girilir. Her sanayi yapısının kapısında Ne işe yarar? açıklaması var.",
-   "en": "Factories come alive: you can now walk into every building in the industrial zone. Inside the flour, feed and sugar factories and the textile workshop there are raw material piles, a feed hopper, a conveyor running through the machine and product pallets; raw material goes in and comes out as product. With no power or no raw materials the belt stops and the light turns red; without operator Erkan the belt runs at half speed. Erkan, Selin and the engineer work inside during working hours. The control panel shows the recipe, daily capacity and this morning's output; once a day you can run a manual shift (20 energy) for an extra quarter of the daily capacity. The industrial permit plot is now the Industry office: the permit on the wall lists everything it unlocks, and the wholesale desk, factory status board and staff board are there too. You can also enter the generator room, cold store, port agency and holding headquarters. Every industrial building has a What is it for? explanation at its door."
+   "tr": "Giriş seviyesi telefon ve tabletlerde ekran kartı yükü yaklaşık üçte bir azaldı: grafik en düşük ayardayken gökyüzünden gelen yansıma ışığı hesaplanmıyor, yerine ortam ışığı biraz artırıldı. Görüntü neredeyse aynı; daha yüksek grafik ayarlarında hiçbir şey değişmedi.",
+   "en": "About a third less GPU load on entry-level phones and tablets: at the lowest graphics setting, reflected sky light is no longer calculated and ambient light is raised slightly instead. The picture looks almost the same; higher graphics settings are unchanged."
   },
   {
-   "v": 631,
-   "pv": "1.48",
+   "v": 635,
+   "pv": "1.49",
    "d": "2026-11-04",
-   "tr": "Karda köy kavşaklarındaki asfalt yaması artık yol gibi karla örtülüyor; gri karsız dikdörtgen kalmadı.",
-   "en": "Asphalt patches at village junctions are now covered by snow like the roads; no more grey snow-free rectangle."
+   "tr": "Giriş seviyesi telefon ve tabletlerde daha az işlemci yükü: grafik en düşük ayardayken uzaktaki köylüler, kalabalık ve mini harita daha seyrek hesaplanıyor (yürüyüş hızları aynı). Yakındaki insan ve hayvanların tek parça çizime geçişi yavaş cihazlarda da her saniye ilerliyor.",
+   "en": "Less CPU load on entry-level phones and tablets: at the lowest graphics setting, distant villagers, crowds and the minimap update less often (walking speeds unchanged). Nearby people and animals now switch to single-piece drawing steadily on slow devices too."
   }
  ]
 }
