@@ -1,30 +1,30 @@
 {
- "v": 626,
+ "v": 629,
  "version": "1.47",
  "quests": 216,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 626,
+   "v": 629,
    "pv": "1.47",
-   "d": "2026-11-03",
-   "tr": "Kar yağınca tarla parselleri karla örtülüyor: filizler ve otlar kar altında kalıyor, ekinler kar kalkana kadar büyümüyor (sera hariç). Yerdeki ot telleri de kara gömülüyor.",
-   "en": "When snow settles, field plots are now covered: sprouts and weeds stay under the snow and crops don't grow until it melts (greenhouse excepted). Grass blades sink into the snow too."
+   "d": "2026-11-04",
+   "tr": "Laboratuvardaki alçı analizinde kristal suyu artık 300 °C'de ölçülüyor (önce 230 °C idi); soru, doğru cevap, açıklama ve rapor buna göre güncellendi.",
+   "en": "In the lab's gypsum analysis, crystal water is now measured at 300 °C (was 230 °C); the question, correct answer, explanation and report were updated."
   },
   {
-   "v": 625,
+   "v": 628,
    "pv": "1.47",
-   "d": "2026-11-03",
-   "tr": "Çardağına artık kendi adını verebilirsin: kurunca adı sorulur, sonradan çardağın kartındaki «Çardağa ad ver» düğmesiyle değiştirilir. Tabelada çay simgesi yok, yalnız verdiğin ad yazar (ad vermezsen «Çardak»). Çardağın çatısı altına artık kar yağmıyor; semaverin dibindeyken bank yerine semaver düğmesi çıkıyor.",
-   "en": "You can now give your gazebo its own name: you are asked when you build it, and you can change it later with «Name the gazebo» on its card. The sign has no tea icon, only the name you choose (or «Gazebo»). Snow no longer settles under the gazebo roof, and next to the samovar you get the samovar button instead of the bench one."
+   "d": "2026-11-04",
+   "tr": "Mevsimler artık iki kat uzun sürüyor: her mevsim yaklaşık 7,5 gerçek gün, geçişler daha yavaş. Kışın kar daha seyrek yağıyor, iki kar yağışı arasında en az bir açık ya da bulutlu dönem oluyor; yağan kar yerde kalmayı sürdürüyor.",
+   "en": "Seasons now last twice as long: each season is about 7.5 real days and the changes come more slowly. In winter it snows less often, with at least one clear or cloudy spell between two snowfalls; fallen snow still stays on the ground."
   },
   {
-   "v": 624,
+   "v": 627,
    "pv": "1.47",
-   "d": "2026-11-03",
-   "tr": "Hastane artık gerçek bir tedavi süreci: içeri girince Hemşire Elif masasından kalkıp seni karşılar. Sağlığına göre tansiyon ve ateş ölçülür, gerekirse kan ve idrar tahlili yapılır, yaraların sarılır, serum takılır; sedyede yatarken adımları ve sağlığının dolduğunu görürsün, sonunda doktor tahlil sonuçlarını söyler. Ücret aynı (20 altın), sağlığın tamken kısa kontrol ücretsiz. Bayılınca artık 112 ambulansı sirenle gelip seni Devlet Hastanesi'ne götürür, orada tedavi edilirsin (ambulans + tedavi yine 40 altın).",
-   "en": "The hospital now has a real treatment process: when you walk in, Nurse Elif gets up from her desk to greet you. Depending on your health, your blood pressure and temperature are checked, blood and urine tests are done if needed, wounds are bandaged and an IV drip is put in; lying on the bed you see each step and your health filling up, and at the end the doctor tells you the test results. The price is the same (20 gold), and a quick check-up is free when you're healthy. If you faint, a 112 ambulance now arrives with its siren and takes you to the State Hospital for treatment (ambulance + treatment still 40 gold)."
+   "d": "2026-11-04",
+   "tr": "Kış daha gerçekçi: karda ve soğukta (4°C altı) koyunlar kırkılmaz, havalar ısınınca kırkılır; kırkım görevi bu sırada ambardaki yünü de sayar. Kışın ve karda meyve ağaçları meyve vermez. Kar yağarken de kamp ateşi yanar; ateşin başında ısınınca sağlığın yükselir (yağmur yine söndürür). Karlı açık tarla sürülmez, ekilmez, biçilmez; olgun ekin kar kalkana kadar bozulmadan bekler, serada iş sürer. Traktör yolda da mazot yakar (100 metrede 1 L); mazot bitince durur, oturduğun yerden bidonla mazot koyabilirsin.",
+   "en": "Winter is more realistic: sheep aren't sheared in snow or cold (below 4°C) and can be sheared once it warms up; meanwhile the shearing quest also counts wool in your barn. Fruit trees give no fruit in winter or snow. The campfire now keeps burning while it snows, and warming up by it raises your health (rain still puts it out). Snowy open fields can't be ploughed, sown or harvested; ripe crops wait under the snow without spoiling, and work goes on in the greenhouse. The tractor also burns diesel on the road (1 L per 100 m); it stops when the tank is empty, and you can top it up from a jerrycan without getting off."
   }
  ]
 }
