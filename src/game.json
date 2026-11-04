@@ -1,30 +1,30 @@
 {
- "v": 629,
- "version": "1.47",
+ "v": 633,
+ "version": "1.49",
  "quests": 216,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 629,
-   "pv": "1.47",
+   "v": 633,
+   "pv": "1.49",
    "d": "2026-11-04",
-   "tr": "Laboratuvardaki alçı analizinde kristal suyu artık 300 °C'de ölçülüyor (önce 230 °C idi); soru, doğru cevap, açıklama ve rapor buna göre güncellendi.",
-   "en": "In the lab's gypsum analysis, crystal water is now measured at 300 °C (was 230 °C); the question, correct answer, explanation and report were updated."
+   "tr": "Karda ahır ve ağılların çatısını ve yan perdelerini çoban, hayvan bakıcısı Murat ya da sağlık bakıcısı Derya kapatıyor; yerde kar varken kapalı kalıyor. Kapalı ön perde artık kapı girişini kapatmıyor.",
+   "en": "In snow the shepherd, animal keeper Murat or animal health carer Derya now close the barn and pen roofs and side curtains, keeping them shut while snow lies on the ground. The closed front curtain no longer blocks the gate."
   },
   {
-   "v": 628,
-   "pv": "1.47",
+   "v": 632,
+   "pv": "1.49",
    "d": "2026-11-04",
-   "tr": "Mevsimler artık iki kat uzun sürüyor: her mevsim yaklaşık 7,5 gerçek gün, geçişler daha yavaş. Kışın kar daha seyrek yağıyor, iki kar yağışı arasında en az bir açık ya da bulutlu dönem oluyor; yağan kar yerde kalmayı sürdürüyor.",
-   "en": "Seasons now last twice as long: each season is about 7.5 real days and the changes come more slowly. In winter it snows less often, with at least one clear or cloudy spell between two snowfalls; fallen snow still stays on the ground."
+   "tr": "Fabrikalar canlandı: sanayi bölgesindeki bütün yapılara artık kapısından girilir. Un, yem, şeker fabrikası ve tekstil atölyesinin içinde hammadde yığını, besleme hunisi, makinenin içinden geçen bant ve ürün paletleri var; hammadde makineye girer, ürün olarak çıkar. Elektrik kesikse ya da hammadde yoksa bant durur ve ışık kırmızı yanar, operatör Erkan yoksa bant yarım hızda döner. Erkan, Selin ve mühendisin mesai saatinde içeride çalışır. Kontrol panelinde tarif, günlük kapasite ve bu sabahki üretim görünür; günde bir kez elle vardiya çalıştırıp (20 enerji) günlük kapasitenin dörtte biri kadar ek ürün yapabilirsin. Sanayi izni arsası artık Sanayi ofisi: duvardaki izin belgesi neleri açtığını tek tek yazar, toptancı masası, fabrikaların durum panosu ve çalışan panosu da burada. Jeneratör dairesine, soğuk hava deposuna, liman acentesine ve holding merkezine de girilir. Her sanayi yapısının kapısında Ne işe yarar? açıklaması var.",
+   "en": "Factories come alive: you can now walk into every building in the industrial zone. Inside the flour, feed and sugar factories and the textile workshop there are raw material piles, a feed hopper, a conveyor running through the machine and product pallets; raw material goes in and comes out as product. With no power or no raw materials the belt stops and the light turns red; without operator Erkan the belt runs at half speed. Erkan, Selin and the engineer work inside during working hours. The control panel shows the recipe, daily capacity and this morning's output; once a day you can run a manual shift (20 energy) for an extra quarter of the daily capacity. The industrial permit plot is now the Industry office: the permit on the wall lists everything it unlocks, and the wholesale desk, factory status board and staff board are there too. You can also enter the generator room, cold store, port agency and holding headquarters. Every industrial building has a What is it for? explanation at its door."
   },
   {
-   "v": 627,
-   "pv": "1.47",
+   "v": 631,
+   "pv": "1.48",
    "d": "2026-11-04",
-   "tr": "Kış daha gerçekçi: karda ve soğukta (4°C altı) koyunlar kırkılmaz, havalar ısınınca kırkılır; kırkım görevi bu sırada ambardaki yünü de sayar. Kışın ve karda meyve ağaçları meyve vermez. Kar yağarken de kamp ateşi yanar; ateşin başında ısınınca sağlığın yükselir (yağmur yine söndürür). Karlı açık tarla sürülmez, ekilmez, biçilmez; olgun ekin kar kalkana kadar bozulmadan bekler, serada iş sürer. Traktör yolda da mazot yakar (100 metrede 1 L); mazot bitince durur, oturduğun yerden bidonla mazot koyabilirsin.",
-   "en": "Winter is more realistic: sheep aren't sheared in snow or cold (below 4°C) and can be sheared once it warms up; meanwhile the shearing quest also counts wool in your barn. Fruit trees give no fruit in winter or snow. The campfire now keeps burning while it snows, and warming up by it raises your health (rain still puts it out). Snowy open fields can't be ploughed, sown or harvested; ripe crops wait under the snow without spoiling, and work goes on in the greenhouse. The tractor also burns diesel on the road (1 L per 100 m); it stops when the tank is empty, and you can top it up from a jerrycan without getting off."
+   "tr": "Karda köy kavşaklarındaki asfalt yaması artık yol gibi karla örtülüyor; gri karsız dikdörtgen kalmadı.",
+   "en": "Asphalt patches at village junctions are now covered by snow like the roads; no more grey snow-free rectangle."
   }
  ]
 }
