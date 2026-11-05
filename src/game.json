@@ -1,10 +1,17 @@
 {
- "v": 648,
+ "v": 649,
  "version": "1.51",
  "quests": 216,
  "chapters": 6,
  "languages": 7,
  "changes": [
+  {
+   "v": 649,
+   "pv": "1.51",
+   "d": "2026-11-05",
+   "tr": "Yamaçta ata binerken binici artık eyerde oturuyor, atın boynuna kaymıyor. Traktör otomatik sürerken mazot bitince olduğu yerde duruyor; o ana kadar biçilen ekin toplanıyor. Çoban ve bakıcılar ahır/ağıl çatısını ve perdesini hava değişince hemen açıp kapatıyor.",
+   "en": "When riding on slopes the rider now stays in the saddle instead of sliding onto the horse's neck. During auto-drive the tractor stops where it is when diesel runs out, and the crops cut so far are collected. Shepherds and keepers now open and close barn roofs and curtains as soon as the weather changes."
+  },
   {
    "v": 648,
    "pv": "1.51",
@@ -18,13 +25,6 @@
    "d": "2026-11-05",
    "tr": "Sel ve Tasami hediyeleri artık oyun açıkken anında geliyor (oyunu kapatıp açmak gerekmiyor). Karlı havada sel olmuyor; kar kalkınca geliyor.",
    "en": "Floods and Tasami gifts now arrive instantly while the game is open (no restart needed). There are no floods in snowy weather; it comes once the snow is gone."
-  },
-  {
-   "v": 646,
-   "pv": "1.50",
-   "d": "2026-11-05",
-   "tr": "Yönetici panelinden oyunculara sel gönderilebiliyor (test için). Sel, oyuncu köyde ya da çiftlikteyken gelir.",
-   "en": "Admins can now send a flood to a player (for testing). It arrives when the player is in the village or on the farm."
   }
  ]
 }
