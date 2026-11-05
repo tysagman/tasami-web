@@ -1,30 +1,30 @@
 {
- "v": 637,
+ "v": 640,
  "version": "1.49",
  "quests": 216,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 637,
+   "v": 640,
    "pv": "1.49",
    "d": "2026-11-05",
-   "tr": "Kendi karakterin artık 30'dan fazla parça yerine tek parça çiziliyor (her karede ~34 çizim yerine ~5, gölgesi de öyle); görünüşü, aletleri ve hareketleri aynı. Kıyafet ya da görünüm değişince karakter birkaç saniye içinde yeniden hazırlanır. Bütün telefonlarda, en çok da giriş seviyesi cihazlarda işe yarar.",
-   "en": "Your own character is now drawn as a single piece instead of 30+ parts (about 5 draws per frame instead of 34, shadow too); looks, tools and movement are unchanged. When clothes or appearance change, the character is prepared again within a few seconds. Helps on all phones, most of all entry-level devices."
+   "tr": "Hesabına giriş yapmış oyuncular oyunu açınca artık hesap ekranını görmez, doğrudan ana menü gelir. Hesap ekranı yalnız misafir oyunculara bir kez gösterilir.",
+   "en": "Players who are signed in no longer see the account screen when they open the game; the main menu comes up directly. The account screen is shown once only to guest players."
   },
   {
-   "v": 636,
+   "v": 639,
    "pv": "1.49",
-   "d": "2026-11-04",
-   "tr": "Giriş seviyesi telefon ve tabletlerde ekran kartı yükü yaklaşık üçte bir azaldı: grafik en düşük ayardayken gökyüzünden gelen yansıma ışığı hesaplanmıyor, yerine ortam ışığı biraz artırıldı. Görüntü neredeyse aynı; daha yüksek grafik ayarlarında hiçbir şey değişmedi.",
-   "en": "About a third less GPU load on entry-level phones and tablets: at the lowest graphics setting, reflected sky light is no longer calculated and ambient light is raised slightly instead. The picture looks almost the same; higher graphics settings are unchanged."
+   "d": "2026-11-05",
+   "tr": "Bazı oyuncular hesaplarından kendiliğinden çıkıyordu: internet yavaşken oyun açılışta hesabını doğrulamayı yalnız 5 saniye bekliyor, sonra misafir girişine geçiyordu. Artık hesabın doğrulanması beklenir, kayıtlı hesap misafirle değişmez. Daha önce hesabından düşen oyuncular Hesap ekranında uyarı görür; bir kez yeniden giriş yapınca kaydı yine buluta yüklenir.",
+   "en": "Some players were being signed out of their account on their own: on a slow connection the game waited only 5 seconds for your account to be verified at start, then switched to guest. Now it waits for the account check and your account is never replaced by a guest. Players who were signed out see a note on the Account screen; signing in once uploads the save to the cloud again."
   },
   {
-   "v": 635,
+   "v": 638,
    "pv": "1.49",
-   "d": "2026-11-04",
-   "tr": "Giriş seviyesi telefon ve tabletlerde daha az işlemci yükü: grafik en düşük ayardayken uzaktaki köylüler, kalabalık ve mini harita daha seyrek hesaplanıyor (yürüyüş hızları aynı). Yakındaki insan ve hayvanların tek parça çizime geçişi yavaş cihazlarda da her saniye ilerliyor.",
-   "en": "Less CPU load on entry-level phones and tablets: at the lowest graphics setting, distant villagers, crowds and the minimap update less often (walking speeds unchanged). Nearby people and animals now switch to single-piece drawing steadily on slow devices too."
+   "d": "2026-11-05",
+   "tr": "Görev penceresindeki \"İlerleme\" satırı artık neyi saydığını yazıyor: ör. Demirkol görevinde \"Üst üste teslim günü 3/10\", altında \"Kooperatife teslim yaptığın her gün 1 sayılır\" ve bugün teslim yapılıp yapılmadığı. Diğer görevlerde de \"Kesilen odun\", \"İnek sayısı\", \"Kamyon seferi\", \"Üretilen kumaş\" gibi açık adlar var; sayaç görevlerinde görev başladıktan sonra yapılanların sayıldığı yazar.",
+   "en": "The \"Progress\" line in the quest window now says what it counts: e.g. \"Days delivered in a row 3/10\" in the Demirkol quest, with \"Each day you deliver to the cooperative counts as 1\" and whether you delivered today. Other quests show clear names too, like \"Wood chopped\", \"Number of cows\", \"Truck trips\" or \"Fabric produced\"; counter quests note that only what you do after the quest starts counts."
   }
  ]
 }
