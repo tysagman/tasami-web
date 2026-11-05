@@ -1,30 +1,30 @@
 {
- "v": 640,
- "version": "1.49",
+ "v": 648,
+ "version": "1.51",
  "quests": 216,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 640,
-   "pv": "1.49",
+   "v": 648,
+   "pv": "1.51",
    "d": "2026-11-05",
-   "tr": "Hesabına giriş yapmış oyuncular oyunu açınca artık hesap ekranını görmez, doğrudan ana menü gelir. Hesap ekranı yalnız misafir oyunculara bir kez gösterilir.",
-   "en": "Players who are signed in no longer see the account screen when they open the game; the main menu comes up directly. The account screen is shown once only to guest players."
+   "tr": "Hava durumu artık yaşadığın bölgeye göre: Doğu Anadolu'da kış sert ve karlı (Elazığ–Erzurum arası), Akdeniz ve Ege'de ılık ve yağmurlu, Karadeniz'de bol yağmur, İç Anadolu'da kuru soğuk, Güneydoğu'da sıcak yaz. Yurt dışında da iklim kuşağına göre (ılıman, karasal, soğuk kuzey, sıcak kurak, tropikal). Konum izni istenmez; bölgen yanlışsa Hava durumu ekranındaki 📍 Bölgen satırından seçebilirsin. Takvim, mevsimler ve görevler herkeste aynı kalır.",
+   "en": "Weather now follows the region you live in: harsh snowy winters in Eastern Anatolia, mild rainy winters on the Mediterranean and Aegean coasts, lots of rain on the Black Sea, dry cold in Central Anatolia, hot summers in the Southeast. Abroad it follows your climate zone (mild, continental, cold northern, hot dry, tropical). No location permission is needed; if your region is wrong, pick it from the 📍 Your region row on the Weather screen. The calendar, seasons and quests stay the same for everyone."
   },
   {
-   "v": 639,
-   "pv": "1.49",
+   "v": 647,
+   "pv": "1.50",
    "d": "2026-11-05",
-   "tr": "Bazı oyuncular hesaplarından kendiliğinden çıkıyordu: internet yavaşken oyun açılışta hesabını doğrulamayı yalnız 5 saniye bekliyor, sonra misafir girişine geçiyordu. Artık hesabın doğrulanması beklenir, kayıtlı hesap misafirle değişmez. Daha önce hesabından düşen oyuncular Hesap ekranında uyarı görür; bir kez yeniden giriş yapınca kaydı yine buluta yüklenir.",
-   "en": "Some players were being signed out of their account on their own: on a slow connection the game waited only 5 seconds for your account to be verified at start, then switched to guest. Now it waits for the account check and your account is never replaced by a guest. Players who were signed out see a note on the Account screen; signing in once uploads the save to the cloud again."
+   "tr": "Sel ve Tasami hediyeleri artık oyun açıkken anında geliyor (oyunu kapatıp açmak gerekmiyor). Karlı havada sel olmuyor; kar kalkınca geliyor.",
+   "en": "Floods and Tasami gifts now arrive instantly while the game is open (no restart needed). There are no floods in snowy weather; it comes once the snow is gone."
   },
   {
-   "v": 638,
-   "pv": "1.49",
+   "v": 646,
+   "pv": "1.50",
    "d": "2026-11-05",
-   "tr": "Görev penceresindeki \"İlerleme\" satırı artık neyi saydığını yazıyor: ör. Demirkol görevinde \"Üst üste teslim günü 3/10\", altında \"Kooperatife teslim yaptığın her gün 1 sayılır\" ve bugün teslim yapılıp yapılmadığı. Diğer görevlerde de \"Kesilen odun\", \"İnek sayısı\", \"Kamyon seferi\", \"Üretilen kumaş\" gibi açık adlar var; sayaç görevlerinde görev başladıktan sonra yapılanların sayıldığı yazar.",
-   "en": "The \"Progress\" line in the quest window now says what it counts: e.g. \"Days delivered in a row 3/10\" in the Demirkol quest, with \"Each day you deliver to the cooperative counts as 1\" and whether you delivered today. Other quests show clear names too, like \"Wood chopped\", \"Number of cows\", \"Truck trips\" or \"Fabric produced\"; counter quests note that only what you do after the quest starts counts."
+   "tr": "Yönetici panelinden oyunculara sel gönderilebiliyor (test için). Sel, oyuncu köyde ya da çiftlikteyken gelir.",
+   "en": "Admins can now send a flood to a player (for testing). It arrives when the player is in the village or on the farm."
   }
  ]
 }
