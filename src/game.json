@@ -1,30 +1,30 @@
 {
- "v": 649,
- "version": "1.51",
- "quests": 216,
+ "v": 659,
+ "version": "1.56",
+ "quests": 218,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 649,
-   "pv": "1.51",
-   "d": "2026-11-05",
-   "tr": "Yamaçta ata binerken binici artık eyerde oturuyor, atın boynuna kaymıyor. Traktör otomatik sürerken mazot bitince olduğu yerde duruyor; o ana kadar biçilen ekin toplanıyor. Çoban ve bakıcılar ahır/ağıl çatısını ve perdesini hava değişince hemen açıp kapatıyor.",
-   "en": "When riding on slopes the rider now stays in the saddle instead of sliding onto the horse's neck. During auto-drive the tractor stops where it is when diesel runs out, and the crops cut so far are collected. Shepherds and keepers now open and close barn roofs and curtains as soon as the weather changes."
+   "v": 659,
+   "pv": "1.56",
+   "d": "2026-11-06",
+   "tr": "Gübre taşıyıcı Rıfat akşam meydandaki kuyunun içinde durmuyor, evine gidiyor. Köy dışındaki yamaçlarda karakter artık yere gömülmüyor.",
+   "en": "Manure carrier Rıfat no longer stands inside the square's well in the evening. Your character no longer sinks into slopes outside the village."
   },
   {
-   "v": 648,
-   "pv": "1.51",
-   "d": "2026-11-05",
-   "tr": "Hava durumu artık yaşadığın bölgeye göre: Doğu Anadolu'da kış sert ve karlı (Elazığ–Erzurum arası), Akdeniz ve Ege'de ılık ve yağmurlu, Karadeniz'de bol yağmur, İç Anadolu'da kuru soğuk, Güneydoğu'da sıcak yaz. Yurt dışında da iklim kuşağına göre (ılıman, karasal, soğuk kuzey, sıcak kurak, tropikal). Konum izni istenmez; bölgen yanlışsa Hava durumu ekranındaki 📍 Bölgen satırından seçebilirsin. Takvim, mevsimler ve görevler herkeste aynı kalır.",
-   "en": "Weather now follows the region you live in: harsh snowy winters in Eastern Anatolia, mild rainy winters on the Mediterranean and Aegean coasts, lots of rain on the Black Sea, dry cold in Central Anatolia, hot summers in the Southeast. Abroad it follows your climate zone (mild, continental, cold northern, hot dry, tropical). No location permission is needed; if your region is wrong, pick it from the 📍 Your region row on the Weather screen. The calendar, seasons and quests stay the same for everyone."
+   "v": 658,
+   "pv": "1.56",
+   "d": "2026-11-06",
+   "tr": "Haritada bölge keşfi: bir bölgeye (Batı ormanları, Güney ovası, Kuzey Diyarı, Elazığ yolu vb.) ilk girdiğinde artık bölgenin tamamı haritada açılıyor; eskiden yalnız girdiğin noktanın çevresi açılıyordu. Daha önce gittiğin bölgeler de oyunu açınca haritada tamamen görünür.",
+   "en": "Map exploration: the first time you enter a region (Western forests, Southern plain, Northern lands, the Elazığ road and others), the whole region now appears on the map; before, only the area around where you entered was revealed. Regions you visited before are also fully revealed when you open the game."
   },
   {
-   "v": 647,
-   "pv": "1.50",
-   "d": "2026-11-05",
-   "tr": "Sel ve Tasami hediyeleri artık oyun açıkken anında geliyor (oyunu kapatıp açmak gerekmiyor). Karlı havada sel olmuyor; kar kalkınca geliyor.",
-   "en": "Floods and Tasami gifts now arrive instantly while the game is open (no restart needed). There are no floods in snowy weather; it comes once the snow is gone."
+   "v": 657,
+   "pv": "1.56",
+   "d": "2026-11-06",
+   "tr": "Elle tarla işi artık parsel parsel: tarla düğmesine basınca karakterin tek bir eğilişle bütün tarlayı bitirmesi yerine her parselin yanına yürür; orakla başakları biçer, tohum serper ya da kazmayla toprağı sürer. Parseller tek tek değişir. Yorgunluk ve verim aynı; istersen yürüyüp işi yarıda bırakabilirsin, yapılanlar kalır. Traktörle otomatik sürüş elle işten çok daha hızlı.",
+   "en": "Hand field work is now plot by plot: instead of finishing the whole field with one bend, your character walks to each plot, cuts the wheat with a sickle, scatters seeds or digs the soil with a pick. Plots change one by one. Energy and yield are the same; walk away to stop halfway and the finished plots stay done. Automatic tractor work is much faster than working by hand."
   }
  ]
 }
