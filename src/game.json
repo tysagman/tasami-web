@@ -1,10 +1,17 @@
 {
- "v": 659,
- "version": "1.56",
+ "v": 660,
+ "version": "1.57",
  "quests": 218,
  "chapters": 6,
  "languages": 7,
  "changes": [
+  {
+   "v": 660,
+   "pv": "1.57",
+   "d": "2026-11-06",
+   "tr": "Salıncakta karakter oturağa tam oturuyor. Traktör seranın yan duvarlarından geçmiyor, seraya açık uçlarından girilir. Kâhya başvurularında Reddet düğmesi var; herkesi reddedersen ilan yeniden çıkar. Fabrikalarda hammadde deposundan köylüden hammadde (pancar, yün) alınıp doğrudan ambara konabilir.",
+   "en": "Your character now sits properly on the swing. The tractor no longer drives through the greenhouse side walls; enter from the open ends. Steward applications have a Reject button; if you reject everyone, the ad is posted again. In factories you can buy raw materials (beets, wool) from villagers straight into storage."
+  },
   {
    "v": 659,
    "pv": "1.56",
@@ -18,13 +25,6 @@
    "d": "2026-11-06",
    "tr": "Haritada bölge keşfi: bir bölgeye (Batı ormanları, Güney ovası, Kuzey Diyarı, Elazığ yolu vb.) ilk girdiğinde artık bölgenin tamamı haritada açılıyor; eskiden yalnız girdiğin noktanın çevresi açılıyordu. Daha önce gittiğin bölgeler de oyunu açınca haritada tamamen görünür.",
    "en": "Map exploration: the first time you enter a region (Western forests, Southern plain, Northern lands, the Elazığ road and others), the whole region now appears on the map; before, only the area around where you entered was revealed. Regions you visited before are also fully revealed when you open the game."
-  },
-  {
-   "v": 657,
-   "pv": "1.56",
-   "d": "2026-11-06",
-   "tr": "Elle tarla işi artık parsel parsel: tarla düğmesine basınca karakterin tek bir eğilişle bütün tarlayı bitirmesi yerine her parselin yanına yürür; orakla başakları biçer, tohum serper ya da kazmayla toprağı sürer. Parseller tek tek değişir. Yorgunluk ve verim aynı; istersen yürüyüp işi yarıda bırakabilirsin, yapılanlar kalır. Traktörle otomatik sürüş elle işten çok daha hızlı.",
-   "en": "Hand field work is now plot by plot: instead of finishing the whole field with one bend, your character walks to each plot, cuts the wheat with a sickle, scatters seeds or digs the soil with a pick. Plots change one by one. Energy and yield are the same; walk away to stop halfway and the finished plots stay done. Automatic tractor work is much faster than working by hand."
   }
  ]
 }
