@@ -1,30 +1,30 @@
 {
- "v": 673,
- "version": "1.63",
+ "v": 675,
+ "version": "1.64",
  "quests": 218,
  "chapters": 6,
  "languages": 7,
  "changes": [
+  {
+   "v": 675,
+   "pv": "1.64",
+   "d": "2026-11-07",
+   "tr": "Hazırlık: yeni Android sürümü için isteğe bağlı ödüllü reklam altyapısı eklendi (inşaatı hızlandırma, Sen yokken ek ürün, günlük hediye, bozulmak üzere ürün, afet kurtarma, enerji, bedava taksi; günde en çok 5). Reklam izlemek hiçbir zaman zorunlu değil, araya giren reklam ve şerit reklam yok. Şu an oyunda bir değişiklik görünmez.",
+   "en": "Preparation: optional rewarded ads were added for the next Android version (speed up construction, extra goods while away, daily gift, about-to-spoil goods, disaster recovery, energy, free taxi; at most 5 a day). Watching ads is never required, and there are no interstitial or banner ads. Nothing changes in the game yet."
+  },
+  {
+   "v": 674,
+   "pv": "1.64",
+   "d": "2026-11-07",
+   "tr": "v1.64: Dede tarlasında traktör artık normal tarla gibi yalnız üstünden geçtiği parselleri sürer, eker, biçer. Tarlanın içinde ağaç kalmadı. At arabasındaki yük kasaya oturur. Dedenin tarlası ve konağı senin alanın: arkadaşın ziyarete gelmeden orada görünmez. Traktördeki arkadaşın traktörün üstünde görünür.",
+   "en": "v1.64: On Grandpa's field the tractor now works parcel by parcel like on your own field. No trees inside the field. Cart load sits in the bed. The field and mansion are private. Friends driving a tractor are shown on it."
+  },
   {
    "v": 673,
    "pv": "1.63",
    "d": "2026-11-07",
    "tr": "Hasan Dede'nin tarlasının tabelası artık girişin üstünde kemer: kapıdan yürüyerek, atla ve traktörle rahatça girilir.",
    "en": "Grandpa Hasan's field sign is now an arch over the gate, so the entrance is no longer blocked."
-  },
-  {
-   "v": 672,
-   "pv": "1.63",
-   "d": "2026-11-07",
-   "tr": "v1.63: Traktör daha gerçekçi: açık kabin, koltuk ve direksiyon; sürerken karakterin direksiyonda oturduğu görünür, dönerken direksiyon çevrilir; lastikler tırnaklı. Kâhya raporunda saat düzgün yazılır, işe alınmış kâhyanın kartında başvuru satırı görünmez.",
-   "en": "v1.63: More realistic tractor: open cab, seat and steering wheel; your character is seen at the wheel and turns it; treaded tyres. Steward report time shows correctly."
-  },
-  {
-   "v": 671,
-   "pv": "1.62",
-   "d": "2026-11-07",
-   "tr": "Çantan dolunca traktör artık durur: biçer tablasıyla otomatik sürüş yalnız çantaya sığan parselleri biçer, çanta dolunca durur ve uyarır; elle sürerken çanta doluysa traktör olgun ekine girmez, boşuna mazot yanmaz. Yeni yapı Samanlık: 1.000 ot sandıkta yer kaplamadan balya balya saklanır, çoban ve çalışanlar yemliğe otu buradan alır. Evin yanındaki saman balyaları kaldırıldı.",
-   "en": "The tractor now stops when your bag is full: auto-driving with the harvester head only harvests plots that fit in your bag, then stops and warns you; when driving by hand with a full bag the tractor won't enter ripe crops, so no fuel is wasted. New building Hay barn: stores 1,000 hay bale by bale without taking chest space; the shepherd and workers take hay for the troughs from here. The hay bales next to the house were removed."
   }
  ]
 }
