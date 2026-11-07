@@ -1,30 +1,30 @@
 {
- "v": 660,
- "version": "1.57",
+ "v": 667,
+ "version": "1.60",
  "quests": 218,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 660,
-   "pv": "1.57",
-   "d": "2026-11-06",
-   "tr": "Salıncakta karakter oturağa tam oturuyor. Traktör seranın yan duvarlarından geçmiyor, seraya açık uçlarından girilir. Kâhya başvurularında Reddet düğmesi var; herkesi reddedersen ilan yeniden çıkar. Fabrikalarda hammadde deposundan köylüden hammadde (pancar, yün) alınıp doğrudan ambara konabilir.",
-   "en": "Your character now sits properly on the swing. The tractor no longer drives through the greenhouse side walls; enter from the open ends. Steward applications have a Reject button; if you reject everyone, the ad is posted again. In factories you can buy raw materials (beets, wool) from villagers straight into storage."
+   "v": 667,
+   "pv": "1.60",
+   "d": "2026-11-07",
+   "tr": "Toptancı artık görünüyor: sanayi bölgesindeki sanayi ofisinde, toptancı masasının başında oturuyor. Toptancı görevlerinde 📍 Yol göster seni sanayi ofisinin kapısına götürür, görev kartı toptancının nerede olduğunu yazar. Fabrika, mandıra, kamyon, ihracat, holding, vadeli hesap ve sigorta görevlerinin oku da eve değil, ilgili yapıya ya da Hazar Bank'a gider.",
+   "en": "The wholesaler is now visible: he sits at the wholesale desk in the industry office in the industrial zone. In wholesaler quests 📍 Show the way takes you to the industry office door, and the quest card says where he is. Factory, dairy, truck, export, holding, time deposit and insurance quests now point to their building or Hazar Bank instead of your house."
   },
   {
-   "v": 659,
-   "pv": "1.56",
-   "d": "2026-11-06",
-   "tr": "Gübre taşıyıcı Rıfat akşam meydandaki kuyunun içinde durmuyor, evine gidiyor. Köy dışındaki yamaçlarda karakter artık yere gömülmüyor.",
-   "en": "Manure carrier Rıfat no longer stands inside the square's well in the evening. Your character no longer sinks into slopes outside the village."
+   "v": 666,
+   "pv": "1.60",
+   "d": "2026-11-07",
+   "tr": "20 ve üstü çuval un, şeker, yem ya da top kumaş teslim ederken taşıt gerekiyor: yanında arabalı at ya da traktör + römork olmalı, ya da çiftlikte kamyonun olmalı. Taşıt yoksa nasıl getireceğin yazılır.",
+   "en": "Delivering 20 or more sacks of flour, sugar, feed or bolts of cloth now needs a vehicle: bring a horse cart or tractor + trailer, or own a truck. Without one, the game tells you how to bring it."
   },
   {
-   "v": 658,
-   "pv": "1.56",
-   "d": "2026-11-06",
-   "tr": "Haritada bölge keşfi: bir bölgeye (Batı ormanları, Güney ovası, Kuzey Diyarı, Elazığ yolu vb.) ilk girdiğinde artık bölgenin tamamı haritada açılıyor; eskiden yalnız girdiğin noktanın çevresi açılıyordu. Daha önce gittiğin bölgeler de oyunu açınca haritada tamamen görünür.",
-   "en": "Map exploration: the first time you enter a region (Western forests, Southern plain, Northern lands, the Elazığ road and others), the whole region now appears on the map; before, only the area around where you entered was revealed. Regions you visited before are also fully revealed when you open the game."
+   "v": 665,
+   "pv": "1.59",
+   "d": "2026-11-07",
+   "tr": "Kadın karakterler artık kadın olduğu belli olacak şekilde görünüyor: belli bir bel ve göğüs hattı, sırta inen uzun saç, yüzü açık renkli başörtüsü ve uzun etek. Köylü kadınların uzun saçı artık yüzün altını kapatıp sakal gibi görünmüyor, açık renkli başörtüleri de kel kafa gibi görünmüyor. Kadın kâhya (ör. Kâhya Songül) kadın simgesiyle ve renkli başörtüsüyle görünür.",
+   "en": "Female characters now clearly look like women: a defined waist and bust, long hair falling down the back, colorful headscarves that leave the face open and long skirts. Village women's long hair no longer covers the lower face like a beard, and light headscarves no longer look like a bald head. A female steward (e.g. Steward Songül) now shows a woman icon and a colorful headscarf."
   }
  ]
 }
