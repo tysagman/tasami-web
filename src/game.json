@@ -1,30 +1,30 @@
 {
- "v": 675,
- "version": "1.64",
+ "v": 678,
+ "version": "1.65",
  "quests": 218,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 675,
-   "pv": "1.64",
+   "v": 678,
+   "pv": "1.65",
    "d": "2026-11-07",
-   "tr": "Hazırlık: yeni Android sürümü için isteğe bağlı ödüllü reklam altyapısı eklendi (inşaatı hızlandırma, Sen yokken ek ürün, günlük hediye, bozulmak üzere ürün, afet kurtarma, enerji, bedava taksi; günde en çok 5). Reklam izlemek hiçbir zaman zorunlu değil, araya giren reklam ve şerit reklam yok. Şu an oyunda bir değişiklik görünmez.",
-   "en": "Preparation: optional rewarded ads were added for the next Android version (speed up construction, extra goods while away, daily gift, about-to-spoil goods, disaster recovery, energy, free taxi; at most 5 a day). Watching ads is never required, and there are no interstitial or banner ads. Nothing changes in the game yet."
+   "tr": "v1.65: Çok yüksek grafik ayarı coştu (Ayarlar › Grafik ve hız › Çok yüksek; güçlü telefonlar ve bilgisayar için). Güneş, su pırıltısı, ateş ve lambalar parlıyor, ağaçların arasından güneş huzmeleri sızıyor, renkler daha canlı, kenarlar daha yumuşak. Göl artık dalgalanıyor, gökyüzünü yansıtıyor ve güneşte pırıl pırıl. Bilgisayarda gölgeler daha net. Düşük, Orta ve Yüksek ayarlar değişmedi.",
+   "en": "v1.65: The Very high graphics setting got a big upgrade (Settings › Graphics and speed › Very high; for powerful phones and computers). The sun, water sparkles, fires and lamps glow, sunbeams shine through the trees, colors are more vivid and edges are smoother. The lake now ripples, reflects the sky and sparkles in the sun. Shadows are sharper on computers. Low, Medium and High are unchanged."
   },
   {
-   "v": 674,
+   "v": 677,
    "pv": "1.64",
-   "d": "2026-11-07",
-   "tr": "v1.64: Dede tarlasında traktör artık normal tarla gibi yalnız üstünden geçtiği parselleri sürer, eker, biçer. Tarlanın içinde ağaç kalmadı. At arabasındaki yük kasaya oturur. Dedenin tarlası ve konağı senin alanın: arkadaşın ziyarete gelmeden orada görünmez. Traktördeki arkadaşın traktörün üstünde görünür.",
-   "en": "v1.64: On Grandpa's field the tractor now works parcel by parcel like on your own field. No trees inside the field. Cart load sits in the bed. The field and mansion are private. Friends driving a tractor are shown on it."
+   "d": "2026-11-08",
+   "tr": "Hazırlık: ödüllü reklam üst üste yüklenemezse oyun bunun özel DNS ya da reklam engelleyiciden olabileceğini kibarca söyler. Oyunda bir ceza ya da kısıtlama yok.",
+   "en": "Preparation: if rewarded ads repeatedly fail to load, the game kindly mentions that a private DNS or ad blocker may be the reason. There is no penalty or restriction."
   },
   {
-   "v": 673,
-   "pv": "1.63",
-   "d": "2026-11-07",
-   "tr": "Hasan Dede'nin tarlasının tabelası artık girişin üstünde kemer: kapıdan yürüyerek, atla ve traktörle rahatça girilir.",
-   "en": "Grandpa Hasan's field sign is now an arch over the gate, so the entrance is no longer blocked."
+   "v": 676,
+   "pv": "1.64",
+   "d": "2026-11-08",
+   "tr": "Gelen kutusunda mesajlar silinebiliyor: her mesajın yanındaki 🗑 ile tek tek, «Seç» ile seçip, «Hepsini sil» ile hepsini birden.",
+   "en": "Inbox messages can now be deleted: one by one with the 🗑 next to each message, several at once with «Select», or all at once with «Delete all»."
   }
  ]
 }
