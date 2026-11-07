@@ -1,30 +1,30 @@
 {
- "v": 667,
- "version": "1.60",
+ "v": 673,
+ "version": "1.63",
  "quests": 218,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 667,
-   "pv": "1.60",
+   "v": 673,
+   "pv": "1.63",
    "d": "2026-11-07",
-   "tr": "Toptancı artık görünüyor: sanayi bölgesindeki sanayi ofisinde, toptancı masasının başında oturuyor. Toptancı görevlerinde 📍 Yol göster seni sanayi ofisinin kapısına götürür, görev kartı toptancının nerede olduğunu yazar. Fabrika, mandıra, kamyon, ihracat, holding, vadeli hesap ve sigorta görevlerinin oku da eve değil, ilgili yapıya ya da Hazar Bank'a gider.",
-   "en": "The wholesaler is now visible: he sits at the wholesale desk in the industry office in the industrial zone. In wholesaler quests 📍 Show the way takes you to the industry office door, and the quest card says where he is. Factory, dairy, truck, export, holding, time deposit and insurance quests now point to their building or Hazar Bank instead of your house."
+   "tr": "Hasan Dede'nin tarlasının tabelası artık girişin üstünde kemer: kapıdan yürüyerek, atla ve traktörle rahatça girilir.",
+   "en": "Grandpa Hasan's field sign is now an arch over the gate, so the entrance is no longer blocked."
   },
   {
-   "v": 666,
-   "pv": "1.60",
+   "v": 672,
+   "pv": "1.63",
    "d": "2026-11-07",
-   "tr": "20 ve üstü çuval un, şeker, yem ya da top kumaş teslim ederken taşıt gerekiyor: yanında arabalı at ya da traktör + römork olmalı, ya da çiftlikte kamyonun olmalı. Taşıt yoksa nasıl getireceğin yazılır.",
-   "en": "Delivering 20 or more sacks of flour, sugar, feed or bolts of cloth now needs a vehicle: bring a horse cart or tractor + trailer, or own a truck. Without one, the game tells you how to bring it."
+   "tr": "v1.63: Traktör daha gerçekçi: açık kabin, koltuk ve direksiyon; sürerken karakterin direksiyonda oturduğu görünür, dönerken direksiyon çevrilir; lastikler tırnaklı. Kâhya raporunda saat düzgün yazılır, işe alınmış kâhyanın kartında başvuru satırı görünmez.",
+   "en": "v1.63: More realistic tractor: open cab, seat and steering wheel; your character is seen at the wheel and turns it; treaded tyres. Steward report time shows correctly."
   },
   {
-   "v": 665,
-   "pv": "1.59",
+   "v": 671,
+   "pv": "1.62",
    "d": "2026-11-07",
-   "tr": "Kadın karakterler artık kadın olduğu belli olacak şekilde görünüyor: belli bir bel ve göğüs hattı, sırta inen uzun saç, yüzü açık renkli başörtüsü ve uzun etek. Köylü kadınların uzun saçı artık yüzün altını kapatıp sakal gibi görünmüyor, açık renkli başörtüleri de kel kafa gibi görünmüyor. Kadın kâhya (ör. Kâhya Songül) kadın simgesiyle ve renkli başörtüsüyle görünür.",
-   "en": "Female characters now clearly look like women: a defined waist and bust, long hair falling down the back, colorful headscarves that leave the face open and long skirts. Village women's long hair no longer covers the lower face like a beard, and light headscarves no longer look like a bald head. A female steward (e.g. Steward Songül) now shows a woman icon and a colorful headscarf."
+   "tr": "Çantan dolunca traktör artık durur: biçer tablasıyla otomatik sürüş yalnız çantaya sığan parselleri biçer, çanta dolunca durur ve uyarır; elle sürerken çanta doluysa traktör olgun ekine girmez, boşuna mazot yanmaz. Yeni yapı Samanlık: 1.000 ot sandıkta yer kaplamadan balya balya saklanır, çoban ve çalışanlar yemliğe otu buradan alır. Evin yanındaki saman balyaları kaldırıldı.",
+   "en": "The tractor now stops when your bag is full: auto-driving with the harvester head only harvests plots that fit in your bag, then stops and warns you; when driving by hand with a full bag the tractor won't enter ripe crops, so no fuel is wasted. New building Hay barn: stores 1,000 hay bale by bale without taking chest space; the shepherd and workers take hay for the troughs from here. The hay bales next to the house were removed."
   }
  ]
 }
