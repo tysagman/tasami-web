@@ -1,30 +1,30 @@
 {
- "v": 688,
- "version": "1.70",
+ "v": 694,
+ "version": "1.71",
  "quests": 218,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 688,
-   "pv": "1.70",
+   "v": 694,
+   "pv": "1.71",
    "d": "2026-11-08",
-   "tr": "Fabrikalarda arıza ve planlı bakım: makineler çalıştıkça aşınır, oyunda değilken daha hızlı. Arızada üretim durur, onarılmazsa her gün büyür; teknik destek çağırınca parça ve ekip birkaç gün içinde gelir. Planlı bakım aşınmayı sıfırlar ve arıza riskini düşürür.",
-   "en": "Factory breakdowns and scheduled maintenance: machines wear as they run, faster while you are away. A breakdown stops production and gets worse each day if not repaired; call technical support and parts arrive in a few days. Scheduled maintenance resets wear and lowers the risk."
+   "tr": "Toptancı sözleşmesindeki ürün ayrılır",
+   "en": "Wholesale contract goods are reserved"
   },
   {
-   "v": 687,
-   "pv": "1.69",
+   "v": 693,
+   "pv": "1.71",
    "d": "2026-11-08",
-   "tr": "Kürk Kaplıcası havuzunun suyu artık görünüyor; havuzun kenarından içine girilmiyor.",
-   "en": "The Kürk hot spring pool now shows its water, and you can no longer walk into it through the rim."
+   "tr": "Kâhya görünüşü ve traktör mazotu düzeldi",
+   "en": "Steward appearance and tractor fuel fixed"
   },
   {
-   "v": 686,
-   "pv": "1.69",
+   "v": 692,
+   "pv": "1.71",
    "d": "2026-11-08",
-   "tr": "Gönderdiğin hata kayıtları artık oyunda nerede olduğunu da bize iletir; sorunları daha hızlı buluruz.",
-   "en": "Bug reports now include where you were in the game, so we can find issues faster."
+   "tr": "Dede tarlasında traktör sıra sıra sürer",
+   "en": "Tractor works grandpa's field row by row"
   }
  ]
 }
