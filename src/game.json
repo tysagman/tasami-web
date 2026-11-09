@@ -1,30 +1,30 @@
 {
- "v": 697,
- "version": "1.71",
+ "v": 707,
+ "version": "1.00",
  "quests": 218,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 697,
-   "pv": "1.71",
-   "d": "2026-11-08",
-   "tr": "Dalışta karakter artık ileri yüzüyor. Salıncakta arı sokmuyor, karakter oturağa tam oturuyor. Eşek arabası tabelanın içine park etmiyor. Kapalı pazarda turistler yığılmıyor, tezgâhları geziyor.",
-   "en": "Diving: the character now swims forward. No bee stings while on the swing, and the character sits properly on the seat. The donkey cart no longer parks inside the signpost. Covered market: tourists no longer crowd together, they browse the stalls."
+   "v": 707,
+   "pv": "1.00",
+   "d": "2026-11-09",
+   "tr": "Geri düğmesiyle dönülen menü artık hep güncel açılır: altın, stok ve diğer sayılar eski kalmaz (Diğer, Durumun, Çanta, fabrika ve kişi pencereleri dahil).",
+   "en": "Menus you return to with Back now always open up to date: gold, stock and other numbers are never stale (including More, Status, Bag, factory and character windows)."
   },
   {
-   "v": 696,
-   "pv": "1.71",
-   "d": "2026-11-08",
-   "tr": "Traktör çarpışması düzeldi",
-   "en": "Tractor collisions fixed"
+   "v": 706,
+   "pv": "1.00",
+   "d": "2026-11-09",
+   "tr": "Kâhya üretimi yönetir (ek vardiya, kapasite artırma)",
+   "en": "Steward manages production (extra shifts, capacity upgrades)"
   },
   {
-   "v": 695,
-   "pv": "1.71",
-   "d": "2026-11-08",
-   "tr": "Dede tarlası görüntüsü düzeldi",
-   "en": "Grandpa's field visuals fixed"
+   "v": 705,
+   "pv": "1.00",
+   "d": "2026-11-09",
+   "tr": "Her menüde ← Geri düğmesi: alt menüden bir adım önceki menüye döner. Android geri tuşu da artık menüden komple çıkmıyor, bir adım geri gidiyor. ✕ menüyü tamamen kapatır.",
+   "en": "Every menu now has a ← Back button that returns to the previous menu. The Android back button also goes back one step instead of closing the whole menu. ✕ closes the menu completely."
   }
  ]
 }
