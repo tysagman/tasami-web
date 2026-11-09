@@ -1,30 +1,30 @@
 {
- "v": 707,
+ "v": 727,
  "version": "1.00",
  "quests": 218,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 707,
+   "v": 727,
    "pv": "1.00",
    "d": "2026-11-09",
-   "tr": "Geri düğmesiyle dönülen menü artık hep güncel açılır: altın, stok ve diğer sayılar eski kalmaz (Diğer, Durumun, Çanta, fabrika ve kişi pencereleri dahil).",
-   "en": "Menus you return to with Back now always open up to date: gold, stock and other numbers are never stale (including More, Status, Bag, factory and character windows)."
+   "tr": "Hasan Dede'nin konağındaki anı odasında gençlik fotoğrafının çerçevesi boş görünüyordu; artık içinde genç Hasan ile arkadaşı Selim'in eski fotoğrafı duruyor.",
+   "en": "In Grandpa Hasan's mansion, the frame of his youth photo looked empty; it now shows the old photo of young Hasan and his friend Selim."
   },
   {
-   "v": 706,
+   "v": 726,
    "pv": "1.00",
    "d": "2026-11-09",
-   "tr": "Kâhya üretimi yönetir (ek vardiya, kapasite artırma)",
-   "en": "Steward manages production (extra shifts, capacity upgrades)"
+   "tr": "Gönderdiklerim düzeldi: düzeltilip yayınlanan ama listede hâlâ «Sırada» ya da «İşleme alındı» görünen bildirimlerin durumu güncellendi. Hata olmayan ya da artık geçerli olmayan bildirimler «İncelendi» yazar. Bundan sonra bir düzeltme yayınlanınca bildirimin kendiliğinden «Düzeltildi» olur.",
+   "en": "My reports fixed: reports that were already fixed but still showed «Queued» or «In progress» now show the right status. Reports that were not bugs or no longer apply show «Reviewed». From now on a report turns «Fixed» automatically when its fix is released."
   },
   {
-   "v": 705,
+   "v": 724,
    "pv": "1.00",
    "d": "2026-11-09",
-   "tr": "Her menüde ← Geri düğmesi: alt menüden bir adım önceki menüye döner. Android geri tuşu da artık menüden komple çıkmıyor, bir adım geri gidiyor. ✕ menüyü tamamen kapatır.",
-   "en": "Every menu now has a ← Back button that returns to the previous menu. The Android back button also goes back one step instead of closing the whole menu. ✕ closes the menu completely."
+   "tr": "Mandıradaki yoğurt tezgâhında artık yoğurttan ayran yapılabiliyor.",
+   "en": "You can now make ayran from yogurt at the dairy's yogurt counter."
   }
  ]
 }
