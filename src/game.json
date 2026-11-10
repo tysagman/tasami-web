@@ -1,30 +1,30 @@
 {
- "v": 747,
+ "v": 751,
  "version": "1.00",
  "quests": 218,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 747,
+   "v": 751,
    "pv": "1.00",
    "d": "2026-11-10",
-   "tr": "Rıfat'ın traktörü ve gübre römorku artık ahır kapısının önünde değil, gübre çukurunun yanında duruyor. Rıfat gübreyi oraya yükler, seferden dönünce de oraya park eder. Taşıyıcı yoksa elle topladığın gübreyi gübre çukurunun yanındaki römorka yüklersin.",
-   "en": "Rıfat's tractor and manure trailer now stand next to the manure pit instead of in front of the barn gate. Rıfat loads the manure there and parks there after each trip. Without a carrier, load the manure you collect by hand onto the trailer next to the manure pit."
+   "tr": "Otobüsler oyuncunun ve yayaların içinden geçmiyor, kenara iter; önünde durursan korna çalar.",
+   "en": "Buses no longer drive through you or pedestrians; they push you aside and honk."
   },
   {
-   "v": 746,
+   "v": 750,
    "pv": "1.00",
    "d": "2026-11-10",
-   "tr": "Telefon ısınınca oyun kendiliğinden yavaşlar: kare hızı ve gerekirse görüntü kalitesi biraz düşer, telefon soğuyup pil daha az gider. Soğuyunca oyun normal hızına döner. (Yeni uygulama güncellemesiyle çalışır.)",
-   "en": "When your phone gets hot, the game now slows down on its own: the frame rate and, if needed, the image quality drop a little so the phone cools off and uses less battery. Once it cools down, the game returns to normal speed. (Works with the new app update.)"
+   "tr": "Otobüs duraklarının içinden geçilmiyor. Tarım dronunun yanına gidince pencere açılır, Şimdi ilaçla ile uçurulur.",
+   "en": "You can no longer walk through bus stops. Walk up to the farm drone to open its panel and spray now."
   },
   {
-   "v": 745,
+   "v": 749,
    "pv": "1.00",
    "d": "2026-11-10",
-   "tr": "Köpek kulübesini taşıyınca köpekler de hemen yeni kulübenin önüne gelir. Laboratuvar çalışanları (Laborant Nazlı ve ekibi) sanayideki laboratuvarda başlar, eski yerden uzun yol yürümezler.",
-   "en": "When you move the dog kennel, the dogs now come to the new kennel right away. Lab staff (Lab Technician Nazlı and team) start at the lab in the industrial zone instead of walking a long way from the old spot."
+   "tr": "Yem fabrikası silosunda buğday bitince un fabrikasındaki fazla buğday aktarılır. Ayşe yokken de dede tarlasını biçip eker.",
+   "en": "Feed factory now gets surplus wheat from the flour mill silo. Ayşe harvests and replants the grandfather's field while you are away."
   }
  ]
 }
