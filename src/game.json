@@ -1,30 +1,30 @@
 {
- "v": 727,
+ "v": 733,
  "version": "1.00",
  "quests": 218,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 727,
+   "v": 733,
    "pv": "1.00",
-   "d": "2026-11-09",
-   "tr": "Hasan Dede'nin konağındaki anı odasında gençlik fotoğrafının çerçevesi boş görünüyordu; artık içinde genç Hasan ile arkadaşı Selim'in eski fotoğrafı duruyor.",
-   "en": "In Grandpa Hasan's mansion, the frame of his youth photo looked empty; it now shows the old photo of young Hasan and his friend Selim."
+   "d": "2026-11-10",
+   "tr": "Biyogaz tesisi ve laboratuvarı artık sanayi bölgesinde. Sanayi bölgesi batıya doğru büyüdü, ikisi bu yeni şeride kurulur; köyün yanındaki tesis ve laboratuvar ücretsiz olarak oraya taşınır, kademe, cihazlar ve verim aynı kalır. Gübre çiftlikte birikmeye devam eder: Rıfat ahırdaki gübreyi ahırın önündeki gübre römorkuna yükler, römork onu sanayideki tesise götürür. Rıfat yoksa topladığın gübreyi römorka boşaltabilirsin. Operatör Kadir ve laboratuvar çalışanları sanayiye kapıdan girip çıkar.",
+   "en": "The biogas plant and laboratory are now in the Industrial zone. The zone has grown to the west and both are built on the new strip; a plant and lab near the village move there for free, keeping their level, equipment and efficiency. Manure still collects on the farm: Rıfat loads it from the barn onto the manure trailer in front of the barn, and the trailer takes it to the plant in the Industrial zone. Without Rıfat, you can unload the manure you collect onto the trailer. Operator Kadir and the lab staff come and go through the zone gate."
   },
   {
-   "v": 726,
+   "v": 732,
    "pv": "1.00",
    "d": "2026-11-09",
-   "tr": "Gönderdiklerim düzeldi: düzeltilip yayınlanan ama listede hâlâ «Sırada» ya da «İşleme alındı» görünen bildirimlerin durumu güncellendi. Hata olmayan ya da artık geçerli olmayan bildirimler «İncelendi» yazar. Bundan sonra bir düzeltme yayınlanınca bildirimin kendiliğinden «Düzeltildi» olur.",
-   "en": "My reports fixed: reports that were already fixed but still showed «Queued» or «In progress» now show the right status. Reports that were not bugs or no longer apply show «Reviewed». From now on a report turns «Fixed» automatically when its fix is released."
+   "tr": "Evinin balkonuna (sundurmasına) çıkmak kolaylaştı: korkuluktaki giriş aralığı genişletildi.",
+   "en": "Getting onto your house's porch is easier: the opening in the railing is wider."
   },
   {
-   "v": 724,
+   "v": 731,
    "pv": "1.00",
    "d": "2026-11-09",
-   "tr": "Mandıradaki yoğurt tezgâhında artık yoğurttan ayran yapılabiliyor.",
-   "en": "You can now make ayran from yogurt at the dairy's yogurt counter."
+   "tr": "Otobüsler artık tarifeyle çalışıyor: bileti alıp durakta bekliyorsun, otobüs sefer saatinde gelince biniyorsun ve yalnız duraklarda iniyorsun. Durağa dokununca her durağın sonraki otobüs saatini ve kaç dakika kaldığını görürsün. Sivrice ⇄ Elazığ hattında iki otobüs, Çamlıbel ve Akpınar hatları da var. Yol kenarındaki duraklar artık yola dönük. Hankendi çay ocağına kapı geldi; önündeki taburelerde oturup çay içebilirsin.",
+   "en": "Buses now run on a timetable: buy a ticket, wait at the stop and board when the scheduled bus arrives; it only drops you off at stops. Tap a stop to see the next bus time and minutes left for every stop. Two buses on the Sivrice ⇄ Elazığ line, plus the Çamlıbel and Akpınar lines. Roadside bus stops now face the road. The Hankendi tea house has a door, and you can sit on the stools out front and drink tea."
   }
  ]
 }
