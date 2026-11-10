@@ -30,7 +30,7 @@
 <link rel="preload" as="image" href="{{b}}assets/img/oyun/genel.webp" imagesrcset="{{b}}assets/img/oyun/genel-k.webp 960w, {{b}}assets/img/oyun/genel.webp 1920w" imagesizes="100vw">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{b}}assets/site.css">
 <script>(function(c){c.add('js');try{if(!sessionStorage.getItem('tsm-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)c.add('intro-on')}catch(e){}})(document.documentElement.classList)</script>
 <script type="application/ld+json">{{ld}}</script>
@@ -61,14 +61,14 @@
     <div class="hero-shade" aria-hidden="true"></div>
     <canvas class="hero-fx" aria-hidden="true"></canvas>
     <div class="wrap hero-in">
-      <span class="badge"><i></i>{{badge}}</span>
       <p class="kicker">{{kicker}}</p>
-      <h1 class="hero-title hero-logo"><img src="{{b}}assets/img/oyun/baslik-logo.webp" srcset="{{b}}assets/img/oyun/baslik-logo-k.webp 700w, {{b}}assets/img/oyun/baslik-logo.webp 1336w" sizes="(max-width: 700px) 92vw, 760px" alt="{{game}}" width="1336" height="391" fetchpriority="high"></h1>
+      <h1 class="hero-title">{{game}}</h1>
       <p class="lead">{{tagline}}</p>
       <div class="cta">
         <a class="btn primary" href="#test"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5v17l15-8.5z"/></svg>{{cta_test}}</a>
         <button class="btn glass" type="button" data-trailer><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z"/></svg>{{cta_watch}}</button>
       </div>
+      <p class="badge"><i></i>{{badge}}</p>
     </div>
     <a class="scroll-cue" href="#hikaye"><span>{{scroll}}</span><i></i></a>
   </section>
@@ -141,25 +141,23 @@
 
   <section class="test" id="test">
     <div class="test-bg" aria-hidden="true"></div>
-    <div class="wrap">
-      <div class="sec-head center reveal"><p class="kicker">{{t_k}}</p><h2>{{t_h}}</h2><p class="sub">{{t_sub}}</p></div>
-      <div class="test-grid">
-        <div class="card play reveal">
-          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5v17l15-8.5z"/></svg>{{t_and_h}}</h3>
-          <p>{{t_and_p}}</p>
-          <form id="tform" novalidate data-ok="{{t_ok}}" data-dup="{{t_dup}}" data-err="{{t_err}}" data-bad="{{t_bad}}" data-busy="{{t_busy}}" data-need="{{t_need}}" data-next="{{thanks_url}}" data-lang="{{lang}}">
-            <label>{{t_email}}<input type="email" name="email" required maxlength="100" autocomplete="email" placeholder="ornek@gmail.com"></label>
-            <label>{{t_name}}<input type="text" name="name" maxlength="60" autocomplete="name"></label>
-            <label class="chk"><input type="checkbox" name="ok" required> <span>{{t_consent}} <a href="{{privacy_url}}" target="_blank">{{privacy}}</a></span></label>
-            <button class="btn primary" type="submit">{{t_send}}</button>
-            <p class="msg" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-        <div class="card ios reveal">
-          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="18" r="1.2"/></svg>{{t_ios_h}}</h3>
-          <p>{{t_ios_p}}</p>
-          <span class="soon">{{t_soon}}</span>
-        </div>
+    <div class="wrap test-grid">
+      <div class="sec-head test-head reveal"><p class="kicker">{{t_k}}</p><h2>{{t_h}}</h2><p class="sub">{{t_sub}}</p></div>
+      <div class="card play reveal">
+        <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5v17l15-8.5z"/></svg>{{t_and_h}}</h3>
+        <p>{{t_and_p}}</p>
+        <form id="tform" novalidate data-ok="{{t_ok}}" data-dup="{{t_dup}}" data-err="{{t_err}}" data-bad="{{t_bad}}" data-busy="{{t_busy}}" data-need="{{t_need}}" data-next="{{thanks_url}}" data-lang="{{lang}}">
+          <label>{{t_email}}<input type="email" name="email" required maxlength="100" autocomplete="email" placeholder="ornek@gmail.com"></label>
+          <label>{{t_name}}<input type="text" name="name" maxlength="60" autocomplete="name"></label>
+          <label class="chk"><input type="checkbox" name="ok" required> <span>{{t_consent}} <a href="{{privacy_url}}" target="_blank">{{privacy}}</a></span></label>
+          <button class="btn primary" type="submit">{{t_send}}</button>
+          <p class="msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="card ios reveal">
+        <h3><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="18" r="1.2"/></svg>{{t_ios_h}}</h3>
+        <p>{{t_ios_p}}</p>
+        <span class="soon">{{t_soon}}</span>
       </div>
     </div>
   </section>
@@ -180,17 +178,24 @@
     <div class="wrap reveal">
       <h2>{{contact_h}}</h2>
       <p>{{contact}}</p>
-      <a class="btn primary" href="mailto:{{mail_to}}">✉ {{mail}}</a>
+      <a class="btn primary" href="mailto:{{mail_to}}"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3.5 6.5h17v11h-17zM4 7l8 6.5L20 7"/></svg>{{mail}}</a>
       <p class="mail"><a href="mailto:{{mail_to}}">{{mail_to}}</a></p>
     </div>
   </section>
 </main>
 
 <footer class="foot">
-  <div class="wrap foot-in">
-    <a class="brand" href="#oyun"><img src="{{b}}assets/img/tasami-amblem.png" alt="" width="32" height="32"><span>TASA<b>Mİ</b><em class="slogan">{{slogan}}</em></span></a>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="#oyun"><img src="{{b}}assets/img/tasami-amblem.png" alt="" width="40" height="40"><span>TASA<b>Mİ</b><em class="slogan">{{slogan}}</em></span></a>
+      <p>{{about_org}}</p>
+    </div>
+    <nav class="foot-col" aria-label="{{foot_site}}"><p class="foot-h">{{foot_site}}</p>{{foot_nav}}</nav>
+    <div class="foot-col"><p class="foot-h">{{foot_legal}}</p><a href="{{privacy_url}}">{{privacy}}</a><a href="{{terms_url}}">{{terms}}</a><a href="{{delete_url}}">{{delete}}</a></div>
+    <div class="foot-col"><p class="foot-h">{{foot_contact}}</p><a href="mailto:{{mail_to}}">{{mail_to}}</a><a href="{{yt}}" target="_blank" rel="noopener">YouTube</a><a href="{{other_href}}" hreflang="{{other_lang_code}}">{{other_name}}</a></div>
+  </div>
+  <div class="wrap foot-bar">
     <span>© 2026 Tasami. {{rights}}</span>
-    <span><a href="{{privacy_url}}">{{privacy}}</a> · <a href="{{terms_url}}">{{terms}}</a> · <a href="{{delete_url}}">{{delete}}</a> · <a href="{{other_href}}">{{other_name}}</a> · <a href="{{yt}}" target="_blank" rel="noopener">YouTube</a></span>
     <small class="credit">{{credit}}</small>
   </div>
 </footer>

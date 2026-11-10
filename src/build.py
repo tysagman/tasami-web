@@ -70,7 +70,7 @@ T = {
         "locale": "tr_TR", "other_locale": "en_US",
         "og_alt": "Toprağın Mirası oyun logosu",
         "nav": ["Oyun", "Hikâye", "Özellikler", "Görüntüler", "Erken erişim", "Stüdyo"],
-        "menu": "Menü",
+        "menu": "Menü", "foot_site": "Site", "foot_legal": "Yasal", "foot_contact": "İletişim", "other_lang_code": "en",
         "kicker": "Tasami'nin ilk oyunu",
         "game": "Toprağın Mirası",
         "tagline": "Dedenden kalan toprağa boş elle gel. Çiftliğini kur, köyünü büyüt, fabrikalarını işlet ve Hazar Gölü kıyısında kendi mirasını bırak.",
@@ -147,7 +147,7 @@ T = {
         "locale": "en_US", "other_locale": "tr_TR",
         "og_alt": "Legacy of the Land game logo",
         "nav": ["Game", "Story", "Features", "Screenshots", "Early access", "Studio"],
-        "menu": "Menu",
+        "menu": "Menu", "foot_site": "Site", "foot_legal": "Legal", "foot_contact": "Contact", "other_lang_code": "tr",
         "kicker": "Tasami's first game",
         "game": "Legacy of the Land",
         "tagline": "Arrive empty-handed on the land your grandfather left you. Build your farm, grow your village, run your factories and leave your own legacy on the shores of Lake Hazar.",
@@ -266,7 +266,7 @@ def render(t):
         f'<ul class="tags">{"".join(f"<li>{x}</li>" for x in tags)}</ul></div></article>'
         for i, (h, d, tags) in enumerate(t["feats"]))
     gallery = "".join(
-        f'<figure class="g-item reveal{" wide" if i in (0, 5) else ""}" style="--i:{i % 4}"><a href="{b}assets/img/oyun/{n}.webp" data-cap="{(ce if en else ct)}">'
+        f'<figure class="g-item reveal{" wide" if i == 0 else ""}" style="--i:{i % 4}"><a href="{b}assets/img/oyun/{n}.webp" data-cap="{(ce if en else ct)}">'
         f'{img(b, n, t["game"] + ": " + (ce if en else ct))}</a><figcaption>{ce if en else ct}</figcaption></figure>'
         for i, (n, ct, ce) in enumerate(GALLERY))
     about = "".join(f"<p>{p}</p>" for p in t["about"])
@@ -302,13 +302,13 @@ def render(t):
                      "thumbnailUrl": f"https://i.ytimg.com/vi/{YOUTUBE_ID}/hqdefault.jpg", "uploadDate": "2026-10-27T12:00:00+03:00"}},
     ], ensure_ascii=False)
     vals = dict(t, b=b, yt=YOUTUBE, stats=stats, updates=updates, story=story, chapters=chapters, jmap=jmap, feats=feats, gallery=gallery, about=about,
-                services=services, nav=nav, marquee=marquee, ld=ld, mail_to=CONTACT,
+                services=services, nav=nav, foot_nav=nav, marquee=marquee, ld=ld, mail_to=CONTACT,
                 privacy_url="/" + pages.PRIVACY[t["lang"]][0], terms_url="/" + pages.TERMS[t["lang"]][0],
                 thanks_url="/" + pages.THANKS[t["lang"]][0], delete_url=PLAY_URL + "hesap-sil.html",
                 icons=ICONS, analytics=ANALYTICS, cookie=cookie(t),
                 canonical=SITE + t["path"],
                 hero_img=img(b, "genel", "", eager=True, big=True),
-                story_img=img(b, "koy-meydani", scene("koy-meydani")))
+                story_img=img(b, "kovan", scene("kovan")))
     out = TEMPLATE
     for k, v in vals.items():
         if isinstance(v, str):
