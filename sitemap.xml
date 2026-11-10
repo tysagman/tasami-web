@@ -14,4 +14,28 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tasami.com.tr/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tasami.com.tr/"/>
   </url>
+  <url>
+    <loc>https://tasami.com.tr/gizlilik/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tasami.com.tr/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tasami.com.tr/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tasami.com.tr/gizlilik/"/>
+  </url>
+  <url>
+    <loc>https://tasami.com.tr/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tasami.com.tr/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tasami.com.tr/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tasami.com.tr/gizlilik/"/>
+  </url>
+  <url>
+    <loc>https://tasami.com.tr/kullanim-kosullari/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tasami.com.tr/kullanim-kosullari/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tasami.com.tr/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tasami.com.tr/kullanim-kosullari/"/>
+  </url>
+  <url>
+    <loc>https://tasami.com.tr/en/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://tasami.com.tr/kullanim-kosullari/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tasami.com.tr/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tasami.com.tr/kullanim-kosullari/"/>
+  </url>
 </urlset>

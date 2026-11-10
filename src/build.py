@@ -4,6 +4,7 @@ Metinleri değiştirmek için aşağıdaki T sözlüğünü düzenleyin, sonra: 
 Görseller assets/img/oyun/<ad>.webp (1920x1080) ve <ad>-k.webp (960x540); hepsi oyunun içinden çekildi.
 """
 import html, json, pathlib
+import pages
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 TEMPLATE = (ROOT / "src" / "template.html").read_text(encoding="utf-8")
@@ -13,6 +14,16 @@ CONTACT = "info@tasami.com.tr"
 SITE = "https://tasami.com.tr/"
 YOUTUBE_ID = "VAp9sWofOYo"  # resmî fragman
 YOUTUBE = "https://www.youtube.com/watch?v=" + YOUTUBE_ID
+# Cloudflare Web Analytics (çerezsiz ziyaret sayacı): Cloudflare > Analytics & Logs > Web Analytics > Add a site
+# ile alınan token buraya yazılır. Boşsa sayaç eklenmez.
+CF_BEACON_TOKEN = "fb4c1c174d214c309af63e72ce75216d"
+ANALYTICS = (f"<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js\" data-cf-beacon='{{\"token\": \"{CF_BEACON_TOKEN}\"}}'></script>"
+             if CF_BEACON_TOKEN else "")
+ICONS = ('<link rel="icon" href="/favicon.ico" sizes="48x48">\n'
+         '<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">\n'
+         '<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">\n'
+         '<link rel="apple-touch-icon" href="/apple-touch-icon.png">\n'
+         '<link rel="manifest" href="/site.webmanifest">')
 # Oyundan otomatik gelir (tools/oyun-senkron.js, .github/workflows/oyun-senkron.yml)
 GAME = json.loads((ROOT / "src" / "game.json").read_text(encoding="utf-8"))
 VERSION = GAME["version"]
@@ -38,6 +49,10 @@ GALLERY = [
     ("sinagog", "Köyün ibadethanesi · sinagog", "The village place of worship · synagogue"),
     ("gol-kiyisi", "Göl kıyısı", "The lakeshore"),
 ]
+
+# görsellerin alt metinleri (galeri başlıkları + galeride olmayanlar)
+SCENE = {n: (tr, en) for n, tr, en in GALLERY}
+SCENE["inek-merasi"] = ("İnek merası ve ahır", "The cow pasture and barn")
 
 CHAPTER_IMG = ["ciftlik-evi", "inek-merasi", "kuzey-diyari", "fabrikalar", "sehir", "genel"]
 # journey map over genel.webp (viewBox 1600x900): pin of each chapter and where its photo card floats (% of the map)
@@ -101,7 +116,8 @@ T = {
         "t_and_h": "Google Play · Kapalı test",
         "t_and_p": "Google Play'de kullandığın Gmail adresini bırak. Seni test listesine ekleyip davet bağlantısını e-postayla göndereceğiz.",
         "t_email": "Gmail adresin", "t_name": "Adın (isteğe bağlı)",
-        "t_consent": "E-posta adresimin yalnızca test daveti için kullanılmasını kabul ediyorum.",
+        "t_consent": "E-posta adresimin yalnızca test daveti için kullanılmasını ve bu amaçla yurt dışındaki sunucularda (Google Firebase) saklanmasını kabul ediyorum.",
+        "t_busy": "Gönderiliyor…", "t_need": "Devam etmek için onay kutusunu işaretlemelisin.",
         "t_send": "Teste katıl",
         "t_ok": "Teşekkürler! Kaydın alındı. Davet e-postası geldiğinde Google Play'den testi indirebilirsin.",
         "t_dup": "Bu tarayıcıdan zaten kayıt oldun. Teşekkürler!",
@@ -119,7 +135,8 @@ T = {
         "contact_h": "Bize ulaşın",
         "contact": "Oyun hakkında görüşünüz, iş birliği teklifiniz ya da bir uygulama fikriniz mi var? Yazın, dönüş yapalım.",
         "mail": "E-posta gönder",
-        "privacy": "Gizlilik politikası", "delete": "Hesap silme", "rights": "Tüm hakları saklıdır.", "music": "Müzik", "music_on": "Müziği aç", "music_off": "Müziği kapat", "credit": "Müzikteki enstrüman sesleri: FluidR3 GM (Frank Wen, CC BY 3.0)",
+        "privacy": "Gizlilik politikası", "terms": "Kullanım koşulları", "delete": "Hesap silme", "home_label": "Ana sayfa", "updated_l": "Son güncelleme",
+        "ck_text": "Bu site reklam ya da takip çerezi kullanmaz. Ziyaretleri çerezsiz sayarız; müzik tercihin gibi küçük ayarlar yalnızca tarayıcında kalır.", "ck_more": "Ayrıntılar", "ck_ok": "Tamam", "ck_label": "Çerez bildirimi", "rights": "Tüm hakları saklıdır.", "music": "Müzik", "music_on": "Müziği aç", "music_off": "Müziği kapat", "credit": "Müzikteki enstrüman sesleri: FluidR3 GM (Frank Wen, CC BY 3.0)",
         "close": "Kapat", "prev": "Önceki", "next": "Sonraki",
     },
     "en": {
@@ -176,7 +193,8 @@ T = {
         "t_and_h": "Google Play · Closed test",
         "t_and_p": "Leave the Gmail address you use on Google Play. We'll add you to the tester list and email you the invite link.",
         "t_email": "Your Gmail address", "t_name": "Your name (optional)",
-        "t_consent": "I agree that my email address is used only for the test invitation.",
+        "t_consent": "I agree that my email address is used only for the test invitation and stored for this purpose on servers abroad (Google Firebase).",
+        "t_busy": "Sending…", "t_need": "Please tick the box to continue.",
         "t_send": "Join the test",
         "t_ok": "Thanks! You're signed up. When the invite arrives, you can install the test from Google Play.",
         "t_dup": "You've already signed up from this browser. Thanks!",
@@ -194,10 +212,17 @@ T = {
         "contact_h": "Get in touch",
         "contact": "Feedback on the game, a partnership offer or an app idea? Write to us and we'll get back to you.",
         "mail": "Send an email",
-        "privacy": "Privacy policy", "delete": "Account deletion", "rights": "All rights reserved.", "music": "Music", "music_on": "Play music", "music_off": "Mute music", "credit": "Instrument samples in the music: FluidR3 GM (Frank Wen, CC BY 3.0)",
+        "privacy": "Privacy policy", "terms": "Terms of use", "delete": "Account deletion", "home_label": "Home", "updated_l": "Last updated",
+        "ck_text": "This site uses no advertising or tracking cookies. We count visits without cookies; small settings like your music choice stay in your browser.", "ck_more": "Details", "ck_ok": "OK", "ck_label": "Cookie notice", "rights": "All rights reserved.", "music": "Music", "music_on": "Play music", "music_off": "Mute music", "credit": "Instrument samples in the music: FluidR3 GM (Frank Wen, CC BY 3.0)",
         "close": "Close", "prev": "Previous", "next": "Next",
     },
 }
+
+def cookie(t):
+    return (f'<div class="cookie" role="region" aria-label="{t["ck_label"]}" hidden><p>{t["ck_text"]} '
+            f'<a href="/{pages.PRIVACY[t["lang"]][0]}#cerezler">{t["ck_more"]}</a></p>'
+            f'<button class="btn primary ck-ok" type="button">{t["ck_ok"]}</button></div>')
+
 
 NAV_IDS = ["oyun", "hikaye", "ozellikler", "goruntuler", "test", "studyo"]
 
@@ -213,11 +238,12 @@ def img(b, name, alt, cls="", eager=False, big=False):
 def render(t):
     b = t["base"]
     en = t["lang"] == "en"
+    scene = lambda n: t["game"] + ": " + SCENE[n][1 if en else 0]
     stats = "".join(
         f'<div class="stat reveal"><strong data-count="{n}">{n}</strong><span>{l}</span></div>' for n, l in t["stats"])
     story = "".join(f"<p>{p}</p>" for p in t["story"])
     chapters = "".join(
-        f'<li class="ch reveal" id="ch-{i+1}" style="--i:{i}"><figure>{img(b, CHAPTER_IMG[i], h)}</figure>'
+        f'<li class="ch reveal" id="ch-{i+1}" style="--i:{i}"><figure>{img(b, CHAPTER_IMG[i], scene(CHAPTER_IMG[i]))}</figure>'
         f'<div class="ch-body"><span class="ch-n">{t["chapter"]} {i+1}</span><h3>{h}</h3><p>{d}</p></div></li>'
         for i, (h, d) in enumerate(t["chapters"]))
     jmap = (f'<div class="jmap reveal" data-pins="{";".join(f"{x},{y}" for x, y in JMAP_PINS)}">'
@@ -235,7 +261,7 @@ def render(t):
                       for i, ((cx, cy), (h, _)) in enumerate(zip(JMAP_CARDS, t["chapters"])))
             + '</div>')
     feats = "".join(
-        f'<article class="feat{" flip" if i % 2 else ""}"><figure class="feat-img reveal">{img(b, FEATURE_IMG[i], h)}</figure>'
+        f'<article class="feat{" flip" if i % 2 else ""}"><figure class="feat-img reveal">{img(b, FEATURE_IMG[i], scene(FEATURE_IMG[i]))}</figure>'
         f'<div class="feat-txt reveal"><span class="feat-n">0{i+1}</span><h3>{h}</h3><p>{d}</p>'
         f'<ul class="tags">{"".join(f"<li>{x}</li>" for x in tags)}</ul></div></article>'
         for i, (h, d, tags) in enumerate(t["feats"]))
@@ -277,10 +303,12 @@ def render(t):
     ], ensure_ascii=False)
     vals = dict(t, b=b, yt=YOUTUBE, stats=stats, updates=updates, story=story, chapters=chapters, jmap=jmap, feats=feats, gallery=gallery, about=about,
                 services=services, nav=nav, marquee=marquee, ld=ld, mail_to=CONTACT,
-                privacy_url=PLAY_URL + "gizlilik.html", delete_url=PLAY_URL + "hesap-sil.html",
+                privacy_url="/" + pages.PRIVACY[t["lang"]][0], terms_url="/" + pages.TERMS[t["lang"]][0],
+                thanks_url="/" + pages.THANKS[t["lang"]][0], delete_url=PLAY_URL + "hesap-sil.html",
+                icons=ICONS, analytics=ANALYTICS, cookie=cookie(t),
                 canonical=SITE + t["path"],
                 hero_img=img(b, "genel", "", eager=True, big=True),
-                story_img=img(b, "koy-meydani", t["game"]))
+                story_img=img(b, "koy-meydani", scene("koy-meydani")))
     out = TEMPLATE
     for k, v in vals.items():
         if isinstance(v, str):
@@ -289,17 +317,82 @@ def render(t):
     return out
 
 
+PAGE = (ROOT / "src" / "page.html").read_text(encoding="utf-8")
+
+
+def fill(tpl, vals):
+    for k, v in vals.items():
+        tpl = tpl.replace("{{" + k + "}}", v)
+    assert "{{" not in tpl, tpl[tpl.find("{{"):tpl.find("{{") + 40]
+    return tpl
+
+
+def foot_links(t):
+    L = t["lang"]
+    return " · ".join([
+        f'<a href="/{pages.PRIVACY[L][0]}">{t["privacy"]}</a>',
+        f'<a href="/{pages.TERMS[L][0]}">{t["terms"]}</a>',
+        f'<a href="{PLAY_URL}hesap-sil.html">{t["delete"]}</a>',
+        f'<a href="mailto:{CONTACT}">{CONTACT}</a>'])
+
+
+def subpage(group, L, index=True, heading=True):
+    """group: pages.PRIVACY / TERMS / THANKS; L: 'tr' | 'en'"""
+    t = T[L]
+    path, title, desc, body = group[L]
+    other = "en" if L == "tr" else "tr"
+    home = "/" + t["path"]
+    links = [f'<link rel="canonical" href="{SITE}{path}">']
+    if index:
+        links += [f'<link rel="alternate" hreflang="{h}" href="{SITE}{group[h][0]}">' for h in ("tr", "en")]
+        links.append(f'<link rel="alternate" hreflang="x-default" href="{SITE}{group["tr"][0]}">')
+    vals = dict(
+        lang=L, title=title, desc=desc, robots="index,follow" if index else "noindex,follow",
+        head_links="\n".join(links), locale=t["locale"], og_alt=t["og_alt"], icons=ICONS, analytics=ANALYTICS,
+        home=home, home_label=t["home_label"], menu=t["menu"],
+        lang_link=f'<a class="lang" href="/{group[other][0]}" hreflang="{other}" title="{t["other_name"]}">{t["other_lang"]}</a>',
+        doc_cls="" if heading else " center",
+        heading=f'<p class="kicker">Tasami</p><h1>{title.split(" | ")[0]}</h1>' if heading else "",
+        body=body.format(mail=CONTACT, home=home, game_privacy=PLAY_URL + "gizlilik.html",
+                         privacy="/" + pages.PRIVACY[L][0], terms="/" + pages.TERMS[L][0]),
+        updated=f'<p class="doc-upd">{t["updated_l"]}: {pages.UPDATED[L]}</p>' if heading else "",
+        slogan=t["slogan"], rights=t["rights"], foot_links=foot_links(t), cookie=cookie(t))
+    out = ROOT / path / "index.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(fill(PAGE, vals), encoding="utf-8")
+    print("yazıldı:", out.relative_to(ROOT))
+
+
 for t in T.values():
     p = ROOT / t["path"] / "index.html"
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(render(t), encoding="utf-8")
     print("yazıldı:", p.relative_to(ROOT))
 
+for L in ("tr", "en"):
+    subpage(pages.PRIVACY, L)
+    subpage(pages.TERMS, L)
+    subpage(pages.THANKS, L, index=False, heading=False)
+
+# GitHub Pages her bilinmeyen adreste kökteki 404.html'i gösterir (iki dilli)
+t = T["tr"]
+(ROOT / "404.html").write_text(fill(PAGE, dict(
+    lang="tr", title="Sayfa bulunamadı · Page not found | Tasami", desc="Aradığın sayfa bulunamadı.", robots="noindex",
+    head_links="", locale="tr_TR", og_alt=t["og_alt"], icons=ICONS, analytics=ANALYTICS, home="/", home_label="Ana sayfa",
+    menu=t["menu"], lang_link='<a class="lang" href="/en/" hreflang="en" title="English">EN</a>', doc_cls=" center",
+    heading="", body=pages.NOT_FOUND, updated="", slogan=t["slogan"], rights=t["rights"], foot_links=foot_links(t),
+    cookie=cookie(t))), encoding="utf-8")
+print("yazıldı: 404.html")
+
 # arama motorları: robots.txt + iki dilli sitemap (lastmod = son oyun güncellemesi)
 alts = "".join(f'\n    <xhtml:link rel="alternate" hreflang="{h}" href="{SITE}{q}"/>'
                for h, q in (("tr", ""), ("en", "en/"), ("x-default", "")))
 urls = "".join(f"\n  <url>\n    <loc>{SITE}{t['path']}</loc>\n    <lastmod>{GAME['changes'][0]['d']}</lastmod>{alts}\n  </url>"
                for t in T.values())
+for g in (pages.PRIVACY, pages.TERMS):
+    galts = "".join(f'\n    <xhtml:link rel="alternate" hreflang="{h}" href="{SITE}{g[q][0]}"/>'
+                    for h, q in (("tr", "tr"), ("en", "en"), ("x-default", "tr")))
+    urls += "".join(f"\n  <url>\n    <loc>{SITE}{g[L][0]}</loc>{galts}\n  </url>" for L in ("tr", "en"))
 (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n'
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'
     + urls + "\n</urlset>\n", encoding="utf-8")
