@@ -912,3 +912,4 @@ html{scroll-padding-top:72px}
   .card.ios{padding:20px}
   .contact .wrap{border-radius:22px}
 }
+.hero .badge{align-items:flex-start;line-height:1.5}.hero .badge i{margin-top:.5em}
