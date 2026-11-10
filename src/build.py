@@ -16,7 +16,7 @@ YOUTUBE_ID = "VAp9sWofOYo"  # resmî fragman
 YOUTUBE = "https://www.youtube.com/watch?v=" + YOUTUBE_ID
 # Cloudflare Web Analytics (çerezsiz ziyaret sayacı): Cloudflare > Analytics & Logs > Web Analytics > Add a site
 # ile alınan token buraya yazılır. Boşsa sayaç eklenmez.
-CF_BEACON_TOKEN = ""
+CF_BEACON_TOKEN = "fb4c1c174d214c309af63e72ce75216d"
 ANALYTICS = (f"<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js\" data-cf-beacon='{{\"token\": \"{CF_BEACON_TOKEN}\"}}'></script>"
              if CF_BEACON_TOKEN else "")
 ICONS = ('<link rel="icon" href="/favicon.ico" sizes="48x48">\n'
