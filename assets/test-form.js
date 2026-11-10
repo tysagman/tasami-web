@@ -17,12 +17,24 @@ const say = (t, ok) => { msg.textContent = t; msg.className = "msg " + (ok ? "ok
 const done = () => { try { return localStorage.getItem(KEY) } catch (e) { return null } };
 if (done()) { say(f.dataset.dup, true); btn.disabled = true; }
 
+const label = btn.textContent;
+const busy = on => {
+  btn.disabled = on;
+  btn.classList.toggle("busy", on);
+  btn.setAttribute("aria-busy", on ? "true" : "false");
+  btn.textContent = on ? f.dataset.busy : label;
+};
+f.email.addEventListener("input", () => f.email.removeAttribute("aria-invalid"));
+f.ok.addEventListener("change", () => { if (f.ok.checked && msg.classList.contains("err")) say("", true); });
+
 f.addEventListener("submit", async (e) => {
   e.preventDefault();
   const email = f.email.value.trim().toLowerCase(), name = f.name.value.trim();
-  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) || email.length > 100) { say(f.dataset.bad, false); f.email.focus(); return; }
-  if (!f.ok.checked) { f.ok.focus(); f.ok.reportValidity(); return; }
-  btn.disabled = true;
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) || email.length > 100) {
+    f.email.setAttribute("aria-invalid", "true"); say(f.dataset.bad, false); f.email.focus(); return;
+  }
+  if (!f.ok.checked) { say(f.dataset.need, false); f.ok.focus(); return; }
+  busy(true);
   try {
     const { user } = await signInAnonymously(getAuth(app));
     const data = { uid: user.uid, email, platform: "android", lang: f.dataset.lang, at: serverTimestamp() };
@@ -30,9 +42,12 @@ f.addEventListener("submit", async (e) => {
     await setDoc(doc(getFirestore(app), "testers", user.uid + "_android"), data);
     try { localStorage.setItem(KEY, "1") } catch (e) {}
     say(f.dataset.ok, true); f.reset();
+    if (f.dataset.next) location.href = f.dataset.next;
+    else { busy(false); btn.disabled = true; }
   } catch (err) {
     console.error(err);
-    if (err && err.code === "permission-denied" && done()) say(f.dataset.dup, true);
-    else { say(f.dataset.err, false); btn.disabled = false; }
+    busy(false);
+    if (err && err.code === "permission-denied" && done()) { say(f.dataset.dup, true); btn.disabled = true; }
+    else say(f.dataset.err, false);
   }
 });

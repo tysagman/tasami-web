@@ -26,8 +26,7 @@
 <meta name="twitter:description" content="{{desc}}">
 <meta name="twitter:image" content="https://tasami.com.tr/assets/img/oyun/baslik-og.jpg">
 <meta name="theme-color" content="#000000">
-<link rel="icon" type="image/png" href="{{b}}favicon.png">
-<link rel="apple-touch-icon" href="{{b}}apple-touch-icon.png">
+{{icons}}
 <link rel="preload" as="image" href="{{b}}assets/img/oyun/genel.webp" imagesrcset="{{b}}assets/img/oyun/genel-k.webp 960w, {{b}}assets/img/oyun/genel.webp 1920w" imagesizes="100vw">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +34,7 @@
 <link rel="stylesheet" href="{{b}}assets/site.css">
 <script>(function(c){c.add('js');try{if(!sessionStorage.getItem('tsm-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)c.add('intro-on')}catch(e){}})(document.documentElement.classList)</script>
 <script type="application/ld+json">{{ld}}</script>
+{{analytics}}
 </head>
 <body>
 <div class="intro" aria-hidden="true">
@@ -147,10 +147,10 @@
         <div class="card play reveal">
           <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5v17l15-8.5z"/></svg>{{t_and_h}}</h3>
           <p>{{t_and_p}}</p>
-          <form id="tform" novalidate data-ok="{{t_ok}}" data-dup="{{t_dup}}" data-err="{{t_err}}" data-bad="{{t_bad}}" data-lang="{{lang}}">
+          <form id="tform" novalidate data-ok="{{t_ok}}" data-dup="{{t_dup}}" data-err="{{t_err}}" data-bad="{{t_bad}}" data-busy="{{t_busy}}" data-need="{{t_need}}" data-next="{{thanks_url}}" data-lang="{{lang}}">
             <label>{{t_email}}<input type="email" name="email" required maxlength="100" autocomplete="email" placeholder="ornek@gmail.com"></label>
             <label>{{t_name}}<input type="text" name="name" maxlength="60" autocomplete="name"></label>
-            <label class="chk"><input type="checkbox" name="ok" required> <span>{{t_consent}} <a href="{{privacy_url}}" target="_blank" rel="noopener">{{privacy}}</a></span></label>
+            <label class="chk"><input type="checkbox" name="ok" required> <span>{{t_consent}} <a href="{{privacy_url}}" target="_blank">{{privacy}}</a></span></label>
             <button class="btn primary" type="submit">{{t_send}}</button>
             <p class="msg" role="status" aria-live="polite"></p>
           </form>
@@ -190,7 +190,7 @@
   <div class="wrap foot-in">
     <a class="brand" href="#oyun"><img src="{{b}}assets/img/tasami-amblem.png" alt="" width="32" height="32"><span>TASA<b>Mİ</b><em class="slogan">{{slogan}}</em></span></a>
     <span>© 2026 Tasami. {{rights}}</span>
-    <span><a href="{{privacy_url}}">{{privacy}}</a> · <a href="{{delete_url}}">{{delete}}</a> · <a href="{{other_href}}">{{other_name}}</a> · <a href="{{yt}}" target="_blank" rel="noopener">YouTube</a></span>
+    <span><a href="{{privacy_url}}">{{privacy}}</a> · <a href="{{terms_url}}">{{terms}}</a> · <a href="{{delete_url}}">{{delete}}</a> · <a href="{{other_href}}">{{other_name}}</a> · <a href="{{yt}}" target="_blank" rel="noopener">YouTube</a></span>
     <small class="credit">{{credit}}</small>
   </div>
 </footer>
@@ -206,10 +206,13 @@
   <div class="vm-in"><video controls playsinline preload="none"><source src="{{b}}assets/video/{{trailer}}" type="video/mp4"></video></div>
 </div>
 
+<a class="m-cta" href="#test" aria-hidden="true" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5v17l15-8.5z"/></svg>{{cta_test}}</a>
+{{cookie}}
 <button class="music" type="button" aria-pressed="false" data-src="{{b}}assets/audio/muzik.mp3" data-on="{{music_on}}" data-off="{{music_off}}" aria-label="{{music_on}}"><span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><b>{{music}}</b></button>
 
 <script src="{{b}}assets/rise.js" defer></script>
 <script src="{{b}}assets/site.js" defer></script>
+<script src="{{b}}assets/extra.js" defer></script>
 <script type="module" src="{{b}}assets/test-form.js"></script>
 </body>
 </html>
