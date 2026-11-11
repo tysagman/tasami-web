@@ -1,30 +1,30 @@
 {
- "v": 753,
+ "v": 764,
  "version": "1.00",
- "quests": 218,
+ "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 753,
+   "v": 764,
    "pv": "1.00",
    "d": "2026-11-11",
-   "tr": "Genel tarama düzeltmeleri: bina içinde ve sanayi bölgesinde üstteki yer adı doğru yazar, haritada sanayi bölgesi görünür, ilk odun görevinde yanlış kış notu çıkmaz, uzak köylüye teslim yan görevleri Bölüm 2'den sonra gelir, diğer dillerde eksik çeviriler tamamlandı.",
-   "en": "General sweep fixes: the place name is correct inside buildings and in the industrial zone, the industrial zone shows on the map, the first wood quest no longer shows a wrong winter note, far-villager delivery side quests start in Chapter 2, and missing translations were added."
+   "tr": "Fabrika hammadde silosundaki Reklam izle düğmesi geri geldi (ör. 3 ham yün, 12 ot; aynı gün izledikçe artar, günde 3). Toptancı sözleşmesindeki reklam da duruyor; ikisinin hakları ayrı, hepsi günde 5 reklam sınırının içinde.",
+   "en": "The Watch ad button in the factory raw material silo is back (e.g. 3 raw wool, 12 hay; grows with each ad the same day, 3 a day). The ad on the wholesale contract stays too; each has its own count, all within the 5-ads-a-day limit."
   },
   {
-   "v": 752,
+   "v": 763,
    "pv": "1.00",
-   "d": "2026-11-10",
-   "tr": "Görev ekranı fabrika silosundaki şeker pancarı, buğday ve yünü de sayar; silodaki yetiyorsa eksik görünmez.",
-   "en": "The quest screen now counts raw materials in the factory silo; if the silo has enough, nothing shows as missing."
+   "d": "2026-11-11",
+   "tr": "Yeni: Fabrika nöbeti. Oyundayken birkaç dakikada bir fabrikalarından birinde hat olayı çıkıyor (bant sıkıştı, voltaj dalgalanıyor, un kepekli çıkıyor…). Üç farklı iş var: arızanın sebebini bul, ibreyi yeşil alanda durdur ya da adımları doğru sırayla seç; aynı olay arka arkaya gelmez. Zamanında müdahale edersen silodaki hammaddeden ek parti üretilir, fabrikanın içindeysen 2 kat. Kaçırırsan makine biraz aşınır. Doğru müdahaleler hat ustalığını artırır (5 kademe, her biri kalıcı +%1 kapasite). Kontrol panelinde sabah üretimine kalan süre görünür. İstersen ödüllü reklamla ek partiyi bir kez daha alabilirsin (günde 2). Bugün listesine yeni iş: Fabrikada bir hat olayını çöz.",
+   "en": "New: Factory watch. While you play, a line event pops up in one of your factories every few minutes (belt jammed, voltage fluctuating, flour coming out with bran…). There are three kinds of jobs: find the cause, stop the needle in the green zone, or pick the steps in the right order; the same event never comes twice in a row. Step in on time and an extra batch is made from the silo's raw material, ×2 if you're inside the factory. Miss it and the machine wears a little. Right fixes raise your line mastery (5 ranks, each a permanent +1% capacity). The control panel shows the time until the morning production. If you like, a rewarded ad gives the extra batch once more (2 a day). New Today task: fix a line event at the factory."
   },
   {
-   "v": 751,
+   "v": 762,
    "pv": "1.00",
-   "d": "2026-11-10",
-   "tr": "Otobüsler oyuncunun ve yayaların içinden geçmiyor, kenara iter; önünde durursan korna çalar.",
-   "en": "Buses no longer drive through you or pedestrians; they push you aside and honk."
+   "d": "2026-11-11",
+   "tr": "Fabrikada küçük arıza olunca kâhya haber veriyor, teknik desteği sen çağırıyorsun; bir gün çağırmazsan arıza büyür ve o zaman kâhya çağırır (ücret kasadan). Fabrika silosundaki reklamla hammadde kaldırıldı; yerine toptancı sözleşmesinde Reklam izle düğmesi var: sözleşmedeki üründen pahalıdan az, ucuzdan çok verir (ör. 1 top kumaş, 7 yem), aynı gün izledikçe artar, günde 3.",
+   "en": "When a factory has a small breakdown the steward tells you and you call technical support; if you don't within a day, the breakdown gets worse and the steward calls them (paid from the treasury). Raw materials by ad in the factory silo were removed; instead the wholesale contract has a Watch ad button: it gives some of the contract's product, fewer of expensive goods and more of cheap ones (e.g. 1 bolt of fabric, 7 feed), growing with each ad the same day, 3 a day."
   }
  ]
 }
