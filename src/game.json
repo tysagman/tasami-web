@@ -1,30 +1,30 @@
 {
- "v": 751,
+ "v": 753,
  "version": "1.00",
  "quests": 218,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
+   "v": 753,
+   "pv": "1.00",
+   "d": "2026-11-11",
+   "tr": "Genel tarama düzeltmeleri: bina içinde ve sanayi bölgesinde üstteki yer adı doğru yazar, haritada sanayi bölgesi görünür, ilk odun görevinde yanlış kış notu çıkmaz, uzak köylüye teslim yan görevleri Bölüm 2'den sonra gelir, diğer dillerde eksik çeviriler tamamlandı.",
+   "en": "General sweep fixes: the place name is correct inside buildings and in the industrial zone, the industrial zone shows on the map, the first wood quest no longer shows a wrong winter note, far-villager delivery side quests start in Chapter 2, and missing translations were added."
+  },
+  {
+   "v": 752,
+   "pv": "1.00",
+   "d": "2026-11-10",
+   "tr": "Görev ekranı fabrika silosundaki şeker pancarı, buğday ve yünü de sayar; silodaki yetiyorsa eksik görünmez.",
+   "en": "The quest screen now counts raw materials in the factory silo; if the silo has enough, nothing shows as missing."
+  },
+  {
    "v": 751,
    "pv": "1.00",
    "d": "2026-11-10",
    "tr": "Otobüsler oyuncunun ve yayaların içinden geçmiyor, kenara iter; önünde durursan korna çalar.",
    "en": "Buses no longer drive through you or pedestrians; they push you aside and honk."
-  },
-  {
-   "v": 750,
-   "pv": "1.00",
-   "d": "2026-11-10",
-   "tr": "Otobüs duraklarının içinden geçilmiyor. Tarım dronunun yanına gidince pencere açılır, Şimdi ilaçla ile uçurulur.",
-   "en": "You can no longer walk through bus stops. Walk up to the farm drone to open its panel and spray now."
-  },
-  {
-   "v": 749,
-   "pv": "1.00",
-   "d": "2026-11-10",
-   "tr": "Yem fabrikası silosunda buğday bitince un fabrikasındaki fazla buğday aktarılır. Ayşe yokken de dede tarlasını biçip eker.",
-   "en": "Feed factory now gets surplus wheat from the flour mill silo. Ayşe harvests and replants the grandfather's field while you are away."
   }
  ]
 }
