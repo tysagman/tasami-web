@@ -97,8 +97,8 @@ T = {
             ("Toprağa Kök", "Ahır, tarlalar, ilk çalışanların, turistler ve göldeki dalış merkezi."),
             ("Köyün Umudu", "Kuzey Diyarı açılıyor: süt ve mandıra, kooperatif, banka ve Demirkol'la fiyat savaşı."),
             ("Fabrika Dumanı", "Un, yem ve şeker fabrikaları, tekstil atölyesi, toptancıyla sözleşmeler."),
-            ("Yollar ve Limanlar", "Meslek okulu, bursiyerler, kamyon filosu, soğuk hava deposu ve ilk ihracat gemisi."),
-            ("Miras", "Holding ve şirketlerin, köye hastane ve kütüphane, Hasan Dede Vakfı."),
+            ("Yollar ve Limanlar", "Kamyon filosu ve ihracat gemileriyle Demirkol AŞ'ye karşı Pazar Savaşı: Elazığ, Malatya, Diyarbakır, İstanbul Gıda Fuarı ve kendi markan."),
+            ("Miras", "Demirkol AŞ'yi devral: köylülerden pay topla, ihaleye gir, yönetim kurulunu yönet; sonunda Hasan Dede'nin son mektubu."),
         ],
         "feat_k": "Özellikler", "feat_h": "Yaşayan bir dünya",
         "feats": [
@@ -174,8 +174,8 @@ T = {
             ("Taking Root", "Barns, fields, your first workers, tourists and a diving centre on the lake."),
             ("The Village's Hope", "The Northlands open up: milk and a dairy, a co-op, the bank and a price war with Demirkol."),
             ("Factory Smoke", "Flour, feed and sugar factories, a textile workshop and contracts with wholesalers."),
-            ("Roads and Harbours", "A vocational school, scholarships, a truck fleet, cold storage and the first export ship."),
-            ("Legacy", "A holding and its companies, a hospital and library for the village, the Hasan Dede Foundation."),
+            ("Roads and Harbours", "A market war with Demirkol Inc. fought with trucks and export ships: Elazığ, Malatya, Diyarbakır, the Istanbul Food Fair and your own brand."),
+            ("Legacy", "Take over Demirkol Inc.: gather shares from villagers, bid in a sealed tender, run the board, and finally read Hasan Dede's last letter."),
         ],
         "feat_k": "Features", "feat_h": "A living world",
         "feats": [
