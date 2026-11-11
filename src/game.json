@@ -1,30 +1,27 @@
 {
- "v": 764,
+ "v": 774,
  "version": "1.00",
  "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 764,
-   "pv": "1.00",
+   "v": 774,
    "d": "2026-11-11",
-   "tr": "Fabrika hammadde silosundaki Reklam izle düğmesi geri geldi (ör. 3 ham yün, 12 ot; aynı gün izledikçe artar, günde 3). Toptancı sözleşmesindeki reklam da duruyor; ikisinin hakları ayrı, hepsi günde 5 reklam sınırının içinde.",
-   "en": "The Watch ad button in the factory raw material silo is back (e.g. 3 raw wool, 12 hay; grows with each ad the same day, 3 a day). The ad on the wholesale contract stays too; each has its own count, all within the 5-ads-a-day limit."
+   "tr": "Aynı evde oturan iki kişi (örneğin Derya ile Ayşe) evdeyken kapıda yalnız biri görünüyor, kapıyı çalınca yalnız o çıkıyordu. Artık kapı yazısında evdeki herkes görünüyor ve kapıyı çalınca hepsi dışarı çıkıyor.",
+   "en": "When two people living in the same house (for example Derya and Ayşe) were at home, the door showed only one of them and knocking brought out only that one. The door label now lists everyone at home, and knocking brings them all out."
   },
   {
-   "v": 763,
-   "pv": "1.00",
+   "v": 773,
    "d": "2026-11-11",
-   "tr": "Yeni: Fabrika nöbeti. Oyundayken birkaç dakikada bir fabrikalarından birinde hat olayı çıkıyor (bant sıkıştı, voltaj dalgalanıyor, un kepekli çıkıyor…). Üç farklı iş var: arızanın sebebini bul, ibreyi yeşil alanda durdur ya da adımları doğru sırayla seç; aynı olay arka arkaya gelmez. Zamanında müdahale edersen silodaki hammaddeden ek parti üretilir, fabrikanın içindeysen 2 kat. Kaçırırsan makine biraz aşınır. Doğru müdahaleler hat ustalığını artırır (5 kademe, her biri kalıcı +%1 kapasite). Kontrol panelinde sabah üretimine kalan süre görünür. İstersen ödüllü reklamla ek partiyi bir kez daha alabilirsin (günde 2). Bugün listesine yeni iş: Fabrikada bir hat olayını çöz.",
-   "en": "New: Factory watch. While you play, a line event pops up in one of your factories every few minutes (belt jammed, voltage fluctuating, flour coming out with bran…). There are three kinds of jobs: find the cause, stop the needle in the green zone, or pick the steps in the right order; the same event never comes twice in a row. Step in on time and an extra batch is made from the silo's raw material, ×2 if you're inside the factory. Miss it and the machine wears a little. Right fixes raise your line mastery (5 ranks, each a permanent +1% capacity). The control panel shows the time until the morning production. If you like, a rewarded ad gives the extra batch once more (2 a day). New Today task: fix a line event at the factory."
+   "tr": "Otobüs artık durakların içinden geçmiyor, dönüşlerde durağa değmiyor; durakların içine yürüyerek ya da araçla da girilmiyor. Otobüs bileti reklam izleyerek bedava alınabiliyor (günde 2 kez); taksinin reklamla bedava yolculuğu günde 1'den 2'ye çıktı. Parayla ödeme yerinde duruyor.",
+   "en": "The bus no longer drives through bus stops or clips them when turning, and you can no longer walk or drive into a stop. You can now get a free bus ticket by watching an ad (twice a day); the free taxi ride with an ad went from once to twice a day. Paying with gold still works as before."
   },
   {
-   "v": 762,
-   "pv": "1.00",
+   "v": 772,
    "d": "2026-11-11",
-   "tr": "Fabrikada küçük arıza olunca kâhya haber veriyor, teknik desteği sen çağırıyorsun; bir gün çağırmazsan arıza büyür ve o zaman kâhya çağırır (ücret kasadan). Fabrika silosundaki reklamla hammadde kaldırıldı; yerine toptancı sözleşmesinde Reklam izle düğmesi var: sözleşmedeki üründen pahalıdan az, ucuzdan çok verir (ör. 1 top kumaş, 7 yem), aynı gün izledikçe artar, günde 3.",
-   "en": "When a factory has a small breakdown the steward tells you and you call technical support; if you don't within a day, the breakdown gets worse and the steward calls them (paid from the treasury). Raw materials by ad in the factory silo were removed; instead the wholesale contract has a Watch ad button: it gives some of the contract's product, fewer of expensive goods and more of cheap ones (e.g. 1 bolt of fabric, 7 feed), growing with each ad the same day, 3 a day."
+   "tr": "\"Ne ekilsin?\" ekranında arpa ve pamuk simgesi bazı telefonlarda boş kutu çıkıyordu, düzeldi. Karakter ata daha doğal oturuyor: bacaklar atın iki yanında, gövde hafif öne eğik.",
+   "en": "The barley and cotton icons on the \"What to plant?\" screen showed as empty boxes on some phones; fixed. The character now sits on the horse more naturally: legs on either side, body leaning slightly forward."
   }
  ]
 }
