@@ -1,27 +1,27 @@
 {
- "v": 787,
+ "v": 799,
  "version": "1.00",
  "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 787,
+   "v": 799,
    "d": "2026-11-12",
-   "tr": "Bölüm 4'te Finans müdürü: Çalışanlar ekranından ilan ver, bir hafta içinde gelen 5 CV'den birini seç, maaşını sen belirle. Finans müdürü bütün gelir ve giderlerini kalem kalem deftere yazar (bugün, dün, son 7 gün, net kâr), ödeme günü cebin yetmezse maaşı, araba sigortasını, bursu ve zekâtı banka hesabından çekip öder, her sabah kısa bir hesap raporu verir: en çok kazandıran ve harcatan kalemler, kasanın kaç gün yeteceği, zarar eden işler. İstersen akşamları cepteki fazlayı bankaya da yatırır.",
-   "en": "Finance manager in Chapter 4: post a job ad in Workers, choose one of the 5 CVs that arrive within a week and set the salary yourself. The finance manager records all your income and expenses item by item (today, yesterday, last 7 days, net profit), pays wages, car insurance, scholarships and zakat from your bank account when your pocket falls short on payment day, and sends a short accounts report every morning: top earners and expenses, how many days your cash will last, and what is losing money. If you like, they also deposit your extra cash in the bank every evening."
+   "tr": "📺 Bölüm 1 ve 2'de daha çok isteğe bağlı ödüllü reklam fırsatı: ekin hızlandırma günde 4, inşaat hızlandırma günde 3, enerji günde 3, kümes yumurtası günde 2 kez. Yeni: bir görevi bitirdikten sonraki 5 dakika içinde reklam izlersen görevin altın ödülünü bir kez daha alırsın (günde 3). Sol üstteki 📺 düğmesi o an işine yarayacak reklamı gösterir. Ana menüden Çıkış'a basınca günde bir kez 'Çıkmadan önce' ekranı ödül seçeneklerini gösterir; istemezsen 'Kaydet ve çık' ile hemen çıkarsın. Hiçbir reklam kendiliğinden açılmaz, günde en çok 15 reklam sınırı aynı. Ayrıntılar: Ayarlar › Reklamlar.",
+   "en": "📺 More optional rewarded ad chances in Chapters 1 and 2: crop speed-up 4 times a day, construction speed-up 3, energy 3, coop eggs 2 times a day. New: watch an ad within 5 minutes of finishing a quest to get its gold reward once more (3 times a day). The 📺 button at the top left shows the ad that helps you right now. When you tap Exit in the main menu, a 'Before you leave' screen shows reward options once a day; tap 'Save and exit' to leave right away. No ad ever opens by itself and the 15-ads-a-day limit is unchanged. Details: Settings › Ads."
   },
   {
-   "v": 786,
+   "v": 798,
    "d": "2026-11-12",
-   "tr": "Otobüs, taksi ve araban artık kendi etrafında fırıldak gibi dönmüyor. Ters yöne gitmesi gerekince gerçek bir araç gibi manevra yapıyor: ileri, geri vitesle geri, sonra tekrar ileri. Otobüs hat sonlarında (Sivrice, Elazığ, Çamlıbel, Akpınar) toprak bir dönüş alanında dönüyor; dar köy duraklarında önce geldiği yoldan geri çekilip boş alanda dönüyor.",
-   "en": "Buses, taxis and your car no longer spin in place. When they need to turn around they make a real three-point turn: forward, reverse, then forward again. At the end of each bus line (Sivrice, Elazığ, Çamlıbel, Akpınar) the bus turns on a dirt turning area; at tight village stops it first backs up along its road and turns in open ground."
+   "tr": "Google Play'den indirilen oyunda, oyunu 2 dakika oynayınca ya da açık tutunca «Oyunumuzu beğendin mi?» penceresi açılır. «5 yıldız ver» seni oyunun Google Play sayfasına götürür. Değerlendiren ya da «Hayır, teşekkürler» diyen oyuncuya bir daha sorulmaz; «Sonra» dersen en erken 3 gün sonra, en çok 3 kez sorulur. Başka bir pencere açıkken ya da yürürken araya girmez.",
+   "en": "In the Google Play version, after you play or keep the game open for 2 minutes, an «Enjoying our game?» window appears. «Give 5 stars» takes you to the game's Google Play page. If you rate it or tap «No, thanks» you won't be asked again; «Later» asks again at the earliest 3 days later, at most 3 times. It never interrupts while another window is open or while you're walking."
   },
   {
-   "v": 785,
+   "v": 797,
    "d": "2026-11-12",
-   "tr": "Yurdunu kur › Doğa temaları artık gözle görülür biçimde farklı: zemin, ot, çiçekler, ağaç yaprakları, gökyüzü, sis ve göl temaya göre değişir; seçince hemen uygulanır. Zeytinlik kalktı (seçmiş olanlar Çiçekli çayır görür), Güz ormanı ve Kızıl toprak eklendi (7 tema). Bölgeler 7 oldu: Marmara ve Güneydoğu eklendi.",
-   "en": "Set up your homeland › Nature themes now look clearly different: ground, grass, flowers, tree leaves, sky, haze and the lake change with the theme and apply instantly. Olive grove was removed (players who chose it get Flower meadow); Autumn forest and Red earth were added (7 themes). Regions are now 7: Marmara and Southeast were added."
+   "tr": "Taksinin gittiği yerlere toprak yol yapıldı: göl kıyısı, doğu ve batı kıyısı, Batık Şehir, Meşe ormanı, Tavşan vadisi, Mastar Dağı eteği ve uzak köylerdeki duraklara giden yollar artık haritada çizili. Taksi bu yolları izliyor, yapıların, süslerin, çitlerin ve ağaçların içinden geçmiyor. Yol açılamayan yerde (çok kalabalık çiftlik çevresi) taksi seni ana yolda bırakır. Yolun üstüne yeni yapı kurarsan yol kendiliğinden başka yerden yeniden açılır.",
+   "en": "Taxi destinations now have dirt roads: the lake shore, east and west shores, the Sunken City, the oak forest, Rabbit Valley, the foot of Mount Mastar and outlying stops are connected by drawn roads. The taxi follows these roads and no longer drives through buildings, decorations, fences or trees. Where no road can be opened (a very crowded farm), the taxi drops you on the main road. If you build on a road, it is rerouted automatically."
   }
  ]
 }
