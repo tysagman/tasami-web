@@ -65,7 +65,7 @@
       <h1 class="hero-title">{{game}}</h1>
       <p class="lead">{{tagline}}</p>
       <div class="cta">
-        <a class="btn primary" href="#test"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5v17l15-8.5z"/></svg>{{cta_test}}</a>
+        <a class="btn primary" href="{{store}}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5v17l15-8.5z"/></svg>{{cta_test}}</a>
         <button class="btn glass" type="button" data-trailer><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8.5v7l6-3.5z"/></svg>{{cta_watch}}</button>
       </div>
       <p class="badge"><i></i>{{badge}}</p>
@@ -139,20 +139,14 @@
     </div>
   </section>
 
-  <section class="test" id="test">
+  <section class="test" id="indir">
     <div class="test-bg" aria-hidden="true"></div>
     <div class="wrap test-grid">
       <div class="sec-head test-head reveal"><p class="kicker">{{t_k}}</p><h2>{{t_h}}</h2><p class="sub">{{t_sub}}</p></div>
       <div class="card play reveal">
         <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5v17l15-8.5z"/></svg>{{t_and_h}}</h3>
         <p>{{t_and_p}}</p>
-        <form id="tform" novalidate data-ok="{{t_ok}}" data-dup="{{t_dup}}" data-err="{{t_err}}" data-bad="{{t_bad}}" data-busy="{{t_busy}}" data-need="{{t_need}}" data-next="{{thanks_url}}" data-lang="{{lang}}">
-          <label>{{t_email}}<input type="email" name="email" required maxlength="100" autocomplete="email" placeholder="ornek@gmail.com"></label>
-          <label>{{t_name}}<input type="text" name="name" maxlength="60" autocomplete="name"></label>
-          <label class="chk"><input type="checkbox" name="ok" required> <span>{{t_consent}} <a href="{{privacy_url}}" target="_blank">{{privacy}}</a></span></label>
-          <button class="btn primary" type="submit">{{t_send}}</button>
-          <p class="msg" role="status" aria-live="polite"></p>
-        </form>
+        <a class="btn primary store-btn" href="{{store}}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5v17l15-8.5z"/></svg>{{t_get}}</a>
       </div>
       <div class="card ios reveal">
         <h3><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="18" r="1.2"/></svg>{{t_ios_h}}</h3>
@@ -211,13 +205,12 @@
   <div class="vm-in"><video controls playsinline preload="none"><source src="{{b}}assets/video/{{trailer}}" type="video/mp4"></video></div>
 </div>
 
-<a class="m-cta" href="#test" aria-hidden="true" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5v17l15-8.5z"/></svg>{{cta_test}}</a>
+<a class="m-cta" href="{{store}}" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5v17l15-8.5z"/></svg>{{cta_test}}</a>
 {{cookie}}
 <button class="music" type="button" aria-pressed="false" data-src="{{b}}assets/audio/muzik.mp3" data-on="{{music_on}}" data-off="{{music_off}}" aria-label="{{music_on}}"><span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><b>{{music}}</b></button>
 
 <script src="{{b}}assets/rise.js" defer></script>
 <script src="{{b}}assets/site.js" defer></script>
 <script src="{{b}}assets/extra.js" defer></script>
-<script type="module" src="{{b}}assets/test-form.js"></script>
 </body>
 </html>
