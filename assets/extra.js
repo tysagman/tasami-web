@@ -1,4 +1,4 @@
-// Tüm sayfalar: çerez bildirimi (bir kez) ve mobilde sabit "Kapalı teste katıl" butonu.
+// Tüm sayfalar: çerez bildirimi (bir kez) ve mobilde sabit "Google Play'den indir" butonu.
 (() => {
   const get = k => { try { return localStorage.getItem(k) } catch (e) { return null } };
   const set = (k, v) => { try { localStorage.setItem(k, v) } catch (e) {} };
@@ -16,15 +16,14 @@
     });
   }
 
-  // Mobile sticky CTA: visible after the hero, hidden while the sign-up section is on screen
-  // and for visitors who already signed up.
+  // Mobile sticky CTA: visible after the hero, hidden while the download section is on screen.
   const cta = document.querySelector('.m-cta');
   const hero = document.querySelector('.hero');
-  const test = document.getElementById('test');
+  const test = document.getElementById('indir');
   if (!cta || !hero || !test) return;
   let pastHero = false, atTest = false;
   const update = () => {
-    const on = pastHero && !atTest && !get('tasami-test-kayit');
+    const on = pastHero && !atTest;
     cta.classList.toggle('show', on);
     cta.setAttribute('aria-hidden', on ? 'false' : 'true');
     cta.tabIndex = on ? 0 : -1;

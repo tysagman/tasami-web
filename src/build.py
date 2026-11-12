@@ -10,6 +10,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 TEMPLATE = (ROOT / "src" / "template.html").read_text(encoding="utf-8")
 
 PLAY_URL = "https://tysagman.github.io/toprak-oyun/oyun/"
+STORE_URL = "https://play.google.com/store/apps/details?id=com.tasami.topraginmirasi"
 CONTACT = "info@tasami.com.tr"
 SITE = "https://tasami.com.tr/"
 YOUTUBE_ID = "VAp9sWofOYo"  # resmî fragman
@@ -66,17 +67,17 @@ T = {
         "lang": "tr", "path": "", "base": "",
         "other_lang": "EN", "other_href": "en/", "other_name": "English",
         "title": "Toprağın Mirası: 3D çiftlik ve köy kurma oyunu | Tasami",
-        "desc": "Toprağın Mirası: Hazar Gölü kıyısında dedenden kalan toprakta çiftlik, köy ve fabrika kurduğun 3D çok oyunculu yaşam oyunu. Android kapalı teste katıl.",
+        "desc": "Toprağın Mirası: Hazar Gölü kıyısında dedenden kalan toprakta çiftlik, köy ve fabrika kurduğun 3D çok oyunculu yaşam oyunu. Şimdi Google Play'de.",
         "locale": "tr_TR", "other_locale": "en_US",
         "og_alt": "Toprağın Mirası oyun logosu",
-        "nav": ["Oyun", "Hikâye", "Özellikler", "Görüntüler", "Erken erişim", "Stüdyo"],
+        "nav": ["Oyun", "Hikâye", "Özellikler", "Görüntüler", "İndir", "Stüdyo"],
         "menu": "Menü", "foot_site": "Site", "foot_legal": "Yasal", "foot_contact": "İletişim", "other_lang_code": "en",
         "kicker": "Tasami'nin ilk oyunu",
         "game": "Toprağın Mirası",
         "tagline": "Dedenden kalan toprağa boş elle gel. Çiftliğini kur, köyünü büyüt, fabrikalarını işlet ve Hazar Gölü kıyısında kendi mirasını bırak.",
-        "cta_test": "Kapalı teste katıl",
+        "cta_test": "Google Play'den indir",
         "cta_watch": "Fragmanı izle",
-        "badge": f"Sürüm {VERSION} · Google Play'e başvuruldu, onay bekleniyor",
+        "badge": f"Sürüm {VERSION} · Google Play'de yayında",
         "scroll": "Keşfet",
         "presents": "sunar", "skip": "Geç", "yt_btn": "YouTube'da izle", "upd_k": "Oyunla eş zamanlı", "upd_h": "Son güncellemeler", "upd_v": "Sürüm", "slogan": "Topraktan Sanayiye",
         "trailer": "toprak-mirasi-fragman.mp4?v=1030",
@@ -111,19 +112,10 @@ T = {
         ],
         "gal_k": "Görüntüler", "gal_h": "Oyundan kareler", "gal_sub": "Tümü oyunun içinden, gerçek görüntülerdir.",
         "tr_k": "Resmî fragman", "tr_h": "Toprağın Mirası'nı izle", "tr_note": "Oyun içinden çekilmiştir",
-        "t_k": "Erken erişim", "t_h": "İlk oynayanlardan ol",
-        "t_sub": "Toprağın Mirası için Google Play'e yayın başvurusu yapıldı; oyun henüz yayınlanmadı, onay bekleniyor. O zamana kadar Android kapalı testine katılabilirsin.",
-        "t_and_h": "Google Play · Kapalı test",
-        "t_and_p": "Google Play'de kullandığın Gmail adresini bırak. Seni test listesine ekleyip davet bağlantısını e-postayla göndereceğiz.",
-        "t_email": "Gmail adresin", "t_name": "Adın (isteğe bağlı)",
-        "t_consent": "E-posta adresimin yalnızca test daveti için kullanılmasını ve bu amaçla yurt dışındaki sunucularda (Google Firebase) saklanmasını kabul ediyorum.",
-        "t_busy": "Gönderiliyor…", "t_need": "Devam etmek için onay kutusunu işaretlemelisin.",
-        "t_send": "Teste katıl",
-        "t_ok": "Teşekkürler! Kaydın alındı. Davet e-postası geldiğinde Google Play'den testi indirebilirsin.",
-        "t_dup": "Bu tarayıcıdan zaten kayıt oldun. Teşekkürler!",
-        "t_err": "Kayıt gönderilemedi. Lütfen biraz sonra tekrar dene ya da bize e-posta gönder.",
-        "t_bad": "Lütfen geçerli bir e-posta adresi yaz.",
-        "t_ios_h": "App Store · iOS", "t_ios_p": "iPhone ve iPad sürümü üzerinde çalışıyoruz.", "t_soon": "Yakında",
+        "t_k": "İndir", "t_h": "Toprağın Mirası yayında",
+        "t_sub": "Oyun Google Play'de herkese açık. Android telefonuna ya da tabletine indir, dedenden kalan toprağa bugün adım at.",
+        "t_and_h": "Google Play · Android",
+        "t_and_p": "Toprağın Mirası'nı Google Play mağazasından indir.", "t_get": "Google Play'den indir", "t_ios_h": "App Store · iOS", "t_ios_p": "iPhone ve iPad sürümü üzerinde çalışıyoruz.", "t_soon": "Yakında",
         "about_k": "Stüdyo", "about_h": "Tasami hakkında",
         "about_org": "İki kimya mühendisinin kurduğu, oyun tasarımı, oyun geliştirme ve mobil uygulama stüdyosu.",
         "about": [
@@ -143,7 +135,7 @@ T = {
         "lang": "en", "path": "en/", "base": "../",
         "other_lang": "TR", "other_href": "../", "other_name": "Türkçe",
         "title": "Legacy of the Land: 3D farming and village-building game | Tasami",
-        "desc": "Legacy of the Land: build a farm, a village and factories on your grandfather's land by Lake Hazar in this 3D multiplayer life sim. Join the Android closed test.",
+        "desc": "Legacy of the Land: build a farm, a village and factories on your grandfather's land by Lake Hazar in this 3D multiplayer life sim. Out now on Google Play.",
         "locale": "en_US", "other_locale": "tr_TR",
         "og_alt": "Legacy of the Land game logo",
         "nav": ["Game", "Story", "Features", "Screenshots", "Early access", "Studio"],
@@ -151,9 +143,9 @@ T = {
         "kicker": "Tasami's first game",
         "game": "Legacy of the Land",
         "tagline": "Arrive empty-handed on the land your grandfather left you. Build your farm, grow your village, run your factories and leave your own legacy on the shores of Lake Hazar.",
-        "cta_test": "Join the closed test",
+        "cta_test": "Get it on Google Play",
         "cta_watch": "Watch the trailer",
-        "badge": f"Version {VERSION} · Submitted to Google Play, awaiting approval",
+        "badge": f"Version {VERSION} · Out now on Google Play",
         "scroll": "Explore",
         "presents": "presents", "skip": "Skip", "yt_btn": "Watch on YouTube", "upd_k": "Live from the game", "upd_h": "Latest updates", "upd_v": "Version", "slogan": "From Soil to Industry",
         "trailer": "legacy-of-the-land-trailer.mp4?v=1030",
@@ -188,19 +180,10 @@ T = {
         ],
         "gal_k": "Screenshots", "gal_h": "Scenes from the game", "gal_sub": "All captured in-game.",
         "tr_k": "Official trailer", "tr_h": "Watch Legacy of the Land", "tr_note": "Captured in-game",
-        "t_k": "Early access", "t_h": "Be among the first to play",
-        "t_sub": "Legacy of the Land has been submitted to Google Play for release. It is not published yet and is awaiting approval. Until then you can join the Android closed test.",
-        "t_and_h": "Google Play · Closed test",
-        "t_and_p": "Leave the Gmail address you use on Google Play. We'll add you to the tester list and email you the invite link.",
-        "t_email": "Your Gmail address", "t_name": "Your name (optional)",
-        "t_consent": "I agree that my email address is used only for the test invitation and stored for this purpose on servers abroad (Google Firebase).",
-        "t_busy": "Sending…", "t_need": "Please tick the box to continue.",
-        "t_send": "Join the test",
-        "t_ok": "Thanks! You're signed up. When the invite arrives, you can install the test from Google Play.",
-        "t_dup": "You've already signed up from this browser. Thanks!",
-        "t_err": "Couldn't send your sign-up. Please try again later or email us.",
-        "t_bad": "Please enter a valid email address.",
-        "t_ios_h": "App Store · iOS", "t_ios_p": "We're working on the iPhone and iPad version.", "t_soon": "Coming soon",
+        "t_k": "Download", "t_h": "Legacy of the Land is out now",
+        "t_sub": "The game is now available to everyone on Google Play. Install it on your Android phone or tablet and step onto your grandfather's land today.",
+        "t_and_h": "Google Play · Android",
+        "t_and_p": "Download Legacy of the Land from the Google Play Store.", "t_get": "Get it on Google Play", "t_ios_h": "App Store · iOS", "t_ios_p": "We're working on the iPhone and iPad version.", "t_soon": "Coming soon",
         "about_k": "Studio", "about_h": "About Tasami",
         "about_org": "A game design, game development and mobile app studio founded by two chemical engineers.",
         "about": [
@@ -224,7 +207,7 @@ def cookie(t):
             f'<button class="btn primary ck-ok" type="button">{t["ck_ok"]}</button></div>')
 
 
-NAV_IDS = ["oyun", "hikaye", "ozellikler", "goruntuler", "test", "studyo"]
+NAV_IDS = ["oyun", "hikaye", "ozellikler", "goruntuler", "indir", "studyo"]
 
 
 def img(b, name, alt, cls="", eager=False, big=False):
@@ -293,7 +276,7 @@ def render(t):
          "description": t["about_org"]},
         {"@context": "https://schema.org", "@type": "VideoGame", "name": t["game"],
          "alternateName": "Legacy of the Land" if t["lang"] == "tr" else "Toprağın Mirası", "url": SITE + t["path"],
-         "description": t["desc"], "genre": ["Simulation", "Farming"], "gamePlatform": ["Android"],
+         "description": t["desc"], "genre": ["Simulation", "Farming"], "gamePlatform": ["Android"], "operatingSystem": "Android", "installUrl": STORE_URL,
          "playMode": ["SinglePlayer", "MultiPlayer"], "author": org, "publisher": org,
          "inLanguage": ["tr", "en", "de", "fr", "es", "ru", "ku"],
          "image": SITE + "assets/img/oyun/baslik-og.jpg",
@@ -304,7 +287,7 @@ def render(t):
     vals = dict(t, b=b, yt=YOUTUBE, stats=stats, updates=updates, story=story, chapters=chapters, jmap=jmap, feats=feats, gallery=gallery, about=about,
                 services=services, nav=nav, foot_nav=nav, marquee=marquee, ld=ld, mail_to=CONTACT,
                 privacy_url="/" + pages.PRIVACY[t["lang"]][0], terms_url="/" + pages.TERMS[t["lang"]][0],
-                thanks_url="/" + pages.THANKS[t["lang"]][0], delete_url=PLAY_URL + "hesap-sil.html",
+                store=STORE_URL, delete_url=PLAY_URL + "hesap-sil.html",
                 icons=ICONS, analytics=ANALYTICS, cookie=cookie(t),
                 canonical=SITE + t["path"],
                 hero_img=img(b, "genel", "", eager=True, big=True),
@@ -337,7 +320,7 @@ def foot_links(t):
 
 
 def subpage(group, L, index=True, heading=True):
-    """group: pages.PRIVACY / TERMS / THANKS; L: 'tr' | 'en'"""
+    """group: pages.PRIVACY / TERMS; L: 'tr' | 'en'"""
     t = T[L]
     path, title, desc, body = group[L]
     other = "en" if L == "tr" else "tr"
@@ -372,7 +355,6 @@ for t in T.values():
 for L in ("tr", "en"):
     subpage(pages.PRIVACY, L)
     subpage(pages.TERMS, L)
-    subpage(pages.THANKS, L, index=False, heading=False)
 
 # GitHub Pages her bilinmeyen adreste kökteki 404.html'i gösterir (iki dilli)
 t = T["tr"]
