@@ -1,27 +1,27 @@
 {
- "v": 774,
+ "v": 787,
  "version": "1.00",
  "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 774,
-   "d": "2026-11-11",
-   "tr": "Aynı evde oturan iki kişi (örneğin Derya ile Ayşe) evdeyken kapıda yalnız biri görünüyor, kapıyı çalınca yalnız o çıkıyordu. Artık kapı yazısında evdeki herkes görünüyor ve kapıyı çalınca hepsi dışarı çıkıyor.",
-   "en": "When two people living in the same house (for example Derya and Ayşe) were at home, the door showed only one of them and knocking brought out only that one. The door label now lists everyone at home, and knocking brings them all out."
+   "v": 787,
+   "d": "2026-11-12",
+   "tr": "Bölüm 4'te Finans müdürü: Çalışanlar ekranından ilan ver, bir hafta içinde gelen 5 CV'den birini seç, maaşını sen belirle. Finans müdürü bütün gelir ve giderlerini kalem kalem deftere yazar (bugün, dün, son 7 gün, net kâr), ödeme günü cebin yetmezse maaşı, araba sigortasını, bursu ve zekâtı banka hesabından çekip öder, her sabah kısa bir hesap raporu verir: en çok kazandıran ve harcatan kalemler, kasanın kaç gün yeteceği, zarar eden işler. İstersen akşamları cepteki fazlayı bankaya da yatırır.",
+   "en": "Finance manager in Chapter 4: post a job ad in Workers, choose one of the 5 CVs that arrive within a week and set the salary yourself. The finance manager records all your income and expenses item by item (today, yesterday, last 7 days, net profit), pays wages, car insurance, scholarships and zakat from your bank account when your pocket falls short on payment day, and sends a short accounts report every morning: top earners and expenses, how many days your cash will last, and what is losing money. If you like, they also deposit your extra cash in the bank every evening."
   },
   {
-   "v": 773,
-   "d": "2026-11-11",
-   "tr": "Otobüs artık durakların içinden geçmiyor, dönüşlerde durağa değmiyor; durakların içine yürüyerek ya da araçla da girilmiyor. Otobüs bileti reklam izleyerek bedava alınabiliyor (günde 2 kez); taksinin reklamla bedava yolculuğu günde 1'den 2'ye çıktı. Parayla ödeme yerinde duruyor.",
-   "en": "The bus no longer drives through bus stops or clips them when turning, and you can no longer walk or drive into a stop. You can now get a free bus ticket by watching an ad (twice a day); the free taxi ride with an ad went from once to twice a day. Paying with gold still works as before."
+   "v": 786,
+   "d": "2026-11-12",
+   "tr": "Otobüs, taksi ve araban artık kendi etrafında fırıldak gibi dönmüyor. Ters yöne gitmesi gerekince gerçek bir araç gibi manevra yapıyor: ileri, geri vitesle geri, sonra tekrar ileri. Otobüs hat sonlarında (Sivrice, Elazığ, Çamlıbel, Akpınar) toprak bir dönüş alanında dönüyor; dar köy duraklarında önce geldiği yoldan geri çekilip boş alanda dönüyor.",
+   "en": "Buses, taxis and your car no longer spin in place. When they need to turn around they make a real three-point turn: forward, reverse, then forward again. At the end of each bus line (Sivrice, Elazığ, Çamlıbel, Akpınar) the bus turns on a dirt turning area; at tight village stops it first backs up along its road and turns in open ground."
   },
   {
-   "v": 772,
-   "d": "2026-11-11",
-   "tr": "\"Ne ekilsin?\" ekranında arpa ve pamuk simgesi bazı telefonlarda boş kutu çıkıyordu, düzeldi. Karakter ata daha doğal oturuyor: bacaklar atın iki yanında, gövde hafif öne eğik.",
-   "en": "The barley and cotton icons on the \"What to plant?\" screen showed as empty boxes on some phones; fixed. The character now sits on the horse more naturally: legs on either side, body leaning slightly forward."
+   "v": 785,
+   "d": "2026-11-12",
+   "tr": "Yurdunu kur › Doğa temaları artık gözle görülür biçimde farklı: zemin, ot, çiçekler, ağaç yaprakları, gökyüzü, sis ve göl temaya göre değişir; seçince hemen uygulanır. Zeytinlik kalktı (seçmiş olanlar Çiçekli çayır görür), Güz ormanı ve Kızıl toprak eklendi (7 tema). Bölgeler 7 oldu: Marmara ve Güneydoğu eklendi.",
+   "en": "Set up your homeland › Nature themes now look clearly different: ground, grass, flowers, tree leaves, sky, haze and the lake change with the theme and apply instantly. Olive grove was removed (players who chose it get Flower meadow); Autumn forest and Red earth were added (7 themes). Regions are now 7: Marmara and Southeast were added."
   }
  ]
 }
