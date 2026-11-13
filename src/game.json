@@ -1,10 +1,16 @@
 {
- "v": 820,
+ "v": 821,
  "version": "1.00",
  "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
+  {
+   "v": 821,
+   "d": "2026-11-13",
+   "tr": "Köylü arabaları azaldı (en çok 4): artık yalnız yol kenarındaki asfalt park ceplerinde durur, çimene, köy meydanına ve çiftliğinin önüne park etmez. Köy meydanına hiçbir araç giremez.",
+   "en": "Fewer villager cars (at most 4): they now park only in roadside parking bays, never on grass, the village square or in front of your farm. No vehicle can enter the village square."
+  },
   {
    "v": 820,
    "d": "2026-11-13",
@@ -16,12 +22,6 @@
    "d": "2026-11-13",
    "tr": "Hazar Akaryakıt açıldı: benzin ve motorin pompası, elektrikliler için şarj yeri. Pompacı Erkan depoyu doldurur, fiyatlar her gün biraz değişir. Köylülerin de arabaları var, yollarda gezip istasyona uğrarlar.",
    "en": "Hazar fuel station is open: petrol and diesel pumps plus EV chargers. Attendant Erkan fills your tank, and prices change a little each day. Villagers now drive their own cars and stop by the station too."
-  },
-  {
-   "v": 818,
-   "d": "2026-11-13",
-   "tr": "📺 İlk bölümlerde reklam azaldı: Bölüm 1'de hiç reklam düğmesi yok, Bölüm 2'de günde en çok 5 reklam izlenebilir. Bölüm 3'ten itibaren eskisi gibi günde en çok 15. Reklamlar yine isteğe bağlı, hiçbiri kendiliğinden açılmaz.",
-   "en": "📺 Fewer ads in the early chapters: Chapter 1 has no ad buttons at all, and in Chapter 2 you can watch at most 5 ads a day. From Chapter 3 on it is 15 a day as before. Ads remain optional and never open by themselves."
   }
  ]
 }
