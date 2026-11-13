@@ -1,27 +1,27 @@
 {
- "v": 813,
+ "v": 820,
  "version": "1.00",
  "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 813,
+   "v": 820,
    "d": "2026-11-13",
-   "tr": "Küçük hikâye ve karakter düzeltmeleri.",
-   "en": "Small story and character fixes."
+   "tr": "Araba, taksi ve ambulans dönüş yaparken artık ahır, ağıl, kümes gibi yapıların içinden geçmiyor; taksi yapıya değmeyen yerde duruyor.",
+   "en": "Cars, taxis and the ambulance no longer drive through the barn, pens or coop while turning; the taxi stops clear of buildings."
   },
   {
-   "v": 812,
+   "v": 819,
    "d": "2026-11-13",
-   "tr": "Taksi çiftlikte seni bırakırken ya da almaya gelirken artık at arabasının, traktörün, kendi aracının içinde durmuyor; boş bir yerde duruyor.",
-   "en": "The taxi no longer stops inside your parked horse cart, tractor or car at the farm; it stops in a free spot."
+   "tr": "Hazar Akaryakıt açıldı: benzin ve motorin pompası, elektrikliler için şarj yeri. Pompacı Erkan depoyu doldurur, fiyatlar her gün biraz değişir. Köylülerin de arabaları var, yollarda gezip istasyona uğrarlar.",
+   "en": "Hazar fuel station is open: petrol and diesel pumps plus EV chargers. Attendant Erkan fills your tank, and prices change a little each day. Villagers now drive their own cars and stop by the station too."
   },
   {
-   "v": 811,
+   "v": 818,
    "d": "2026-11-13",
-   "tr": "Bayram ve özel gün kutlamaları artık gerçek tarihe göre çıkıyor; kasımda oyuna girerken 15 Temmuz yazısı çıkmıyor.",
-   "en": "Holiday greetings now follow the real date; the July 15 message no longer appears in November."
+   "tr": "📺 İlk bölümlerde reklam azaldı: Bölüm 1'de hiç reklam düğmesi yok, Bölüm 2'de günde en çok 5 reklam izlenebilir. Bölüm 3'ten itibaren eskisi gibi günde en çok 15. Reklamlar yine isteğe bağlı, hiçbiri kendiliğinden açılmaz.",
+   "en": "📺 Fewer ads in the early chapters: Chapter 1 has no ad buttons at all, and in Chapter 2 you can watch at most 5 ads a day. From Chapter 3 on it is 15 a day as before. Ads remain optional and never open by themselves."
   }
  ]
 }
