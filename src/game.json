@@ -1,27 +1,27 @@
 {
- "v": 806,
+ "v": 813,
  "version": "1.00",
  "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 806,
-   "d": "2026-11-12",
-   "tr": "🚜 Park hâlindeki traktörün römorkunun içine artık girilemiyor (traktörle römork arasındaki boşlukta karakter römorka giriyordu).",
-   "en": "🚜 You can no longer walk into the trailer of a parked tractor (the character could slip into it from the gap behind the tractor)."
+   "v": 813,
+   "d": "2026-11-13",
+   "tr": "Küçük hikâye ve karakter düzeltmeleri.",
+   "en": "Small story and character fixes."
   },
   {
-   "v": 805,
-   "d": "2026-11-12",
-   "tr": "📊 Oyunun ilk dakikalarını iyileştirebilmek için hangi adımda zorlandığını anonim olarak ölçen bir sayaç eklendi (kişisel bilgi toplanmaz).",
-   "en": "📊 Added an anonymous counter that shows which step of the first minutes is hardest, so we can improve it (no personal data is collected)."
+   "v": 812,
+   "d": "2026-11-13",
+   "tr": "Taksi çiftlikte seni bırakırken ya da almaya gelirken artık at arabasının, traktörün, kendi aracının içinde durmuyor; boş bir yerde duruyor.",
+   "en": "The taxi no longer stops inside your parked horse cart, tractor or car at the farm; it stops in a free spot."
   },
   {
-   "v": 804,
-   "d": "2026-11-12",
-   "tr": "📺 Bölüm 1 ve 2'deki reklam teklifleri eski hâline döndü: ekin, inşaat, enerji ve yumurta reklamlarının günlük hakları önceki gibi; görev ödülü reklamı, ana menüden çıkarken açılan 'Çıkmadan önce' ekranı ve sol üstteki 📺 düğmesinin ek önerileri kaldırıldı. Reklamlar yine isteğe bağlı, hiçbiri kendiliğinden açılmaz.",
-   "en": "📺 Ad offers in Chapters 1 and 2 are back to how they were: the daily limits for crop, construction, energy and egg ads are as before; the quest reward ad, the 'Before you leave' screen when exiting from the main menu and the extra suggestions on the 📺 button at the top left were removed. Ads remain optional and never open by themselves."
+   "v": 811,
+   "d": "2026-11-13",
+   "tr": "Bayram ve özel gün kutlamaları artık gerçek tarihe göre çıkıyor; kasımda oyuna girerken 15 Temmuz yazısı çıkmıyor.",
+   "en": "Holiday greetings now follow the real date; the July 15 message no longer appears in November."
   }
  ]
 }
