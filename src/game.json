@@ -1,27 +1,27 @@
 {
- "v": 830,
+ "v": 833,
  "version": "1.00",
  "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 830,
+   "v": 833,
    "d": "2026-11-14",
-   "tr": "Oto Galeri'de artık Sedan, Hatchback, SUV ve Pikap'ın benzinli, dizel ve elektrikli modelleri var; her birinin kasası, hızı ve motor sesi farklı. Spor araba gür V8 sesiyle en hızlısı: 750.000 A, Bölüm 5 ve itibar seviyesi 10 gerekir.",
-   "en": "The Car Dealer now offers Sedan, Hatchback, SUV and Pickup in petrol, diesel and electric versions, each with its own body, speed and engine sound. The sports car is the fastest with a deep V8 sound: 750,000 G, requires Chapter 5 and reputation level 10."
+   "tr": "Otobüs artık durmak için karşı şeride geçmiyor: yol üstündeki her durağın karşısında ikinci bir durak var, otobüs gittiği yönün sağındaki durakta durur. Biletli yolculukta da doğru taraftaki durağa yönlendirilirsin.",
+   "en": "Buses no longer cross into the opposite lane to stop: every roadside stop now has a twin across the road and the bus stops on its own side. Ticket guidance points you to the stop on the correct side."
   },
   {
-   "v": 829,
+   "v": 832,
    "d": "2026-11-14",
-   "tr": "Araba sürüşü kolaylaştı: çubuğu ne kadar itersen o kadar hızlı gidersin, sağa-sola çevirince direksiyon döner, geri çekince fren ve geri vites; kamera hep arkada. Arabayla giderken ayak sesi gelmiyor. Araba insanların içinden geçmiyor: önüne çıkan yayaya yavaşlayıp durur, korna çalar. Hızlı giderken arabanın ekranda titremesi giderildi. Akaryakıtta pompa hortumu arabanın içinden geçmiyor, depo kapağı pompaya bakan tarafta.",
-   "en": "Driving is easier: push the stick further to go faster, steer left and right, pull back to brake and reverse; the camera stays behind. No more footstep sounds while driving. Cars no longer pass through people: they slow down, stop and honk for pedestrians. Fixed the car shaking on screen at speed. At the fuel station the pump hose no longer goes through the car."
+   "tr": "Akaryakıt istasyonunda pompa adaları artık yürürken engel değil: bordürün üstünden karşı şeride geçebilirsin. Pompa, şarj ünitesi ve direkler yine engel, arabayla adaya çıkılmaz.",
+   "en": "At the fuel station the pump islands no longer block you on foot: you can step over the curb to the other lane. Pumps, chargers and pillars still block, and cars cannot drive onto the islands."
   },
   {
-   "v": 828,
+   "v": 831,
    "d": "2026-11-14",
-   "tr": "Araba alınca artık galerinin kapısından çıkıp önüne gelir, üstünde işaret yanar ve tebrik penceresi açılır: hemen binebilir ya da ücretsiz eve (otoparka) teslim ettirebilirsin. Arabanın nerede olduğu haritada Önemli yerler › Araban satırında; Git deyince yol gösterilir. Daha önce alınıp evden uzakta kalmış araba bir kez evin otoparkına getirildi.",
-   "en": "When you buy a car it now rolls out of the dealer's door with a marker above it, and a congratulations window opens: drive it right away or have it delivered home to your car park for free. The map shows where your car is under Important places › Your car; tap Go to be guided there. Cars bought earlier and left far from home were brought to your home car park once."
+   "tr": "Yönetim paneli için küçük iç düzenleme.",
+   "en": "Small internal update for the admin panel."
   }
  ]
 }
