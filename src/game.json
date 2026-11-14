@@ -1,27 +1,27 @@
 {
- "v": 821,
+ "v": 825,
  "version": "1.00",
  "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 821,
-   "d": "2026-11-13",
-   "tr": "Köylü arabaları azaldı (en çok 4): artık yalnız yol kenarındaki asfalt park ceplerinde durur, çimene, köy meydanına ve çiftliğinin önüne park etmez. Köy meydanına hiçbir araç giremez.",
-   "en": "Fewer villager cars (at most 4): they now park only in roadside parking bays, never on grass, the village square or in front of your farm. No vehicle can enter the village square."
+   "v": 825,
+   "d": "2026-11-14",
+   "tr": "Çiftlik evinin sundurmasında ve kapı basamağında karakterin ayakları artık döşemeye gömülmüyor; sundurma çatısı biraz yükseldi, baş değmiyor.",
+   "en": "Your character's feet no longer sink into the farmhouse porch floor and doorstep; the porch roof is slightly higher so your head doesn't touch it."
   },
   {
-   "v": 820,
-   "d": "2026-11-13",
-   "tr": "Araba, taksi ve ambulans dönüş yaparken artık ahır, ağıl, kümes gibi yapıların içinden geçmiyor; taksi yapıya değmeyen yerde duruyor.",
-   "en": "Cars, taxis and the ambulance no longer drive through the barn, pens or coop while turning; the taxi stops clear of buildings."
+   "v": 824,
+   "d": "2026-11-14",
+   "tr": "Finans müdürünün önerisi artık mesajın içinden onaylanır: mesajda ✔ Onayla / ✖ Reddet ve 📒 Defteri aç tuşları var, nereden onaylanacağı ve neden önerdiği yazıyor; bildirime dokununca Defter açılır. Defterde her gelir ve gider kaleminin ne olduğu yazıyor; kaleme dokununca saatiyle hareketleri ve satılan ya da alınan eşyalar (ör. −40 Domates, +100 Buğday) görünür.",
+   "en": "The finance manager's proposal can now be approved right in the message: it has ✔ Approve / ✖ Decline and 📒 Open the book buttons and says where to approve and why; tapping the notification opens the book. Every income and expense item in the book now explains what it is; tap an item to see its timed movements and the goods sold or bought (e.g. −40 Tomatoes, +100 Wheat)."
   },
   {
-   "v": 819,
-   "d": "2026-11-13",
-   "tr": "Hazar Akaryakıt açıldı: benzin ve motorin pompası, elektrikliler için şarj yeri. Pompacı Erkan depoyu doldurur, fiyatlar her gün biraz değişir. Köylülerin de arabaları var, yollarda gezip istasyona uğrarlar.",
-   "en": "Hazar fuel station is open: petrol and diesel pumps plus EV chargers. Attendant Erkan fills your tank, and prices change a little each day. Villagers now drive their own cars and stop by the station too."
+   "v": 823,
+   "d": "2026-11-14",
+   "tr": "Ambarda balık ve yumurta miktarları artık virgüllü uzun sayılar olarak görünmüyor; bozulan ürün tam adet olarak eksilir, eski kayıtlardaki küsuratlar düzeltildi.",
+   "en": "Fish and egg amounts in the barn no longer show long decimals; spoiled goods now drop by whole pieces and old saves were fixed."
   }
  ]
 }
