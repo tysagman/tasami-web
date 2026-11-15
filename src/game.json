@@ -1,27 +1,27 @@
 {
- "v": 833,
+ "v": 837,
  "version": "1.00",
  "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 833,
-   "d": "2026-11-14",
-   "tr": "Otobüs artık durmak için karşı şeride geçmiyor: yol üstündeki her durağın karşısında ikinci bir durak var, otobüs gittiği yönün sağındaki durakta durur. Biletli yolculukta da doğru taraftaki durağa yönlendirilirsin.",
-   "en": "Buses no longer cross into the opposite lane to stop: every roadside stop now has a twin across the road and the bus stops on its own side. Ticket guidance points you to the stop on the correct side."
+   "v": 837,
+   "d": "2026-11-15",
+   "tr": "Ulupınar şehir merkezinde asfaltın ortasında görünen toprak leke kaldırıldı (otobüs dönüş alanı, taksi yolu ve izleri artık şehirde çizilmez).",
+   "en": "Removed the dirt patch in the middle of the Ulupınar city asphalt (bus turnaround, taxi tracks and dirt roads are no longer drawn in the city)."
   },
   {
-   "v": 832,
-   "d": "2026-11-14",
-   "tr": "Akaryakıt istasyonunda pompa adaları artık yürürken engel değil: bordürün üstünden karşı şeride geçebilirsin. Pompa, şarj ünitesi ve direkler yine engel, arabayla adaya çıkılmaz.",
-   "en": "At the fuel station the pump islands no longer block you on foot: you can step over the curb to the other lane. Pumps, chargers and pillars still block, and cars cannot drive onto the islands."
+   "v": 836,
+   "d": "2026-11-15",
+   "tr": "Tarladaki reklam düğmesinin yazısı artık yuvarlak tuşa sığıyor (bütün dillerde); uzun etkileşim yazılarında punto kendiliğinden küçülür.",
+   "en": "The ad button text on the field now fits inside the round button (all languages); long action labels shrink to fit."
   },
   {
-   "v": 831,
-   "d": "2026-11-14",
-   "tr": "Yönetim paneli için küçük iç düzenleme.",
-   "en": "Small internal update for the admin panel."
+   "v": 835,
+   "d": "2026-11-15",
+   "tr": "Kartal ortada yokken (örneğin şehirde) «Kartalı kov» düğmesi artık çıkmıyor; kartal yalnız yakında avlanacak hayvan varken gelir.",
+   "en": "The «Shoo the eagle» button no longer appears when no eagle is hunting nearby (e.g. in the city); eagles only come when there is prey nearby."
   }
  ]
 }
