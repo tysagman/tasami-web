@@ -780,6 +780,13 @@ html{scroll-padding-top:72px}
   .updates .wrap{display:grid;grid-template-columns:1fr 1.9fr;gap:clamp(40px,6vw,88px);align-items:start}
   .updates .sec-head{margin:0;position:sticky;top:104px}
 }
+/* development note (Unity) under the update list */
+.dev{margin-top:36px;padding:clamp(22px,3vw,32px);background:var(--surface);border:1px solid var(--hair);border-left:2px solid var(--accent);border-radius:var(--r)}
+.dev .kicker{color:var(--accent)}
+.dev h3{color:var(--ink);font-size:clamp(1.3rem,2.2vw,1.6rem)}
+.dev p{color:var(--text)}
+.dev .tags{margin:0}
+@media (min-width:980px){.updates .wrap{row-gap:0}.updates .dev{grid-column:2}}
 
 /* download: pitch on the left, Google Play card on the right */
 .test{padding:var(--pad) 0;background:var(--bg);border-top:1px solid var(--hair)}
