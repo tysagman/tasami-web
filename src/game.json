@@ -1,27 +1,27 @@
 {
- "v": 845,
+ "v": 850,
  "version": "1.00",
  "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 845,
+   "v": 850,
    "d": "2026-11-18",
-   "tr": "Spor arabada sürücünün kafası artık tavandan dışarı çıkmıyor. Köydeki sokak lambaları yolun kenarına alındı, araba ve karakter artık içlerinden geçemiyor.",
-   "en": "In the sports car the driver's head no longer pokes through the roof. Village street lamps were moved off the road and are now solid; cars and players can't pass through them."
+   "tr": "Çamlıbel'de bekleyen otobüs artık yolu kapatmıyor; durağın önünde yola paralel duruyor.",
+   "en": "The bus waiting in Çamlıbel no longer blocks the road; it now parks alongside the road at the stop."
   },
   {
-   "v": 844,
+   "v": 849,
    "d": "2026-11-18",
-   "tr": "Kamyon seferinde artık kaç kamyonun hangi şehre gideceğini sen seçiyorsun; yük kamyonlara eşit bölünür.",
-   "en": "On truck trips you now choose how many trucks go to which city; the load is split evenly between the trucks."
+   "tr": "Muhtarlık seçimini kazanınca artık her yerde belli: sol üstte 🎖️ Köyün muhtarı sensin satırı (dokununca köy yönetimi), Rıza Amca eski muhtar olur, seçim penceresinin başında köyün muhtarı yazar. Seçimi önceden kazananlara bir kez açıklama penceresi gelir.",
+   "en": "Winning the headman election is now clear everywhere: a 🎖️ You are the village headman row at the top left (tap for village management), Rıza becomes the former headman, and the election window shows who the headman is. Players who already won see an explanation once."
   },
   {
-   "v": 843,
+   "v": 848,
    "d": "2026-11-18",
-   "tr": "Reklam izleyerek yakıt doldurma artık aracın deposunun yarısını dolduruyor (traktör 20 L, araba ve biçerdöver de dahil); depo taşmaz, günlük reklam hakları aynı.",
-   "en": "Watching an ad to refuel now fills half of the vehicle's tank (tractor 20 L; cars and the combine harvester too); the tank never overflows, daily ad limits unchanged."
+   "tr": "Fabrika arızaları artık çeşitli: kayış kopması, motor ısınması, elektrik arızası, rulman ve her fabrikaya özel arızalar. Fabrikanın içinde arızanın türü görünür. Arıza sıklığı ve onarım ücretleri aynı.",
+   "en": "Factory breakdowns now vary: snapped belts, overheated motors, electrical faults, bearings and breakdowns specific to each factory. You can see the type of breakdown inside the factory. Breakdown frequency and repair costs are unchanged."
   }
  ]
 }
