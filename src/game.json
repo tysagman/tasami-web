@@ -1,27 +1,27 @@
 {
- "v": 852,
+ "v": 854,
  "version": "1.00",
  "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
+   "v": 854,
+   "d": "2026-11-21",
+   "tr": "Taş ocağında arabadan inince yeniden binilebiliyor; araba dik yamaçlara yan çıkıp devrilecek kadar yatmıyor.",
+   "en": "You can get back into your car at the stone quarry; the car no longer drives sideways up steep slopes and tips over."
+  },
+  {
+   "v": 853,
+   "d": "2026-11-21",
+   "tr": "Araba Meşe ormanındaki toprak yolda takılmıyor; ağacın yanından geçerken sıkışan araba artık kurtulabiliyor.",
+   "en": "The car no longer gets stuck on the dirt road in the Oak Forest; a car wedged against a tree can now get free."
+  },
+  {
    "v": 852,
    "d": "2026-11-20",
    "tr": "Aydınlatma direklerinin ışığı artık uzaktan (ör. dağ evi yolundan) köyün üstünde parlak leke gibi görünmüyor; çiftliğe yaklaşınca yine yanıyor.",
    "en": "Farm lamp post glow no longer shows as bright patches from far away (e.g. the mountain house path); it still lights up the farm up close."
-  },
-  {
-   "v": 851,
-   "d": "2026-11-19",
-   "tr": "Dağ evindeki şezlonglara artık gerçekten uzanılıyor: karakter sırtlığa yaslanır, bacakları minderin üstünde durur; şezlong sırtı doğru yöne yatık. Havuz yanındaki şezlonglarda da \"Şezlonga uzan\" çıkar.",
-   "en": "You can now really lie on the mountain house sun loungers: your character leans on the backrest with legs on the cushion; the backrest faces the right way. Loungers next to the pool also show \"Lie on the lounger\"."
-  },
-  {
-   "v": 850,
-   "d": "2026-11-18",
-   "tr": "Çamlıbel'de bekleyen otobüs artık yolu kapatmıyor; durağın önünde yola paralel duruyor.",
-   "en": "The bus waiting in Çamlıbel no longer blocks the road; it now parks alongside the road at the stop."
   }
  ]
 }
