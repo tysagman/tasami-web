@@ -1,27 +1,27 @@
 {
- "v": 859,
+ "v": 861,
  "version": "1.00",
  "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
+   "v": 861,
+   "d": "2026-11-23",
+   "tr": "Bazı telefonlarda (yeni Android WebView) zemin, dağlar ve yapılar kapkara görünüyordu. Oyun açılışta bunu kendisi fark edip dokuları düzgün çizer.",
+   "en": "On some phones (new Android WebView) the ground, mountains and buildings looked pitch black. The game now detects this at startup and draws textures correctly."
+  },
+  {
+   "v": 860,
+   "d": "2026-11-23",
+   "tr": "Kaleyi süsle görevi bitince kalede artık şenlik süsü görünüyor: surlarda flama dizileri, kulelerde sancaklar, avluda perdeli sahne ve gece yanan fenerler. Görevi önceden bitirenlerde de görünür.",
+   "en": "After the Decorate the Castle quest, the castle now shows festival decorations: bunting on the walls, banners on the towers, a curtained stage and lanterns that glow at night. Also shown for players who finished it earlier."
+  },
+  {
    "v": 859,
    "d": "2026-11-23",
    "tr": "Kamyon artık ürüne göre yük alır: yumurta, süt, peynir gibi küçük/hafif ürünlerden çok daha fazla, kumaş topu gibi hacimli üründen daha az. Sefer ekranında her ürünün kamyon başına miktarı ve kamyon doluluğu görünür.",
    "en": "Trucks now carry loads by product: far more small/light goods like eggs, milk and cheese, fewer bulky ones like fabric rolls. The trip screen shows each product's amount per truck and how full the trucks are."
-  },
-  {
-   "v": 858,
-   "d": "2026-11-23",
-   "tr": "Muhtar seçilince köy projeleri, dilekçeler ve muhtarlığa yapılan görev teslimleri artık senin 🎖️ Muhtarlık masanda. Rıza Amca eski muhtar olarak yalnız akıl verir.",
-   "en": "When you are elected headman, village projects, petitions and deliveries to the headman's office are now on your own 🎖️ headman's desk. Uncle Rıza, the former headman, only gives advice."
-  },
-  {
-   "v": 857,
-   "d": "2026-11-21",
-   "tr": "Otobüsler artık daha yavaş: en çok 40 km/s.",
-   "en": "Buses are slower now: up to 40 km/h."
   }
  ]
 }
