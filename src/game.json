@@ -1,27 +1,27 @@
 {
- "v": 861,
+ "v": 863,
  "version": "1.00",
  "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
+   "v": 863,
+   "d": "2026-11-25",
+   "tr": "Dağ evi havuzunda karakter artık kıyafetle değil şort/mayoyla yüzer; havuzdan çıkınca kıyafetin geri gelir.",
+   "en": "In the mountain house pool your character now swims in shorts/swimsuit instead of clothes; your outfit returns when you get out."
+  },
+  {
+   "v": 862,
+   "d": "2026-11-25",
+   "tr": "Demirkol AŞ ekranında Cengiz Demirkol'da kalan pay ve toplam %100 görünür; son kararda kalan pay doğru alınır.",
+   "en": "Demirkol Inc. screen now shows the share left with Cengiz Demirkol and a 100% total; buying the rest takes the correct remaining share."
+  },
+  {
    "v": 861,
    "d": "2026-11-23",
    "tr": "Bazı telefonlarda (yeni Android WebView) zemin, dağlar ve yapılar kapkara görünüyordu. Oyun açılışta bunu kendisi fark edip dokuları düzgün çizer.",
    "en": "On some phones (new Android WebView) the ground, mountains and buildings looked pitch black. The game now detects this at startup and draws textures correctly."
-  },
-  {
-   "v": 860,
-   "d": "2026-11-23",
-   "tr": "Kaleyi süsle görevi bitince kalede artık şenlik süsü görünüyor: surlarda flama dizileri, kulelerde sancaklar, avluda perdeli sahne ve gece yanan fenerler. Görevi önceden bitirenlerde de görünür.",
-   "en": "After the Decorate the Castle quest, the castle now shows festival decorations: bunting on the walls, banners on the towers, a curtained stage and lanterns that glow at night. Also shown for players who finished it earlier."
-  },
-  {
-   "v": 859,
-   "d": "2026-11-23",
-   "tr": "Kamyon artık ürüne göre yük alır: yumurta, süt, peynir gibi küçük/hafif ürünlerden çok daha fazla, kumaş topu gibi hacimli üründen daha az. Sefer ekranında her ürünün kamyon başına miktarı ve kamyon doluluğu görünür.",
-   "en": "Trucks now carry loads by product: far more small/light goods like eggs, milk and cheese, fewer bulky ones like fabric rolls. The trip screen shows each product's amount per truck and how full the trucks are."
   }
  ]
 }
