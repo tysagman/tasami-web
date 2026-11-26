@@ -1,10 +1,16 @@
 {
- "v": 866,
+ "v": 867,
  "version": "1.00",
  "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
+  {
+   "v": 867,
+   "d": "2026-11-26",
+   "tr": "Kamyon seferi: «50 kg tulum ya da keçi peyniri gönder» görevinde peynir artık kamyon yükü ekranında çıkıyor; çantadaki peynir de yüklenebiliyor.",
+   "en": "Truck runs: in the «send 50 kg tulum or goat cheese» quest the cheese now appears on the truck load screen; cheese in your bag can be loaded too."
+  },
   {
    "v": 866,
    "d": "2026-11-26",
@@ -16,12 +22,6 @@
    "d": "2026-11-26",
    "tr": "«Üç şirketin 20 gün çalışsın» görevi artık oyun gününe göre sayılır: oyunda olmadığın saatler de sayılır (müdür maaşları o günler için de ödenir).",
    "en": "The «three companies work for 20 days» quest now counts game days: hours you are away from the game count too (manager salaries are paid for those days as well)."
-  },
-  {
-   "v": 864,
-   "d": "2026-11-26",
-   "tr": "Yukarı Yayla'da ağıl ve koyunlar patikanın kenarına alındı, çit çıtaları düzgün; pazar tezgâhı ve demirhanedeki köylüler artık tezgâha gömülmüyor.",
-   "en": "In Upper Plateau the sheepfold and flock moved off the path, fence rails fixed; villagers at the market stall and smithy no longer stand inside their counters."
   }
  ]
 }
