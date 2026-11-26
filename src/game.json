@@ -1,27 +1,27 @@
 {
- "v": 863,
+ "v": 866,
  "version": "1.00",
  "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
   {
-   "v": 863,
-   "d": "2026-11-25",
-   "tr": "Dağ evi havuzunda karakter artık kıyafetle değil şort/mayoyla yüzer; havuzdan çıkınca kıyafetin geri gelir.",
-   "en": "In the mountain house pool your character now swims in shorts/swimsuit instead of clothes; your outfit returns when you get out."
+   "v": 866,
+   "d": "2026-11-26",
+   "tr": "Reklamla kazanılan bedava taksi yolculuğu artık taksiyi iptal edince ya da menüden çıkınca kaybolmuyor; hak araca binince harcanır.",
+   "en": "The free taxi ride earned by watching an ad is no longer lost if you cancel the taxi or leave the menu; it is used when you get in."
   },
   {
-   "v": 862,
-   "d": "2026-11-25",
-   "tr": "Demirkol AŞ ekranında Cengiz Demirkol'da kalan pay ve toplam %100 görünür; son kararda kalan pay doğru alınır.",
-   "en": "Demirkol Inc. screen now shows the share left with Cengiz Demirkol and a 100% total; buying the rest takes the correct remaining share."
+   "v": 865,
+   "d": "2026-11-26",
+   "tr": "«Üç şirketin 20 gün çalışsın» görevi artık oyun gününe göre sayılır: oyunda olmadığın saatler de sayılır (müdür maaşları o günler için de ödenir).",
+   "en": "The «three companies work for 20 days» quest now counts game days: hours you are away from the game count too (manager salaries are paid for those days as well)."
   },
   {
-   "v": 861,
-   "d": "2026-11-23",
-   "tr": "Bazı telefonlarda (yeni Android WebView) zemin, dağlar ve yapılar kapkara görünüyordu. Oyun açılışta bunu kendisi fark edip dokuları düzgün çizer.",
-   "en": "On some phones (new Android WebView) the ground, mountains and buildings looked pitch black. The game now detects this at startup and draws textures correctly."
+   "v": 864,
+   "d": "2026-11-26",
+   "tr": "Yukarı Yayla'da ağıl ve koyunlar patikanın kenarına alındı, çit çıtaları düzgün; pazar tezgâhı ve demirhanedeki köylüler artık tezgâha gömülmüyor.",
+   "en": "In Upper Plateau the sheepfold and flock moved off the path, fence rails fixed; villagers at the market stall and smithy no longer stand inside their counters."
   }
  ]
 }
