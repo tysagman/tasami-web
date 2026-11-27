@@ -1,10 +1,16 @@
 {
- "v": 867,
+ "v": 868,
  "version": "1.00",
  "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
+  {
+   "v": 868,
+   "d": "2026-11-27",
+   "tr": "🔒 Ana menüye Gizlilik ve KVKK aydınlatma metni bağlantısı eklendi; gizlilik politikası güncellendi.",
+   "en": "🔒 Added a privacy and data notice link to the main menu; privacy policy updated."
+  },
   {
    "v": 867,
    "d": "2026-11-26",
@@ -16,12 +22,6 @@
    "d": "2026-11-26",
    "tr": "Reklamla kazanılan bedava taksi yolculuğu artık taksiyi iptal edince ya da menüden çıkınca kaybolmuyor; hak araca binince harcanır.",
    "en": "The free taxi ride earned by watching an ad is no longer lost if you cancel the taxi or leave the menu; it is used when you get in."
-  },
-  {
-   "v": 865,
-   "d": "2026-11-26",
-   "tr": "«Üç şirketin 20 gün çalışsın» görevi artık oyun gününe göre sayılır: oyunda olmadığın saatler de sayılır (müdür maaşları o günler için de ödenir).",
-   "en": "The «three companies work for 20 days» quest now counts game days: hours you are away from the game count too (manager salaries are paid for those days as well)."
   }
  ]
 }
