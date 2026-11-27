@@ -1,10 +1,16 @@
 {
- "v": 868,
+ "v": 869,
  "version": "1.00",
  "quests": 220,
  "chapters": 6,
  "languages": 7,
  "changes": [
+  {
+   "v": 869,
+   "d": "2026-11-27",
+   "tr": "Hesabını silince mesajların, şikâyet ve geri bildirimlerin, klan üyeliğin de otomatik silinir; şikâyetlerde e-posta tutulmaz.",
+   "en": "Deleting your account now also removes your messages, reports, feedback and clan membership automatically; reports no longer store your email."
+  },
   {
    "v": 868,
    "d": "2026-11-27",
@@ -16,12 +22,6 @@
    "d": "2026-11-26",
    "tr": "Kamyon seferi: «50 kg tulum ya da keçi peyniri gönder» görevinde peynir artık kamyon yükü ekranında çıkıyor; çantadaki peynir de yüklenebiliyor.",
    "en": "Truck runs: in the «send 50 kg tulum or goat cheese» quest the cheese now appears on the truck load screen; cheese in your bag can be loaded too."
-  },
-  {
-   "v": 866,
-   "d": "2026-11-26",
-   "tr": "Reklamla kazanılan bedava taksi yolculuğu artık taksiyi iptal edince ya da menüden çıkınca kaybolmuyor; hak araca binince harcanır.",
-   "en": "The free taxi ride earned by watching an ad is no longer lost if you cancel the taxi or leave the menu; it is used when you get in."
   }
  ]
 }
